@@ -11,11 +11,17 @@
 		]
 	},
 	"version": "1.7.0",
-	"canonicalBase": "http://hl7.org/fhir/us/core",
+	"canonicalBase": "http://hl7.org/fhir/us/pharmacymaturity",
 	"tool": "jekyll",
 	"sct-edition": "http://snomed.info/sct/731000124108",
-	"spreadsheets": [
-			],
+	"dependencyList": [
+		{
+			"name": "uscore",
+			"location": "http://ig.fhir.me/Healthedata1/US-Core",
+			"source": "resources"
+		}
+	],
+	"spreadsheets": [],
 	"defaults": {
 		"Any": {
 			"template-format": "format.html",
