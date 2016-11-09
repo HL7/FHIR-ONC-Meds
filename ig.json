@@ -21,7 +21,7 @@
 			"source": "resources"
 		}
 	],
-	"spreadsheets": [],
+	"spreadsheets": ["medicationadministration-profile-spreadsheet.xml"],
 	"defaults": {
 		"Any": {
 			"template-format": "format.html",
