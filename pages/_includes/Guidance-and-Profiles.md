@@ -7,8 +7,8 @@
   1. All resources can be used to construct the list
 	- May only use MedicationStatement converting all MedicationResources to it.
 	  - ( Discussion: may need some additional clarification surrounding the use of MedicationStatement and what if any information is lost / using `derivedFrom` element to capture that information ( # of refills/who/substitutions))
-    - Guidance on who responsible for ‘deciding’ active – the server or client?
-    - Guidance on How to deal with the “Not-Given” medications
+  - Guidance on who responsible for ‘deciding’ active – the server or client?
+  - Guidance on How to deal with the “Not-Given” medications
 
 ### Profiles
 
