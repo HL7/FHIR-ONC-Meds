@@ -22,7 +22,10 @@
 		}
 	],
 	"spreadsheets": ["medicationadministration-profile-spreadsheet.xml","medicationdispense-profile-spreadsheet.xml"],
-	"defaults": {
+	"extraTemplates": [
+				"mappings"
+			],
+"defaults": {
 		"Any": {
 			"template-format": "format.html",
 			"template-base": "base.html"
@@ -34,9 +37,11 @@
 			"template-base": "cm.html"
 		},
 		"StructureDefinition": {
-			"template-base": "sd.html"
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html",
+			"template-mappings": "sd-mappings.html"
 		}
-	},
+},
 	"source": "ig.xml",
 	"resources": {}
 }
