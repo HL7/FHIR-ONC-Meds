@@ -1,3 +1,5 @@
+﻿
+
 ## 1.	Patient and Provider access to a patient’s active and historical medication list
 
 1.	This use case adopts the [Use cases for the Argonaut Project](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf) specifically within the scope of accessing medication lists as prescribed in [Meaningful Use 2015 §?170.302(d)](https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf). ___Maintain active medication list. Enable a user to record, change, and access a patient's active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.___
@@ -18,7 +20,7 @@
   1.  Terminology
       - [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/)
 
-## 1. Create new outpatient Prescription
+## 2. Create new outpatient Prescription
 
   1.  Actors: Providers/EHR (See [Use cases for the Argonaut Project](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf))
   1.  Workflow Description:  See a general discussion of FHIR workflow [here](http://build.fhir.org/workflow.html).
@@ -31,15 +33,15 @@
   1.  Terminology
       - RxNorm
 
-## 1. Dispense medication from Pharmacy
+## 3. Dispense medication from Pharmacy
 
-  1. Background:
-    1.  Not supported by community pharmacies since they are mandated to use [NCPDP Script](https://www.ncpdp.org/NCPDP/media/pdf/EprescribingFactSheet.pdf)
-    1.  Currently in hospital pharmacies using HL7 V2 RXD messaging.
-    1. Potential use for "secondary" recording of data.
+ 1. Background:
+    - Not supported by community pharmacies since they are mandated to use [NCPDP Script](https://www.ncpdp.org/NCPDP/media/pdf/EprescribingFactSheet.pdf)
+    - Currently in hospital pharmacies using HL7 V2 RXD messaging.
+    - Potential use for "secondary" recording of data.
       - For example:  script history, real time benefit checking or Prescription Drug Monitoring
   1. Actors: TBD
- 1.  FHIR Resources
+  1.  FHIR Resources
       - MedicationDispense
   1.  Terminology
       - [RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/)
