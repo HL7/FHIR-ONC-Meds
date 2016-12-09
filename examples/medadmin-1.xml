@@ -1,0 +1,37 @@
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+	<id value="medadmin-1"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2016-12-08T06:38:52Z"/>
+		<profile value="http://hl7.org/fhir/us/pharmacymaturity/StructureDefinition/medicationadministration"/>
+	</meta>
+	<status value="completed"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="285018"/>
+			<display value="Lantus 100 unit/ml injectable solution"/>
+		</coding>
+	</medicationCodeableConcept>
+	<patient>
+		<reference value="http://hl7.org/fhir/us/core/Patient-example.html"/>
+		<display value="Amy V. Shaw"/>
+	</patient>
+	<effectivePeriod>
+		<start value="2015-01-15T04:30:00+01:00"/>
+		<end value="2015-01-15T14:30:00+01:00"/>
+	</effectivePeriod>
+	<performer>
+		<reference value="http://hl7.org/fhir/us/core/Practitioner-practitioner-1.html"/>
+		<display value="Ronald Bone"/>
+	</performer>
+	<dosage>
+		<text value="20 Units SC before breakfast"/>
+		<dose>
+			<value value="20"/>
+			<unit value="U"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="U"/>
+		</dose>
+	</dosage>
+</MedicationAdministration>

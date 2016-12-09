@@ -1,0 +1,29 @@
+<MedicationDispense xmlns="http://hl7.org/fhir">
+	<id value="meddispense-1"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2016-12-08T06:38:52Z"/>
+		<profile value="http://hl7.org/fhir/us/pharmacymaturity/StructureDefinition/medicationdispense"/>
+	</meta>
+	<status value="in-progress"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="285018"/>
+			<display value="Lantus 100 unit/ml injectable solution"/>
+		</coding>
+	</medicationCodeableConcept>
+	<patient>
+		<reference value="http://hl7.org/fhir/us/core/Patient-example.html"/>
+		<display value="Donald Duck "/>
+	</patient>
+	<dispenser>
+		<reference value="http://hl7.org/fhir/us/core/Practitioner-practitioner-1.html"/>
+		<display value="Rob van den Berk"/>
+	</dispenser>
+	<whenHandedOver value="2016-12-08T06:38:52Z"/>
+	<dosageInstruction>
+		<sequence value="1"/>
+		<text value="20 Units SC three times daily"/>
+	</dosageInstruction>
+</MedicationDispense>
