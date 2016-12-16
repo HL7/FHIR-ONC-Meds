@@ -19,8 +19,8 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 ### Find your rendered IG automatically available at
 
-http://build.fhir.org/Healthedata1/FHIR-ONC-Meds
+http://build.fhir.org/ig/Healthedata1/FHIR-ONC-Meds
 
 ### Find debugging info about the build
 
-http://build.fhir.org/Healthedata1/FHIR-ONC-Meds/debug.tgz
+http://build.fhir.org/ig/Healthedata1/FHIR-ONC-Meds/debug.tgz
