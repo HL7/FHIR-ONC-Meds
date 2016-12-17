@@ -43,16 +43,16 @@ Thumbs.db
 
 # FHIR IG Publisher local build directories #
 #############################################
-
 qa
 temp
 output
 archive
+
 # Altova files #
 ################
 *.spp
 *.sps
-*,svp
+*.svp
 tmp*.html
 tmp*.md
 *.mfd
