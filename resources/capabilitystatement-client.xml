@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd/capabilitystatement.xsd">
+	<id value="client"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<span style="font-size:larger; font-weight:bold; ">US Meds Client</span>
+			<hr/>
+			<span>FHIR Version: </span>
+			<span>STU3</span>
+			<br/>
+			<span>Supported formats: </span>
+			<span>xml</span>
+			<span>, </span>
+			<span>json</span>
+			<br/>
+			<span>Published:  </span>
+			<span>2016-12-13</span>
+			<br/>
+			<span>Published by: </span>
+			<span>FHIR Pharmacy Maturity ProjectTeam</span>
+			<p>
+				<span>This profile describes the expected capabilities of a client when conforming to the [Pharmacy FHIR Maturity Project IG](http://hl7.org/fhir/us/meds/). This statement includes: The basic expectations for the capabilities of a conformant client application  The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that *MAY* be supported by the client   </span>
+			</p>
+			<br/>
+			<span style="font-size:larger; font-weight:bold; ">RESTful Behavior</span>
+			<br/>
+			<hr/>
+			<span>Description: </span>
+			<span>  The client is responsible for creating and initiating the queries for information about an individual patient.</span>
+			<br/>
+			<br/>
+			<span>Security: </span>
+			<span>Clients SHALL implement applicable security requirements in the [US Core IG](http://hl7.org/fhir/us/core/).</span>
+			<br/>
+			<br/>
+			<span style="font-weight:bold; ">Profile Summary: </span>
+			<br/>
+			<br/>
+			<span> All clients SHOULD Support the following interactions for all Profiles: </span>
+			<a href="http://build.fhir.org/http.html#search-type">
+				<span>search-type</span>
+			</a>
+			<span>, </span>
+			<a href="http://build.fhir.org/http.html#read">
+				<span>read</span>
+			</a>
+			<span>, </span>
+			<a href="http://build.fhir.org/http.html#vread">
+				<span>vread</span>
+			</a>
+			<span>, </span>
+			<a href="http://build.fhir.org/http.html#history-instance">
+				<span>history-instance</span>
+			</a>
+			<br/>
+			<br/>
+			<br/>
+			<span>All clients SHOULD Support the following search parameter combinations for each of the profiles listed:</span>
+			<br/>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>
+							<span>Profile (Type)</span>
+						</th>
+						<th>
+							<span>Supported Searches</span>
+						</th>
+						<th>
+							<span>Supported Includes</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="#US Meds MedicationAdministration Profile">
+								<span>US Meds MedicationAdministration Profile</span>
+							</a>
+							<span> (</span>
+							<span>MedicationAdministration</span>
+							<span>)</span>
+						</td>
+						<td>
+							<span>patient</span>
+						</td>
+						<td>
+							<span>MedicationAdministration.medication</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<span style="font-weight:bold; ">Profile Details:</span>
+			<br/>
+			<br/>
+			<ol>
+				<li>
+					<h4>
+						<a name="USMedsMedicationAdministrationProfile"/>
+						<span>US Meds MedicationAdministration Profile</span>
+						<span> </span>
+					</h4>
+					<p>
+						<span>Overview of the required search and read operations.:  </span>
+						<span> The MedicationAdministration resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but if the an external reference to Medication is used, the server SHALL support the include parameter for searching this element. The client application must support connecting to a server and fetching a patient's medications using both methods:      </span>
+					</p>
+					<p>
+						<span>Resource Type: </span>
+						<span>MedicationAdministration</span>
+					</p>
+					<p>
+						<span>Interactions:</span>
+					</p>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>
+									<span>Code</span>
+								</th>
+								<th>
+									<span>Description</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<span>search-type</span>
+								</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td>
+									<span>read</span>
+								</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td>
+									<span>vread</span>
+								</td>
+								<td> </td>
+							</tr>
+							<tr>
+								<td>
+									<span>history-instance</span>
+								</td>
+								<td> </td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						<span>Search: </span>
+					</p>
+					<p>
+						<span>Supported _include values: </span>
+						<span>MedicationAdministration.medication</span>
+					</p>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>
+									<span>Name</span>
+								</th>
+								<th>
+									<span>Type</span>
+								</th>
+								<th>
+									<span>Search Syntax</span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr style="height:0.44in; ">
+								<td>
+									<span>patient</span>
+								</td>
+								<td>
+									<span>reference</span>
+								</td>
+								<td>
+									<span>GET [Base]/MedicationAdministration?patient=[id]
+GET [Base]/MedicationAdministration?patient=[id]&amp;_include=MedicationAdministration:medication</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ol>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+		</div>
+	</text>
+	<url value="http://hl7.org/fhir/us/meds/CapabilityStatement/client"/>
+	<name value="US Meds Client"/>
+	<status value="draft"/>
+	<date value="2016-12-13"/>
+	<publisher value="FHIR Pharmacy Maturity ProjectTeam"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="This profile describes the expected capabilities of a client when conforming to the [Pharmacy FHIR Maturity Project IG](http://hl7.org/fhir/us/meds/). This statement includes: The basic expectations for the capabilities of a conformant client application  The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that *MAY* be supported by the client   "/>
+	<kind value="requirements"/>
+	<fhirVersion value="STU3"/>
+	<acceptUnknown value="extensions"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<profile>
+		<reference id="1"  value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration"/>
+		<display value="US Meds MedicationAdministration Profile"/>
+	</profile>
+	<rest>
+		<mode value="client"/>
+		<documentation value="  The client is responsible for creating and initiating the queries for information about an individual patient."/>
+		<security>
+			<description value="Clients SHALL implement applicable security requirements in the [US Core IG](http://hl7.org/fhir/us/core/)."/>
+		</security>
+		<resource>
+			<type value="MedicationAdministration"/>
+			<profile>
+				<reference value="#1"/>
+				<display value="US Meds MedicationAdministration Profile"/>
+			</profile>
+			<documentation value=" The MedicationAdministration resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but if the an external reference to Medication is used, the server SHALL support the include parameter for searching this element. The client application must support connecting to a server and fetching a patient's medications using both methods:      "/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<searchInclude value="MedicationAdministration.medication">
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+			</searchInclude>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+				<documentation value="GET [Base]/MedicationAdministration?patient=[id]&#xA;GET [Base]/MedicationAdministration?patient=[id]&amp;_include=MedicationAdministration:medication"/>
+			</searchParam>
+		</resource>
+	</rest>
+</CapabilityStatement>

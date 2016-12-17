@@ -3,7 +3,7 @@
 	<meta>
 		<versionId value="1"/>
 		<lastUpdated value="2016-12-08T06:38:52Z"/>
-		<profile value="http://hl7.org/fhir/us/pharmacymaturity/StructureDefinition/medicationadministration"/>
+		<profile value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration"/>
 	</meta>
 	<status value="completed"/>
 	<medicationCodeableConcept>
