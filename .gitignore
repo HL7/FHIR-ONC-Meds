@@ -51,6 +51,8 @@ archive
 # Altova files #
 ################
 *.spp
+*.sps
+*,svp
 tmp*.html
 tmp*.md
 *.mfd
@@ -60,7 +62,11 @@ edos-example1.csv
 schema-template.xsd
 infile.csv
 outfile.csv
+apstmtn.sps
+capstmtn.xhtml
+resources/xapabilitystatement-client.xml
 Log-FHIR.xlsx
+
 
 # Microsoft Office #
 ####################
