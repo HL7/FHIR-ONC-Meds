@@ -1,12 +1,4 @@
-## {{site.data.fhir.igName}} Implementation Guide
-{:.no_toc}
-
-source pages/\_include/{{page.md_filename}}.md  file
-
-<!-- TOC -->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
+﻿## {{site.data.fhir.igName}} Implementation Guide
 
 ### Introduction
 
