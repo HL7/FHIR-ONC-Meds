@@ -1,7 +1,7 @@
 ## {{site.data.fhir.igName}} Implementation Guide
 {:.no_toc}
 
-source pages/_include/{{page.md_filename}}.md  file
+source pages/\_include/{{page.md_filename}}.md  file
 
 <!-- TOC -->
 
@@ -27,9 +27,10 @@ The following actors are defined:
 
 The following specific uses case are defined:
 
-1. Patient and Provider access to a patient’s active and historical medication list
-1. Create new outpatient Prescription
-1. Dispense medication from Pharmacy
+1. [Patient and Provider access to a patient’s active and historical medication list](todo.html)
+1. [Medication list updates](todo.html)
+1. [Create new outpatient Prescription](todo.html)
+1. [Dispense medication from Pharmacy](todo.html)
 
 A detailed description and guidance for each is given in the [General Guidance](todo.html) section.
 
