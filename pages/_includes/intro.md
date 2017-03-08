@@ -1,12 +1,6 @@
 ## {{site.data.fhir.igName}} Implementation Guide
-{:.no_toc}
 
 source pages/\_include/{{page.md_filename}}.md  file
-
-<!-- TOC -->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
 
 ### Introduction
 
@@ -48,9 +42,6 @@ In addition these two profiles have been defined for this implementation guide:
 
   Each profile defines the minimum mandatory elements, extensions and terminology requirements that MUST be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a logical view of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples. In addition each profile has a “Quick Start” section which is intended as an implementer friendly overview of the required search and read operations.
 
-
-<p>,</p>
-
 ### Security
 
-Refer to the US Core Implementation Guide's [General Security Considerations](todo.html) page for a discussion of the security conformance requirements.  
+Refer to the US Core Implementation Guide's [General Security Considerations](todo.html) page for a discussion of the security conformance requirements.

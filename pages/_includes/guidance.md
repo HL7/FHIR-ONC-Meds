@@ -1,4 +1,3 @@
-
 ## Definitions, Interpretations and Requirements common to all US-Meds actors
 {:.no_toc}
 
