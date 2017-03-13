@@ -370,21 +370,15 @@ a.to-top {
 
 // Adding 'Contents' headline to the TOC
 
-#markdown-toc:before {
-    content: "Contents:";
-    font-weight: bold;
+#markdown-toc::before {
+  content: "Table of Contents";
+  font-weight: bold;
 }
-
-/*
-// Using numbers instead of bullets for listing
-#markdown-toc ul {
-    list-style: decimal;
+#markdown-toc ul{
+  list-style: none;
+  padding: 1.5 em;
 }
-*/
-
 #markdown-toc {
-    border: 1px solid #aaa;
-    padding: 1.5em;
-/*    list-style: decimal; */
-    display: inline-block;
+  list-style: none;
+  padding: 0;
 }

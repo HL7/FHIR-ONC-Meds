@@ -6,10 +6,18 @@ This section outlines the definitions and interpretations and specific guidance 
 
 source pages/\_include/{{page.md_filename}}.md  file
 
-<!-- TOC -->
+
+---
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+**Contents**
 
 * Do not remove this line (it will not be displayed)
 {:toc}
+
+---
+
+<!-- end TOC -->
 
 ### Background on the FHIR Medications resources
 
@@ -25,43 +33,15 @@ Details about each resource can be found in the FHIR specification.  As well, a 
 
 For this IG we are focused on access and updates to a patient's medications and the interaction between the medication order (*MedicationRequest*) and the medication record (*MedicationStatement*).  Therefore it is important to understand the relationships between these resources.  Figure 1 illustrates the workflow relationship between the order and the fulfillment as represented by the FHIR medication resources.
 
-<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
-file:///assets/images/usmed-fig1.png
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1.</strong></figcaption>
-  <img src="assets/images/usmed-fig1.png" class="figure-img img-responsive img-rounded center-block" alt="Workflow relationship between the order and the fulfillment">
-</figure>
-
-<!--
-<img src="assets/images/usmed-fig1.png" class="img-responsive" alt="Workflow relationship between the order and the fulfillment">
--->
-<p></p>
-</div>
+{% include img.html img="usmed-fig1.png" caption="Figure 1" %}
 
 Figure 2 shows the information sources for MedicationStatement which include patient reported medications and medications directly derived from the system's MedicationRequest resources.  Note that patient reported medications may be directly reported by the patient or derived from variety of patient provided records including including other FHIR resources.
 
-<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
-file:///assets/images/usmed-fig2.png
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 2.</strong></figcaption>
-  <img src="assets/images/usmed-fig2.png" class="figure-img img-responsive img-rounded center-block" alt="Workflow relationship between the order and the fulfillment">
-</figure>
-<p></p>
-</div>
+{% include img.html img="usmed-fig2.png" caption="Figure 2" %}
 
 Except for Medication resource itself, the medication resources represent a medication using either a code or a reference to a Medication resource. When using a code, the code  **SHALL** be [extensibly](todo.html) bound to [RxNorm](todo.html) - i.e. unless the concept is not covered by RxNorm, the RxNorm code **SHALL** be used.  More information about using codes can be found in US Core [General Guidance Section](todo.html) and the [FHIR Specification](todo.html).  When referencing the Medication resource, the resource may be a [contained](todo.html) or an external resource. These options are shown in figure 3 below.  The server application **MAY** choose any combination of these methods, but if an external reference to Medication is used, the server **SHALL** support the include parameter for searching this element. The client application **MUST** support all methods. The US Core IG provides [Examples](todo.html) that show these different methods. Additional guidance is provided below and in the [CapabilityStatement](todo.html) section.
 
-<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
-file:///assets/images/usmed-fig3.png
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 3.</strong></figcaption>
-  <img src="assets/images/usmed-fig3.png" class="figure-img img-responsive img-rounded center-block" alt="Workflow relationship between the order and the fulfillment">
-</figure>
-<p></p>
-</div>
+{% include img.html img="usmed-fig3.png" caption="Figure 3" %}
 
 ### Use Case 1 - Patient and Provider access to a patient’s active and historical medication list
 
@@ -81,9 +61,9 @@ A MedicationStatement resource query **SHALL** be all that is required to access
 
 Duplication of medications may exist between the sources of information.  The deduplication activity **MAY** be provided by the server but **SHOULD** be provided by the client.
 
-**“Not-Given” Medications**
+**“Not Taken” Medications**
 
-For specific guidance on how to interpret the “Not-Given” element, see the [MedicationStatement Resource Notes](todo.html) section in the FHIR Specification. An example is provided which contains an instance using this element.  
+For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes](http://build.fhir.org/medicationstatement.html#11.5.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
 
 **Quick Start:**
 
