@@ -12,18 +12,21 @@
 			<code value="285018"/>
 			<display value="Lantus 100 unit/ml injectable solution"/>
 		</coding>
+		<text value="Lantus 100 unit/ml injectable solution"/>
 	</medicationCodeableConcept>
-	<patient>
-		<reference value="http://hl7.org/fhir/us/core/Patient-example.html"/>
+	<subject>
+		<reference value="http://hl7.org/fhir/us/core/Patient/example"/>
 		<display value="Amy V. Shaw"/>
-	</patient>
+	</subject>
 	<effectivePeriod>
 		<start value="2015-01-15T04:30:00+01:00"/>
 		<end value="2015-01-15T14:30:00+01:00"/>
 	</effectivePeriod>
 	<performer>
-		<reference value="http://hl7.org/fhir/us/core/Practitioner-practitioner-1.html"/>
-		<display value="Ronald Bone"/>
+		<actor>
+			<reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
+			<display value="Ronald Bone"/>
+		</actor>
 	</performer>
 	<dosage>
 		<text value="20 Units SC before breakfast"/>

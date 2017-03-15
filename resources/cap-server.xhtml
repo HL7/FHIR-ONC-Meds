@@ -1,3 +1,6 @@
+<h3 id="conformance-requirements-for-the-us-meds-server">Conformance requirements for the US Meds Server</h3>
+
+<p><a name="d6508d8f-d010-4e72-b34e-73e9e7979e75"> </a>Source Resource: <a href="capabilitystatement-server.xml.html">XML</a>/<a href="capabilitystatement-server.json.html">JSON</a></p>
 
 <ul>
   <li>FHIR Version: 1.9.0</li>
@@ -6,7 +9,7 @@
   <li>Published by: Health Level Seven International Pharmacy Work Group</li>
 </ul>
 
-<p>The Section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. When conforming to the US Meds IG and It is expected that it will be used in conjuction with the <a href="todo.html">US Core CapabilityStatement</a>. Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+<p>The Section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. It is expected that this CapabilityStatement will be used in conjuction with the <a href="todo.html">US Core CapabilityStatement</a>. Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
 
 <h4 id="behavior">Behavior</h4>
 
@@ -64,8 +67,8 @@
 <h4 id="profile-interaction-summary">Profile Interaction Summary:</h4>
 
 <ul>
-  <li><a name="426278d9-b936-41de-a190-49ea42899b2c"> </a>All servers <strong>SHALL</strong> make available the <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#read">read</a> and <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
-  <li><a name="45b24ad8-ac52-48e4-ae5e-c8f386a14863"> </a>All servers <strong>SHOULD</strong> make available the <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#vread">vread</a> and <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
+  <li><a name="ca50b9be-6eab-4148-9152-149eff788c9c"> </a>All servers <strong>SHALL</strong> make available the <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#read">read</a> and <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
+  <li><a name="f2d6468f-c7a7-49b2-b0f5-6d9663e42c9b"> </a>All servers <strong>SHOULD</strong> make available the <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#vread">vread</a> and <a href="file:///Users/ehaas/Documents/FHIR/build/publish/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
 </ul>
 
 <p><strong>Summary of US Meds search criteria</strong></p>
@@ -126,7 +129,7 @@
 
 <p>Search Criteria:</p>
 
-<p>A server <strong>SHALL</strong> be capable of returning a patient’s administered medications using one of or both:</p>
+<p>A server <strong>SHALL</strong> be capable of fetching a patient’s administered medications using one of or both:</p>
 
 <ul>
   <li><code class="highlighter-rouge">GET /MedicationAdministration?patient=[id]</code></li>
@@ -189,12 +192,12 @@
   </tbody>
 </table>
 
-<h5 id="medicationrequest">3. MedicationRequest</h5>
+<h5 id="medicationrequest">4. MedicationRequest</h5>
 <p>Supported Profiles:  <a href="todo.html">US Core MedicationRequest Profile</a></p>
 
 <p>Search Criteria:</p>
 
-<p>A server is capable of returning a patient’s active medications orders using one of or both:</p>
+<p>A server <strong>SHALL</strong> be capable of returning a patient’s active medications orders using one of or both:</p>
 
 <ul>
   <li><code class="highlighter-rouge">GET /MedicationRequest?patient=[id]</code></li>
@@ -224,16 +227,30 @@
   </tbody>
 </table>
 
-<h5 id="medicationstatement">4. MedicationStatement</h5>
+<h5 id="medicationstatement">5. MedicationStatement</h5>
 <p>Supported Profiles:  <a href="todo.html">US Core MedicationStatement Profile</a></p>
 
 <p>Search Criteria:</p>
 
-<p>A server is capable of returning all medications for a patient using one of or both:</p>
+<p>A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:</p>
 
 <ul>
   <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]</code></li>
   <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication</code></li>
+</ul>
+
+<p>A server <strong>SHALL</strong> be capable of returning all active medications for a patient using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;status=active</code></li>
+  <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;status=active&amp;_include=MedicationStatement:medication</code></li>
+</ul>
+
+<p>A server <strong>SHOULD</strong> be capable of returning all active medications for a patient for an encounter using:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;encounter=[id]&amp;status=active</code></li>
+  <li><code class="highlighter-rouge">GET /MedicationStatement?patient=[id]&amp;encounter=[id]&amp;status=active&amp;_include=MedicationStatement:medication</code></li>
 </ul>
 
 <p>Search Parameters:</p>
@@ -272,3 +289,5 @@
     </tr>
   </tbody>
 </table>
+
+<p><br/></p>

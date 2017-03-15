@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/medicationrequest.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="derivedfrom-mr-test2-2"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+	</meta>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="311036"/>
+			<display value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+			<userSelected value="false"/>
+		</coding>
+		<text value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+	</medicationCodeableConcept>
+	<effectivePeriod>
+		<start value="2015-07-01"/>
+	</effectivePeriod>
+	<dateAsserted value="2017-03-15T16:07:02.816-07:00"/>
+	<subject>
+		<reference value="Patient/s1"/>
+		<display value="Brian Z"/>
+	</subject>
+	<derivedFrom>
+		<reference value="MedicationRequest/test2-2"/>
+	</derivedFrom>
+	<taken value="na"/>
+	<dosage>
+		<sequence value="1"/>
+		<text value="10U every AM, 5U every PM, 5U at bedtime"/>
+		<asNeededBoolean value="false"/>
+		<route>
+			<coding>
+				<system value="http://hl7.org/fhir/route-codes"/>
+				<code value="34206005"/>
+				<display value="Subcutaneous route (qualifier value)"/>
+				<userSelected value="false"/>
+			</coding>
+		</route>
+	</dosage>
+</MedicationStatement>

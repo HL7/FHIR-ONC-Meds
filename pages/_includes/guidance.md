@@ -67,6 +67,8 @@ For specific guidance on how to determine if the patient has taken the medicatio
 
 **Quick Start:**
 
+Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
+
 **1\.** Get "all medications" for a patient by querying MedicationStatement using the `patient` search parameter.  This query is identical to that defined in the [US Core implementation Guide](todo.html). See that IG for further details.
 
 Example: [Get All Medications](todo.html)
@@ -93,7 +95,7 @@ Active medication orders includes only the currently prescribed medications.  Th
 
 **Quick Start:**
 
-**1\.** `GET /MedicationRequest?patient=[id]&status=active`
+**1\.** `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationStatement:medication}`
 
 *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
 

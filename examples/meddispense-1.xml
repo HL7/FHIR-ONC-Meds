@@ -12,15 +12,16 @@
 			<code value="285018"/>
 			<display value="Lantus 100 unit/ml injectable solution"/>
 		</coding>
+		<text value="Lantus 100 unit/ml injectable solution"/>
 	</medicationCodeableConcept>
-	<patient>
-		<reference value="http://hl7.org/fhir/us/core/Patient-example.html"/>
-		<display value="Donald Duck "/>
-	</patient>
-	<dispenser>
-		<reference value="http://hl7.org/fhir/us/core/Practitioner-practitioner-1.html"/>
-		<display value="Rob van den Berk"/>
-	</dispenser>
+	<subject>
+		<reference value="http://hl7.org/fhir/us/core/Patient/example"/>
+	</subject>
+	<performer>
+		<actor>
+			<reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
+		</actor>
+	</performer>
 	<whenHandedOver value="2016-12-08T06:38:52Z"/>
 	<dosageInstruction>
 		<sequence value="1"/>

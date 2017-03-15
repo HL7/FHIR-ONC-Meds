@@ -1,0 +1,64 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "test2-2",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "active",
+	"intent": "order",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "311036",
+				"display": "Humulin R (insulin regular, human) U100  100units/ml inj solution",
+				"userSelected": false
+			}
+		],
+		"text": "Humulin R (insulin regular, human) U100  100units/ml inj solution"
+	},
+	"subject": {
+		"reference": "Patient/s1",
+		"display": "Brian Z"
+	},
+	"authoredOn": "2015-07-01",
+	"requester": {
+		"agent": {
+			"reference": "Practitioner/B",
+			"display": "Dr. Cryn"
+		},
+		"onBehalfOf": {
+			"reference": "Organization/bmc-endo",
+			"display": "BMC Endo"
+		}
+	},
+
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "10U every AM, 5U every PM, 5U at bedtime",
+			"asNeededBoolean": false,
+			"route": {
+				"coding": [
+					{
+						"system": "http://hl7.org/fhir/route-codes",
+						"code": "34206005",
+						"display": "Subcutaneous route (qualifier value)",
+						"userSelected": false
+					}
+				]
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 11,
+		"quantity": {
+			"value": 40,
+			"unit": "ml",
+			"system": "http://unitsofmeasure.org",
+			"code": "mL"
+		}
+	}
+}

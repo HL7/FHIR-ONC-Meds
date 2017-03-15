@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/medicationrequest.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="derivedfrom-mr-test2-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+	</meta>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="104491"/>
+			<display value="Simvastatin 20 MG Oral Tablet [Zocor]"/>
+			<userSelected value="false"/>
+		</coding>
+		<text value="Zocor (simvastatin) 20mg Tablet"/>
+	</medicationCodeableConcept>
+	<effectivePeriod>
+		<start value="2016-01-15"/>
+	</effectivePeriod>
+	<dateAsserted value="2017-03-15T16:02:37.792-07:00"/>
+	<subject>
+		<reference value="Patient/s1"/>
+		<display value="Brian Z"/>
+	</subject>
+	<derivedFrom>
+		<reference value="MedicationRequest/test2-1"/>
+	</derivedFrom>
+	<taken value="na"/>
+	<reasonCode>
+		<coding>
+			<system value="http://hl7.org/fhir/condition-code"/>
+			<code value="13644009"/>
+			<display value="Hypercholesterolemia (disorder)"/>
+			<userSelected value="false"/>
+		</coding>
+	</reasonCode>
+	<dosage>
+		<sequence value="1"/>
+		<text value="40mg by mouth once daily"/>
+		<asNeededBoolean value="false"/>
+		<route>
+			<coding>
+				<system value="http://ncimeta.nci.nih.gov"/>
+				<code value="C38288"/>
+				<display value="ORAL"/>
+				<userSelected value="false"/>
+			</coding>
+		</route>
+	</dosage>
+</MedicationStatement>

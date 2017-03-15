@@ -1,0 +1,75 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "test2-3",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "completed",
+	"intent": "order",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "314231",
+				"display": "Simvastatin 10 MG Oral Tablet",
+				"userSelected": false
+			}
+		],
+		"text": "simvastatin 10mg Tablet"
+	},
+	"subject": {
+		"reference": "Patient/s1",
+		"display": "Brian Z"
+	},
+	"authoredOn": "2015-06-12",
+	"requester": {
+		"agent": {
+			"reference": "Practitioner/A",
+			"display": "Dr. Cayr"
+		},
+		"onBehalfOf": {
+			"reference": "Organization/bmc",
+			"display": "BMC PCP"
+		}
+	},
+	"reasonCode": [
+		{
+			"coding": [
+				{
+					"system": "http://hl7.org/fhir/condition-code",
+					"code": "13644009",
+					"display": "Hypercholesterolemia (disorder)",
+					"userSelected": false
+				}
+			]
+		}
+	],
+	"dosageInstruction": [
+		{
+			"sequence": 1,
+			"text": "30mg (3 tablets) by mouth once daily",
+			"asNeededBoolean": false,
+			"route": {
+				"coding": [
+					{
+						"system": "http://ncimeta.nci.nih.gov",
+						"code": "C38288",
+						"display": "ORAL",
+						"userSelected": false
+					}
+				]
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 6,
+		"quantity": {
+			"value": 90,
+			"unit": "tablets",
+			"system": "http://hl7.org/fhir/v3/orderableDrugForm",
+			"code": "TAB"
+		}
+	}
+}
