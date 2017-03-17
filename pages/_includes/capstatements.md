@@ -22,7 +22,7 @@ This section outlines conformance requirements for each of the US-Meds actors id
 
 Source Resource: [XML](capabilitystatement-server.xml.html)/[JSON](capabilitystatement-server.json.html)
 
-- FHIR Version: 1.9.0
+- FHIR Version: 3.0.0
 - Supported formats: xml, json
 - Published: 2017-03-08
 - Published by: Health Level Seven International Pharmacy Work Group
@@ -181,7 +181,7 @@ Search Parameters:
 
 Source Resource: [XML](capabilitystatement-client.xml.html)/[JSON](capabilitystatement-client.json.html)
 
-- FHIR Version: 1.9.0
+- FHIR Version: 3.0.0
 - Supported formats: xml, json
 - Published: 2017-03-08
 - Published by: Health Level Seven International Pharmacy Work Group

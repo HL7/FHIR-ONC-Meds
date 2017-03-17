@@ -23,11 +23,11 @@
 	},
 	"dateAsserted": "2016-09-12",
 	"informationSource": {
-		"reference": "Patient/s1",
+		
 		"display": "Brian Z"
 	},
 	"subject": {
-		"reference": "Patient/s1",
+		
 		"display": "Brian Z"
 	},
 	"taken":"y",

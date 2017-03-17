@@ -20,17 +20,16 @@
 		"text": "simvastatin 10mg Tablet"
 	},
 	"subject": {
-		"reference": "Patient/s1",
+
 		"display": "Brian Z"
 	},
 	"authoredOn": "2015-06-12",
 	"requester": {
 		"agent": {
-			"reference": "Practitioner/A",
+
 			"display": "Dr. Cayr"
 		},
 		"onBehalfOf": {
-			"reference": "Organization/bmc",
 			"display": "BMC PCP"
 		}
 	},

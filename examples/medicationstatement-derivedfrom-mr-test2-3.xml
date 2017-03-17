@@ -19,7 +19,7 @@
 	</effectivePeriod>
 	<dateAsserted value="2017-03-15T16:07:59.169-07:00"/>
 	<subject>
-		<reference value="Patient/s1"/>
+		
 		<display value="Brian Z"/>
 	</subject>
 	<derivedFrom>

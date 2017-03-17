@@ -15,13 +15,13 @@
 		<text value="Lantus 100 unit/ml injectable solution"/>
 	</medicationCodeableConcept>
 	<subject>
-		<reference value="http://hl7.org/fhir/us/core/Patient/example"/>
+		<display value="Amy V. Shaw"/>
 	</subject>
-	<performer>
-		<actor>
-			<reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
-		</actor>
-	</performer>
+		<performer>
+			<actor>
+				<display value="Ronald Bone, MD"/>
+			</actor>
+		</performer>
 	<whenHandedOver value="2016-12-08T06:38:52Z"/>
 	<dosageInstruction>
 		<sequence value="1"/>
