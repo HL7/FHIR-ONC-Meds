@@ -44,6 +44,7 @@ Except for Medication resource itself, the medication resources represent a medi
 {% include img.html img="usmed-fig3.png" caption="Figure 3" %}
 
 ### Use Case 1 - Patient and Provider access to a patient’s active and historical medication list
+{: #uc-1}
 
 The guidance below addressed how a client accesses a patient's medication list. This use case adopts the Use cases for the Argonaut Project and US Core specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d).*Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*
 
@@ -106,12 +107,14 @@ Active medication orders includes only the currently prescribed medications.  Th
 Example: [Get All *Active* Medication Order](get-all-enc-meds.html)
 
 ### Use Case 2 - Medication list update
+{: #uc-2}
 
 This use case adopts the Use cases for the Argonaut Project and US Core specifically within the scope of recording and changing medications as prescribed in Meaningful Use 2015 §?170.302(d).*Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*  The updates would be to the MedicationStatement resource and  include both creation of new resources or changes to the existing resources.  These interactions require patient or provider requires write access to the EHR systems.   Refer to the US Core Implementation Guide's [General Security Considerations](todo.html) page for a discussion of the security and authorization requirements.
 
 This Use Case will be the focus of future versions of this IG.
 
 ### Use Case 3 - Create new outpatient Prescription
+{: #uc-3}
 
 Provider creates new outpatient Prescription using the MedicationRequest resource.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the [FHIR workflow sections](get-all-active-med-order.html) in the FHIR specification.
 
@@ -119,6 +122,7 @@ At the time of this publication, the US implementors have not used the Medicatio
 
 
 ### Use Case 4 - Dispense medication from Pharmacy
+{: #uc-4}
 
 Background: Community pharmacies in the US are mandated to use [NCPDP](https://www.ncpdp.org/) Script format for representing dispensing information and hospital pharmacies are typically using HL7 V2 RXD messaging.  Possible scenarios where this resource could be used for interchange of dispensing data include:
 - prescription history
