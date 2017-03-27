@@ -20,7 +20,7 @@ This section outlines conformance requirements for each of the US-Meds actors id
 
 ### Conformance requirements for the US Meds Server
 
-Source Resource: [XML](capabilitystatement-server.xml.html)/[JSON](capabilitystatement-server.json.html)
+Source Resource: [XML](CapabilityStatement-server.xml.html)/[JSON](CapabilityStatement-server.json.html)
 
 - FHIR Version: 3.0.0
 - Supported formats: xml, json
@@ -72,8 +72,8 @@ US Meds Servers **SHALL**:
 
 #### Profile Interaction Summary:
 
-- All servers **SHALL** make available the [read](http://build.fhir.org/http.html#read) and [search](http://build.fhir.org/http.html#search) interactions for the Profiles the server chooses to support.
-- All servers **SHOULD** make available the [vread](http://build.fhir.org/http.html#vread) and [history-instance](http://build.fhir.org/http.html#history) interactions for the Profiles the server chooses to support.
+- All servers **SHALL** make available the [read]({{ site.data.fhir.path }}/http.html#read) and [search]({{ site.data.fhir.path }}/http.html#search) interactions for the Profiles the server chooses to support.
+- All servers **SHOULD** make available the [vread]({{ site.data.fhir.path }}/http.html#vread) and [history-instance]({{ site.data.fhir.path }}/http.html#history) interactions for the Profiles the server chooses to support.
 
 **Summary of US Meds search criteria**
 
@@ -179,7 +179,7 @@ Search Parameters:
 
 ### Conformance requirements for the US Meds Client
 
-Source Resource: [XML](capabilitystatement-client.xml.html)/[JSON](capabilitystatement-client.json.html)
+Source Resource: [XML](CapabilityStatement-client.xml.html)/[JSON](CapabilityStatement-client.json.html)
 
 - FHIR Version: 3.0.0
 - Supported formats: xml, json
@@ -190,7 +190,7 @@ This section describes the expected capabilities of a client actor which is resp
 
 #### Behavior
 
-The US Meds Clent **SHALL** support fetching and querying of one or more US Meds profile(s), using the supported RESTful interactions and search parameters declared in the [US Meds Server CapabilityStatement](#conformance-requirements-for-the-us-meds-client)
+The US Meds Clent **SHALL** support fetching and querying of one or more US Meds profile(s), using the supported RESTful interactions and search parameters declared in the [US Meds Server CapabilityStatement](#conformance-requirements-for-the-us-meds-server)
 
 The US Meds Clent **SHOULD** Declare a CapabilityStatement identifying the list of profiles, operations, search parameter supported.
 

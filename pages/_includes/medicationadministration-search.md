@@ -1,5 +1,5 @@
 
-`GET /MedicationAdministration?patient={id}{&_include=MedicationAdministration:medication}`
+`GET /MedicationAdministration?patient=[id]{&_include=MedicationAdministration:medication}`
 
 **Example:**
 
@@ -12,8 +12,8 @@
 
 -------
 
-  [(how to search by reference)]: http://build.fhir.org/search.html#reference
-  [(how to search by token)]: http://build.fhir.org/search.html#token
-  [Composite Search Parameters]: http://build.fhir.org/search.html#combining
-  [(how to search by date)]: http://build.fhir.org/search.html#date
-  [(how to search by _include)]: http://build.fhir.org/search.html#_include
+  [(how to search by reference)]: {{ site.data.fhir.path }}/search.html#reference
+  [(how to search by token)]: {{ site.data.fhir.path }}/search.html#token
+  [Composite Search Parameters]: {{ site.data.fhir.path }}/search.html#combining
+  [(how to search by date)]: {{ site.data.fhir.path }}/search.html#date
+  [(how to search by _include)]: {{ site.data.fhir.path }}/search.html#_include

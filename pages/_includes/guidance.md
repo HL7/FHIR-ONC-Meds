@@ -80,9 +80,10 @@ Duplication of medications may exist between the sources of information.  To pro
 
 **“Not Taken” Medications**
 
-For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes](http://build.fhir.org/medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
+For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes]({{ site.data.fhir.path }}/medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
 
 #### Quick Start
+{:, noTOC}
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
@@ -111,12 +112,13 @@ Example: [Get All *Active* Medications for an Encounter](get-all-active-meds.htm
 Active medication orders include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future(draft), entered in error or unknown.  A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders" using the `patient` and `status`='active' search parameters. This search returns a Bundle of all a patient's active MedicationRequests and, if the \_include parameter is used by the server, Medication resources.
 
 **Quick Start:**
+{:.no_toc}s
 
 **1\.** `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationStatement:medication}`
 
 *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medication Order](get-all-enc-meds.html)
+Example: [Get All *Active* Medication Order](get-all-active-enc-meds.html)
 
 ### Use Case 2 - Medication list update
 {: #uc-2}
