@@ -23,13 +23,16 @@
 	},
 	"dateAsserted": "2016-09-12",
 	"informationSource": {
-		
 		"display": "Brian Z"
 	},
 	"subject": {
-		
+		"reference": "Patient/test2",
 		"display": "Brian Z"
 	},
-	"taken":"y",
-	"note": "Get at doctor's office every third Friday. Taking for energy level and drive."
+	"taken": "y",
+	"note": [
+		{
+			"text": "Get at doctor's office every third Friday. Taking for energy level and drive."
+		}
+	]
 }

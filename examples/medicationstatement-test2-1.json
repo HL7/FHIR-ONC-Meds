@@ -6,7 +6,7 @@
 			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
 		]
 	},
-	"status": "active",
+	"status": "completed",
 	"medicationCodeableConcept": {
 		"coding": [
 			{
@@ -18,14 +18,13 @@
 		],
 		"text": "testosterone cypionate 100mg/ml inj"
 	},
-	"effectivePeriod": {
-		"start": "2016-09-01"
-	},
+	"effectiveDateTime": "2016-09-01",
 	"dateAsserted": "2016-09-01",
 	"informationSource": {
 		"display": "Dr. Cryn"
 	},
 	"subject": {
+		"reference": "Patient/test2",
 		"display": "Brian Z"
 	},
 	"taken": "y"

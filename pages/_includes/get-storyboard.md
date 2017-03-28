@@ -4,9 +4,9 @@ source pages/\_include/{{page.md_filename}}.md  file
 
 ### Storyboard for this example
 
-The following example is based upon the following scenario.
+<!-- { { page.use_case } }-request.md -->
 
-Patient: etc...
+ {% include all-meds-storyboard.md %}
 
 
 #### Request:

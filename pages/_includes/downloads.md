@@ -17,7 +17,8 @@ These files should be the first choice whenever generating any implementation ar
 
 **Schematrons** are also available and listed below:
 
-- [Schematrons]
+- [MedicationDispense](medicationdispense.sch)
+- [MedicationAdministration](medicationadministration.sch)
 
 **Examples:** all the examples that are used in this Implementation Guide available for download:
 

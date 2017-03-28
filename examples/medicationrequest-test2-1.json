@@ -20,17 +20,14 @@
 		"text": "Zocor (simvastatin) 20mg Tablet"
 	},
 	"subject": {
-
+		"reference": "Patient/test2",
 		"display": "Brian Z"
 	},
 	"authoredOn": "2016-01-15",
 	"requester": {
 		"agent": {
 
-			"display": "Dr. Cayr"
-		},
-		"onBehalfOf": {
-			"display": "BMC PCP"
+			"display": "Dr. Cayr (BMC PCP)"
 		}
 	},
 	"reasonCode": [

@@ -85,7 +85,7 @@ Specific server search capabilities are described in detail below in each of the
 | [MedicationAdministration](#medicationadministration) | US Core MedicationAdministration Profile |patient | MedicationAdministration:medication |
 | [MedicationDispense](#medicationdispense) | US Core MedicationDispense Profile | patient | MedicationDispense:medication |
 | [MedicationRequest](#medicationrequest) | US Core MedicationRequest Profile | patient, status, patient + status | MedicationRequest:medication |
-| [MedicationStatement](#medicationstatement)| US Core MedicationStatement Profile | patient, status, encounter, patient + status, patient + status + encounter | MedicationStatement:medication |
+| [MedicationStatement](#medicationstatement)| US Core MedicationStatement Profile | patient, status, context, patient + status, patient + status + context | MedicationStatement:medication |
 {:.grid}
 
 #### Resource  Details:
@@ -162,9 +162,8 @@ A server **SHALL** be capable of returning all active medications for a patient 
 
 A server **SHOULD** be capable of returning all active medications for a patient for an encounter using:
 
-- `GET /MedicationStatement?patient=[id]&encounter=[id]&status=active`
-- `GET /MedicationStatement?patient=[id]&encounter=[id]&status=active&_include=MedicationStatement:medication`
-
+- `GET /MedicationStatement?patient=[id]&context=[id]&status=active`
+- `GET /MedicationStatement?patient=[id]&context=[id]&status=active&_include=MedicationStatement:medication`
 
 Search Parameters:
 
@@ -172,7 +171,7 @@ Search Parameters:
 | ---|---|---|---|--- |
 | **SHALL** | patient | reference | MedicationStatement:medication
 | **SHALL** | patient + status | reference + token | MedicationStatement:medication
-| **SHOULD** | patient + status + encounter | reference + token | MedicationStatement:medication  |
+| **SHOULD** | patient + status + context | reference + token | MedicationStatement:medication  |
 {:.grid}
 
 <br />
@@ -256,7 +255,7 @@ A client **SHALL** be capable of fetching all active medications for a patient u
 
 A client **SHOULD** be capable of fetching all active medications for a patient for an encounter using:
 
-- `GET /MedicationStatement?patient=[id]&encounter=[id]&status=active`
-- `GET /MedicationStatement?patient=[id]&encounter=[id]&status=active&_include=MedicationStatement:medication`
+- `GET /MedicationStatement?patient=[id]&context=[id]&status=active`
+- `GET /MedicationStatement?patient=[id]&context=[id]&status=active&_include=MedicationStatement:medication`
 
 <br />

@@ -82,8 +82,8 @@ Duplication of medications may exist between the sources of information.  To pro
 
 For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes]({{ site.data.fhir.path }}/medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
 
-#### Quick Start
-{:, noTOC}
+##### Quick Start
+
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
@@ -97,7 +97,7 @@ Example: [Get All Medications](get-all-meds.html)
 
 *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medications](get-all-meds.html)
+Example: [Get All *Active* Medications](get-all-active-meds.html)
 
 **3\.** Get “all *active* medications” for an encounter by querying MedicationStatement using the patient and status=’active’ and encounter search parameters. This search returns a Bundle of all active MedicationStatements for an encounter and if the \_include parameter is used, Medication resources for the specified patient.
 
@@ -105,20 +105,20 @@ Example: [Get All *Active* Medications](get-all-meds.html)
 
 Support: Mandatory for server and client to support search by patient, encounter, and status parameter. Mandatory for client to support the \_include parameter. Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medications for an Encounter](get-all-active-meds.html)
+Example: [Get All *Active* Medications for an Encounter](todo.html)
 
 #### Fetching Active Medications Orders
 
 Active medication orders include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future(draft), entered in error or unknown.  A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders" using the `patient` and `status`='active' search parameters. This search returns a Bundle of all a patient's active MedicationRequests and, if the \_include parameter is used by the server, Medication resources.
 
-**Quick Start:**
-{:.no_toc}s
+##### Quick Start
 
-**1\.** `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationStatement:medication}`
+
+**1\.** `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationRequest:medication}`
 
 *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medication Order](get-all-active-enc-meds.html)
+Example: [Get All *Active* Medication Orders](get-all-active-med-order.html)
 
 ### Use Case 2 - Medication list update
 {: #uc-2}
