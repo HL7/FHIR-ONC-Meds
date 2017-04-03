@@ -26,10 +26,6 @@
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>status</b>: ACTIVE      \n      </p><p><b>intent</b>: ORDER      \n      </p><p><b>medication</b>: Zocor (simvastatin) 20mg Tablet         \n        <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '104491' = '104491', given as 'Simvastatin 20 MG Oral Tablet [Zocor]'})</span></p><p><b>subject</b>:         \n        <a href=\"Patient/test2\">Brian Z</a></p><p><b>authoredOn</b>: Jan 15, 2016      \n      </p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Dr. Cayr (BMC PCP)</td></tr></table><p><b>reasonCode</b>: Hypercholesterolemia (disorder)         \n        <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/condition-code code '13644009' = '13644009', given as 'Hypercholesterolemia (disorder)'})</span></p><p><b>dosageInstruction</b>:       \n      </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>11</td><td>60 tablets            \n            <span style=\"background: LightGoldenRodYellow\"> (Details: http://hl7.org/fhir/v3/orderableDrugForm code TAB = 'Tablet')</span></td></tr></table></div>"
-        },
         "status": "active",
         "intent": "order",
         "medicationCodeableConcept": {
@@ -104,10 +100,6 @@
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
           ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>status</b>: ACTIVE      \n      </p><p><b>intent</b>: ORDER      \n      </p><p><b>medication</b>: Humulin R (insulin regular, human) U100  100units/ml inj solution         \n        <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '311036' = '311036', given as 'Humulin R (insulin regular, human) U100  100units/ml inj solution'})</span></p><p><b>subject</b>:         \n        <a href=\"Patient/test2\">Brian Z</a></p><p><b>authoredOn</b>: Jul 1, 2015      \n      </p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Dr. Cryn (BMC Endo)</td></tr></table><p><b>dosageInstruction</b>:       \n      </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>11</td><td>40 ml            \n            <span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td></tr></table></div>"
         },
         "status": "active",
         "intent": "order",

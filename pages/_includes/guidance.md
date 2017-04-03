@@ -10,12 +10,9 @@ source pages/\_include/{{page.md_filename}}.md  file
 ---
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-**Contents**
 
 * Do not remove this line (it will not be displayed)
 {:toc}
-
----
 
 <!-- end TOC -->
 
@@ -49,12 +46,12 @@ The pharmacy resources represent a medication using either a code or a reference
 
 {% include img.html img="usmed-fig3.png" caption="Figure 3: How A Medication is Represented in Pharmacy Resources" %}
 
-### Use Case 1 - Patient and Provider access to a patients' active and historical medication list
+### Use Case 1 - Patient and Provider access to a patients' medications
 {: #uc-1}
 
-The guidance below addresses how a patient or a provider accesses a patients' medication list. This use case adopts the use cases defined as part of the Argonaut Project and US Core, specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*
+The guidance below addresses how a patient or a provider accesses a patients' active, historical and future(planned) medications list.  This use case adopts the use cases defined as part of the Argonaut Project and US Core, specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*   
 
-#### Fetching All Medications, Active Medications, and Active Medications for an Encounter
+#### Fetching All Medications, Active Medications, and All Medications for an Encounter
 
 **Definitions**
 
@@ -63,15 +60,15 @@ The guidance below addresses how a patient or a provider accesses a patients' me
 
 **Requirements**
 
-A MedicationStatement resource query **SHALL** be all that is required to access "all medications" and "all *active* medications" for a patient. The MedicationStatement **SHALL** include both patient reported medications and all medications directly derived from the system's orders. For medications directly derived from the system's orders:
-
-   - The `MedicationStatement.derivedFrom` element **SHALL** reference the systems MedicationRequest resource for that order.
-   - Only MedicationRequest resources with an `intent` of ‘order’ and any status in `status` will be accessible through MedicationStatement ( i.e., MedicationStatement will not be derived from an order-instance, draft or proposed order).
-   - Additional information **MAY** be added (e.g., whether the medication was taken). When this is the case, the `MedicationStatement.informationSource`	**SHALL** reference the individual providing the additional information.
-   - The `MedicationStatement.effectiveDate` or `effectivePeriod` **SHOULD** be derived from an actual date if available. For example, if the medication was administered during a patient visit. If the actual administration date(s) are unknown the orders authoring date **MAY** be used as an approximate date. However, in this case, the `.taken` element in this case **SHOULD** be `unk`, Unknown.
-   - For more information about the dosage etc., the client **MAY** need to query the MedicationRequest resource directly using the `derivedFrom` reference.
-
-The 'context' element **SHOULD** be supported to enable querying for medications administered during an encounter. Searching by context (i.e., for a given inpatient encounter) will return all medications ordered during that encounter, which can include both medications administered in hospital as well as prescribed or discharge medications which are intended to be taken at home. The `category` and `context`  elements **MAY** be used together to get the intersection of medications for a given encounter (i.e., the context) that were administered during as an inpatient (i.e., the category).
+1. A MedicationStatement resource query **SHALL** be all that is required to access "all medications" and "all *active* medications" for a patient:
+1. The MedicationStatement **SHALL** include all medications directly derived from the system's orders. For medications directly derived from the system's orders:
+  - The `MedicationStatement.derivedFrom` element **SHALL** reference the systems MedicationRequest resource for that order.
+        - For more information about the dosage etc., the client **MAY** need to query the MedicationRequest resource directly using the `derivedFrom` reference.
+  - Only MedicationRequest resources with an `intent` of ‘order’ and any status in `status` will be accessible through MedicationStatement ( i.e., MedicationStatement will not be derived from an order-instance, draft or proposed order).
+  - Additional information **MAY** be added (e.g., whether the medication was taken). When this is the case, the `MedicationStatement.informationSource`	**SHALL** reference the individual providing the additional information.
+  - The `MedicationStatement.effectiveDate` or `effectivePeriod` **SHOULD** be derived from an actual date if available. For example, if the medication was administered during a patient visit. If the actual administration date(s) are unknown the orders authoring date **MAY** be used as an approximate date. However, in this case, the `.taken` element **SHOULD** be `unk`, Unknown.
+1. The 'context' element **SHOULD** be supported to enable querying for medications administered during an encounter. Searching by context (i.e., for a given inpatient encounter) will return all medications ordered during that encounter, which can include both medications administered in hospital as well as prescribed or discharge medications which are intended to be taken at home.
+1. The `category` and `context`  elements **MAY** be used together to get the intersection of medications for a given encounter (i.e., the context) that were administered during as an inpatient (i.e., the category).
 
 
 **Deduplication of Data**
@@ -87,38 +84,47 @@ For specific guidance on how to determine if the patient has taken the medicatio
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
-**1\.** Get "all medications" for a patient by querying MedicationStatement using the `patient` search parameter.  This query is identical to that defined in the [US Core implementation Guide]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html#search). See that IG for further details.
+1. Get "all medications" for a patient by querying MedicationStatement using the `patient` search parameter.  This query is identical to that defined in the [US Core implementation Guide]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html#search). See that IG for further details.
 
-Example: [Get All Medications](get-all-meds.html)
+   Example: [Get All Medications](get-all-meds.html)
 
-**2\.** Get "all *active* medications" for a patient by querying MedicationStatement using the `patient` and `status`='active' search parameters. This search returns a Bundle of all active MedicationStatements and if the \_include parameter is used, Medication resources for the specified patient.
+1. Get "all *active* medications" for a patient by querying MedicationStatement using the `patient` and `status`='active' search parameters. This search returns a Bundle of all active MedicationStatements and if the \_include parameter is used, Medication resources for the specified patient.
 
-`GET /MedicationStatement?patient=[id]&status=active{&_include=MedicationStatement:medication}`
+    `GET /MedicationStatement?patient=[id]&status=active{&_include=MedicationStatement:medication}`
 
-*Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
+      *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medications](get-all-active-meds.html)
+      Example: [Get All *Active* Medications](get-all-active-meds.html)
 
-**3\.** Get “all *active* medications” for an encounter by querying MedicationStatement using the patient and status=’active’ and encounter search parameters. This search returns a Bundle of all active MedicationStatements for an encounter and if the \_include parameter is used, Medication resources for the specified patient.
+1. Get “all medications” for an encounter by querying MedicationStatement using the patient and encounter search parameters. This search returns a Bundle of MedicationStatements for an encounter and if the \_include parameter is used, Medication resources for the specified patient.
 
-`GET /MedicationStatement?patient=[id]&encounter=[id]&status=active{&_include=MedicationStatement:medication}`
+    `GET /MedicationStatement?patient=[id]&context=[id]{&_include=MedicationStatement:medication}`
 
-Support: Mandatory for server and client to support search by patient, encounter, and status parameter. Mandatory for client to support the \_include parameter. Optional for server to support the \_include parameter.
+    Support: Mandatory for server and client to support search by patient and encounter parameter. Mandatory for client to support the \_include parameter. Optional for server to support the \_include parameter.
 
-Example: [Get All *Active* Medications for an Encounter](todo.html)
+    Example: [Get All Medications for an Encounter](todo.html)
 
 #### Fetching Active Medications Orders
 
-Active medication orders include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future(draft), entered in error or unknown.  A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders" using the `patient` and `status`='active' search parameters. This search returns a Bundle of all a patient's active MedicationRequests and, if the \_include parameter is used by the server, Medication resources.
+**Definitions**
+
+- "Active medication orders" include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future(draft), entered in error or unknown.
+
+**Requirements**
+
+1. A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders".
 
 ##### Quick Start
 
+Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
-**1\.** `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationRequest:medication}`
+1. Using the `patient` and `status`='active' search parameters. This search returns a Bundle of all a patient's active MedicationRequests and, if the \_include parameter is used by the server, Medication resources.
 
-*Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
+    `GET /MedicationRequest?patient=[id]&status=active{&_include=MedicationRequest:medication}`
 
-Example: [Get All *Active* Medication Orders](get-all-active-med-order.html)
+    *Support:* Mandatory for server and client to support search by patient and status parameter.  Mandatory for client to support the \_include parameter.  Optional for server to support the \_include parameter.
+
+    Example: [Get All *Active* Medication Orders](get-all-active-med-order.html)
 
 ### Use Case 2 - Medication list update
 {: #uc-2}

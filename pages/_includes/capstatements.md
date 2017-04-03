@@ -8,12 +8,9 @@ This section outlines conformance requirements for each of the US-Meds actors id
 ---
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-**Contents**
 
 * Do not remove this line (it will not be displayed)
 {:toc}
-
----
 
 <!-- end TOC -->
 
@@ -85,7 +82,7 @@ Specific server search capabilities are described in detail below in each of the
 | [MedicationAdministration](#medicationadministration) | US Core MedicationAdministration Profile |patient | MedicationAdministration:medication |
 | [MedicationDispense](#medicationdispense) | US Core MedicationDispense Profile | patient | MedicationDispense:medication |
 | [MedicationRequest](#medicationrequest) | US Core MedicationRequest Profile | patient, status, patient + status | MedicationRequest:medication |
-| [MedicationStatement](#medicationstatement)| US Core MedicationStatement Profile | patient, status, context, patient + status, patient + status + context | MedicationStatement:medication |
+| [MedicationStatement](#medicationstatement)| US Core MedicationStatement Profile | patient, status, context, patient + status, patient + context | MedicationStatement:medication |
 {:.grid}
 
 #### Resource  Details:
@@ -160,10 +157,10 @@ A server **SHALL** be capable of returning all active medications for a patient 
 - `GET /MedicationStatement?patient=[id]&status=active`
 - `GET /MedicationStatement?patient=[id]&status=active&_include=MedicationStatement:medication`
 
-A server **SHOULD** be capable of returning all active medications for a patient for an encounter using:
+A server **SHALL** be capable of returning all medications for a patient for an encounter using:
 
-- `GET /MedicationStatement?patient=[id]&context=[id]&status=active`
-- `GET /MedicationStatement?patient=[id]&context=[id]&status=active&_include=MedicationStatement:medication`
+- `GET /MedicationStatement?patient=[id]&context=[id]`
+- `GET /MedicationStatement?patient=[id]&context=[id]&_include=MedicationStatement:medication`
 
 Search Parameters:
 
@@ -171,7 +168,7 @@ Search Parameters:
 | ---|---|---|---|--- |
 | **SHALL** | patient | reference | MedicationStatement:medication
 | **SHALL** | patient + status | reference + token | MedicationStatement:medication
-| **SHOULD** | patient + status + context | reference + token | MedicationStatement:medication  |
+| **SHALL** | patient + context | reference | MedicationStatement:medication  |
 {:.grid}
 
 <br />
@@ -200,6 +197,8 @@ US Core Servers **SHALL** implement the security requirements documented in the 
 **Summary of US Meds search criteria**
 
 Specific client search capabilities are described in detail below in each of the resource sections.  The MedicationAdministration, MedicationDispense, MedicationStatement and MedicationRequest resources can represent a medication using either a code or refer to the Medication resource.  When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but *if* the an external reference to Medication is used, the server **SHALL** support the [`_include`](todo.html) parameter for searching this element. The client application **SHALL** support all above methods without causing the application to fail.
+
+#### Resource  Details:
 
 ##### 1. Medication
 
@@ -253,9 +252,9 @@ A client **SHALL** be capable of fetching all active medications for a patient u
 - `GET /MedicationStatement?patient=[id]&status=active`
 - `GET /MedicationStatement?patient=[id]&status=active&_include=MedicationStatement:medication`
 
-A client **SHOULD** be capable of fetching all active medications for a patient for an encounter using:
+A client **SHALL** be capable of fetching all medications for a patient for an encounter using:
 
-- `GET /MedicationStatement?patient=[id]&context=[id]&status=active`
-- `GET /MedicationStatement?patient=[id]&context=[id]&status=active&_include=MedicationStatement:medication`
+- `GET /MedicationStatement?patient=[id]&context=[id]`
+- `GET /MedicationStatement?patient=[id]&context=[id]&_include=MedicationStatement:medication`
 
 <br />
