@@ -14,8 +14,6 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 *Note: a build takes 2-3 minutes to complete. Then you can...*
 
-(If the CI Build is unavailable a recent version of the buildacs available here : http://healthedatainc.com/go-ftp/FHIR-ONC-Meds/)
-
 
 ### Find your rendered IG automatically available at
 
