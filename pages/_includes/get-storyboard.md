@@ -6,7 +6,11 @@ source pages/\_include/{{page.md_filename}}.md  file
 
 <!-- { { page.use_case } }-request.md -->
 
- {% include all-meds-storyboard.md %}
+{% if page.use_case == 'encounter-meds' %}
+{% include {{ page.use_case }}-storyboard.md %}
+{% else %}
+{% include all-meds-storyboard.md %}
+{% endif %}
 
 
 #### Request:

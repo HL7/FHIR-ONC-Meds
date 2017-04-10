@@ -102,7 +102,7 @@ Below is an overview of the required search and read operations for this use cas
 
     Support: Mandatory for server and client to support search by patient and encounter parameter. Mandatory for client to support the \_include parameter. Optional for server to support the \_include parameter.
 
-    Example: [Get All Medications for an Encounter](todo.html)
+    Example: [Get All Medications for an Encounter](get-all-enc-meds.html)
 
 #### Fetching Active Medications Orders
 
