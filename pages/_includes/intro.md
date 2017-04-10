@@ -2,6 +2,8 @@
 
 source pages/\_include/{{page.md_filename}}.md  file
 
+{% include publish-box.html %}
+
 ### Introduction
 
 The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}) specification. It promotes the consistent use of the pharmacy FHIR resources in the US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access patients' active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions and to record a dispensed medication.
