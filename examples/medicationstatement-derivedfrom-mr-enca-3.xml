@@ -108,7 +108,7 @@
 			</coding>
 		</route>
 		<method>
-			<text value="I hr infusion"/>
+			<text value="1 hr infusion"/>
 		</method>
 		<doseQuantity>
 			<value value="500"/>

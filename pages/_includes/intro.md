@@ -1,23 +1,34 @@
 ## {{site.data.fhir.igName}} Implementation Guide
+{:.no_toc}
 
 source pages/\_include/{{page.md_filename}}.md  file
 
+
+
 {% include publish-box.html %}
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+
+* Do not remove this line (it will not be displayed)
+{:toc}
+
+<!-- end TOC -->
+
 
 ### Introduction
 
-The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}) specification. It promotes the consistent use of the pharmacy FHIR resources in the US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access patients' active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions and to record a dispensed medication.
+The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}) specification. It promotes the consistent use of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access patients' active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions and to record a dispensed medication.
 
 ### Scope
 
-This guide applies the general [Argonaut Project scope statement](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf) and adopts it specifically to enable a user to access, record, change a patient’s active medications as well as medication history.  This covers the  [Meaningful Use 2015 §?170.302(d)](https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf) certification requirement for EHRs.
+This guide applies the general [Argonaut Project scope statement](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf) and adopts it specifically to enable a user to access, record, change a patient’s active medications as well as a medication history.  This covers the  [Meaningful Use 2015 §?170.302(d)](https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf) certification requirement for EHRs.
 
 #### Actors
 
 The following actors are defined:
 
-- US Meds Requestor: An application that initiates a data access request to retrieve patient data. This can be thought of as the client in a client-server interaction and the user is either a provider or a patient.
-- US Meds Responder: A produ that responds to the data access request providing patient data. This can be thought of as the server in a client-server interaction and typically is part of an EHRs.
+- US Meds Requestor: An application that initiates a data access request to retrieve patient medication data. This can be thought of as the client in a client-server interaction and the user is either a provider or a patient.
+- US Meds Responder: A product that responds to the data access request providing patient medication data. This can be thought of as the server in a client-server interaction and typically is part of an EHRs.
 
 #### Use Cases
 
@@ -38,7 +49,7 @@ This IG uses the following US-Core Profiles from the US Core Implementation Guid
 - [US Core Medication Request]({{ page.us-core-base }}StructureDefinition-us-core-medicationrequest.html)
 - [US Core Medication Statement]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html)
 
-In addition two profiles have been defined for this implementation guide:
+In addition, two new profiles have been defined as part of this implementation guide:
 
 {% include list-simple-profiles.xhtml %}
 

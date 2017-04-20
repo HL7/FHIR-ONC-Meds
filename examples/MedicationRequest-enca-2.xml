@@ -37,7 +37,7 @@
 	</reasonCode>
 	<dosageInstruction>
 		<sequence value="1"/>
-		<text value="Cefatoxime 1gm intravenously every 6 hours"/>
+		<text value="Ketoralac 15mg every six hours"/>
 		<timing>
 			<repeat>
 				<frequency value="1"/>

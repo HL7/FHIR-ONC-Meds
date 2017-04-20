@@ -8,7 +8,7 @@
 
 *Support:* Mandatory for server and client to support search by patient. Mandatory for client to support the _include parameter. Optional for server to support the _include parameter.
 
-*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)],, and (how to search by _include)..
+*Implementation Notes:*   This query searches for all MedicationAdministration resources for a patient and returns a Bundle of all MedicationAdministration and resources for the specified patient. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. [(how to search by reference)], and [(how to search by _include)].
 
 -------
 
