@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="get-encounter-meds"/>
   <meta>
@@ -22,52 +21,6 @@
           <lastUpdated value="2017-04-10T12:47:22.409-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: COMPLETED
-            </p>
-            <p>
-              <b>medication</b>: Cefotaxime 1000Mg Powder For Solution For Injection
-              <span style="background: LightGoldenRodYellow">(Details : {RxNorm code &#39;1656313&#39; = &#39;1656313&#39;, given as &#39;Cefotaxime 1000 MG Injection&#39;})</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 10, 2016 --&gt; Sep 12, 2016
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:52:20 AM
-            </p>
-            <p>
-              <b>informationSource</b>: Provider B
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-1">MedicationRequest/enca-1</a>
-            </p>
-            <p>
-              <b>taken</b>: Y
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
@@ -150,52 +103,6 @@
           <lastUpdated value="2017-04-10T12:47:42.113-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: COMPLETED
-            </p>
-            <p>
-              <b>medication</b>: Ketorolac Tromethamine 15 MG/ML For Injection
-              <span style="background: LightGoldenRodYellow">(Details : {RxNorm code &#39;860092&#39; = &#39;860092&#39;, given as &#39;1 ML Ketorolac Tromethamine 15 MG/ML Injection&#39;})</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 10, 2016 --&gt; Sep 12, 2016
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:54:15 AM
-            </p>
-            <p>
-              <b>informationSource</b>: Provider B
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-2">MedicationRequest/enca-2</a>
-            </p>
-            <p>
-              <b>taken</b>: Y
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
@@ -278,55 +185,6 @@
           <lastUpdated value="2017-04-10T12:47:54.316-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>contained</b>:
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: COMPLETED
-            </p>
-            <p>
-              <b>medication</b>: Azithromycin 500mg in 250 ml Normal Saline
-              <span style="background: LightGoldenRodYellow">(Details )</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 10, 2016 --&gt; Sep 12, 2016
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:55:28 AM
-            </p>
-            <p>
-              <b>informationSource</b>: Provider B
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-3">MedicationRequest/enca-3</a>
-            </p>
-            <p>
-              <b>taken</b>: Y
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <contained>
           <Medication>
             <id value="med-1"/>
@@ -457,52 +315,6 @@
           <lastUpdated value="2017-04-10T12:48:03.114-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: COMPLETED
-            </p>
-            <p>
-              <b>medication</b>: LRS
-              <span style="background: LightGoldenRodYellow">(Details : {RxNorm code &#39;860601&#39; = &#39;860601&#39;, given as &#39;Calcium Chloride 0.0014 MEQ/ML / Potassium Chloride 0.024 MEQ/ML / Sodium Chloride 0.103 MEQ/ML / Sodium Lactate 0.028 MEQ/ML Injectable Solution&#39;})</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 10, 2016 --&gt; Sep 12, 2016
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:56:13 AM
-            </p>
-            <p>
-              <b>informationSource</b>: Provider B
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-4">MedicationRequest/enca-4</a>
-            </p>
-            <p>
-              <b>taken</b>: Y
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
@@ -568,53 +380,6 @@
           <lastUpdated value="2017-04-10T12:48:11.192-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: ACTIVE
-            </p>
-            <p>
-              <b>medication</b>: Zithromax 500 MG Oral Tablet
-              <span style="background: LightGoldenRodYellow">(Details : {RxNorm code &#39;212446&#39; = &#39;212446&#39;, given as &#39;Zithromax 250 MG Oral Tablet&#39;})</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 12, 2016 --&gt; Sep 22, 2016
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:56:49 AM
-            </p>
-            <p>
-              <b>informationSource</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-5">MedicationRequest/enca-5</a>
-            </p>
-            <p>
-              <b>taken</b>: N
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
@@ -697,53 +462,6 @@
           <lastUpdated value="2017-04-10T12:48:18.411-04:00"/>
           <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>context</b>:
-              <a href="Encounter/A">Inpatient Encounter A</a>
-            </p>
-            <p>
-              <b>status</b>: ACTIVE
-            </p>
-            <p>
-              <b>medication</b>: Amoxicillin 500 MG
-              <span style="background: LightGoldenRodYellow">(Details : {RxNorm code &#39;308191&#39; = &#39;308191&#39;, given as &#39;Amoxicillin 500 MG Oral Capsule&#39;})</span>
-            </p>
-            <p>
-              <b>effective</b>: Sep 12, 2016 --&gt; (ongoing)
-            </p>
-            <p>
-              <b>dateAsserted</b>: Apr 10, 2017 8:57:19 AM
-            </p>
-            <p>
-              <b>informationSource</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>subject</b>:
-              <a href="Patient/test2">Brian Z</a>
-            </p>
-            <p>
-              <b>derivedFrom</b>:
-              <a href="MedicationRequest/enca-6">MedicationRequest/enca-6</a>
-            </p>
-            <p>
-              <b>taken</b>: N
-            </p>
-            <p>
-              <b>reasonCode</b>: Pneumonia (disorder)
-              <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code &#39;233604007&#39; = &#39;233604007&#39;, given as &#39;Pneumonia (disorder)&#39;})</span>
-            </p>
-            <p>
-              <b>dosage</b>:
-            </p>
-          </div>
-        </text>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
