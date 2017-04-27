@@ -21,4 +21,4 @@ http://build.fhir.org/ig/Healthedata1/FHIR-ONC-Meds
 
 ### Find debugging info about the build
 
-http://build.fhir.org/ig/Healthedata1/FHIR-ONC-Meds/debug.tgz
+http://build.fhir.org/ig/Healthedata1/FHIR-ONC-Meds/build.log
