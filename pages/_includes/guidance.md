@@ -1,4 +1,4 @@
-## Definitions, Interpretations and Requirements common to all US-Meds actors
+﻿## Definitions, Interpretations and Requirements common to all US-Meds actors
 {:.no_toc}
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
@@ -8,7 +8,11 @@
 
 <!-- end TOC -->
 
+<<<<<<< HEAD
 This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
+=======
+This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases.  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ page.us-core-base }}guidance.html) used in the US-Core IG apply to this guide as well.
+>>>>>>> 4ac2edf8dfb59bb5a5e2c0a538197b0f50fbcfa4
 
 
 <!-- source pages/\_include/{{page.md_filename}}.md  file -->
@@ -31,7 +35,7 @@ Details about each resource can be found in the FHIR specification.  A general d
 #### Relationships Between the Pharmacy FHIR Resources
 {:.no_toc}
 
-This IG focuses on access and updates to a patient's medications and the interaction between the medication order/prescription (*MedicationRequest*) and the medication record (*MedicationStatement*).  It is therefore important to understand the relationships between these resources.  Figure 1 illustrates the workflow relationship between the medication order and the fulfillment as represented by the FHIR medication resources.  Note that in the outpatient setting the administration is done by the patient.
+This IG focuses on access and updates to a patient's medications and the interaction between the medication order/prescription (*MedicationRequest*) and the medication record (*MedicationStatement*).  It is therefore important to understand the relationships between these resources.  Figure 1 illustrates the workflow relationship between the medication order and the fulfillment as represented by the FHIR medication resources.  Note that in the outpatient setting the patient does the administration.
 
 {% include img.html img="usmed-fig1.png" caption="Figure 1: FHIR Medication Order and Fulfillment" %}
 
@@ -50,7 +54,7 @@ The pharmacy FHIR resources can represent a medication using either a code or a 
 ### Use Case 1 - Patient and Provider access to a patients' medications
 {: #uc-1}
 
-The guidance below addresses how a patient or a provider can access a patients' active, historical and future(planned) medications list.  This use case adopts the use cases defined as part of the Argonaut Project and US Core, specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*   
+The guidance below addresses how a patient or a provider can access a patients' active, historical and future (planned) medications list.  This use case adopts the use cases defined as part of the Argonaut Project and US Core, specifically within the scope of accessing medication information as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*   
 
 #### Fetching All Medications, Active Medications, and All Medications for an Encounter
 
@@ -68,7 +72,7 @@ The guidance below addresses how a patient or a provider can access a patients' 
   - Only MedicationRequest resources with an `intent` of ‘order’ and any status in `status` will be accessible through MedicationStatement (i.e., MedicationStatement will not be derived from an order-instance, draft or proposed order).
   - Additional information **MAY** be added (e.g., whether the medication was taken). When this is the case, the `MedicationStatement.informationSource`	**SHALL** reference the individual providing the additional information.
   - The `MedicationStatement.effectiveDate` or `effectivePeriod` **SHOULD** be derived from an actual date if available. For example, if the medication was administered during a patient visit. If the actual administration date(s) are unknown the orders authoring date **MAY** be used as an approximate date. However, in this case, the `.taken` element **SHOULD** be `unk` (Unknown).
-1. The 'context' element **SHOULD** be supported to enable querying for medications administered during an encounter. Searching by context (i.e., for a given inpatient encounter) will return all medications ordered during that encounter, which can include both medications administered in hospital as well as prescribed or discharge medications which are intended to be taken at home.
+1. The 'context' element **SHOULD** be supported to enable querying for medications administered during an encounter. Searching by context (i.e., for a given inpatient encounter) will return all medications ordered during that encounter, which can include both medications administered in hospital as well as prescribed or discharge medications, which are intended to be taken at home.
 1. The `category` and `context`  elements **MAY** be used together to get the intersection of medications for a given encounter (i.e., the context) that were administered during as an inpatient (i.e., the category).
 
 
@@ -109,7 +113,7 @@ Below is an overview of the required search and read operations for this use cas
 
 **Definitions**
 
-- "Active medication orders" include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future(draft), entered in error or unknown.
+- "Active medication orders" include only the currently prescribed medications.  They Do not include order statuses of past, on-hold, stopped, cancelled, future (draft), entered in error or unknown.
 
 **Requirements**
 
@@ -130,7 +134,7 @@ Below is an overview of the required search and read operations for this use cas
 ### Use Case 2 - Medication list update
 {: #uc-2}
 
-This use case adopts the use cases for the Argonaut Project and US Core specifically within the scope of recording and changing medications as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*  The updates include both the creation of new MedicationStatement resources and changes to existing MedicationStatement resources.  These interactions require "write acces" access to the EHR systems.   Refer to the US Core Implementation Guide's page for a discussion of the security and authorization requirements.
+This use case adopts the use cases for the Argonaut Project and US Core specifically within the scope of recording and changing medications as prescribed in Meaningful Use 2015 §?170.302(d) - *Maintain active medication list. Enable a user to record, change, and access a patient’s active medication list as well as medication history: (i) Ambulatory setting. Over multiple encounters; or (ii) Inpatient setting. For the duration of an entire hospitalization.*  The updates include both the creation of new MedicationStatement resources and changes to existing MedicationStatement resources.  These interactions require "write access" to the EHR systems.   Refer to the US Core Implementation Guide's page for a discussion of the security and authorization requirements.
 
 This Use Case will be the focus of future versions of this IG.
 
