@@ -12,6 +12,6 @@
 1.  One or more references to a patient, practitioner, or related-person in `MedicationDispense.performer.actor`
 1.  Dosage Information in `MedicationDispense.dosageInstruction`
 
-[Medication Clinical Drug (RxNorm)]: {{ page.us-core-base }}ValueSet-us-core-medication-codes.html
+[Medication Clinical Drug (RxNorm)]: {{ site.data.fhir.uscore }}ValueSet-us-core-medication-codes.html
 
 [MedicationDispenseStatus]: {{ site.data.fhir.path }}/valueset-medication-dispense-status.html

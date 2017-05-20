@@ -8,10 +8,10 @@
 
 <!-- end TOC -->
 
-This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ page.us-core-base }}guidance.html) used in the US-Core IG apply to this guide as well.
+This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
 
 
-source pages/\_include/{{page.md_filename}}.md  file
+<!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
 ### Background on the FHIR Medications resources
 
@@ -43,7 +43,7 @@ This IG focuses on access and updates to a patient's medications and the interac
 
 **Various Ways to Represent the Medication**
 
-The pharmacy FHIR resources can represent a medication using either a code or a reference to a Medication resource. Typically, a code will be used to represent either a branded (for example, Crestor 10mg tablet) or a generic (for example, Rosuvastatin 10mg tablet) medication.  When using a code, the code  **SHALL** be [extensibly]({{ site.data.fhir.path }}/extensibility.html) bound to [RxNorm]({{ site.data.fhir.path }}/rxnorm.html) - i.e. unless the concept is not covered by RxNorm, the RxNorm code **SHALL** be used.  More information about using codes can be found in US Core [General Guidance Section]({{ page.us-core-base }}guidance.html) and the [FHIR Specification]({{ site.data.fhir.path }}/terminologies-systems.html).  A medication resource is typically used when information that is not included as part of the RxNorm code is required.  For example, the Medication resource is the only way to correctly represent compounded or extemporaneously prepared medication.  When referencing the Medication resource, the resource may be a [contained]({{ site.data.fhir.path }}/references.html#contained) or an external resource. These options are shown in figure 3 below.  The server application **MAY** choose any combination of these methods, but if an external reference to Medication is used, the server **SHALL** support the include parameter for searching this element. The client application **MUST** support all methods. The US Core IG provides [examples]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html#examples) that show these different methods. Additional guidance is provided below and in the [CapabilityStatement](capstatements.html) section.
+The pharmacy FHIR resources can represent a medication using either a code or a reference to a Medication resource. Typically, a code will be used to represent either a branded (for example, Crestor 10mg tablet) or a generic (for example, Rosuvastatin 10mg tablet) medication.  When using a code, the code  **SHALL** be [extensibly]({{ site.data.fhir.path }}/extensibility.html) bound to [RxNorm]({{ site.data.fhir.path }}/rxnorm.html) - i.e. unless the concept is not covered by RxNorm, the RxNorm code **SHALL** be used.  More information about using codes can be found in US Core [General Guidance Section]({{ site.data.fhir.uscore }}guidance.html) and the [FHIR Specification]({{ site.data.fhir.path }}/terminologies-systems.html).  A medication resource is typically used when information that is not included as part of the RxNorm code is required.  For example, the Medication resource is the only way to correctly represent compounded or extemporaneously prepared medication.  When referencing the Medication resource, the resource may be a [contained]({{ site.data.fhir.path }}/references.html#contained) or an external resource. These options are shown in figure 3 below.  The server application **MAY** choose any combination of these methods, but if an external reference to Medication is used, the server **SHALL** support the include parameter for searching this element. The client application **MUST** support all methods. The US Core IG provides [examples]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html#examples) that show these different methods. Additional guidance is provided below and in the [CapabilityStatement](capstatements.html) section.
 
 {% include img.html img="usmed-fig3.png" caption="Figure 3: How A Medication is Represented in Pharmacy Resources" %}
 
@@ -85,7 +85,7 @@ For specific guidance on how to determine if the patient has taken the medicatio
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](capstatements.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
-1. Get "all medications" for a patient by querying MedicationStatement using the `patient` search parameter.  This query is identical to that defined in the [US Core Implementation Guide]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html#search). See that IG for further details.
+1. Get "all medications" for a patient by querying MedicationStatement using the `patient` search parameter.  This query is identical to that defined in the [US Core Implementation Guide]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html#search). See that IG for further details.
 
    Example: [Get All Medications](get-all-meds.html)
 

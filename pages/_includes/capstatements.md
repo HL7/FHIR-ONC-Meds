@@ -1,7 +1,7 @@
 ## {{ page.title }}
 {:.no_toc}
 
-source pages/\_include/{{page.md_filename}}.md  file
+<!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
 This section outlines conformance requirements for each of the US-Meds actors identifying the specific profiles and search parameters that need to be supported. Note: The individual profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US-Meds actors.
 
@@ -24,13 +24,13 @@ Source Resource: [XML](CapabilityStatement-server.xml.html)/[JSON](CapabilitySta
 - Published: 2017-03-08
 - Published by: Health Level Seven International Pharmacy Work Group
 
-The section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. It is expected that this CapabilityStatement will be used with the [US Core CapabilityStatement]({{ page.us-core-base }}capstmnts.html). Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
+The section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. It is expected that this CapabilityStatement will be used with the [US Core CapabilityStatement]({{ site.data.fhir.uscore }}capstmnts.html). Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.
 
 #### Behavior
 
 Description: The US Meds Server **SHALL**:
 
-- Support the [US Core Patient]({{ page.us-core-base }}StructureDefinition-us-core-patient.html) resource profile.
+- Support the [US Core Patient]({{ site.data.fhir.uscore }}StructureDefinition-us-core-patient.html) resource profile.
 - At a minimum, support the US Core MedicationStatement Profile.
 - Implement the RESTful behavior according to the FHIR specification.
 - Return the following response classes:
@@ -63,7 +63,7 @@ The US Meds Server **MAY**:
 
 US Meds Servers **SHALL**:
 
-- Implement the security requirements documented in the [US-Core IG]({{ page.us-core-base }}security.html).
+- Implement the security requirements documented in the [US-Core IG]({{ site.data.fhir.uscore }}security.html).
 - A server has ensured that every API request includes a valid Authorization token, supplied via: `Authorization: Bearer {server-specific-token-here}`
 - A server has rejected any unauthorized requests by returning an `HTTP 401` Unauthorized response code.
 
@@ -89,7 +89,7 @@ Specific server search capabilities are described in detail below in each of the
 
 ##### 1. Medication
 
-Supported Profiles:  [US Core Medication Profile]({{ page.us-core-base }}StructureDefinition-us-core-medication.html)
+Supported Profiles:  [US Core Medication Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medication.html)
 
 ##### 2. MedicationAdministration
 Supported Profiles:  [US Meds MedicationAdministration Profile](StructureDefinition-medicationadministration.html)
@@ -125,7 +125,7 @@ A server **SHALL** be capable of returning a patient's dispensed medications usi
 {:.grid}
 
 ##### 4. MedicationRequest
-Supported Profiles:  [US Core MedicationRequest Profile]({{ page.us-core-base }}StructureDefinition-us-core-medicationrequest.html)
+Supported Profiles:  [US Core MedicationRequest Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationrequest.html)
 
 Search Criteria:
 
@@ -143,7 +143,7 @@ Search Parameters:
 {:.grid}
 
 ##### 5. MedicationStatement
-Supported Profiles:  [US Core MedicationStatement Profile]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html)
+Supported Profiles:  [US Core MedicationStatement Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html)
 
 Search Criteria:
 
@@ -182,7 +182,7 @@ Source Resource: [XML](CapabilityStatement-client.xml.html)/[JSON](CapabilitySta
 - Published: 2017-03-08
 - Published by: Health Level Seven International Pharmacy Work Group
 
-This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information about an individual patient.It is expected that this CapabilityStatement will be used with the [US Core CapabilityStatement]({{ page.us-core-base }}capstmnts.html). Together they describe the basic expectations for the capabilities of a conformant client application. The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that **MAY** be supported by the client
+This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information about an individual patient.It is expected that this CapabilityStatement will be used with the [US Core CapabilityStatement]({{ site.data.fhir.uscore }}capstmnts.html). Together they describe the basic expectations for the capabilities of a conformant client application. The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that **MAY** be supported by the client
 
 #### Behavior
 
@@ -192,7 +192,7 @@ The US Meds Clent **SHOULD** Declare a CapabilityStatement identifying the list 
 
 #### Security
 
-US Core Servers **SHALL** implement the security requirements documented in the [US-Core IG]({{ page.us-core-base }}security.html).
+US Core Servers **SHALL** implement the security requirements documented in the [US-Core IG]({{ site.data.fhir.uscore }}security.html).
 
 **Summary of US Meds search criteria**
 
@@ -202,7 +202,7 @@ Specific client search capabilities are described in detail below in each of the
 
 ##### 1. Medication
 
-Supported Profiles:  [US Core Medication Profile](({{ page.us-core-base }}StructureDefinition-us-core-medication.html)
+Supported Profiles:  [US Core Medication Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medication.html)
 
 ##### 2. MedicationAdministration
 Supported Profiles:  [US Meds MedicationAdministration Profile](StructureDefinition-medicationadministration.html)
@@ -227,7 +227,7 @@ A client **SHALL** be capable of fetching a patient's dispensed medications usin
 - `GET /MedicationDispense?patient=[id]&_include=MedicationDispense:medication`
 
 ##### 4. MedicationRequest
-Supported Profiles:  [US Core MedicationRequest Profile]({{ page.us-core-base }}StructureDefinition-us-core-medicationrequest.html)
+Supported Profiles:  [US Core MedicationRequest Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationrequest.html)
 
 Search Criteria:
 
@@ -238,7 +238,7 @@ A client **SHALL** be capable of fetching all patient’s active medications ord
 - `GET /MedicationRequest?patient=[id]&status=active&_include=MedicationRequest:medication`
 
 ##### 5. MedicationStatement
-Supported Profiles:  [US Core MedicationStatement Profile]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html)
+Supported Profiles:  [US Core MedicationStatement Profile]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html)
 
 Search Criteria:
 

@@ -1,6 +1,6 @@
 # {{ page.title }} Example
 
-source pages/\_include/{{page.md_filename}}.md  file
+<!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
 ### Storyboard for this example
 

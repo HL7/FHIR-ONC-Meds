@@ -1,7 +1,7 @@
 ## {{site.data.fhir.igName}} Implementation Guide
 {:.no_toc}
 
-source pages/\_include/{{page.md_filename}}.md  file
+<!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
 
 
@@ -45,9 +45,9 @@ A detailed description and guidance for each is given in the [General Guidance](
 
 This IG uses the following US-Core Profiles from the US Core Implementation Guide:
 
-- [US Core Medication]({{ page.us-core-base }}StructureDefinition-us-core-medication.html)
-- [US Core Medication Request]({{ page.us-core-base }}StructureDefinition-us-core-medicationrequest.html)
-- [US Core Medication Statement]({{ page.us-core-base }}StructureDefinition-us-core-medicationstatement.html)
+- [US Core Medication]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medication.html)
+- [US Core Medication Request]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationrequest.html)
+- [US Core Medication Statement]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html)
 
 In addition, two new profiles have been defined as part of this implementation guide:
 
@@ -57,4 +57,4 @@ In addition, two new profiles have been defined as part of this implementation g
 
 ### Security
 
-Refer to the US Core Implementation Guide's [General Security Considerations]({{ page.us-core-base }}security.html) page for a discussion of the security conformance requirements.
+Refer to the US Core Implementation Guide's [General Security Considerations]({{ site.data.fhir.uscore }}security.html) page for a discussion of the security conformance requirements.
