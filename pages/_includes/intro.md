@@ -1,9 +1,7 @@
-﻿## {{site.data.fhir.igName}} Implementation Guide
+## {{site.data.fhir.igName}} Implementation Guide
 {:.no_toc}
 
 <!-- source pages/\_include/{{page.md_filename}}.md  file -->
-
-
 
 {% include publish-box.html %}
 

@@ -1,4 +1,5 @@
-﻿## Definitions, Interpretations and Requirements common to all US-Meds actors
+
+## Definitions, Interpretations and Requirements common to all US-Meds actors
 {:.no_toc}
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
@@ -8,12 +9,7 @@
 
 <!-- end TOC -->
 
-<<<<<<< HEAD
-This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
-=======
-This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases.  The conformance verbs used are defined in [FHIR Conformance Rules](capstatements.html).  The [general guidance]({{ page.us-core-base }}guidance.html) used in the US-Core IG apply to this guide as well.
->>>>>>> 4ac2edf8dfb59bb5a5e2c0a538197b0f50fbcfa4
-
+This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules]({{ site.data.fhir.path }}/conformance-rules.html#conflang).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
 
 <!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
