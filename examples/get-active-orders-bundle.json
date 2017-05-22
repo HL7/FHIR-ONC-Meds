@@ -53,7 +53,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/condition-code",
+                "system": "http://snomed.info/sct",
                 "code": "13644009",
                 "display": "Hypercholesterolemia (disorder)",
                 "userSelected": false
@@ -132,7 +132,7 @@
             "route": {
               "coding": [
                 {
-                  "system": "http://hl7.org/fhir/route-codes",
+                  "system": "http://snomed.info/sct",
                   "code": "34206005",
                   "display": "Subcutaneous route (qualifier value)",
                   "userSelected": false

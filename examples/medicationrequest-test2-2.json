@@ -40,7 +40,7 @@
 			"route": {
 				"coding": [
 					{
-						"system": "http://hl7.org/fhir/route-codes",
+						"system": "http://snomed.info/sct",
 						"code": "34206005",
 						"display": "Subcutaneous route (qualifier value)",
 						"userSelected": false

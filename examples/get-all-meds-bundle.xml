@@ -47,7 +47,7 @@
 				<taken value="na"/>
 				<reasonCode>
 					<coding>
-						<system value="http://hl7.org/fhir/condition-code"/>
+						<system value="http://snomed.info/sct"/>
 						<code value="13644009"/>
 						<display value="Hypercholesterolemia (disorder)"/>
 						<userSelected value="false"/>
@@ -113,7 +113,7 @@
 					<asNeededBoolean value="false"/>
 					<route>
 						<coding>
-							<system value="http://hl7.org/fhir/route-codes"/>
+							<system value="http://snomed.info/sct"/>
 							<code value="34206005"/>
 							<display value="Subcutaneous route (qualifier value)"/>
 							<userSelected value="false"/>
@@ -164,7 +164,7 @@
 				<taken value="na"/>
 				<reasonCode>
 					<coding>
-						<system value="http://hl7.org/fhir/condition-code"/>
+						<system value="http://snomed.info/sct"/>
 						<code value="13644009"/>
 						<display value="Hypercholesterolemia (disorder)"/>
 						<userSelected value="false"/>

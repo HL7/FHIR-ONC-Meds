@@ -27,6 +27,7 @@
 	</subject>
 	<derivedFrom>
 		<reference value="MedicationRequest/test2-2"/>
+		<display value="Brian Z"/>
 	</derivedFrom>
 	<taken value="na"/>
 	<dosage>
@@ -35,7 +36,7 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://hl7.org/fhir/route-codes"/>
+				<system value="http://snomed.info/sct"/>
 				<code value="34206005"/>
 				<display value="Subcutaneous route (qualifier value)"/>
 				<userSelected value="false"/>

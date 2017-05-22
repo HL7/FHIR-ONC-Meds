@@ -33,7 +33,7 @@
 		{
 			"coding": [
 				{
-					"system": "http://hl7.org/fhir/condition-code",
+					"system": "http://snomed.info/sct",
 					"code": "13644009",
 					"display": "Hypercholesterolemia (disorder)",
 					"userSelected": false
