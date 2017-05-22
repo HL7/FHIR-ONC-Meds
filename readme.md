@@ -1,5 +1,5 @@
 
-#  Welcome to the US Medications Implemenation Guide Repository
+#  Welcome to the US Medications Implementation Guide Repository
 
 Authors:  Eric Haas, Brett Marquard, Melva Peters
 
