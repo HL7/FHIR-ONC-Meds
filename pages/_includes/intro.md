@@ -61,4 +61,4 @@ Refer to the US Core Implementation Guide's [General Security Considerations]({{
 
 Primary Authors: Brett Marquard, Melva Peters, Eric Haas
 
-Sponsoring Workgroup : [Pharmacy](http://www.hl7.org/Special/committees/medication/index.cfm)
+Sponsoring HL7 Workgroup : [Pharmacy](http://www.hl7.org/Special/committees/medication/index.cfm)
