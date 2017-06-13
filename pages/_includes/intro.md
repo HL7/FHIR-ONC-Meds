@@ -56,3 +56,9 @@ In addition, two new profiles have been defined as part of this implementation g
 ### Security
 
 Refer to the US Core Implementation Guide's [General Security Considerations]({{ site.data.fhir.uscore }}security.html) page for a discussion of the security conformance requirements.
+
+----
+
+Primary Authors: Brett Marquard, Melva Peters, Eric Haas
+
+Sponsoring Workgroup : [Pharmacy](http://www.hl7.org/Special/committees/medication/index.cfm)
