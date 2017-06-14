@@ -17,7 +17,7 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 ### Find your rendered IG automatically available at
 
-http://build.fhir.org/ig/HL7/FHIR-ONC-Meds
+http://build.fhir.org/ig/HL7/FHIR-ONC-Meds/index.html
 
 ### Find debugging info about the build
 
