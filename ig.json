@@ -1,207 +1,200 @@
 {
-  "canonicalBase": "http://hl7.org/fhir/us/meds",
-  "defaults": {
-    "Any": {
-      "template-base": "base.html",
-      "template-format": "format.html"
-    },
-    "Bundle": {
-      "template-base": "ex.html"
-    },
-    "CapabilityStatement": {
-      "template-base": "cs.html"
-    },
-    "CodeSystem": {
-      "template-base": "cs.html"
-    },
-    "ConceptMap": {
-      "template-base": "cm.html"
-    },
-    "Encounter": {
-      "template-base": "ex.html"
-    },
-    "MedicationAdministration": {
-      "template-base": "ex.html"
-    },
-    "MedicationDispense": {
-      "template-base": "ex.html"
-    },
-    "MedicationRequest": {
-      "template-base": "ex.html"
-    },
-    "MedicationStatement": {
-      "template-base": "ex.html"
-    },
-    "Patient": {
-      "template-base": "ex.html"
-    },
-    "StructureDefinition": {
-      "template-base": "sd.html",
-      "template-defns": "sd-definitions.html",
-      "template-mappings": "sd-mappings.html"
-    },
-    "ValueSet": {
-      "template-base": "vs.html"
-    }
-  },
-  "dependencyList": [
-    {
-      "location": "http://build.fhir.org/ig/HL7/US-Core/",
-      "name": "uscore",
-      "source": "resources"
-    }
-  ],
-  "extraTemplates": [
-    "mappings"
-  ],
-  "fixed-business-version": "1.0.0",
-  "paths": {
-    "output": "output",
-    "pages": "pages",
-    "qa": "qa",
-    "resources": [
-      "resources",
-      "examples"
-    ],
-    "specification": "http://build.fhir.org",
-    "temp": "temp",
-    "txCache": "txCache"
-  },
-  "resources": {
-    "Bundle/get-active-meds": {
-      "base": "Bundle-get-active-meds.html",
-      "source": "get-active-meds-bundle.xml"
-    },
-    "Bundle/get-active-orders": {
-      "base": "Bundle-get-active-orders.html",
-      "source": "get-active-orders-bundle.json"
-    },
-    "Bundle/get-all-meds": {
-      "base": "Bundle-get-all-meds.html",
-      "source": "get-all-meds-bundle.xml"
-    },
-    "Bundle/get-encounter-meds": {
-      "base": "Bundle-get-encounter-meds.html",
-      "source": "get-encounter-meds-bundle.xml"
-    },
-    "CapabilityStatement/client": {
-      "base": "CapabilityStatement-client.html",
-      "source": "capabilitystatement-client.xml"
-    },
-    "CapabilityStatement/server": {
-      "base": "CapabilityStatement-server.html",
-      "source": "capabilitystatement-server.xml"
-    },
-    "Encounter/A": {
-      "base": "Encounter-A.html",
-      "source": "encounter-a.xml"
-    },
-    "MedicationAdministration/medadmin-1": {
-      "base": "MedicationAdministration-medadmin-1.html",
-      "source": "medadmin-1.xml"
-    },
-    "MedicationDispense/meddispense-1": {
-      "base": "MedicationDispense-meddispense-1.html",
-      "source": "meddispense-1.xml"
-    },
-    "MedicationRequest/enca-1": {
-      "base": "MedicationRequest-enca-1.html",
-      "source": "MedicationRequest-enca-1.xml"
-    },
-    "MedicationRequest/enca-2": {
-      "base": "MedicationRequest-enca-2.html",
-      "source": "MedicationRequest-enca-2.xml"
-    },
-    "MedicationRequest/enca-3": {
-      "base": "MedicationRequest-enca-3.html",
-      "source": "MedicationRequest-enca-3.xml"
-    },
-    "MedicationRequest/enca-4": {
-      "base": "MedicationRequest-enca-4.html",
-      "source": "MedicationRequest-enca-4.xml"
-    },
-    "MedicationRequest/enca-5": {
-      "base": "MedicationRequest-enca-5.html",
-      "source": "MedicationRequest-enca-5.xml"
-    },
-    "MedicationRequest/enca-6": {
-      "base": "MedicationRequest-enca-6.html",
-      "source": "MedicationRequest-enca-6.xml"
-    },
-    "MedicationRequest/test2-1": {
-      "base": "MedicationRequest-test2-1.html",
-      "source": "medicationrequest-test2-1.json"
-    },
-    "MedicationRequest/test2-2": {
-      "base": "MedicationRequest-test2-2.html",
-      "source": "medicationrequest-test2-2.json"
-    },
-    "MedicationRequest/test2-3": {
-      "base": "MedicationRequest-test2-3.html",
-      "source": "medicationrequest-test2-3.json"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-1": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-1.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-1.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-2": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-2.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-2.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-3": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-3.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-3.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-4": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-4.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-4.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-5": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-5.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-5.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-enca-6": {
-      "base": "MedicationStatement-derivedfrom-mr-enca-6.html",
-      "source": "medicationstatement-derivedfrom-mr-enca-6.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-test2-1": {
-      "base": "MedicationStatement-derivedfrom-mr-test2-1.html",
-      "source": "medicationstatement-derivedfrom-mr-test2-1.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-test2-2": {
-      "base": "MedicationStatement-derivedfrom-mr-test2-2.html",
-      "source": "medicationstatement-derivedfrom-mr-test2-2.xml"
-    },
-    "MedicationStatement/derivedfrom-mr-test2-3": {
-      "base": "MedicationStatement-derivedfrom-mr-test2-3.html",
-      "source": "medicationstatement-derivedfrom-mr-test2-3.xml"
-    },
-    "MedicationStatement/test2-1": {
-      "base": "MedicationStatement-test2-1.html",
-      "source": "medicationstatement-test2-1.json"
-    },
-    "MedicationStatement/test2-2": {
-      "base": "MedicationStatement-test2-2.html",
-      "source": "medicationstatement-test2-2.json"
-    },
-    "Patient/test2": {
-      "base": "Patient-test2.html",
-      "source": "test2-patient.xml"
-    },
-    "StructureDefinition/medicationadministration": {
-      "base": "StructureDefinition-medicationadministration.html",
-      "defns": "StructureDefinition-medicationadministration-definitions.html"
-    },
-    "StructureDefinition/medicationdispense": {
-      "base": "StructureDefinition-medicationdispense.html",
-      "defns": "StructureDefinition-medicationdispense-definitions.html"
-    }
-  },
-  "sct-edition": "http://snomed.info/sct/731000124108",
-  "source": "ig.xml",
-  "spreadsheets": [
-    "medicationadministration-profile-spreadsheet.xml",
-    "medicationdispense-profile-spreadsheet.xml"
-  ],
-  "tool": "jekyll"
+	"paths": {
+		"txCache": "txCache",
+		"qa": "qa",
+		"temp": "temp",
+		"resources": ["resources",
+		"examples"],
+		"output": "output",
+		"pages": "pages",
+		"specification": "http://hl7.org/fhir"
+	},
+  "version" : "3.0.1",
+	"tool": "jekyll",
+	"defaults": {
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-defns": "sd-definitions.html",
+			"template-base": "sd.html"
+		},
+		"MedicationDispense": {
+			"template-base": "ex.html"
+		},
+		"ConceptMap": {
+			"template-base": "cm.html"
+		},
+		"MedicationStatement": {
+			"template-base": "ex.html"
+		},
+		"MedicationAdministration": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "vs.html"
+		},
+		"MedicationRequest": {
+			"template-base": "ex.html"
+		},
+		"Patient": {
+			"template-base": "ex.html"
+		},
+		"CodeSystem": {
+			"template-base": "cs.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "cs.html"
+		},
+		"Encounter": {
+			"template-base": "ex.html"
+		},
+		"Bundle": {
+			"template-base": "ex.html"
+		},
+		"Any": {
+			"template-format": "format.html",
+			"template-base": "base.html"
+		}
+	},
+	"spreadsheets": ["medicationadministration-profile-spreadsheet.xml",
+	"medicationdispense-profile-spreadsheet.xml"],
+	"sct-edition": "http://snomed.info/sct/731000124108",
+	"resources": {
+		"MedicationDispense/meddispense-1": {
+			"base": "MedicationDispense-meddispense-1.html",
+			"source": "meddispense-1.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-test2-2": {
+			"base": "MedicationStatement-derivedfrom-mr-test2-2.html",
+			"source": "medicationstatement-derivedfrom-mr-test2-2.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-6": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-6.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-6.xml"
+		},
+		"CapabilityStatement/client": {
+			"base": "CapabilityStatement-client.html",
+			"source": "capabilitystatement-client.xml"
+		},
+		"MedicationRequest/enca-3": {
+			"base": "MedicationRequest-enca-3.html",
+			"source": "MedicationRequest-enca-3.xml"
+		},
+		"MedicationStatement/test2-2": {
+			"base": "MedicationStatement-test2-2.html",
+			"source": "medicationstatement-test2-2.json"
+		},
+		"Bundle/get-encounter-meds": {
+			"base": "Bundle-get-encounter-meds.html",
+			"source": "get-encounter-meds-bundle.xml"
+		},
+		"MedicationRequest/enca-2": {
+			"base": "MedicationRequest-enca-2.html",
+			"source": "MedicationRequest-enca-2.xml"
+		},
+		"MedicationRequest/enca-1": {
+			"base": "MedicationRequest-enca-1.html",
+			"source": "MedicationRequest-enca-1.xml"
+		},
+		"Bundle/get-all-meds": {
+			"base": "Bundle-get-all-meds.html",
+			"source": "get-all-meds-bundle.xml"
+		},
+		"MedicationRequest/enca-6": {
+			"base": "MedicationRequest-enca-6.html",
+			"source": "MedicationRequest-enca-6.xml"
+		},
+		"Patient/test2": {
+			"base": "Patient-test2.html",
+			"source": "test2-patient.xml"
+		},
+		"Bundle/get-active-orders": {
+			"base": "Bundle-get-active-orders.html",
+			"source": "get-active-orders-bundle.json"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-3": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-3.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-3.xml"
+		},
+		"MedicationStatement/test2-1": {
+			"base": "MedicationStatement-test2-1.html",
+			"source": "medicationstatement-test2-1.json"
+		},
+		"MedicationRequest/enca-5": {
+			"base": "MedicationRequest-enca-5.html",
+			"source": "MedicationRequest-enca-5.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-test2-1": {
+			"base": "MedicationStatement-derivedfrom-mr-test2-1.html",
+			"source": "medicationstatement-derivedfrom-mr-test2-1.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-2": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-2.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-2.xml"
+		},
+		"Encounter/A": {
+			"base": "Encounter-A.html",
+			"source": "encounter-a.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-test2-3": {
+			"base": "MedicationStatement-derivedfrom-mr-test2-3.html",
+			"source": "medicationstatement-derivedfrom-mr-test2-3.xml"
+		},
+		"MedicationRequest/test2-3": {
+			"base": "MedicationRequest-test2-3.html",
+			"source": "medicationrequest-test2-3.json"
+		},
+		"StructureDefinition/medicationdispense": {
+			"base": "StructureDefinition-medicationdispense.html",
+			"defns": "StructureDefinition-medicationdispense-definitions.html"
+		},
+		"MedicationRequest/test2-1": {
+			"base": "MedicationRequest-test2-1.html",
+			"source": "medicationrequest-test2-1.json"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-5": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-5.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-5.xml"
+		},
+		"MedicationRequest/test2-2": {
+			"base": "MedicationRequest-test2-2.html",
+			"source": "medicationrequest-test2-2.json"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-1": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-1.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-1.xml"
+		},
+		"StructureDefinition/medicationadministration": {
+			"base": "StructureDefinition-medicationadministration.html",
+			"defns": "StructureDefinition-medicationadministration-definitions.html"
+		},
+		"MedicationRequest/enca-4": {
+			"base": "MedicationRequest-enca-4.html",
+			"source": "MedicationRequest-enca-4.xml"
+		},
+		"CapabilityStatement/server": {
+			"base": "CapabilityStatement-server.html",
+			"source": "capabilitystatement-server.xml"
+		},
+		"MedicationStatement/derivedfrom-mr-enca-4": {
+			"base": "MedicationStatement-derivedfrom-mr-enca-4.html",
+			"source": "medicationstatement-derivedfrom-mr-enca-4.xml"
+		},
+		"MedicationAdministration/medadmin-1": {
+			"base": "MedicationAdministration-medadmin-1.html",
+			"source": "medadmin-1.xml"
+		},
+		"Bundle/get-active-meds": {
+			"base": "Bundle-get-active-meds.html",
+			"source": "get-active-meds-bundle.xml"
+		}
+	},
+	"fixed-business-version": "1.0.0",
+	"dependencyList": [{
+		"location": "http://hl7.org/fhir/us/core/STU1/",
+		"source": "resources",
+		"name": "uscore"
+	}],
+	"extraTemplates": ["mappings"],
+	"source": "ig.xml",
+	"canonicalBase": "http://hl7.org/fhir/us/meds"
 }
