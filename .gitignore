@@ -23,7 +23,7 @@
 *.zip
 # want the definitions file from the resources dir
 !resources/*.zip
-! org.hl7.fhir.igpublisher-old.jar
+!org.hl7.fhir.igpublisher-old.jar
 
 # Logs and databases #
 ######################
