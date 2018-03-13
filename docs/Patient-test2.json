@@ -1,0 +1,114 @@
+{
+  "resourceType": "Patient",
+  "id": "test2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t<p>\n\t\t\t\t<b>Generated Narrative with Details</b>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>id</b>: test2</p>\n\t\t\t<p>\n\t\t\t\t<b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p>\n\t\t\t<p>\n\t\t\t\t<b>active</b>: true</p>\n\t\t\t<p>\n\t\t\t\t<b>name</b>: Biran Z </p>\n\t\t\t<p>\n\t\t\t\t<b>telecom</b>: ph: 555-555-5555(HOME)</p>\n\t\t\t<p>\n\t\t\t\t<b>gender</b>: Male</p>\n\t\t\t<p>\n\t\t\t\t<b>birthsex</b>: Male</p>\n\t\t\t<p>\n\t\t\t\t<b>birthDate</b>: Jan 5, 1964</p>\n\t\t\t<p>\n\t\t\t\t<b>address</b>: 211 Main St Anytown, CA 95555 US </p>\n\t\t\t<p>\n\t\t\t\t<b>race</b>: White</p>\n\t\t\t<p>\n\t\t\t\t<b>ethnicity</b>: Hispanic or Latino</p>\n\t\t\t\t\t\t<p>\n\t\t\t\t<b>preferred language</b>: English</p>\n\n\t\t</div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2135-2",
+            "display": "Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Hispanic or Latino"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "valueCode": "M"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR",
+            "display": "Medical Record Number"
+          }
+        ],
+        "text": "Medical Record Number"
+      },
+      "system": "http://hospital.smarthealthit.org",
+      "value": "1032702"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Z",
+      "given": [
+        "Brian"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-5555",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1964-01-05",
+  "address": [
+    {
+      "line": [
+        "211 Main St"
+      ],
+      "city": "Anytown",
+      "state": "CA",
+      "postalCode": "95555",
+      "country": "US"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en",
+            "display": "English"
+          }
+        ],
+        "text": "English"
+      },
+      "preferred": true
+    }
+  ]
+}

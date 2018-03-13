@@ -1,0 +1,685 @@
+﻿US Meds : Validation Results
+=========================================
+
+err = 82, warn = 82, info = 1034
+Generated Tue Mar 13 12:03:06 EDT 2018. FHIR version 3.1.0 for 3.0.1
+
+ Build Errors : 11 / 0
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-1 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-2 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-3 : 1 / 22
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-4 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-5 : 2 / 12
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-6 : 3 / 13
+ C:\FHIR-ONC-Meds\examples\encounter-a : 0 / 0
+ C:\FHIR-ONC-Meds\examples\get-active-meds-bundle : 3 / 80
+ C:\FHIR-ONC-Meds\examples\get-active-orders-bundle : 2 / 38
+ C:\FHIR-ONC-Meds\examples\get-all-meds-bundle : 3 / 80
+ C:\FHIR-ONC-Meds\examples\get-encounter-meds-bundle : 8 / 135
+ C:\FHIR-ONC-Meds\examples\medadmin-1 : 0 / 6
+ C:\FHIR-ONC-Meds\examples\meddispense-1 : 0 / 4
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-1 : 1 / 10
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-2 : 1 / 9
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-3 : 1 / 10
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-1 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-2 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-3 : 1 / 22
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-4 : 1 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-5 : 2 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-6 : 2 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-1 : 1 / 7
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-2 : 1 / 6
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-3 : 1 / 7
+ C:\FHIR-ONC-Meds\examples\medicationstatement-test2-1 : 0 / 5
+ C:\FHIR-ONC-Meds\examples\medicationstatement-test2-2 : 0 / 6
+ C:\FHIR-ONC-Meds\examples\test2-patient : 0 / 20
+ C:\FHIR-ONC-Meds\resources\capabilitystatement-client : 0 / 0
+ C:\FHIR-ONC-Meds\resources\capabilitystatement-server : 0 / 0
+ C:\FHIR-ONC-Meds\resources\ig : 2 / 0
+ C:\FHIR-ONC-Meds\resources\medicationadministration-profile-spreadsheet : 0 / 1
+ C:\FHIR-ONC-Meds\resources\medicationdispense-profile-spreadsheet : 0 / 1
+</table>
+== n/a ==
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 202, column 64: The link 'http://hl7.org/fhir/STU3/http.html#read' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 202, column 127: The link 'http://hl7.org/fhir/STU3/http.html#search' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 203, column 65: The link 'http://hl7.org/fhir/STU3/http.html#vread' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/ul/li/a at Line 203, column 130: The link 'http://hl7.org/fhir/STU3/http.html#history' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 208, column 573: The link 'http://hl7.org/fhir/STU3/http.html#include' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 268, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 304, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 155, column 193: The link 'hl7.org/fhir/us/meds/STU1/capstatements.html#conformance-requirements-for-the-us-meds-server' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 169, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 182, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html' cannot be resolved
+ERROR: C:\FHIR-ONC-Meds\output\index.html#/html/head/body/div/div/div/div/div/p/a at Line 111, column 200: The link 'http://hl7.org/fhir/us/meds/history.html' cannot be resolved
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-1.xml ==
+WARNING: MedicationRequest/enca-1: MedicationRequest.medicationCodeableConcept: No Message returned
+ERROR: MedicationRequest/enca-1: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-1: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-2.xml ==
+WARNING: MedicationRequest/enca-2: MedicationRequest.medicationCodeableConcept: No Message returned
+ERROR: MedicationRequest/enca-2: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-2: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-3.xml ==
+WARNING: MedicationRequest/enca-3: MedicationRequest.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained.code: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained.ingredient[1]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained.ingredient[2]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+ERROR: MedicationRequest/enca-3: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[1].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[1].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[1].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[2]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[2].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[2].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.contained[1].ingredient[2].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-3: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-4.xml ==
+WARNING: MedicationRequest/enca-4: MedicationRequest.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
+ERROR: MedicationRequest/enca-4: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-4: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-5.xml ==
+WARNING: MedicationRequest/enca-5: MedicationRequest.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
+ERROR: MedicationRequest/enca-5: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: MedicationRequest/enca-5: MedicationRequest.dosageInstruction.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].validityPeriod[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].expectedSupplyDuration[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-6.xml ==
+WARNING: MedicationRequest/enca-6: MedicationRequest.medicationCodeableConcept: No Message returned
+ERROR: MedicationRequest/enca-6: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: MedicationRequest/enca-6: MedicationRequest.dosageInstruction.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: MedicationRequest/enca-6: MedicationRequest.dispenseRequest.numberOfRepeatsAllowed: value is less than permitted minimum value of 1
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].validityPeriod[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].expectedSupplyDuration[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\encounter-a.xml ==
+== C:\FHIR-ONC-Meds\examples\get-active-meds-bundle.xml ==
+WARNING: Bundle/get-active-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-active-meds: Bundle.entry[1].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-active-meds: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+ERROR: Bundle/get-active-meds: Bundle.entry[2].resource.dosage.route.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-active-meds: Bundle.entry[3].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-active-meds: Bundle.entry[3].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-active-meds: Bundle.entry[4].resource.medicationCodeableConcept: No Message returned
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.effectiveDateTime: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-active-meds: Bundle.entry[5].resource.medicationCodeableConcept: No Message returned
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource.note: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[2].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[3].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[4].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\get-active-orders-bundle.json ==
+WARNING: Bundle/get-active-orders: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-active-orders: Bundle.entry[1].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.intent: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.authoredOn: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.requester: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.dosageInstruction: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource.dispenseRequest: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-active-orders: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+ERROR: Bundle/get-active-orders: Bundle.entry[2].resource.dosageInstruction.route.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.intent: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.authoredOn: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.requester: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.dosageInstruction: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource.dispenseRequest: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\get-all-meds-bundle.xml ==
+WARNING: Bundle/get-all-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-all-meds: Bundle.entry[1].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-all-meds: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+ERROR: Bundle/get-all-meds: Bundle.entry[2].resource.dosage.route.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-all-meds: Bundle.entry[3].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-all-meds: Bundle.entry[3].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-all-meds: Bundle.entry[4].resource.medicationCodeableConcept: No Message returned
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.effectiveDateTime: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-all-meds: Bundle.entry[5].resource.medicationCodeableConcept: No Message returned
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource.note: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[2].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[3].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[4].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\get-encounter-meds-bundle.xml ==
+WARNING: Bundle/get-encounter-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-encounter-meds: Bundle.entry[1].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-encounter-meds: Bundle.entry[2].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-encounter-meds: Bundle.entry[2].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained.code: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained.ingredient[1]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained.ingredient[2]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+ERROR: Bundle/get-encounter-meds: Bundle.entry[3].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.medicationReference: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-encounter-meds: Bundle.entry[4].resource.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
+ERROR: Bundle/get-encounter-meds: Bundle.entry[4].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-encounter-meds: Bundle.entry[5].resource.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
+ERROR: Bundle/get-encounter-meds: Bundle.entry[5].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: Bundle/get-encounter-meds: Bundle.entry[5].resource.dosage.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+WARNING: Bundle/get-encounter-meds: Bundle.entry[6].resource.medicationCodeableConcept: No Message returned
+ERROR: Bundle/get-encounter-meds: Bundle.entry[6].resource.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: Bundle/get-encounter-meds: Bundle.entry[6].resource.dosage.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.text: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.context: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.status: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.medicationCodeableConcept: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.effectivePeriod: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.dateAsserted: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.informationSource: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.subject: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.derivedFrom: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.taken: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.reasonCode: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource.dosage: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[2].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[1].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[1].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[1].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[2]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[2].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[2].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].contained[1].ingredient[2].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[3].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[4].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[5].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medadmin-1.xml ==
+WARNING: MedicationAdministration/medadmin-1: MedicationAdministration.medicationCodeableConcept: The display "Lantus 100 unit/ml injectable solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}285018
+INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.dosage[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.dosage[1].dose[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\meddispense-1.xml ==
+WARNING: MedicationDispense/meddispense-1: MedicationDispense.medicationCodeableConcept: The display "Lantus 100 unit/ml injectable solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}285018
+INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationrequest-test2-1.json ==
+WARNING: MedicationRequest/test2-1: MedicationRequest.medicationCodeableConcept: No Message returned
+ERROR: MedicationRequest/test2-1: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationrequest-test2-2.json ==
+WARNING: MedicationRequest/test2-2: MedicationRequest.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+ERROR: MedicationRequest/test2-2: MedicationRequest.dosageInstruction.route.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationrequest-test2-3.json ==
+WARNING: MedicationRequest/test2-3: MedicationRequest.medicationCodeableConcept: No Message returned
+ERROR: MedicationRequest/test2-3: MedicationRequest.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.intent[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-1.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.medicationCodeableConcept: No Message returned
+ERROR: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-2.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.medicationCodeableConcept: No Message returned
+ERROR: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-3.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained.code: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained.ingredient[1]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained.ingredient[2]: Could not verify slice for profile http://hl7.org/fhir/StructureDefinition/Resource
+ERROR: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[1].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[1].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[1].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[2]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[2].itemCodeableConcept[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[2].isActive[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained[1].ingredient[2].amount[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-4.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
+ERROR: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-5.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
+ERROR: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.dosage.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-6.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.medicationCodeableConcept: No Message returned
+ERROR: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+ERROR: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.dosage.additionalInstruction.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.context[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-1.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.medicationCodeableConcept: No Message returned
+ERROR: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-2.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+ERROR: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.dosage.route.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-3.xml ==
+WARNING: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.medicationCodeableConcept: No Message returned
+ERROR: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.reasonCode.coding: Unable to provide support for code system http://snomed.info/sct version http://snomed.info/sct/731000124108
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-test2-1.json ==
+WARNING: MedicationStatement/test2-1: MedicationStatement.medicationCodeableConcept: No Message returned
+INFORMATION: MedicationStatement/test2-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-1: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\medicationstatement-test2-2.json ==
+WARNING: MedicationStatement/test2-2: MedicationStatement.medicationCodeableConcept: No Message returned
+INFORMATION: MedicationStatement/test2-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-2: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: MedicationStatement/test2-2: MedicationStatement.note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\examples\test2-patient.xml ==
+WARNING: Patient/test2: Patient.communication.language: No Message returned
+INFORMATION: Patient/test2: Patient.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[1].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[1].extension[1].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[1].extension[1].valueCoding[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[1].extension[2].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[1].extension[2].valueString[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[2].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[2].extension[1].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[2].extension[1].valueCoding[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[2].extension[2].url[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.extension[2].extension[2].valueString[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.identifier[1].use[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.identifier[1].type[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.active[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.telecom[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.address[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+INFORMATION: Patient/test2: Patient.communication[1].preferred[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
+== C:\FHIR-ONC-Meds\resources\capabilitystatement-client.xml ==
+== C:\FHIR-ONC-Meds\resources\capabilitystatement-server.xml ==
+== C:\FHIR-ONC-Meds\resources\ig.xml ==
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[29]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[29].example': minimum required = 1, but only found 0
+ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[30]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[30].example': minimum required = 1, but only found 0
+== C:\FHIR-ONC-Meds\resources\medicationadministration-profile-spreadsheet.xml ==
+INFORMATION: C:\FHIR-ONC-Meds\resources\medicationadministration-profile-spreadsheet: Resources generated by processing C:\FHIR-ONC-Meds\resources\medicationadministration-profile-spreadsheet:  http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration ("MedicationAdministration Profile")
+== C:\FHIR-ONC-Meds\resources\medicationdispense-profile-spreadsheet.xml ==
+INFORMATION: C:\FHIR-ONC-Meds\resources\medicationdispense-profile-spreadsheet: Resources generated by processing C:\FHIR-ONC-Meds\resources\medicationdispense-profile-spreadsheet:  http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense ("MedicationDispense Profile")

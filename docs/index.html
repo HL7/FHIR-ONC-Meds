@@ -1,0 +1,244 @@
+﻿<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>US Meds</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="US Meds Implemenation Guide"/>
+<meta name="author" content="HL7 Pharmacy Work Group"/>
+
+  <link rel="stylesheet" href="fhir.css"/>
+
+     <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+    <!-- Project extras -->
+  <link rel="stylesheet" href="assets/css/project.css"/>
+  <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+	<link rel="stylesheet" href="jquery-ui.css"/>
+
+    <!-- Favicons -->
+  <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+  <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+  <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+
+
+<body markdown="1">
+
+<div id="segment-header" class="segment">    <!-- segment-header -->
+ <div class="container">    <!-- container -->
+  <a no-external="true" id="logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="logo fhir"/> </a>
+  <div id="hl7-nav">
+    <a no-external="true" id="hl7-logo" href="http://www.hl7.org">
+    <img src="assets/images/hl7-logo.png" alt="visit the hl7 website" width="42" height="50"/>
+   </a>
+  </div>
+  <div style="font-size:30px;padding-top:20px;" id="ig-status">
+<b>US Meds Implementation Guide</b> (Release 1)
+</div>
+
+ </div>
+ <div class="container">    <!-- container -->
+</div></div>    <!-- /segment-header -->
+
+<div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+ <div id="stripe"> </div>
+ <div class="container">    <!-- container -->
+    <!-- HEADER CONTENT -->
+
+  <nav class="navbar navbar-inverse">
+   <div class="container">
+    <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+     <span class="icon-bar"> </span>
+     <span class="icon-bar"> </span>
+     <span class="icon-bar"> </span>
+    </button>
+    <a href="http://hl7.org/fhirindex.html" class="navbar-brand hidden">FHIR</a>
+    <div class="nav-collapse collapse navbar-inverse-collapse">
+     <ul class="nav navbar-nav">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="guidance.html">General Guidance</a></li>
+       <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="pdmp.html">PDMP</a></li>  <!-- <li><a href="extensions.html">Extensions</a></li>
+       <li><a href="terminology.html">Terminology</a></li>
+       <li><a href="searchparams.html">Search Parameters</a></li> -->
+       <li><a href="capstatements.html">Capability Statements</a></li>
+  <!-- <li><a href="security.html">Security</a></li> -->
+       <li><a href="downloads.html">Downloads</a></li>
+           </ul>
+
+    </div>    <!-- /.nav-collapse -->
+   </div>    <!-- /.container -->
+  </nav>    <!-- /.navbar -->
+
+   <!-- /HEADER CONTENT -->
+ </div>    <!-- /container -->
+</div>    <!-- /segment-navbar -->
+
+
+
+    <!-- ============BreadCrumb=============== -->
+
+
+      <!-- /container -->
+     <!-- /segment-breadcrumb -->
+
+ <div id="segment-content" class="segment">    <!-- segment-content -->
+ <div class="container">    <!-- container -->
+            <div class="row">
+             <div class="inner-wrapper">
+
+
+<div class="col-12">
+
+
+    <!-- ============CONTENT CONTENT=============== -->
+
+<h2 id="us-meds-implementation-guide" class="no_toc">US Meds Implementation Guide</h2>
+
+  <!-- source pages/\_include/intro.md  file -->
+
+<p id="publish-box"><a name="155af74c-90b8-442c-aa8f-c21f4629fa6a">​</a>
+This is the   <!-- Continuous Integration Build -->current officially released version of the of the US Meds Implementation Guide, based on <a href="http://hl7.org/fhir">FHIR Version 3.0.1</a>. See the <a href="http://hl7.org/fhir/us/meds/history.html">Directory of published versions<img src="external.png"/></a>
+</p>
+
+  <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc' -->
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a>    <ul>
+      <li><a href="#actors" id="markdown-toc-actors">Actors</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+    </ul>
+  </li>
+  <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+  <li><a href="#security" id="markdown-toc-security">Security</a></li>
+</ul>
+
+  <!-- end TOC -->
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The US Meds Implementation Guide is based upon the <a href="http://hl7.org/fhir">FHIR STU3</a> specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient’s active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions and to record a dispensed medication.</p>
+
+<h3 id="scope">Scope</h3>
+
+<p>This guide applies the general <a href="http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf">Argonaut Project scope statement</a> and adopts it specifically to enable a user to access, record, change a patient’s active medications as well as a medication history.  This covers the  <a href="https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf">Meaningful Use 2015 &sect;?170.302(d)</a> certification requirement for EHRs.</p>
+
+<h4 id="actors">Actors</h4>
+
+<p>The following actors are defined:</p>
+
+<ul>
+  <li>US Meds Requestor: An application that initiates a data access request to retrieve patient medication data. This can be thought of as the client in a client-server interaction and the user is either a patient or provider.</li>
+  <li>US Meds Responder: A product that responds to the data access request providing patient medication data. This can be thought of as the server in a client-server interaction and typically is part of an EHRs.</li>
+</ul>
+
+<h4 id="use-cases">Use Cases</h4>
+
+<p>The following specific uses case are defined:</p>
+
+<ol>
+  <li><a href="guidance.html#uc-1">Patient and Provider access to a patient’s active and historical medication list</a></li>
+  <li><a href="guidance.html#uc-2">Medication list updates</a></li>
+  <li><a href="guidance.html#uc-3">Create new outpatient Prescription</a></li>
+  <li><a href="guidance.html#uc-4">Dispense medication from Pharmacy</a></li>
+</ol>
+
+<p>A detailed description and guidance for each is given in the <a href="guidance.html">General Guidance</a> section.</p>
+
+<h3 id="profiles">Profiles</h3>
+
+<p>This IG uses the following US Core Profiles from the US Core Implementation Guide:</p>
+
+<ul>
+  <li><a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medication.html">US Core Medication</a></li>
+  <li><a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medicationrequest.html">US Core Medication Request</a></li>
+  <li><a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medicationstatement.html">US Core Medication Statement</a></li>
+</ul>
+
+<p>In addition, two new profiles have been defined as part of this implementation guide:</p>
+
+<li><a href="StructureDefinition-medicationadministration.html">MedicationAdministration Profile</a></li>
+<li><a href="StructureDefinition-medicationdispense.html">MedicationDispense Profile</a></li>
+
+<p>Each profile defines the minimum mandatory elements, extensions and terminology requirements that MUST be present. Requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a logical view of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples. In addition each profile has a “Quick Start” section, which is intended as an implementer friendly overview of the required search and read operations.</p>
+
+<h3 id="security">Security</h3>
+
+<p>Refer to the US Core Implementation Guide’s <a href="http://hl7.org/fhir/us/core/STU1/security.html">General Security Considerations</a> page for a discussion of the security conformance requirements.</p>
+
+<hr/>
+
+<p>Primary Authors: Brett Marquard, Melva Peters, Eric Haas</p>
+
+<p>Sponsoring HL7 Workgroup : <a href="http://www.hl7.org/Special/committees/medication/index.cfm">Pharmacy</a></p>
+
+
+<br/>
+
+    <!-- ==============END CONTENT END CONTENT=================== -->
+
+ </div>
+
+    </div>    <!-- /inner-wrapper -->
+            </div>    <!-- /row -->
+        </div>    <!-- /container -->
+
+    </div>    <!-- /segment-content -->
+
+
+    
+
+
+        <!-- /inner-wrapper -->
+                <!-- /row -->
+            <!-- /container -->
+
+        <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">    <!-- segment-footer -->
+  <div class="container">    <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Mar 13, 2018 12:01-0400. |
+               <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhirlicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+        
+        </p>
+   </div>    <!-- /inner-wrapper -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-footer -->
+    <!-- disqus thread -->
+    <!-- disqus -->
+    <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+  <div class="container">    <!-- container -->
+  </div>    <!-- /container -->
+ </div>    <!-- /segment-post-footer -->
+
+   <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist/js/bootstrap.min.js"> </script>
+<script src="./assets/js/respond.min.js"> </script>
+
+<script src="./assets/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+</body>
+
+
+
+</head></html>
