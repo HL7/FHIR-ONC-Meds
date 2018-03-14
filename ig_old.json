@@ -55,6 +55,8 @@
 			"template-base": "base.html"
 		}
 	},
+	"spreadsheets": ["medicationadministration-profile-spreadsheet.xml",
+	"medicationdispense-profile-spreadsheet.xml"],
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"resources": {
 		"MedicationDispense/meddispense-1": {

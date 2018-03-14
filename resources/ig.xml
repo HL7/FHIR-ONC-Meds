@@ -1,1 +1,213 @@
-<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/><name value="US Meds"/><status value="draft"/><experimental value="false"/><publisher value="HL7 Pharmacy Work Group"/><package><name value="base"/><resource><example value="true"/><sourceReference><reference value="Patient/test2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/test2-2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/test2-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-test2-3"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-test2-2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-test2-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-6"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-5"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-4"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-3"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationStatement/derivedfrom-mr-enca-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/test2-3"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/test2-2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/test2-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-6"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-5"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-4"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-3"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-2"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationRequest/enca-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationDispense/meddispense-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="MedicationAdministration/medadmin-1"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Bundle/get-encounter-meds"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Bundle/get-all-meds"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Bundle/get-active-orders"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Bundle/get-active-meds"/></sourceReference></resource><resource><example value="true"/><sourceReference><reference value="Encounter/A"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/server"/></sourceReference></resource><resource><example value="false"/><sourceReference><reference value="CapabilityStatement/client"/></sourceReference></resource></package><page><source value="index.html"/><title value="US Meds Homepage"/><kind value="page"/></page></ImplementationGuide>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
+  <name value="US Meds"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Pharmacy Work Group"/>
+  <package>
+    <name value="base"/>
+    <resource>
+  <example value="false"/>
+  <sourceReference>
+    <reference value="StructureDefinition/medicationadministration"/>
+  </sourceReference>
+</resource>
+
+
+<resource>
+  <example value="false"/>
+  <sourceReference>
+    <reference value="StructureDefinition/medicationdispense"/>
+  </sourceReference>
+</resource>
+
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/test2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationDispense/meddispense-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationAdministration/medadmin-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-encounter-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-all-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-active-orders"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-active-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/A"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/client"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="US Meds Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

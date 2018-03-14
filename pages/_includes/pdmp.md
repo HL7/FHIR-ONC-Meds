@@ -26,6 +26,8 @@ In order to support a FHIR based exchange this guide includes a mapping to the k
 
 
 - [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a mapping for medicationRequest resource to SCRIPT 10.6
+{% include table.md %}
+
 
 #### Mappings for NCPDP Response
 {:.no_toc}
