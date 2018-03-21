@@ -126,11 +126,84 @@
 
 <h4 class="no_toc" id="mappings-for-ncpdp-request">Mappings for NCPDP Request</h4>
 
+<p>This section includes the minimal mapping for the PDMP request.</p>
+
 <ul>
-  <li><a href="http://hl7.org/fhir/medicationrequest-mappings.html#script10.6">MedicationRequest</a>: includes a mapping for medicationRequest resource to SCRIPT 10.6</li>
+  <li><a href="http://hl7.org/fhir/medicationrequest-mappings.html#script10.6">MedicationRequest</a>: includes a full mapping for medicationRequest resource to SCRIPT 10.6</li>
 </ul>
+<table class="grid">
+ <tbody><tr><td><a name="Medication"> </a><a name="medication"> </a><b>Medication</b></td><td>NewRx/MedicationPrescribed
+-or-
+RxFill/MedicationDispensed
+-or-
+RxHistoryResponse/MedicationDispensed
+-or-
+RxHistoryResponse/MedicationPrescribed</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>coding.code = //element(*,MedicationType)/DrugCoded/ProductCode
+
+coding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier
+
+coding.display = //element(*,MedicationType)/DrugDescription</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;status</td><td></td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;manufacturer</td><td>no mapping</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;form</td><td>coding.code =  //element(*,DrugCodedType)/FormCode
+
+coding.system = //element(*,DrugCodedType)/FormSourceCode</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;amount</td><td></td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;ingredient</td><td></td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item[x]</td><td>coding.code = //element(*,MedicationType)/DrugCoded/ProductCode
+
+coding.system = //element(*,MedicationType)/DrugCoded/ProductCodeQualifier
+
+coding.display = //element(*,MedicationType)/DrugDescription</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isActive</td><td></td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amount</td><td>//element(*,DrugCodedType)/Strength</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;batch</td><td>no mapping</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lotNumber</td><td>no mapping</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expirationDate</td><td>no mapping</td></tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;serialNumber</td><td></td></tr>
+</tbody></table>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<!-- file:///assets/images/message_request.png -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Medication Request Mapping to NCPDP and FHIR.</strong></figcaption>
+  <img src="assets/images/message_request.png" class="figure-img img-responsive img-rounded center-block" alt="message_request.png" />
+</figure>
+
+<p></p>
+</div>
 
 <h4 class="no_toc" id="mappings-for-ncpdp-response">Mappings for NCPDP Response</h4>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<!-- file:///assets/images/message_response1.png -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: Medication Response Mapping to NCPDP and FHIR.</strong></figcaption>
+  <img src="assets/images/message_response1.png" class="figure-img img-responsive img-rounded center-block" alt="message_response1.png" />
+</figure>
+
+<p></p>
+</div>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<!-- file:///assets/images/message_response2.png -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>.</strong></figcaption>
+  <img src="assets/images/message_response2.png" class="figure-img img-responsive img-rounded center-block" alt="message_response2.png" />
+</figure>
+
+<p></p>
+</div>
 
 <ul>
   <li><a href="http://hl7.org/fhir/medication-mappings.html#script10.6">Medication</a>:  includes a mapping for medication resource to SCRIPT 10.6</li>
@@ -187,7 +260,7 @@
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Tue, Mar 13, 2018 12:01-0400. |
+            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 21, 2018 15:34-0400. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhirlicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

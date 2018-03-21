@@ -14,6 +14,22 @@
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-medicationadministration.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/medicationadministration"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-medicationdispense.html"/>
+      </extension>
+      <sourceReference>
+        <reference value="StructureDefinition/medicationdispense"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="Patient-test2.html"/>
       </extension>
       <example value="true"/>
@@ -278,30 +294,6 @@
       </extension>
       <sourceReference>
         <reference value="CapabilityStatement/client"/>
-      </sourceReference>
-    </resource>
-  </package>
-  <package>
-    <name value="MedicationAdministration Profile"/>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-medicationadministration.html"/>
-      </extension>
-      <name value="MedicationAdministration Profile"/>
-      <sourceReference>
-        <reference value="StructureDefinition/medicationadministration"/>
-      </sourceReference>
-    </resource>
-  </package>
-  <package>
-    <name value="MedicationDispense Profile"/>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-medicationdispense.html"/>
-      </extension>
-      <name value="MedicationDispense Profile"/>
-      <sourceReference>
-        <reference value="StructureDefinition/medicationdispense"/>
       </sourceReference>
     </resource>
   </package>

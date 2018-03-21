@@ -25,6 +25,28 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationadministration.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationadministration" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationdispense.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationdispense" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "Patient-test2.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "true"^^xsd:boolean ];
@@ -33,7 +55,7 @@
          fhir:Reference.reference [ fhir:value "Patient/test2" ]
        ]
      ], [
-       fhir:index 1;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -45,7 +67,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/test2-2" ]
        ]
      ], [
-       fhir:index 2;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -57,7 +79,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/test2-1" ]
        ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -69,7 +91,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-test2-3" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -81,7 +103,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-test2-2" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -93,7 +115,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-test2-1" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -105,7 +127,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-6" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -117,7 +139,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-5" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -129,7 +151,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-4" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -141,7 +163,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-3" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -153,7 +175,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-2" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -165,7 +187,7 @@
          fhir:Reference.reference [ fhir:value "MedicationStatement/derivedfrom-mr-enca-1" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -177,7 +199,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/test2-3" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -189,7 +211,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/test2-2" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -201,7 +223,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/test2-1" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -213,7 +235,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-6" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -225,7 +247,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-5" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -237,7 +259,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-4" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -249,7 +271,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-3" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -261,7 +283,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-2" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -273,7 +295,7 @@
          fhir:Reference.reference [ fhir:value "MedicationRequest/enca-1" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -285,7 +307,7 @@
          fhir:Reference.reference [ fhir:value "MedicationDispense/meddispense-1" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -297,7 +319,7 @@
          fhir:Reference.reference [ fhir:value "MedicationAdministration/medadmin-1" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -309,7 +331,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/get-encounter-meds" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -321,7 +343,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/get-all-meds" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -333,7 +355,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/get-active-orders" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -345,7 +367,7 @@
          fhir:Reference.reference [ fhir:value "Bundle/get-active-meds" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -357,7 +379,7 @@
          fhir:Reference.reference [ fhir:value "Encounter/A" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -368,7 +390,7 @@
          fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
@@ -379,44 +401,16 @@
          fhir:Reference.reference [ fhir:value "CapabilityStatement/client" ]
        ]
      ]
-  ], [
-     fhir:index 1;
-     fhir:ImplementationGuide.package.name [ fhir:value "MedicationAdministration Profile" ];
-     fhir:ImplementationGuide.package.resource [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationadministration.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "MedicationAdministration Profile" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationadministration" ]
-       ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:ImplementationGuide.package.name [ fhir:value "MedicationDispense Profile" ];
-     fhir:ImplementationGuide.package.resource [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationdispense.html" ]
-       ];
-       fhir:ImplementationGuide.package.resource.name [ fhir:value "MedicationDispense Profile" ];
-       fhir:ImplementationGuide.package.resource.sourceReference [
-         fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationdispense" ]
-       ]
-     ]
   ];
   fhir:ImplementationGuide.page [
      fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
      fhir:ImplementationGuide.page.title [ fhir:value "US Meds Homepage" ];
      fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
   ] .
+
+<http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense> a fhir:us .
 
 <http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
 
@@ -477,10 +471,6 @@
 <http://hl7.org/fhir/us/meds/CapabilityStatement/server> a fhir:us .
 
 <http://hl7.org/fhir/us/meds/CapabilityStatement/client> a fhir:us .
-
-<http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration> a fhir:us .
-
-<http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense> a fhir:us .
 
 # - ontology header ------------------------------------------------------------
 

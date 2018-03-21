@@ -24,7 +24,6 @@
   "description": "This resource defines the expected capabilities of the US Meds Server actor when conforming to the US Meds IG and It is expected that it will be used in conjuction with the US Core CapabilityStatement. Together they describe the complete list of actual profiles, RESTful operations, and search parameters supported by US Meds Servers.  US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
   "kind": "requirements",
   "fhirVersion": "3.0.0",
-  "acceptUnknown": "extensions",
   "format": [
     "xml",
     "json"

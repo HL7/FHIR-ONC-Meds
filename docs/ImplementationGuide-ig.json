@@ -18,6 +18,28 @@
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-medicationadministration.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/medicationadministration"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-medicationdispense.html"
+            }
+          ],
+          "sourceReference": {
+            "reference": "StructureDefinition/medicationdispense"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
               "valueUri": "Patient-test2.html"
             }
           ],
@@ -370,40 +392,6 @@
           ],
           "sourceReference": {
             "reference": "CapabilityStatement/client"
-          }
-        }
-      ]
-    },
-    {
-      "name": "MedicationAdministration Profile",
-      "resource": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-medicationadministration.html"
-            }
-          ],
-          "name": "MedicationAdministration Profile",
-          "sourceReference": {
-            "reference": "StructureDefinition/medicationadministration"
-          }
-        }
-      ]
-    },
-    {
-      "name": "MedicationDispense Profile",
-      "resource": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-              "valueUri": "StructureDefinition-medicationdispense.html"
-            }
-          ],
-          "name": "MedicationDispense Profile",
-          "sourceReference": {
-            "reference": "StructureDefinition/medicationdispense"
           }
         }
       ]
