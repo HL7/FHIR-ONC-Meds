@@ -24,13 +24,19 @@ In order to support a FHIR based exchange this guide includes a mapping to the k
 #### Mappings for NCPDP Request
 {:.no_toc}
 
+This section includes the minimal mapping for the PDMP request.
 
-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a mapping for medicationRequest resource to SCRIPT 10.6
+- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6
 {% include table.md %}
 
 
+{% include img.html img="message_request.png" caption="Figure 1: Medication Request Mapping to NCPDP and FHIR" %}
+
 #### Mappings for NCPDP Response
 {:.no_toc}
+
+{% include img.html img="message_response1.png" caption="Figure 1: Medication Response Mapping to NCPDP and FHIR" %}
+{% include img.html img="message_response2.png"  %}
 
 - [Medication]({{ site.data.fhir.path }}/medication-mappings.html#script10.6):  includes a mapping for medication resource to SCRIPT 10.6
 - [MedicationDispense]({{ site.data.fhir.path }}/medicationdispense-mappings.html): NCPDP mapping does not exist
