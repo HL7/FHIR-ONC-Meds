@@ -3,7 +3,7 @@
   <id value="medicationdispense" />
   <url value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense" />
   <version value="1.0.0" />
-  <name value="MedicationDispense Profile" />
+  <name value="MedicationDispenseProfile" />
   <status value="draft" />
   <date value="2017-03-07" />
   <publisher value="Health Level Seven International Pharmacy Work Group" />

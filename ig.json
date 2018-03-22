@@ -11,6 +11,7 @@
 	},
   "version" : "3.0.1",
 	"tool": "jekyll",
+	"license" : "CC0-1.0",
 	"defaults": {
 		"StructureDefinition": {
 			"template-mappings": "sd-mappings.html",

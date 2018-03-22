@@ -3,7 +3,7 @@
   <id value="medicationadministration" />
   <url value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration" />
   <version value="1.0.0" />
-  <name value="MedicationAdministration Profile" />
+  <name value="MedicationAdministrationProfile" />
   <status value="draft" />
   <date value="2016-11-08" />
   <publisher value="Health Level Seven International (FHIR-Infrastructure)" />
