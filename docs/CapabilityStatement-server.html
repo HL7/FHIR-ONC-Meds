@@ -195,13 +195,13 @@ Formats: <a href="CapabilityStatement-server.xml.html">XML</a>, <a href="Capabil
 			</ul>
 			<h4 id="profile-interaction-summary">Profile Interaction Summary:</h4>
 			<ul>
-				<li><a name="615c920e-cd0e-4958-bbae-47a54915179e">​</a>All servers <strong>SHALL</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read</a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
-				<li><a name="b31dc8e9-6248-409d-b725-bca7fe75379c">​</a>All servers <strong>SHOULD</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread</a> and <a href="http://hl7.org/fhir/STU3/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
+				<li><a name="73c4632f-0c81-416e-ad42-27f6128f4817">​</a>All servers <strong>SHALL</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read</a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
+				<li><a name="a680cdc1-c9cc-4e0e-b426-3cd68e5c4c41">​</a>All servers <strong>SHOULD</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread</a> and <a href="http://hl7.org/fhir/STU3/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
 			</ul>
 			<p>
 				<strong>Summary of US Meds search criteria</strong>
 			</p>
-			<p><a name="cd72992f-9b50-4068-9112-263fe4bd84b8">​</a>Specific server search capabilities are described in detail below in each of the resource sections.  The MedicationAdministration, MedicationDispense, MedicationStatement and MedicationRequest resources can represent a medication using either a code or refer to the Medication resource.  When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but <em>if</em> the an external reference to Medication is used, the server <strong>SHALL</strong> support the <a href="http://hl7.org/fhir/STU3/http.html#include">
+			<p><a name="a075a168-b0b7-46f3-abaa-01c1dc378239">​</a>Specific server search capabilities are described in detail below in each of the resource sections.  The MedicationAdministration, MedicationDispense, MedicationStatement and MedicationRequest resources can represent a medication using either a code or refer to the Medication resource.  When referencing a Medication resource, the resource may be contained or an external resource. The server application can choose any one way or more than one method, but <em>if</em> the an external reference to Medication is used, the server <strong>SHALL</strong> support the <a href="http://hl7.org/fhir/STU3/http.html#include">
 					<code class="highlighter-rouge">_include</code>
 				</a> parameter for searching this element. The client application must support all methods.</p>
 			<table class="grid">
@@ -261,7 +261,7 @@ Formats: <a href="CapabilityStatement-server.xml.html">XML</a>, <a href="Capabil
 			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
 			</p>
 			<h5 id="medicationadministration">2. MedicationAdministration</h5>
-			<p><a name="c6bf4382-db88-45bd-8101-5e3cb3bcff44">​</a>Supported Profiles:  <a href="http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html">US Meds MedicationAdministration Profile</a>
+			<p><a name="a1b51f84-e665-43a1-846a-2398af82d87b">​</a>Supported Profiles:  <a href="http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html">US Meds MedicationAdministration Profile</a>
 			</p>
 			<p>Search Criteria:</p>
 			<p>A server <strong>SHALL</strong> be capable of fetching a patient’s administered medications using one of or both:</p>
@@ -297,7 +297,7 @@ Formats: <a href="CapabilityStatement-server.xml.html">XML</a>, <a href="Capabil
 				</tbody>
 			</table>
 			<h5 id="medicationdispense">3. MedicationDispense</h5>
-			<p><a name="3ab83ec9-fdae-4740-8594-282e9a19c37a">​</a>Supported Profiles:  <a href="http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html">US Meds MedicationDispense Profile</a>
+			<p><a name="ffbee54f-c9a2-4993-a5f0-75d07d9da165">​</a>Supported Profiles:  <a href="http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html">US Meds MedicationDispense Profile</a>
 			</p>
 			<p>Search Criteria:</p>
 			<p>A server <strong>SHALL</strong> be capable of returning a patient’s dispensed medications using one of or both:</p>
@@ -471,7 +471,7 @@ Formats: <a href="CapabilityStatement-server.xml.html">XML</a>, <a href="Capabil
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 08:45-0700. |
+            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 12:27-0400. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhirlicense.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

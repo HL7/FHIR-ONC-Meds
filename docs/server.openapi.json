@@ -13,6 +13,51 @@
     "description": "FHIR CapabilityStatement"
   },
   "paths": {
+    "/Medication": {
+      "summary": "manage the collection of resources of type Medication",
+      "description": "Access to services to manage the collection of all resources of type Medication",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedication",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/Medication/{rid}": {
       "summary": "Read/Write/etc resource instance of type Medication",
       "description": "Access to services to manage the state of a single resource of type Medication",
@@ -96,6 +141,51 @@
               "application/fhir+xml": {
                 "schema": {
                   "$ref": "http://build.fhir.org/Medication.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationAdministration": {
+      "summary": "manage the collection of resources of type MedicationAdministration",
+      "description": "Access to services to manage the collection of all resources of type MedicationAdministration",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationAdministration",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
                 }
               }
             }
@@ -193,6 +283,51 @@
         }
       }
     },
+    "/MedicationDispense": {
+      "summary": "manage the collection of resources of type MedicationDispense",
+      "description": "Access to services to manage the collection of all resources of type MedicationDispense",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationDispense",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/MedicationDispense/{rid}": {
       "summary": "Read/Write/etc resource instance of type MedicationDispense",
       "description": "Access to services to manage the state of a single resource of type MedicationDispense",
@@ -283,6 +418,51 @@
         }
       }
     },
+    "/MedicationRequest": {
+      "summary": "manage the collection of resources of type MedicationRequest",
+      "description": "Access to services to manage the collection of all resources of type MedicationRequest",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationRequest",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/MedicationRequest/{rid}": {
       "summary": "Read/Write/etc resource instance of type MedicationRequest",
       "description": "Access to services to manage the state of a single resource of type MedicationRequest",
@@ -366,6 +546,51 @@
               "application/fhir+xml": {
                 "schema": {
                   "$ref": "http://build.fhir.org/MedicationRequest.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationStatement": {
+      "summary": "manage the collection of resources of type MedicationStatement",
+      "description": "Access to services to manage the collection of all resources of type MedicationStatement",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationStatement",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/fhir.json.schema/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://build.fhir.org/Bundle.xsd"
                 }
               }
             }

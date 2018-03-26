@@ -304,5 +304,6 @@
   <page>
     <source value="index.html"/>
     <title value="US Meds Homepage"/>
+    <kind value="page"/>
   </page>
 </ImplementationGuide>
