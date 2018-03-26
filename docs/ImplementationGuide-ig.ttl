@@ -19,6 +19,7 @@
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Pharmacy Work Group"];
   fhir:ImplementationGuide.package [
      fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
      fhir:ImplementationGuide.package.name [ fhir:value "base" ];
      fhir:ImplementationGuide.package.resource [
        fhir:index 0;
@@ -27,6 +28,7 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationadministration.html" ]
        ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/medicationadministration" ]
@@ -38,6 +40,7 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationdispense.html" ]
        ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/medicationdispense" ]
@@ -385,6 +388,7 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CapabilityStatement-server.html" ]
        ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/meds/CapabilityStatement/server>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/server" ]
@@ -396,6 +400,7 @@
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "CapabilityStatement-client.html" ]
        ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/us/meds/CapabilityStatement/client>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/client" ]

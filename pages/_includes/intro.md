@@ -15,13 +15,21 @@
 
 ### Introduction
 
+**May 2018 Ballot** The guidance pertaining to the [Prescription Drug Monitoring Program (PDMP)](pdmp.html) is open for ballot this May 2018. The previous profiles, security, and capability statements are not open for ballot this cycle. Members of the US Realm Steering Committee are considering a full ballot US Core, including US Medications, in the near future.
+
 The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions and to record a dispensed medication.
 
+
+
 ### Scope
+
+(Not open for May 2018 ballot)
 
 This guide applies the general [Argonaut Project scope statement](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf) and adopts it specifically to enable a user to access, record, change a patient’s active medications as well as a medication history.  This covers the  [Meaningful Use 2015 §?170.302(d)](https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf) certification requirement for EHRs.
 
 #### Actors
+
+(Not open for May 2018 ballot)
 
 The following actors are defined:
 
