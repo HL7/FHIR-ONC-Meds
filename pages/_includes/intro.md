@@ -68,8 +68,7 @@ In addition, two new profiles have been defined as part of this implementation g
 
 ### Security
 
-(Not open for May 2018 ballot)
-{: #publish-box}
+(Not open for May 2018 ballot)3{: #publish-box}
 
 Refer to the US Core Implementation Guide's [General Security Considerations]({{ site.data.fhir.uscore }}security.html) page for a discussion of the security conformance requirements.
 

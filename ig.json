@@ -5,7 +5,7 @@
 		"temp": "temp",
 		"resources": ["resources",
 		"examples"],
-		"output": "docs",
+		"output": "output",
 		"pages": "pages",
 		"specification": "http://hl7.org/fhir"
 	},
@@ -188,12 +188,14 @@
 		}
 	},
 	"fixed-business-version": "1.0.0",
-	"dependencyList": [{
-		"location": "http://hl7.org/fhir/us/core/STU1/",
-		"source": "resources",
-		"name": "uscore"
-	}],
-	"extraTemplates": ["mappings"],
+  "dependencyList": [
+    {
+      "name": "uscore",
+      "location": "http://hl7.org/fhir/us/core/1.0.1/",
+      "source": "dependency/uscore-vp"
+    }
+    ],
+    	"extraTemplates": ["mappings"],
 	"source": "ig.xml",
 	"canonicalBase": "http://hl7.org/fhir/us/meds"
 }

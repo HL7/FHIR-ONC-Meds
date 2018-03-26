@@ -14,7 +14,7 @@ This section outlines the definitions, interpretations, and specific guidance fo
 
 States have approached the deployment of PDMPs in a variety of approaches...<br>
 
--ADD IMAGE from our PPT-
+-ADD IMAGE from our  PPT-
 
 In order to support a FHIR based exchange this guide includes a mapping to the key resources.
 
@@ -24,19 +24,23 @@ In order to support a FHIR based exchange this guide includes a mapping to the k
 #### Mappings for NCPDP Request
 {:.no_toc}
 
+
 This section includes the minimal mapping for the PDMP request.
 
-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6
-{% include table.md %}
+[MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6
 
 
-{% include img.html img="message_request.png" caption="Figure 1: Medication Request Mapping to NCPDP and FHIR" %}
+
+
+{% include NCPDP_Request_table.html %}
+
 
 #### Mappings for NCPDP Response
 {:.no_toc}
 
-{% include img.html img="message_response1.png" caption="Figure 1: Medication Response Mapping to NCPDP and FHIR" %}
-{% include img.html img="message_response2.png"  %}
+
+{% include NCPDP_Response_table.html %}
+
 
 - [Medication]({{ site.data.fhir.path }}/medication-mappings.html#script10.6):  includes a mapping for medication resource to SCRIPT 10.6
 - [MedicationDispense]({{ site.data.fhir.path }}/medicationdispense-mappings.html): NCPDP mapping does not exist
@@ -47,7 +51,7 @@ This section includes the minimal mapping for the PDMP request.
 
 ### PDMP Exchange Approaches
 {:.no_toc}
-The existing state PDMP exchanges primarily rely on a messaging approach. This section describes a parallel messaging approach in FHIR and outlines the initial steps for a FHIR RESTful approach. 
+The existing state PDMP exchanges primarily rely on a messaging approach. This section describes a parallel messaging approach in FHIR and outlines the initial steps for a FHIR RESTful approach.
 
 #### PDMP Exchange using FHIR Messaging
 {:.no_toc}
@@ -62,6 +66,3 @@ The existing state PDMP exchanges primarily rely on a messaging approach. This s
 - Authorization server - unlikely states will want to deploy
 - Give a couple example queries
 - Partial section build out since uncertain if folks will use -- primarily to generate discussion.
-
-
-
