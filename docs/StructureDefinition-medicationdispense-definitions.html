@@ -14,6 +14,7 @@
    <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
@@ -192,7 +193,7 @@
   <tr><td>Definition</td><td><p>The procedure that the dispense is done because of.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/procedure.html" title="http://hl7.org/fhir/StructureDefinition/Procedure">Procedure</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/procedure.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]">Procedure</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.status"> </a><b>MedicationDispense.status</b></td></tr>
   <tr><td>Definition</td><td><p>A code specifying the state of the set of dispense events.</p>
 </td></tr>
@@ -214,7 +215,7 @@
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/terminologies.html">Binding</a></td><td>Prescribable medications<br/>The codes SHALL be taken from <a href="http://hl7.org/fhir/us/core/STU1//ValueSet-us-core-medication-codes.html">Medication Clinical Drug (RxNorm)</a>; other codes may be used where these codes are not suitable</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU1//StructureDefinition-us-core-medication.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication">US  Core Medication Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU1//StructureDefinition-us-core-medication.html" title="[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication]]">US  Core Medication Profile</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. .</p>
@@ -223,7 +224,7 @@
   <tr><td>Definition</td><td><p>A link to a resource representing the person or the group to whom the medication will be given.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU1//StructureDefinition-us-core-patient.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU1//StructureDefinition-us-core-patient.html" title="[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient]]">US Core Patient Profile</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>SubstanceAdministration-&gt;subject-&gt;Patient.</p>
 </td></tr>
@@ -231,12 +232,12 @@
   <tr><td>Definition</td><td><p>The encounter or episode of care that establishes the context for this event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a> | <a href="http://hl7.org/fhir/episodeofcare.html" title="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]">Encounter</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.supportingInformation"> </a><b>MedicationDispense.supportingInformation</b></td></tr>
   <tr><td>Definition</td><td><p>Additional information that supports the medication being dispensed.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.performer"> </a><b>MedicationDispense.performer</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates who or what performed the event.  It should be assumed that the performer is the dispenser of the medication.</p>
 </td></tr>
@@ -273,18 +274,18 @@
   <tr><td>Definition</td><td><p>The device, practitioner, etc. who performed the action.  It should be assumed that the actor is the dispenser of the medication.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(http://hl7.org/fhir/us/core/StructureDefinition/us-core-pract | <a href="http://hl7.org/fhir/us/core/STU1//StructureDefinition-us-core-organization.html" title="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">US Core Organization Profile</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>([CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-pract], CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.performer.onBehalfOf"> </a><b>MedicationDispense.performer.onBehalfOf</b></td></tr>
   <tr><td>Definition</td><td><p>The organization the device or practitioner was acting on behalf of.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.authorizingPrescription"> </a><b>MedicationDispense.authorizingPrescription</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates the medication order that is being dispensed against.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/medicationrequest.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest]]">MedicationRequest</a>)</td></tr>
   <tr><td>Comments</td><td><p>Maps to basedOn in Event logical model.</p>
 </td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.type"> </a><b>MedicationDispense.type</b></td></tr>
@@ -318,12 +319,12 @@
   <tr><td>Definition</td><td><p>Identification of the facility/location where the medication was shipped to, as part of the dispense event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/location.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]">Location</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.receiver"> </a><b>MedicationDispense.receiver</b></td></tr>
   <tr><td>Definition</td><td><p>Identifies the person who picked up the medication.  This will usually be a patient or their caregiver, but some cases exist where it can be a healthcare professional.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]">Patient</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.note"> </a><b>MedicationDispense.note</b></td></tr>
   <tr><td>Definition</td><td><p>Extra information about the dispense that could not be conveyed in the other attributes.</p>
 </td></tr>
@@ -388,12 +389,12 @@ The pharmacist reviews the medication order prior to dispense and updates the do
   <tr><td>Definition</td><td><p>The person or organization that has primary responsibility for the substitution.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]">Practitioner</a>)</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.detectedIssue"> </a><b>MedicationDispense.detectedIssue</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction, duplicate therapy, dosage alert etc.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/detectedissue.html" title="http://hl7.org/fhir/StructureDefinition/DetectedIssue">DetectedIssue</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/detectedissue.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/DetectedIssue]]">DetectedIssue</a>)</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Contraindication, Drug Utilization Review (DUR), Alert</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.notDone"> </a><b>MedicationDispense.notDone</b></td></tr>
   <tr><td>Definition</td><td><p>True if the dispense was not performed for some reason.</p>
@@ -404,13 +405,13 @@ The pharmacist reviews the medication order prior to dispense and updates the do
   <tr><td>Definition</td><td><p>Indicates the reason why a dispense was not performed.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/detectedissue.html" title="http://hl7.org/fhir/StructureDefinition/DetectedIssue">DetectedIssue</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/detectedissue.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/DetectedIssue]]">DetectedIssue</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td colspan="2" class="structure"><a name="MedicationDispense.eventHistory"> </a><b>MedicationDispense.eventHistory</b></td></tr>
   <tr><td>Definition</td><td><p>A summary of the events of interest that have occurred, such as when the dispense was verified.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/provenance.html" title="http://hl7.org/fhir/StructureDefinition/Provenance">Provenance</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/provenance.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Provenance]]">Provenance</a>)</td></tr>
   <tr><td>Comments</td><td><p>This may not include provenances for all versions of the request – only those deemed “relevant” or important. This SHALL NOT include the Provenance associated with this current version of the resource. (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update. Until then, it can be queried directly as the Provenance that points to this version using _revinclude All Provenances should have some historical version of this Request as their subject.).</p>
 </td></tr>
 </table>
@@ -437,7 +438,7 @@ The pharmacist reviews the medication order prior to dispense and updates the do
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 10:13-0400. |
+            US Meds Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 08:45-0700. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhirlicense.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -5,7 +5,7 @@
 		"temp": "temp",
 		"resources": ["resources",
 		"examples"],
-		"output": "output",
+		"output": "docs",
 		"pages": "pages",
 		"specification": "http://hl7.org/fhir"
 	},

@@ -409,8 +409,7 @@
   ];
   fhir:ImplementationGuide.page [
      fhir:ImplementationGuide.page.source [ fhir:value "index.html" ];
-     fhir:ImplementationGuide.page.title [ fhir:value "US Meds Homepage" ];
-     fhir:ImplementationGuide.page.kind [ fhir:value "page" ]
+     fhir:ImplementationGuide.page.title [ fhir:value "US Meds Homepage" ]
   ] .
 
 <http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration> a fhir:us .

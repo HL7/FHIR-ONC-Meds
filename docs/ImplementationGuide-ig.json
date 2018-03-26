@@ -404,7 +404,6 @@
   ],
   "page": {
     "source": "index.html",
-    "title": "US Meds Homepage",
-    "kind": "page"
+    "title": "US Meds Homepage"
   }
 }
