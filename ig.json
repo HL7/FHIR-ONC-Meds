@@ -144,7 +144,9 @@
 		},
 		"StructureDefinition/medicationdispense": {
 			"base": "StructureDefinition-medicationdispense.html",
-			"defns": "StructureDefinition-medicationdispense-definitions.html"
+			"defns": "StructureDefinition-medicationdispense-definitions.html",
+      "source": "StructureDefinition-medicationdispense.xml"
+
 		},
 		"MedicationRequest/test2-1": {
 			"base": "MedicationRequest-test2-1.html",
@@ -164,7 +166,9 @@
 		},
 		"StructureDefinition/medicationadministration": {
 			"base": "StructureDefinition-medicationadministration.html",
-			"defns": "StructureDefinition-medicationadministration-definitions.html"
+			"defns": "StructureDefinition-medicationadministration-definitions.html",
+      "source": "StructureDefinition-medicationadministration.xml"
+
 		},
 		"MedicationRequest/enca-4": {
 			"base": "MedicationRequest-enca-4.html",
