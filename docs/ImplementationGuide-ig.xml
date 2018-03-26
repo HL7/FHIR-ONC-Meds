@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>US Meds</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/us/meds/ImplementationGuide/ig</pre></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
+  <name value="US Meds"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 Pharmacy Work Group"/>
+  <package id="p1">
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-medicationadministration.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/medicationadministration"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-medicationdispense.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/medicationdispense"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Patient-test2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/test2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-test2-2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-test2-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-test2-3.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-test2-2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-test2-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-6.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-5.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-4.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-3.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationStatement-derivedfrom-mr-enca-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-test2-3.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-test2-2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-test2-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/test2-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-6.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-6"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-5.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-5"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-4.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-4"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-3.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-2.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationRequest-enca-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationRequest/enca-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationDispense-meddispense-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationDispense/meddispense-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MedicationAdministration-medadmin-1.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="MedicationAdministration/medadmin-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-get-encounter-meds.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-encounter-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-get-all-meds.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-all-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-get-active-orders.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-active-orders"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-get-active-meds.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/get-active-meds"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Encounter-A.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Encounter/A"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-server.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/server"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="CapabilityStatement-client.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="CapabilityStatement/client"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="US Meds Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>
