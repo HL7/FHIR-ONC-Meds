@@ -418,3 +418,19 @@ text-align: baseline;
 font-size: 1em;
 
 }
+
+/* ----------not open styling------*/
+
+
+#not-open {
+  list-style: none;
+  padding: 0;
+}
+
+p#not-open {
+  background-color: pink;
+  border:1px solid maroon;
+  padding: 5px;s
+}
+
+}

@@ -29,6 +29,8 @@ The following actors are defined:
 - US Meds Responder: A product that responds to the data access request providing patient medication data. This can be thought of as the server in a client-server interaction and typically is part of an EHRs.
 
 #### Use Cases
+<span class="glyphicon glyphicon-exclamation-sign"></span> (Not open for May 2018 ballot)
+{: #not-open}
 
 The following specific uses case are defined:
 
@@ -41,6 +43,8 @@ A detailed description and guidance for each is given in the [General Guidance](
 
 ###  Profiles
 
+*(Not open for May 2018 ballot)*{: style="color: red"}.
+
 This IG uses the following US Core Profiles from the US Core Implementation Guide:
 
 - [US Core Medication]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medication.html)
@@ -51,9 +55,13 @@ In addition, two new profiles have been defined as part of this implementation g
 
 {% include list-simple-profiles.xhtml %}
 
+
   Each profile defines the minimum mandatory elements, extensions and terminology requirements that MUST be present. Requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a logical view of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples. In addition each profile has a “Quick Start” section, which is intended as an implementer friendly overview of the required search and read operations.
 
 ### Security
+
+(Not open for May 2018 ballot)
+{: #publish-box}
 
 Refer to the US Core Implementation Guide's [General Security Considerations]({{ site.data.fhir.uscore }}security.html) page for a discussion of the security conformance requirements.
 
