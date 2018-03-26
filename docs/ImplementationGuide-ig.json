@@ -12,6 +12,7 @@
   "publisher": "HL7 Pharmacy Work Group",
   "package": [
     {
+      "id": "p1",
       "name": "base",
       "resource": [
         {
@@ -21,6 +22,7 @@
               "valueUri": "StructureDefinition-medicationadministration.html"
             }
           ],
+          "example": false,
           "sourceReference": {
             "reference": "StructureDefinition/medicationadministration"
           }
@@ -32,6 +34,7 @@
               "valueUri": "StructureDefinition-medicationdispense.html"
             }
           ],
+          "example": false,
           "sourceReference": {
             "reference": "StructureDefinition/medicationdispense"
           }
@@ -379,6 +382,7 @@
               "valueUri": "CapabilityStatement-server.html"
             }
           ],
+          "example": false,
           "sourceReference": {
             "reference": "CapabilityStatement/server"
           }
@@ -390,6 +394,7 @@
               "valueUri": "CapabilityStatement-client.html"
             }
           ],
+          "example": false,
           "sourceReference": {
             "reference": "CapabilityStatement/client"
           }

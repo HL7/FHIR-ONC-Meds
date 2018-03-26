@@ -10,12 +10,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Pharmacy Work Group"/>
-  <package>
+  <package id="p1">
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-medicationadministration.html"/>
       </extension>
+      <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/medicationadministration"/>
       </sourceReference>
@@ -24,6 +25,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-medicationdispense.html"/>
       </extension>
+      <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/medicationdispense"/>
       </sourceReference>
@@ -284,6 +286,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-server.html"/>
       </extension>
+      <example value="false"/>
       <sourceReference>
         <reference value="CapabilityStatement/server"/>
       </sourceReference>
@@ -292,6 +295,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="CapabilityStatement-client.html"/>
       </extension>
+      <example value="false"/>
       <sourceReference>
         <reference value="CapabilityStatement/client"/>
       </sourceReference>

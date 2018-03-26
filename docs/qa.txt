@@ -1,41 +1,41 @@
 ﻿US Meds : Validation Results
 =========================================
 
-err = 90, warn = 82, info = 632
-Generated Wed Mar 21 15:35:08 EDT 2018. FHIR version 3.2.0 for 3.0.1
+err = 2, warn = 82, info = 632
+Generated Mon Mar 26 10:17:53 EDT 2018. FHIR version 3.2.0 for 3.0.1
 
- Build Errors : 17 / 0
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-1 : 1 / 8
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-2 : 1 / 8
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-3 : 1 / 19
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-4 : 1 / 8
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-5 : 2 / 12
- C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-6 : 3 / 13
+ Build Errors : 11 / 0
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-1 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-2 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-3 : 0 / 19
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-4 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-5 : 0 / 12
+ C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-6 : 1 / 13
  C:\FHIR-ONC-Meds\examples\encounter-a : 0 / 0
- C:\FHIR-ONC-Meds\examples\get-active-meds-bundle : 3 / 31
- C:\FHIR-ONC-Meds\examples\get-active-orders-bundle : 2 / 19
- C:\FHIR-ONC-Meds\examples\get-all-meds-bundle : 3 / 31
- C:\FHIR-ONC-Meds\examples\get-encounter-meds-bundle : 8 / 59
+ C:\FHIR-ONC-Meds\examples\get-active-meds-bundle : 0 / 31
+ C:\FHIR-ONC-Meds\examples\get-active-orders-bundle : 0 / 19
+ C:\FHIR-ONC-Meds\examples\get-all-meds-bundle : 0 / 31
+ C:\FHIR-ONC-Meds\examples\get-encounter-meds-bundle : 0 / 59
  C:\FHIR-ONC-Meds\examples\medadmin-1 : 0 / 6
  C:\FHIR-ONC-Meds\examples\meddispense-1 : 0 / 4
- C:\FHIR-ONC-Meds\examples\medicationrequest-test2-1 : 1 / 10
- C:\FHIR-ONC-Meds\examples\medicationrequest-test2-2 : 1 / 9
- C:\FHIR-ONC-Meds\examples\medicationrequest-test2-3 : 1 / 10
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-1 : 1 / 8
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-2 : 1 / 8
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-3 : 1 / 19
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-4 : 1 / 8
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-5 : 2 / 8
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-6 : 2 / 8
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-1 : 1 / 7
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-2 : 1 / 6
- C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-3 : 1 / 7
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-1 : 0 / 10
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-2 : 0 / 9
+ C:\FHIR-ONC-Meds\examples\medicationrequest-test2-3 : 0 / 10
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-1 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-2 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-3 : 0 / 19
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-4 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-5 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-6 : 0 / 8
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-1 : 0 / 7
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-2 : 0 / 6
+ C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-3 : 0 / 7
  C:\FHIR-ONC-Meds\examples\medicationstatement-test2-1 : 0 / 5
  C:\FHIR-ONC-Meds\examples\medicationstatement-test2-2 : 0 / 6
- C:\FHIR-ONC-Meds\examples\test2-patient : 2 / 20
+ C:\FHIR-ONC-Meds\examples\test2-patient : 0 / 20
  C:\FHIR-ONC-Meds\resources\capabilitystatement-client : 0 / 0
  C:\FHIR-ONC-Meds\resources\capabilitystatement-server : 0 / 0
- C:\FHIR-ONC-Meds\resources\ig : 4 / 0
+ C:\FHIR-ONC-Meds\resources\ig : 0 / 0
  C:\FHIR-ONC-Meds\resources\structuredefinition-medicationadministration : 0 / 0
  C:\FHIR-ONC-Meds\resources\structuredefinition-medicationdispense : 0 / 0
 </table>
@@ -47,19 +47,12 @@ ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/d
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 208, column 573: The link 'http://hl7.org/fhir/STU3/http.html#include' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 268, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-server.html#/html/head/body/div/div/div/div/div/div/p/a at Line 304, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 306, column 1691: The link 'http://hl7.org/fhir/v3/et/v3-ActPharmacySupplyType/index.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 320, column 1772: The link 'http://hl7.org/fhir/v3/et/v3-ActSubstanceAdminSubstitutionCode/index.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 321, column 1738: The link 'http://hl7.org/fhir/v3/et/v3-SubstanceAdminSubstitutionReason/index.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 489, column 1691: The link 'http://hl7.org/fhir/v3/et/v3-ActPharmacySupplyType/index.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 503, column 1772: The link 'http://hl7.org/fhir/v3/et/v3-ActSubstanceAdminSubstitutionCode/index.html' cannot be resolved
-ERROR: C:\FHIR-ONC-Meds\output\StructureDefinition-medicationdispense.html#/html/head/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 504, column 1738: The link 'http://hl7.org/fhir/v3/et/v3-SubstanceAdminSubstitutionReason/index.html' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 155, column 193: The link 'hl7.org/fhir/us/meds/STU1/capstatements.html#conformance-requirements-for-the-us-meds-server' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 169, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\CapabilityStatement-client.html#/html/head/body/div/div/div/div/div/div/p/a at Line 182, column 29: The link 'http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationdispense.html' cannot be resolved
 ERROR: C:\FHIR-ONC-Meds\output\index.html#/html/head/body/div/div/div/div/div/p/a at Line 111, column 200: The link 'http://hl7.org/fhir/us/meds/history.html' cannot be resolved
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-1.xml ==
-WARNING: MedicationRequest/enca-1: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/enca-1: MedicationRequest.reasonCode.coding: null
+WARNING: MedicationRequest/enca-1: MedicationRequest.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationRequest/enca-1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-1: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -68,8 +61,7 @@ INFORMATION: MedicationRequest/enca-1: MedicationRequest.context[1]: Instance in
 INFORMATION: MedicationRequest/enca-1: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-1: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-2.xml ==
-WARNING: MedicationRequest/enca-2: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/enca-2: MedicationRequest.reasonCode.coding: null
+WARNING: MedicationRequest/enca-2: MedicationRequest.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationRequest/enca-2: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-2: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-2: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -79,7 +71,6 @@ INFORMATION: MedicationRequest/enca-2: MedicationRequest.reasonCode[1]: Instance
 INFORMATION: MedicationRequest/enca-2: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-3.xml ==
 WARNING: MedicationRequest/enca-3: MedicationRequest.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
-ERROR: MedicationRequest/enca-3: MedicationRequest.reasonCode.coding: null
 INFORMATION: MedicationRequest/enca-3: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-3: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-3: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -99,8 +90,7 @@ INFORMATION: MedicationRequest/enca-3: MedicationRequest.context[1]: Instance in
 INFORMATION: MedicationRequest/enca-3: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-3: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-4.xml ==
-WARNING: MedicationRequest/enca-4: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/enca-4: MedicationRequest.reasonCode.coding: null
+WARNING: MedicationRequest/enca-4: MedicationRequest.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
 INFORMATION: MedicationRequest/enca-4: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-4: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-4: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -109,9 +99,7 @@ INFORMATION: MedicationRequest/enca-4: MedicationRequest.context[1]: Instance in
 INFORMATION: MedicationRequest/enca-4: MedicationRequest.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-4: MedicationRequest.dosageInstruction[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-5.xml ==
-WARNING: MedicationRequest/enca-5: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/enca-5: MedicationRequest.reasonCode.coding: null
-ERROR: MedicationRequest/enca-5: MedicationRequest.dosageInstruction.additionalInstruction.coding: null
+WARNING: MedicationRequest/enca-5: MedicationRequest.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
 INFORMATION: MedicationRequest/enca-5: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-5: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-5: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -124,9 +112,7 @@ INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].vali
 INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-5: MedicationRequest.dispenseRequest[1].expectedSupplyDuration[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\MedicationRequest-enca-6.xml ==
-WARNING: MedicationRequest/enca-6: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/enca-6: MedicationRequest.reasonCode.coding: null
-ERROR: MedicationRequest/enca-6: MedicationRequest.dosageInstruction.additionalInstruction.coding: null
+WARNING: MedicationRequest/enca-6: MedicationRequest.medicationCodeableConcept: No Message returned
 ERROR: MedicationRequest/enca-6: MedicationRequest.dispenseRequest.numberOfRepeatsAllowed: value is less than permitted minimum value of 1
 INFORMATION: MedicationRequest/enca-6: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/enca-6: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -142,14 +128,11 @@ INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].quan
 INFORMATION: MedicationRequest/enca-6: MedicationRequest.dispenseRequest[1].expectedSupplyDuration[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\encounter-a.xml ==
 == C:\FHIR-ONC-Meds\examples\get-active-meds-bundle.xml ==
-WARNING: Bundle/get-active-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-active-meds: Bundle.entry[1].resource.reasonCode.coding: null
-WARNING: Bundle/get-active-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-active-meds: Bundle.entry[2].resource.dosage.route.coding: null
-WARNING: Bundle/get-active-meds: Bundle.entry[3].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-active-meds: Bundle.entry[3].resource.reasonCode.coding: null
-WARNING: Bundle/get-active-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-WARNING: Bundle/get-active-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: Bundle/get-active-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-active-meds: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+WARNING: Bundle/get-active-meds: Bundle.entry[3].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-active-meds: Bundle.entry[4].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-active-meds: Bundle.entry[5].resource.medicationCodeableConcept: No Message returned
 INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -177,10 +160,8 @@ INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].text[1]: Instan
 INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-meds: Bundle.entry[5].resource[1].note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\get-active-orders-bundle.json ==
-WARNING: Bundle/get-active-orders: Bundle.entry[1].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-active-orders: Bundle.entry[1].resource.reasonCode.coding: null
-WARNING: Bundle/get-active-orders: Bundle.entry[2].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-active-orders: Bundle.entry[2].resource.dosageInstruction.route.coding: null
+WARNING: Bundle/get-active-orders: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-active-orders: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
 INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-orders: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -199,14 +180,11 @@ INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseReque
 INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-active-orders: Bundle.entry[2].resource[1].dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\get-all-meds-bundle.xml ==
-WARNING: Bundle/get-all-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-all-meds: Bundle.entry[1].resource.reasonCode.coding: null
-WARNING: Bundle/get-all-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-all-meds: Bundle.entry[2].resource.dosage.route.coding: null
-WARNING: Bundle/get-all-meds: Bundle.entry[3].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-all-meds: Bundle.entry[3].resource.reasonCode.coding: null
-WARNING: Bundle/get-all-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-WARNING: Bundle/get-all-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: Bundle/get-all-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-all-meds: Bundle.entry[2].resource.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
+WARNING: Bundle/get-all-meds: Bundle.entry[3].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-all-meds: Bundle.entry[4].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-all-meds: Bundle.entry[5].resource.medicationCodeableConcept: No Message returned
 INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-all-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -234,20 +212,12 @@ INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].text[1]: Instance 
 INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-all-meds: Bundle.entry[5].resource[1].note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\get-encounter-meds-bundle.xml ==
-WARNING: Bundle/get-encounter-meds: Bundle.entry[1].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-encounter-meds: Bundle.entry[1].resource.reasonCode.coding: null
-WARNING: Bundle/get-encounter-meds: Bundle.entry[2].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-encounter-meds: Bundle.entry[2].resource.reasonCode.coding: null
+WARNING: Bundle/get-encounter-meds: Bundle.entry[1].resource.medicationCodeableConcept: No Message returned
+WARNING: Bundle/get-encounter-meds: Bundle.entry[2].resource.medicationCodeableConcept: No Message returned
 WARNING: Bundle/get-encounter-meds: Bundle.entry[3].resource.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
-ERROR: Bundle/get-encounter-meds: Bundle.entry[3].resource.reasonCode.coding: null
-WARNING: Bundle/get-encounter-meds: Bundle.entry[4].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-encounter-meds: Bundle.entry[4].resource.reasonCode.coding: null
-WARNING: Bundle/get-encounter-meds: Bundle.entry[5].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-encounter-meds: Bundle.entry[5].resource.reasonCode.coding: null
-ERROR: Bundle/get-encounter-meds: Bundle.entry[5].resource.dosage.additionalInstruction.coding: null
-WARNING: Bundle/get-encounter-meds: Bundle.entry[6].resource.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: Bundle/get-encounter-meds: Bundle.entry[6].resource.reasonCode.coding: null
-ERROR: Bundle/get-encounter-meds: Bundle.entry[6].resource.dosage.additionalInstruction.coding: null
+WARNING: Bundle/get-encounter-meds: Bundle.entry[4].resource.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
+WARNING: Bundle/get-encounter-meds: Bundle.entry[5].resource.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
+WARNING: Bundle/get-encounter-meds: Bundle.entry[6].resource.medicationCodeableConcept: No Message returned
 INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-encounter-meds: Bundle.entry[1].resource[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -302,20 +272,19 @@ INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].informationS
 INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Bundle/get-encounter-meds: Bundle.entry[6].resource[1].dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medadmin-1.xml ==
-WARNING: MedicationAdministration/medadmin-1: MedicationAdministration.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: MedicationAdministration/medadmin-1: MedicationAdministration.medicationCodeableConcept: The display "Lantus 100 unit/ml injectable solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}285018
 INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.dosage[1].text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationAdministration/medadmin-1: MedicationAdministration.dosage[1].dose[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\meddispense-1.xml ==
-WARNING: MedicationDispense/meddispense-1: MedicationDispense.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: MedicationDispense/meddispense-1: MedicationDispense.medicationCodeableConcept: The display "Lantus 100 unit/ml injectable solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}285018
 INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationDispense/meddispense-1: MedicationDispense.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationrequest-test2-1.json ==
-WARNING: MedicationRequest/test2-1: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/test2-1: MedicationRequest.reasonCode.coding: null
+WARNING: MedicationRequest/test2-1: MedicationRequest.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationRequest/test2-1: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-1: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-1: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -326,8 +295,7 @@ INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1]: In
 INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-1: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationrequest-test2-2.json ==
-WARNING: MedicationRequest/test2-2: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/test2-2: MedicationRequest.dosageInstruction.route.coding: null
+WARNING: MedicationRequest/test2-2: MedicationRequest.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
 INFORMATION: MedicationRequest/test2-2: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-2: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-2: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -337,8 +305,7 @@ INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1]: In
 INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-2: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationrequest-test2-3.json ==
-WARNING: MedicationRequest/test2-3: MedicationRequest.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationRequest/test2-3: MedicationRequest.reasonCode.coding: null
+WARNING: MedicationRequest/test2-3: MedicationRequest.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationRequest/test2-3: MedicationRequest.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-3: MedicationRequest.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-3: MedicationRequest.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -349,8 +316,7 @@ INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1]: In
 INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1].numberOfRepeatsAllowed[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationRequest/test2-3: MedicationRequest.dispenseRequest[1].quantity[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-1.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.reasonCode.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -359,8 +325,7 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.info
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-1: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-2.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.reasonCode.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -370,7 +335,6 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.reas
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-2: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-3.xml ==
 WARNING: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.contained.code: No code provided, and a code should be provided from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes
-ERROR: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.reasonCode.coding: null
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -390,8 +354,7 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.info
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-3: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-4.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.reasonCode.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.medicationCodeableConcept: None of the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes (http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes, and a code should come from this value set unless it has no suitable code) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#860601)
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -400,9 +363,7 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.info
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-4: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-5.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.reasonCode.coding: null
-ERROR: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.dosage.additionalInstruction.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.medicationCodeableConcept: The display "Zithromax 250 MG Oral Tablet" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}212446
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -411,9 +372,7 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.info
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-5: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-enca-6.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.reasonCode.coding: null
-ERROR: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.dosage.additionalInstruction.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -422,8 +381,7 @@ INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.info
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-enca-6: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-1.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.reasonCode.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -431,16 +389,14 @@ INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.inf
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-1: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-2.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.dosage.route.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.medicationCodeableConcept: The display "Humulin R (insulin regular, human) U100  100units/ml inj solution" is not a valid display for the code {http://www.nlm.nih.gov/research/umls/rxnorm}311036
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-2: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-derivedfrom-mr-test2-3.xml ==
-WARNING: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
-ERROR: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.reasonCode.coding: null
+WARNING: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -448,21 +404,19 @@ INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.inf
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.reasonCode[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/derivedfrom-mr-test2-3: MedicationStatement.dosage[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-test2-1.json ==
-WARNING: MedicationStatement/test2-1: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: MedicationStatement/test2-1: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/test2-1: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-1: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-1: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-1: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\medicationstatement-test2-2.json ==
-WARNING: MedicationStatement/test2-2: MedicationStatement.medicationCodeableConcept: Could not confirm that the codes provided are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes and a code should come from this value set unless it has no suitable code (class = NOSERVICE)
+WARNING: MedicationStatement/test2-2: MedicationStatement.medicationCodeableConcept: No Message returned
 INFORMATION: MedicationStatement/test2-2: MedicationStatement.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-2: MedicationStatement.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-2: MedicationStatement.text[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-2: MedicationStatement.informationSource[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: MedicationStatement/test2-2: MedicationStatement.note[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 == C:\FHIR-ONC-Meds\examples\test2-patient.xml ==
-ERROR: Patient/test2: Patient.extension[1][url='http://hl7.org/fhir/us/core/StructureDefinition/us-core-race']: The Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' definition is for a complex extension, so it cannot contain a value
-ERROR: Patient/test2: Patient.extension[2][url='http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity']: The Extension 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' definition is for a complex extension, so it cannot contain a value
 WARNING: Patient/test2: Patient.communication.language: ValueSet null not found
 INFORMATION: Patient/test2: Patient.id[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
 INFORMATION: Patient/test2: Patient.meta[1]: Instance includes element that is not marked as 'mustSupport' and was validated against profiles declaring mustSupport=true
@@ -486,9 +440,5 @@ INFORMATION: Patient/test2: Patient.communication[1].preferred[1]: Instance incl
 == C:\FHIR-ONC-Meds\resources\capabilitystatement-client.xml ==
 == C:\FHIR-ONC-Meds\resources\capabilitystatement-server.xml ==
 == C:\FHIR-ONC-Meds\resources\ig.xml ==
-ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[1]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[1].example': minimum required = 1, but only found 0
-ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[2]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[2].example': minimum required = 1, but only found 0
-ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[31]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[31].example': minimum required = 1, but only found 0
-ERROR: ImplementationGuide/ig: ImplementationGuide.package.resource[32]: Profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide, Element 'ImplementationGuide.package.resource[32].example': minimum required = 1, but only found 0
-== C:\FHIR-ONC-Meds\resources\StructureDefinition-medicationadministration.xml ==
-== C:\FHIR-ONC-Meds\resources\StructureDefinition-medicationdispense.xml ==
+== C:\FHIR-ONC-Meds\resources\structuredefinition-medicationadministration.xml ==
+== C:\FHIR-ONC-Meds\resources\structuredefinition-medicationdispense.xml ==
