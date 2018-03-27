@@ -9,7 +9,7 @@
 
 <!-- end TOC -->
 
-This section outlines the definitions, interpretations, and specific guidance for using FHIR with a state PDMP. Prescription Drug Monitoring Programs are being deployed in every state in the US to address prescription drug misuse, abuse, and diversion. They provide critical health information to physicians and other health care providers about an individual’s history of controlled substance prescriptions.  The current connections from PDMPs primarily utilize NCPDP, ASAP, and NIEM. The guidance provided here is intended to supplement, not replace, existing exchanges using other standards.
+This section outlines the definitions, interpretations, and specific guidance for using FHIR with a state PDMP. Prescription Drug Monitoring Programs are being deployed in every state in the US to address prescription drug misuse, abuse, and diversion. They provide critical health information to physicians and other health care providers about an individual’s history of controlled substance prescriptions. While there is not one single PDMP specification, the Centers for Disease Control and Prevention provide background information on [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html). The current connections to PDMPs primarily utilize NCPDP, ASAP, and NIEM. The guidance provided here is intended to supplement, not replace, existing exchanges using other standards.
 
 
 States have approached the deployment of PDMPs in a variety of approaches...<br>
@@ -24,11 +24,9 @@ In order to support a FHIR based exchange this guide includes a mapping to the k
 #### Mappings for NCPDP Request
 {:.no_toc}
 
+This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP.
 
-This section includes the minimal mapping for the PDMP request.
-
-[MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6
-
+<!-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6 -->
 
 
 
@@ -38,6 +36,7 @@ This section includes the minimal mapping for the PDMP request.
 #### Mappings for NCPDP Response
 {:.no_toc}
 
+This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR.
 
 {% include NCPDP_Response_table.html %}
 
