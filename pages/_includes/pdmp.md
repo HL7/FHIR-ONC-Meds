@@ -67,3 +67,5 @@ This section includes the minimal mapping for the PDMP request from an EHR to a 
 #### Mappings for PMIX Response
 
 This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR.
+
+{% include PMIX_Response_table.html %}
