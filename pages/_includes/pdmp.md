@@ -19,35 +19,6 @@ States have approached the deployment of PDMPs in a variety of approaches...<br>
 In order to support a FHIR based exchange this guide includes a mapping to the key resources.
 
 
-### FHIR Mapping to Existing PDMP Exchanges
-
-#### Mappings for NCPDP Request
-{:.no_toc}
-
-This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP.
-
-<!-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6 -->
-
-
-
-{% include NCPDP_Request_table.html %}
-
-
-#### Mappings for NCPDP Response
-{:.no_toc}
-
-This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR.
-
-{% include NCPDP_Response_table.html %}
-
-
-- [Medication]({{ site.data.fhir.path }}/medication-mappings.html#script10.6):  includes a mapping for medication resource to SCRIPT 10.6
-- [MedicationDispense]({{ site.data.fhir.path }}/medicationdispense-mappings.html): NCPDP mapping does not exist
-- [MedicationAdministration]({{ site.data.fhir.path }}/medicationadministration-mappings.html): NCPDP mapping does not exist
-- [MedicationStatement]({{ site.data.fhir.path }}/medicationstatement.html): NCPDP mapping does not exist
-
-
-
 ### PDMP Exchange Approaches
 {:.no_toc}
 The existing state PDMP exchanges primarily rely on a messaging approach. This section describes a parallel messaging approach in FHIR and outlines the initial steps for a FHIR RESTful approach.
@@ -65,3 +36,34 @@ The existing state PDMP exchanges primarily rely on a messaging approach. This s
 - Authorization server - unlikely states will want to deploy
 - Give a couple example queries
 - Partial section build out since uncertain if folks will use -- primarily to generate discussion.
+
+
+### FHIR Mapping to Existing PDMP Exchanges
+
+#### Mappings for NCPDP Request
+{:.no_toc}
+
+This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP.
+
+<!-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6 -->
+
+
+{% include NCPDP_Request_table.html %}
+
+
+#### Mappings for NCPDP Response
+{:.no_toc}
+
+This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR.
+
+{% include NCPDP_Response_table.html %}
+
+#### Mappings for PMIX Request
+
+This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP.
+
+{% include PMIX_Request_table.html %}
+
+#### Mappings for PMIX Response
+
+This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR.
