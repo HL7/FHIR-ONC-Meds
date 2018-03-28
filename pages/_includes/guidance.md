@@ -2,6 +2,8 @@
 ## Definitions, Interpretations and Requirements common to all US-Meds actors
 {:.no_toc}
 
+Not open for May 2018 ballot
+{: #publish-box}
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 * Do not remove this line (it will not be displayed)

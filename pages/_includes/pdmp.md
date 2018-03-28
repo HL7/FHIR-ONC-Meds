@@ -12,7 +12,7 @@
 
 ### Introduction
 
-In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances. Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion also commonly known as Opioid abuse. In order to reduce opioid absue, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing any controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. 
+In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances. Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion also commonly known as Opioid abuse. In order to reduce opioid absue, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing any controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. For general background on state PDMPs, see the Centers for Disease Control and Prevention [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html).
 
 
 ### Scope 
@@ -58,7 +58,7 @@ The FHIR standard provides a rich set of [search mechanisms](http://hl7.org/fhir
 
 The following is an example of how search parameters will be used by a PDMP Requestor to retrieve PDMP data from a PDMP Responder. 
 
-GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31
+`GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31`
 
 The above API will fetch all MedicationRequests for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015.
 
@@ -69,7 +69,7 @@ Also as part of the Search API one can specify to the server to include addition
 
 The FHIR standard also provides APIs that resemble messaging paradigm similar to HL7 v2. These are part of the [FHIR Messaging APIs](http://hl7.org/fhir/messaging.html). A PDMP Requestor can request prescription history for a patient by invoking the [$process-message](http://hl7.org/fhir/messageheader-operations.html) on the base URL as follows:
 
-POST [base-url]/$process-message
+`POST [base-url]/$process-message`
 
 **NOTE**: FHIR Messaging APIs will require the use of the POST operation even to access data.
 
@@ -296,6 +296,7 @@ The PDMP Requestor **SHALL** invoke the Search operation on the PDMP Responder i
 	* dispenseRequest.validityPeriod - To specify the date range for the PDMP data retrieval
 	
 The PDMP Requestor **SHALL** include the following _include parameters for the MedicationRequest Search operations
+
 * _include=MedicationRequest:subject - Returns the Patient Resource information
 * _include:recurse=MedicationRequest:requester - Returns the Practitioner Resource information and Organization information
 * _include=MedicationRequest:medication - Returns the Medication Resource information
