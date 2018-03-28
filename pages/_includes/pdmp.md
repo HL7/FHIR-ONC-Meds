@@ -171,7 +171,7 @@ The section describes the expected capabilities of the PDMP Responder actor whic
 The PDMP Responder **SHALL**:
 
 * Support the US Core Patient, US Core Practitioner, US Core Organization resource profiles.
-* Support the US Core MedicationRequest Profile.
+* Support the US Meds MedicationRequest and MedicationDispense Profile.
 * Implement the RESTful behavior according to the FHIR specification.
 	* which includes returning the following response classes:
 		* (Status 200): successful operation
@@ -188,7 +188,6 @@ The PDMP Responder **SHOULD**:
 * Support the following US Core and US Meds resource profiles:
 	* US Core Medication
 	* US Meds MedicationAdministration
-	* US Meds MedicationDispense
 
 * Support xml resource formats for all US Meds interactions.
 * Identify the US Core profile(s) and US Meds profiles supported as part of the FHIR meta.profile attribute for each instance.
@@ -234,7 +233,30 @@ The following is an example of the query.
 
 `GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationRequest:subject&_include:recurse=MedicationRequest:requester&_include=MedicationRequest:medication`
 
-The above API will fetch all MedicationRequests for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
+The above API will fetch all MedicationRequest resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
+
+All other information required to authenticate and authorize a PDMP Requestor is captured as part of registering the PDMP Requestor following the SMART Backend Services Authorization Guide. 
+
+The PDMP Responder **SHALL** support the following search parameters and combination for the MedicationDispense resource
+
+* Chained Search parameters
+	* subject:Patient.name.given - Patient's first name
+	* subject:Patient.name.family - Patient's family name
+	* subject:Patient.birthdate - Patient's birth date
+	* authorizingPrescription.dispenseRequest.validityPeriod - To specify the date range for the PDMP data retrieval
+	
+The PDMP Responder **SHALL** support the following _include parameters for the MedicationDispense Search operations
+
+* _include=MedicationDispense:subject - Returns the Patient Resource information
+* _include:recurse=MedicationDispense:authorizingPrescription - Returns the MedicationRequest, Practitioner Resource information and Organization information
+* _include=MedicationDispense:medication - Returns the Medication Resource information
+
+	
+The following is an example of the query. 
+
+`GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
+
+The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
 All other information required to authenticate and authorize a PDMP Requestor is captured as part of registering the PDMP Requestor following the SMART Backend Services Authorization Guide. 
 
@@ -248,7 +270,7 @@ The section describes the expected capabilities of the PDMP Requestor actor whic
 The PDMP Requestor **SHALL**:
 
 * Support the US Core Patient, US Core Practitioner, US Core Organization resource profiles.
-* Support the US Core MedicationRequest Profile.
+* Support the US Meds MedicationRequest and MedicationDispense Profile.
 * Consume the RESTful responses according to the FHIR specification.
 	* which includes returning the following response classes:
 		* (Status 200): successful operation
@@ -264,16 +286,15 @@ The PDMP Requestor **SHOULD**:
 * Support the following US Core and US Meds resource profiles:
 	* US Core Medication
 	* US Meds MedicationAdministration
-	* US Meds MedicationDispense
 
 * Support xml resource formats for all PDMP interactions.
 
 
 ##### Profile Interactions:
 
-* The PDMP Requestor **SHALL** support the FHIR Search interaction for MedicationRequest profile.
+* The PDMP Requestor **SHALL** support the FHIR Search interaction for MedicationRequest and MedicationDispense profile.
 
-* The PDMP Requestor **SHOULD** support the FHIR Read profile interaction MedicationRequest profile.
+* The PDMP Requestor **SHOULD** support the FHIR Read profile interaction MedicationRequest and MedicationDispense profile.
 
 * The PDMP Requestor **MAY** support other FHIR profile interactions.
 
@@ -308,6 +329,26 @@ The following is an example of the query.
 
 The above API will fetch all MedicationRequests for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
+The PDMP Requestor **SHALL** invoke the Search operation on the PDMP Responder including the following search and _include parameters when requesting PDMP data using the MedicationDispense resource
+
+* Chained Search parameters
+	* subject:Patient.name.given - Patient's first name
+	* subject:Patient.name.family - Patient's family name
+	* subject:Patient.birthdate - Patient's birth date
+	* authorizingPrescription.dispenseRequest.validityPeriod - To specify the date range for the PDMP data retrieval
+	
+The PDMP Requestor **SHALL** include the following _include parameters for the MedicationDispense Search operations
+
+* _include=MedicationDispense:subject - Returns the Patient Resource information
+* _include:recurse=MedicationDispense:authorizingPrescription - Returns the MedicationRequest, Practitioner Resource information and Organization information
+* _include=MedicationDispense:medication - Returns the Medication Resource information
+
+	
+The following is an example of the query. 
+
+`GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
+
+The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
 ### Patient Matching Considerations
 
@@ -318,5 +359,31 @@ The US Meds PDMP FHIR IG does not add any patient matching requirements to the P
 
 The following are deployment options showing how the US Meds PDMP FHIR IG can be used to implement the various actors. 
 
-(CONSIDER INSERTING NEW POWERPOINT IMAGES) OR (Mike's prior images)
+#### Deployment Option 1: 
+
+In this deployment option, the EHRs, Apps and Clinical Systems act as the PDMP Requestors and interact with Intermediary Gateways such as Appriss, RxCheck which act as the PDMP Responders. The communication is performed using FHIR APIs. In this case the PDMP Requestors are isolated from the State PDMP Systems and the protocols they support. 
+
+The Intermediaries may translate the incoming FHIR request for data to a PMIX/NIEM request to comply with existing state interfaces or may use other methods to get the data from the State PDMP systems. All of these interactions are isolated from the PDMP Requestor. The Intermediaries may also retrieve data from multiple State PDMP systems simultaneously.
+
+{% include img.html img="dep-option-1.png" caption="Figure 3: Deployment Option using Intermediaries and PMIX/NIEM" %}
+
+
+#### Deployment Option 2:
+
+In this deployment option, the EHRs, Apps and Clinical Systems act as the PDMP Requestors and interact with Intermediary Gateways such as Appriss, RxCheck which act as the PDMP Responders. The communication is performed using FHIR APIs. In this case the PDMP Requestors are isolated from the State PDMP Systems and the protocols they support. 
+
+The Intermediaries in this case will use FHIR APIs to request data from one or more State PDMP Systems. The advantage here it is the same standard end to end however an Intermediary can provide value added information such as analytics, ability to integrate data from multiple states. 
+
+The Intermediary plays the role of PDMP Responder for Transactions 1 and 2 but plays the role of PDMP Requestor for Transactions 1a and 1b where the State PDMP Systems play the PDMP Responder role. 
+
+{% include img.html img="dep-option-2.png" caption="Figure 4: Deployment Option using Intermediaries and only FHIR" %}
+
+
+#### Deployment Option 3:
+
+In this deployment option, the EHRs, Apps and Clinical Systems act as the PDMP Requestors and interact with the State PDMP Systems which act as the PDMP Responders using the FHIR APIs 
+
+There are no intermediaries being used in this deployment and State PDMP Systems have to support the necessary FHIR APIs and SMART Backend Authorization protocols.
+
+{% include img.html img="dep-option-3.png" caption="Figure 5: Deployment Option using FHIR and no Intermediaries" %}
 
