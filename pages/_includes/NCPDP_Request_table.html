@@ -88,28 +88,28 @@
         <td class="maptable16" rowspan="3">Patient</td>
         <td class="maptable17">First Name</td>
         <td class="maptable17">&lt;FirstName&gt;</td>
-        <td class="maptable17">MedicationRequest.subject(Patient) --> Patient.name.given</td>
+        <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.name.given</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Last Name</td>
         <td class="maptable17">&lt;LastName&gt;</td>
-        <td class="maptable17">MedicationRequest.subject(Patient) --> Patient.name.family</td>
+        <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.name.family</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Date of Birth</td>
         <td class="maptable17">&lt;DateofBirth&gt;</td>
-        <td class="maptable17">MedicationRequest.subject(Patient) --> Patient.birthdate</td>
+        <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.birthdate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16" rowspan="2">Request Prescription Date Range</td>
         <td class="maptable17">Start Date</td>
         <td class="maptable17">&lt;EffectiveDate&gt;</td>
-        <td class="maptable17">MedicationRequest.dispenseRequest.validityPeriod</td>
+        <td class="maptable17">MedicationDispense.authorizingPrescription.dispenseRequest.validityPeriod</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">End Date</td>
         <td class="maptable17">&lt;ExpirationDate&gt;</td>
-        <td class="maptable17">MedicationRequest.dispenseRequest.validityPeriod</td>
+        <td class="maptable17">MedicationDispense.authorizingPrescription.dispenseRequest.validityPeriod</td>
       </tr>
       <tr style='height:40px;'>
         <td class="maptable112">

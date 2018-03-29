@@ -12,7 +12,7 @@
 
 ### Introduction
 
-In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances. Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion also commonly known as Opioid abuse. In order to reduce opioid absue, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing any controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. For general background on state PDMPs, see the Centers for Disease Control and Prevention [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html).
+In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances. Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion also commonly known as Opioid abuse. In order to reduce opioid abuse, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing any controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. For general background on state PDMPs, see the Centers for Disease Control and Prevention [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html).
 
 
 ### Scope 
@@ -58,9 +58,9 @@ The FHIR standard provides a rich set of [search mechanisms](http://hl7.org/fhir
 
 The following is an example of how search parameters will be used by a PDMP Requestor to retrieve PDMP data from a PDMP Responder. 
 
-`GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31`
+`GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
 
-The above API will fetch all MedicationRequests for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015.
+The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
 Also as part of the Search API one can specify to the server to include additional information such as the prescriber information, patient information. The combinations that need to be implemented by the US Meds PDMP FHIR IG actors will be described in detail as part of the Capability Statements.  
 
@@ -86,7 +86,7 @@ The body of the message will be a FHIR Bundle that contains a MessageHeader reso
 * Include the Practitioner and Patient Resources as entries in the bundle.
 * Include the Parameters resource with the parameters of startDate and endDate with values for date range.
 
-The PDMP Responder has to be able to process this message and return back a Bundle which contains all the MedicationRequest resources along with Practitioner, Organization and Patient resources related to the data set. In case of errors OperationOutcome would be returned similar to any regular FHIR API. 
+The PDMP Responder has to be able to process this message and return back a Bundle which contains all the MedicationDispense resources along with Practitioner, Organization and Patient resources related to the data set. In case of errors OperationOutcome would be returned similar to any regular FHIR API. 
 
 **NOTE**: FHIR Messaging operations can only be invoked on FHIR Servers which conform to the FHIR Messaging operations in their capability statements and not on regular FHIR servers implementing RESTful Search APIs.
 
@@ -105,18 +105,18 @@ For the purposes of the US Meds PDMP FHIR IG, the FHIR Search APIs will be used 
 #### Security Considerations
 
 
-All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations. In addition to the [FHIR Security](http://hl7.org/fhir/security.html) considerations, the PDMP requests need to contain specific information about Requestor Identity and Requestor Facility information. Providing this information using FHIR Search APIs is very cumbersome and is not necessary. This kind of information can be collected by the PDMP Responder's Authorization Server during application registration and avoid repeating the information on each request. These mechanisms are outlined in great detail in the [SMART Backend Services Authorization Guide](http://docs.smarthealthit.org/authorization/backend-services/). The US Meds PDMP FHIR IG will use the SMART Backend Services Authorization Guide to collect the necessary requestor information apriori to making the PDMP data request. In addition the authentication and authorization mechanisms will be used as part of requesting the PDMP data using the FHIR Search APIs. 
+All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations. In addition to the [FHIR Security](http://hl7.org/fhir/security.html) considerations, the PDMP requests need to contain specific information about Requestor Identity and Requestor Facility information. Providing this information using FHIR Search APIs is very cumbersome and is not necessary. This kind of information can be collected by the PDMP Responder's Authorization Server during application registration and avoid repeating the information on each request. These mechanisms are outlined in great detail in the [SMART Backend Services Authorization Guide](http://docs.smarthealthit.org/authorization/backend-services/). The US Meds PDMP FHIR IG will use the SMART Backend Services Authorization Guide to collect the necessary requestor information appropriate to making the PDMP data request. In addition the authentication and authorization mechanisms will be used as part of requesting the PDMP data using the FHIR Search APIs. 
 
 
 #### PDMP Data Elements and Mappings
 
 This section describes identifies data elements that are used commonly in the PDMP data requests and responses and provides mappings of these data elements to FHIR. Based on environmental scans and prior performed by ONC across a spectrum of PDMP implementations the following data was collected:
 
-* Most of the existing implementations use NCPDP script 10.6 or ASAP web services to request and receive PDMP data from PDMP Responders (Intermediaries or State PDMP systems). 
+* Most of the existing EHR implementations use NCPDP script 10.6 or ASAP web services to request and receive PDMP data from PDMP Responders (Intermediaries or State PDMP systems). 
 * Most of the State PDMP systems are implemented using data elements specified by the NIEM standard and expose these data elements using PMIX APIs.
 * Most of the EHRs use intermediaries to request data from one or more State PDMP systems and send NCPDP based requests and receive responses in NCPDP format. 
 
-Based on the above findings, NCPDP Request and Response data elements have been used as a starting point to specify the FHIR APIs. Since the community understands these NCPDP data elements, a mapping of NCPDP Request and Response data elements to FHIR Resources has been created and specified below. This allows organizations already familiar with NCPDP to use the mapping provided to develop their FHIR Resources and APIs. 
+Based on the above findings, NCPDP Request and Response data elements have been used as a starting point to specify the FHIR APIs. Since the community understands these NCPDP data elements, a mapping of NCPDP Request and Response data elements to FHIR Resources has been created and specified below. This allows organizations already familiar with NCPDP to use the mapping provided to develop their FHIR Resources and APIs. Similarly mapping from PMIX/NIEM data elements to FHIR is also provided for systems using PMIX/NIEM to map their data to FHIR and expose them through appropriate APIs.
 
 #### NCPDP Mappings for PDMP Request
 {:.no_toc}
@@ -198,9 +198,9 @@ The PDMP Responder MAY:
 
 ##### Profile Interactions:
 
-* The PDMP Responder **SHALL** support the FHIR Search interaction for MedicationRequest profile.
+* The PDMP Responder **SHALL** support the FHIR Search interaction for MedicationDispense profile.
 
-* The PDMP Responder **SHOULD** support the FHIR Read profile interaction MedicationRequest profile.
+* The PDMP Responder **SHOULD** support the FHIR Read profile interaction MedicationDispense profile.
 
 * The PDMP Responder **MAY** support other FHIR profile interactions.
 
@@ -209,33 +209,9 @@ The PDMP Responder MAY:
 
 * The PDMP Responder **SHALL** support the SMART Backend Services Authorization Guide for verifying authentication and providing authorization to PDMP Requestors.
 
-* The PDMP Responder **SHALL** suppor the HTTP Header parameter X-Request-ID for request coorelation between the PDMP Requester and PDMP Responder. 
+* The PDMP Responder **SHALL** support the HTTP Header parameter X-Request-ID for request coorelation between the PDMP Requester and PDMP Responder. 
 
 ##### Search:
-
-The PDMP Responder **SHALL** support the following search parameters and combination for the MedicationRequest resource
-
-* Chained Search parameters
-	* subject:Patient.name.given - Patient's first name
-	* subject:Patient.name.family - Patient's family name
-	* subject:Patient.birthdate - Patient's birth date
-* Search Parameter
-	* dispenseRequest.validityPeriod - To specify the date range for the PDMP data retrieval
-	
-The PDMP Responder **SHALL** support the following _include parameters for the MedicationRequest Search operations
-
-* _include=MedicationRequest:subject - Returns the Patient Resource information
-* _include:recurse=MedicationRequest:requester - Returns the Practitioner Resource information and Organization information
-* _include=MedicationRequest:medication - Returns the Medication Resource information
-
-	
-The following is an example of the query. 
-
-`GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationRequest:subject&_include:recurse=MedicationRequest:requester&_include=MedicationRequest:medication`
-
-The above API will fetch all MedicationRequest resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
-
-All other information required to authenticate and authorize a PDMP Requestor is captured as part of registering the PDMP Requestor following the SMART Backend Services Authorization Guide. 
 
 The PDMP Responder **SHALL** support the following search parameters and combination for the MedicationDispense resource
 
@@ -292,9 +268,9 @@ The PDMP Requestor **SHOULD**:
 
 ##### Profile Interactions:
 
-* The PDMP Requestor **SHALL** support the FHIR Search interaction for MedicationRequest and MedicationDispense profile.
+* The PDMP Requestor **SHALL** support the FHIR Search interaction for MedicationDispense profile.
 
-* The PDMP Requestor **SHOULD** support the FHIR Read profile interaction MedicationRequest and MedicationDispense profile.
+* The PDMP Requestor **SHOULD** support the FHIR Read profile interaction for MedicationDispense profile.
 
 * The PDMP Requestor **MAY** support other FHIR profile interactions.
 
@@ -306,28 +282,6 @@ The PDMP Requestor **SHOULD**:
 * The PDMP Requestor **SHALL** add the HTTP Header parameter X-Request-ID as part of the Search request for request coorelation between the PDMP Requester and PDMP Responder. 
 
 ##### Search:
-
-The PDMP Requestor **SHALL** invoke the Search operation on the PDMP Responder including the following search and _include parameters when requesting PDMP data using the MedicationRequest resource
-
-* Chained Search parameters
-	* subject:Patient.name.given - Patient's first name
-	* subject:Patient.name.family - Patient's family name
-	* subject:Patient.birthdate - Patient's birth date
-* Search Parameter
-	* dispenseRequest.validityPeriod - To specify the date range for the PDMP data retrieval
-	
-The PDMP Requestor **SHALL** include the following _include parameters for the MedicationRequest Search operations
-
-* _include=MedicationRequest:subject - Returns the Patient Resource information
-* _include:recurse=MedicationRequest:requester - Returns the Practitioner Resource information and Organization information
-* _include=MedicationRequest:medication - Returns the Medication Resource information
-
-	
-The following is an example of the query. 
-
-`GET [base]/MedicationRequest?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&dispenseRequest.validityPeriod=ge2010-01-01&dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationRequest:subject&_include:recurse=MedicationRequest:requester&_include=MedicationRequest:medication`
-
-The above API will fetch all MedicationRequests for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a dispenseRequest that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
 The PDMP Requestor **SHALL** invoke the Search operation on the PDMP Responder including the following search and _include parameters when requesting PDMP data using the MedicationDispense resource
 

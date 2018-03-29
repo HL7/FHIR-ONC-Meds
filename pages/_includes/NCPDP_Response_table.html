@@ -111,17 +111,17 @@
       <tr style='height:20px;'>
         <td class="maptable28">Prescription Written Date</td>
         <td class="maptable29">&lt;WrittenDate&gt;</td>
-        <td class="maptable29">MedicationRequest.authoredOn</td>
+        <td class="maptable29">MedicationDispense.authorizingPrescription.authoredOn</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Prescription Number</td>
         <td class="maptable29">&lt;SourceReference&gt;</td>
-        <td class="maptable29">MedicationRequest.Identifier</td>
+        <td class="maptable29">MedicationDispense.authorizingPrescription.Identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Drug Name[1]</td>
         <td class="maptable29">&lt;DrugDescription&gt;</td>
-        <td class="maptable29">MedicationRequest.medication[x]</td>
+        <td class="maptable29">MedicationDispense.medication[x]</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable28">Drug Strength[1]</td>
@@ -136,12 +136,12 @@
       <tr style='height:20px;'>
         <td class="maptable28">Drug Quantity</td>
         <td class="maptable29">&lt;Quantity&gt;</td>
-        <td class="maptable29">MedicationRequest.dispenseRequest.quantity</td>
+        <td class="maptable29">MedicationDispense.authorizingPrescription.dispenseRequest.quantity</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Days of Supply</td>
         <td class="maptable29">&lt;DaysSupply&gt;</td>
-        <td class="maptable29">MedicationRequest.dispenseRequest.expectedSupplyDuration</td>
+        <td class="maptable29">MedicationDispense.authorizingPrescription.dispenseRequest.expectedSupplyDuration</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Refill Number</td>
@@ -151,7 +151,7 @@
       <tr style='height:20px;'>
         <td class="maptable28">Refills Authorized</td>
         <td class="maptable29">&lt;Refills&gt;</td>
-        <td class="maptable29">MedicationRequest.dispenseRequest.numberOfRepeatsAllowed</td>
+        <td class="maptable29">MedicationDispense.authorizingPrescription.dispenseRequest.numberOfRepeatsAllowed</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Partial Fill Indicator </td>
@@ -167,12 +167,12 @@
         <td class="maptable214" rowspan="2">Drug</td>
         <td class="maptable28">Product ID Qualifier</td>
         <td class="maptable215">&lt;CodeListQualifier&gt;</td>
-        <td class="maptable29">MedicationRequest.medicationCodeableConcept.code.system</td>
+        <td class="maptable29">MedicationDipense.medicationCodeableConcept.code.system</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable28">Product ID</td>
         <td class="maptable29">&lt;ProductCode&gt;</td>
-        <td class="maptable29">MedicationRequest.medicationCodeableConcept.code.value</td>
+        <td class="maptable29">MedicationDispense.medicationCodeableConcept.code.value</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable214" rowspan="6">Dispenser Organization</td>
