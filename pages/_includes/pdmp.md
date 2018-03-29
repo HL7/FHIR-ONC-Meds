@@ -118,7 +118,7 @@ This section describes identifies data elements that are used commonly in the PD
 
 Based on the above findings, NCPDP Request and Response data elements have been used as a starting point to specify the FHIR APIs. Since the community understands these NCPDP data elements, a mapping of NCPDP Request and Response data elements to FHIR Resources has been created and specified below. This allows organizations already familiar with NCPDP to use the mapping provided to develop their FHIR Resources and APIs. 
 
-#### Mappings for NCPDP Request
+#### NCPDP Mappings for PDMP Request
 {:.no_toc}
 
 This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP using NCPDP.
@@ -128,20 +128,20 @@ This section includes the minimal mapping for the PDMP request from an EHR to a 
 {% include NCPDP_Request_table.html %}
 
 
-#### Mappings for NCPDP Response
+#### NCPDP Mappings for PDMP Response
 {:.no_toc}
 
 This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR using NCPDP.
 
 {% include NCPDP_Response_table.html %}
 
-#### Mappings for PMIX Request
+#### PMIX Mappings for PDMP Request
 
 This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP using PMIX.
 
 {% include PMIX_Request_table.html %}
 
-#### Mappings for PMIX Response
+#### PMIX Mappings for PDMP Response
 
 This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR using PMIX.
 
