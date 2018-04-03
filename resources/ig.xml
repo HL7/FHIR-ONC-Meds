@@ -3,6 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
+  <version value="1.1.0"/>
   <name value="US Meds"/>
   <status value="draft"/>
   <experimental value="false"/>
