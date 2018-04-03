@@ -161,7 +161,7 @@
 			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
 			</p>
 			<h5 id="medicationadministration">2. MedicationAdministration</h5>
-			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/meds/STU1/StructureDefinition-medicationadministration.html">US Meds MedicationAdministration Profile</a>
+			<p>Supported Profiles:  <a href="StructureDefinition-medicationadministration.html">US Meds MedicationAdministration Profile</a>
 			</p>
 			<p>Search Criteria:</p>
 			<p>A server <strong>SHALL</strong> be capable of fetching a patient’s administered medications using one of or both:</p>
