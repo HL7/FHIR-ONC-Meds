@@ -196,7 +196,8 @@
   "dependencyList": [
     {
       "name": "uscore",
-      "location": "http://hl7.org/fhir/us/core/STU1/",
+      "version": "current",
+      "location": "http://hl7.org/fhir/us/core",
       "source": "dependency/uscore-vp"
     }
     ],
