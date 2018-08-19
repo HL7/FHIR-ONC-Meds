@@ -304,7 +304,7 @@ The following is an example of the query.
 
 The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
 
-### Patient Matching Considerations
+### Patient Matching Considerations 
 
 The US Meds PDMP FHIR IG does not add any patient matching requirements to the PDMP actors, but relies on existing practices used for patient matching based on the first name, last name and date of birth provided through the request. Some states may require requesters to include additional parameters to facilitate more accurate patient matching results, however these variations are out of scope for this IG.
 
