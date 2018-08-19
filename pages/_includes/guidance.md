@@ -117,7 +117,7 @@ Below is an overview of the required search and read operations for this use cas
 
 1. A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders".
 
-##### Quick Start
+##### Quick Start 
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](CapabilityStatement-server.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
