@@ -12,7 +12,7 @@
 
 ### Introduction
 
-In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances. Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion also commonly known as Opioid abuse. In order to reduce opioid abuse, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing any controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. For general background on state PDMPs, see the Centers for Disease Control and Prevention [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html).
+In the United States, every state is deploying a Prescription Drug Monitoring Program (PDMP) which track controlled substance prescriptions within the state. Overtime, these PDMP databases start to provide rich information on provider and patient behaviors with respect to prescribing and use of controlled substances (primarily opioids). Enabling a Provider to access a Patient's PDMP data during care delivery will help in avoiding potential drug misuse, abuse and diversion. In order to reduce opioid abuse, some states have implemented policies mandating Providers to check the state PDMP for the Patient's controlled substance history before prescribing controlled substances. To further address opioid abuse which is a current national priority, the US Meds Prescription Drug Monitoring Program FHIR Implementation Guide (US Meds PDMP FHIR IG) outlines how systems can access PDMP data for a patient from the state PDMP systems using the HL7 FHIR standard. For general background on state PDMPs, see the Centers for Disease Control and Prevention [what states need to know about PDMPs](https://www.cdc.gov/drugoverdose/pdmp/states.html).
 
 
 ### Scope 
@@ -35,7 +35,7 @@ This section defines the abstract model which is used to identify the specific a
 
 **PDMP Responder**: PDMP Responder is a health IT system that accepts a request from a PDMP Requestor and responds to the request with a controlled substance history for the patient. Real-world examples of such health IT systems include intermediary gateways such as Appriss, RxCheck, State HIEs and State PDMP systems. 
 
-**Note**: PDMP Responders which are acting as intermediaries provide additional value add services such being able to query multiple State PDMP systems, analytics which provide additional information for the Provider requesting the information. The fact that a PDMP Responder is an intermediary or if it is the actual State PDMP system is transparent to the PDMP Requestor and is more of a deployment architecture. 
+**Note**: PDMP Responders, which act as intermediaries, provide additional services such as being able to query multiple State PDMP systems for analytics which generates additional information for the Provider. The fact that a PDMP Responder is an intermediary or if it is the actual State PDMP system is transparent to the PDMP Requestor and is more of a deployment architecture. 
 
 
 {% include img.html img="abstract-model.png" caption="Figure 2: PDMP Abstract Model and Actors" %}
@@ -108,9 +108,9 @@ For the purposes of the US Meds PDMP FHIR IG, the FHIR Search APIs will be used 
 All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations. In addition to the [FHIR Security](http://hl7.org/fhir/security.html) considerations, the PDMP requests need to contain specific information about Requestor Identity and Requestor Facility information. Providing this information using FHIR Search APIs is very cumbersome and is not necessary. This kind of information can be collected by the PDMP Responder's Authorization Server during application registration and avoid repeating the information on each request. These mechanisms are outlined in great detail in the [SMART Backend Services Authorization Guide](http://docs.smarthealthit.org/authorization/backend-services/). The US Meds PDMP FHIR IG will use the SMART Backend Services Authorization Guide to collect the necessary requestor information appropriate to making the PDMP data request. In addition the authentication and authorization mechanisms will be used as part of requesting the PDMP data using the FHIR Search APIs. 
 
 
-#### PDMP Data Elements and Mappings
+### PDMP Data Elements and Mappings
 
-This section describes identifies data elements that are used commonly in the PDMP data requests and responses and provides mappings of these data elements to FHIR. Based on environmental scans and prior performed by ONC across a spectrum of PDMP implementations the following data was collected:
+This section describes and identifies data elements that are used commonly in the PDMP data requests and responses and provides mappings of these data elements to FHIR. Based on environmental scans and prior performed by ONC across a spectrum of PDMP implementations the following data was collected:
 
 * Most of the existing EHR implementations use NCPDP script 10.6 or ASAP web services to request and receive PDMP data from PDMP Responders (Intermediaries or State PDMP systems). 
 * Most of the State PDMP systems are implemented using data elements specified by the NIEM standard and expose these data elements using PMIX APIs.
@@ -172,7 +172,7 @@ The PDMP Responder **SHALL**:
 
 * Support the US Core Patient, US Core Practitioner, US Core Organization resource profiles.
 * Support the US Meds MedicationRequest and MedicationDispense Profile.
-* Implement the RESTful behavior according to the FHIR specification.
+* Implement the RESTful behavior according to the [FHIR specification](https://www.hl7.org/fhir/http.html).
 	* which includes returning the following response classes:
 		* (Status 200): successful operation
 		* (Status 400): invalid parameter
@@ -306,7 +306,7 @@ The above API will fetch all MedicationDispense resources for Patient with a giv
 
 ### Patient Matching Considerations
 
-The US Meds PDMP FHIR IG does not add any patient matching requirements to the PDMP actors, but relies on existing practices used for patient matching based on the first name, last name and date of birth provided through the request.
+The US Meds PDMP FHIR IG does not add any patient matching requirements to the PDMP actors, but relies on existing practices used for patient matching based on the first name, last name and date of birth provided through the request. Some states may require requesters to include additional parameters to facilitate more accurate patient matching results, however these variations are out of scope for this IG.
 
 
 ### Deployment Architecture 
