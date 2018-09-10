@@ -1,5 +1,3 @@
-Not open for May 2018 ballot
-{: #publish-box}
 
 The [MedicationDispense] resource can be used to record a medication that has been dispensed for a named person/patient.  For more information about the context and usage, refer to the resource page in the FHIR specification.  This profile sets minimum expectations for recording, searching and fetching a patient's MedicationAdministration resource. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
 
