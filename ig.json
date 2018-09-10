@@ -7,7 +7,7 @@
 		"examples"],
 		"output": "output",
 		"pages": "pages",
-		"specification": "http://hl7.org/fhir/STU3"
+		"specification": "https://hl7.org/fhir/STU3/index.html"
 	},
   "version" : "3.0.1",
 	"tool": "jekyll",

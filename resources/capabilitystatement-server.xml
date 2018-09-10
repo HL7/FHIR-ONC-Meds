@@ -96,8 +96,8 @@
 			</ul>
 			<h4 id="profile-interaction-summary">Profile Interaction Summary:</h4>
 			<ul>
-				<li>All servers <strong>SHALL</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read</a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
-				<li>All servers <strong>SHOULD</strong> make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread</a> and <a href="http://hl7.org/fhir/STU3/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
+				<li>All servers <strong>SHALL</strong> make available the <a href="https://hl7.org/fhir/STU3/http.html#read.html">read</a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search</a> interactions for the Profiles the server chooses to support.</li>
+				<li>All servers <strong>SHOULD</strong> make available the <a href="https://hl7.org/fhir/STU3/http.html#vread.html">vread</a> and <a href="http://hl7.org/fhir/STU3/http.html#history">history-instance</a> interactions for the Profiles the server chooses to support.</li>
 			</ul>
 			<p>
 				<strong>Summary of US Meds search criteria</strong>
