@@ -45,7 +45,7 @@ The existing state PDMP exchanges primarily rely on a messaging approach. This s
 
 This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP.
 
-<!-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6 -->
+<!-- [MedicationRequest]({{ site.data.fhir.path }}medicationrequest-mappings.html#script10.6): includes a full mapping for medicationRequest resource to SCRIPT 10.6 -->
 
 
 {% include NCPDP_Request_table.html %}

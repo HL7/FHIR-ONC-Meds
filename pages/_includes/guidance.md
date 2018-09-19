@@ -7,7 +7,7 @@
 
 <!-- end TOC -->
 
-This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules]({{ site.data.fhir.path }}/conformance-rules.html#conflang).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
+This section outlines the definitions and interpretations and specific guidance for the US-Meds IG use cases  The conformance verbs used are defined in [FHIR Conformance Rules]({{ site.data.fhir.path }}conformance-rules.html#conflang).  The [general guidance]({{ site.data.fhir.uscore }}guidance.html) used in the US-Core IG apply to this guide as well.
 
 <!-- source pages/\_include/{{page.md_filename}}.md  file -->
 
@@ -18,13 +18,13 @@ This section outlines the definitions and interpretations and specific guidance 
 
 The 5 FHIR pharmacy resources concerned with the ordering, dispensing, administration and recording of medications are:
 
-- [Medication]({{ site.data.fhir.path }}/medication.html):  Represents the medication itself
-- [MedicationRequest]({{ site.data.fhir.path }}/medicationrequest.html): Represents an authorization to dispense and administer a medication (aka prescription or order).  
-- [MedicationDispense]({{ site.data.fhir.path }}/medicationdispense.html): Represents a response to a prescription - provision of a supply of a medication.
-- [MedicationAdministration]({{ site.data.fhir.path }}/medicationadministration.html): Represents the consumption or administration of a medication.
-- [MedicationStatement]({{ site.data.fhir.path }}/medicationstatement.html): Represents the record for past present and future medications use.
+- [Medication]({{ site.data.fhir.path }}medication.html):  Represents the medication itself
+- [MedicationRequest]({{ site.data.fhir.path }}medicationrequest.html): Represents an authorization to dispense and administer a medication (aka prescription or order).  
+- [MedicationDispense]({{ site.data.fhir.path }}medicationdispense.html): Represents a response to a prescription - provision of a supply of a medication.
+- [MedicationAdministration]({{ site.data.fhir.path }}medicationadministration.html): Represents the consumption or administration of a medication.
+- [MedicationStatement]({{ site.data.fhir.path }}medicationstatement.html): Represents the record for past present and future medications use.
 
-Details about each resource can be found in the FHIR specification.  A general discussion regarding the interaction between these resources is described in the FHIR [Medications Module]({{ site.data.fhir.path }}/medications-module.html) and the [Guide to Resources]({{ site.data.fhir.path }}/resourceguide.html) Sections.
+Details about each resource can be found in the FHIR specification.  A general discussion regarding the interaction between these resources is described in the FHIR [Medications Module]({{ site.data.fhir.path }}medications-module.html) and the [Guide to Resources]({{ site.data.fhir.path }}resourceguide.html) Sections.
 
 #### Relationships Between the Pharmacy FHIR Resources
 {:.no_toc}
@@ -41,7 +41,7 @@ This IG focuses on access and updates to a patient's medications and the interac
 
 **Various Ways to Represent the Medication**
 
-The pharmacy FHIR resources can represent a medication using either a code or a reference to a Medication resource. Typically, a code will be used to represent either a branded (for example, Crestor 10mg tablet) or a generic (for example, Rosuvastatin 10mg tablet) medication.  When using a code, the code  **SHALL** be [extensibly]({{ site.data.fhir.path }}/extensibility.html) bound to [RxNorm]({{ site.data.fhir.path }}/rxnorm.html) - i.e. unless the concept is not covered by RxNorm, the RxNorm code **SHALL** be used.  More information about using codes can be found in US Core [General Guidance Section]({{ site.data.fhir.uscore }}guidance.html) and the [FHIR Specification]({{ site.data.fhir.path }}/terminologies-systems.html).  A medication resource is typically used when information that is not included as part of the RxNorm code is required.  For example, the Medication resource is the only way to correctly represent compounded or extemporaneously prepared medication.  When referencing the Medication resource, the resource may be a [contained]({{ site.data.fhir.path }}/references.html#contained) or an external resource. These options are shown in figure 3 below.  The server application **MAY** choose any combination of these methods, but if an external reference to Medication is used, the server **SHALL** support the include parameter for searching this element. The client application **MUST** support all methods. The US Core IG provides [examples]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html#examples) that show these different methods. Additional guidance is provided below and in the [CapabilityStatement](CapabilityStatement-server.html) section.
+The pharmacy FHIR resources can represent a medication using either a code or a reference to a Medication resource. Typically, a code will be used to represent either a branded (for example, Crestor 10mg tablet) or a generic (for example, Rosuvastatin 10mg tablet) medication.  When using a code, the code  **SHALL** be [extensibly]({{ site.data.fhir.path }}extensibility.html) bound to [RxNorm]({{ site.data.fhir.path }}rxnorm.html) - i.e. unless the concept is not covered by RxNorm, the RxNorm code **SHALL** be used.  More information about using codes can be found in US Core [General Guidance Section]({{ site.data.fhir.uscore }}guidance.html) and the [FHIR Specification]({{ site.data.fhir.path }}terminologies-systems.html).  A medication resource is typically used when information that is not included as part of the RxNorm code is required.  For example, the Medication resource is the only way to correctly represent compounded or extemporaneously prepared medication.  When referencing the Medication resource, the resource may be a [contained]({{ site.data.fhir.path }}references.html#contained) or an external resource. These options are shown in figure 3 below.  The server application **MAY** choose any combination of these methods, but if an external reference to Medication is used, the server **SHALL** support the include parameter for searching this element. The client application **MUST** support all methods. The US Core IG provides [examples]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html#examples) that show these different methods. Additional guidance is provided below and in the [CapabilityStatement](CapabilityStatement-server.html) section.
 
 {% include img.html img="usmed-fig3.png" caption="Figure 3: How A Medication is Represented in Pharmacy Resources" %}
 
@@ -76,7 +76,7 @@ Medications may be duplicated in a medication list when multiple sources of data
 
 **“Not Taken” Medications**
 
-For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes]({{ site.data.fhir.path }}/medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
+For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes]({{ site.data.fhir.path }}medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
 
 ##### Quick Start
 
@@ -113,7 +113,7 @@ Below is an overview of the required search and read operations for this use cas
 
 1. A MedicationRequest resource query **SHALL** be all that is required to access the "all active medication orders".
 
-##### Quick Start 
+##### Quick Start
 
 Below is an overview of the required search and read operations for this use case. See the [Conformance requirements](CapabilityStatement-server.html) for a complete list of supported RESTful operations and search parameters for this IG.
 
@@ -135,7 +135,7 @@ This Use Case will be the focus of future versions of this IG.
 ### Use Case 3 - Create new outpatient Prescription
 {: #uc-3}
 
-This use case involves the provider creating a new outpatient prescription using the MedicationRequest resource.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the [FHIR workflow sections]({{ site.data.fhir.path }}/workflow-communications.html) in the FHIR specification.
+This use case involves the provider creating a new outpatient prescription using the MedicationRequest resource.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the [FHIR workflow sections]({{ site.data.fhir.path }}workflow-communications.html) in the FHIR specification.
 
 At the time of this publication, the US implementers have not used the MedicationRequest resource sufficiently to provide meaningful feedback on best practices and guidance.  This Use Case will be the focus of future versions of this IG.
 

@@ -1,9 +1,9 @@
 #### Complete Summary of the Mandatory Requirements
 
-1.  One status in `MedicationDispense.status` which has a [required]({{ site.data.fhir.path }}/terminologies.html#required) binding to:
+1.  One status in `MedicationDispense.status` which has a [required]({{ site.data.fhir.path }}terminologies.html#required) binding to:
 -   [MedicationDispenseStatus] value set.
 1.  One medication via `MedicationDispense.medicationCodeableConcept` or `MedicationDispense.medicationReference`   
--  `MedicationDispense.medicationCodeableConcept` has an [extensible]({{ site.data.fhir.path }}/terminologies.html#extensible) binding to [Medication Clinical Drug (RxNorm)] value set.
+-  `MedicationDispense.medicationCodeableConcept` has an [extensible]({{ site.data.fhir.path }}terminologies.html#extensible) binding to [Medication Clinical Drug (RxNorm)] value set.
 1.  One patient reference in `MedicationDispense.subject`
 1.  One date in `MedicationDispense.whenHandedOver`
 
@@ -14,4 +14,4 @@
 
 [Medication Clinical Drug (RxNorm)]: {{ site.data.fhir.uscore }}ValueSet-us-core-medication-codes.html
 
-[MedicationDispenseStatus]: {{ site.data.fhir.path }}/valueset-medication-dispense-status.html
+[MedicationDispenseStatus]: {{ site.data.fhir.path }}valueset-medication-dispense-status.html

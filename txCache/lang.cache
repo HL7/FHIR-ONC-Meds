@@ -1,0 +1,47 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "urn:ietf:bcp:47",
+    "code" : "en",
+    "display" : "English"
+  }],
+  "text" : "English"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:47",
+      "filter" : [{
+        "property" : "ext-lang",
+        "op" : "exists",
+        "value" : "false"
+      },
+      {
+        "property" : "script",
+        "op" : "exists",
+        "value" : "false"
+      },
+      {
+        "property" : "variant",
+        "op" : "exists",
+        "value" : "false"
+      },
+      {
+        "property" : "extension",
+        "op" : "exists",
+        "value" : "false"
+      },
+      {
+        "property" : "private-use",
+        "op" : "exists",
+        "value" : "false"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (urn:ietf:bcp:47#en, (English)) is not  valid in the value set Language codes with language and optionally a region modifier"
+}
+-------------------------------------------------------------------------------------

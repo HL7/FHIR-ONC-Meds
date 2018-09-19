@@ -35,4 +35,4 @@ In addition, a system [*Must Support*](http://hl7.org/FHIR/us/daf/2016Sep/daf-co
 - [Med Dispense 1](MedicationDispense-meddispense-1.html)
 
   [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
- [MedicationDispense]:{{ site.data.fhir.path }}/medicationdispense.html
+ [MedicationDispense]:{{ site.data.fhir.path }}medicationdispense.html

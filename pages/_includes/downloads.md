@@ -13,7 +13,7 @@ In addition there are format specific definitions files.
 - [JSON](definitions.json.zip)
 - [TTL](definitions.ttl.zip)
 
-These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these US-Core and US Meds profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources]({{ site.data.fhir.path }}/validation.html) for more information about validating profiles and how to use these artifacts
+These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these US-Core and US Meds profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview on [validating FHIR profiles and resources]({{ site.data.fhir.path }}validation.html) for more information about validating profiles and how to use these artifacts
 
 **Schematrons** are also available and listed below:
 

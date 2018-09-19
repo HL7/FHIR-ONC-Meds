@@ -37,9 +37,9 @@ In addition, a system [*Must Support*](http://hl7.org/FHIR/us/daf/2016Sep/daf-co
   [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
   [MedicationOrderStatus]: http://hl7.org/fhir/us/daf/valueset-medication-order-status.html
 [MedicationAdministrationStatus]: http://hl7.org/fhir/us/daf/valueset-medication-Administration-status.html
-[MedicationStatement]:{{ site.data.fhir.path }}/medicationstatement.html
-[MedicationAdministration]:{{ site.data.fhir.path }}/medicationadministration.html
- [MedicationOrder]: {{ site.data.fhir.path }}/medicationorder.html
- [Medication]:{{ site.data.fhir.path }}/medication.html
+[MedicationStatement]:{{ site.data.fhir.path }}medicationstatement.html
+[MedicationAdministration]:{{ site.data.fhir.path }}medicationadministration.html
+ [MedicationOrder]: {{ site.data.fhir.path }}medicationorder.html
+ [Medication]:{{ site.data.fhir.path }}medication.html
  [Conformance]: daf-core-medicationAdministration-conformance.html
- [boundaries section]: {{ site.data.fhir.path }}/medicationadministration.html#bnr
+ [boundaries section]: {{ site.data.fhir.path }}medicationadministration.html#bnr
