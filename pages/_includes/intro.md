@@ -13,13 +13,13 @@
 
 ### Introduction
 
-The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
+The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}index.html) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
 
 ### Scope
 
 This guide applies to the general [Argonaut Project use cases](http://argonautwiki.hl7.org/images/e/ec/Argonaut_UseCasesV1-1.pdf) and adopts it specifically to enable a user to access, record, change a patient’s active medications as well as a medication history.  This covers the  [Meaningful Use 2015 §?170.302(d)](https://www.healthit.gov/sites/default/files/2015Ed_CCG_a7-Medication-list.pdf) certification requirement for EHRs.
 
-#### Actors 
+#### Actors
 
 The following actors are defined:
 

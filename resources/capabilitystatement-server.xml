@@ -48,11 +48,11 @@
 				<li>Published: 2017-03-08</li>
 				<li>Published by: Health Level Seven International Pharmacy Work Group</li>
 			</ul>
-			<p>The section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. It is expected that this CapabilityStatement will be used with the <a href="http://hl7.org/fhir/us/core/STU1/capstmnts.html">US Core CapabilityStatement</a>. Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+			<p>The section describes the expected capabilities of the US Meds Server actor which is responsible for providing responses to the queries submitted by the US Med Client applications. It is expected that this CapabilityStatement will be used with the <a href="http://hl7.org/fhir/us/core/capstmnts.html">US Core CapabilityStatement</a>. Together they describe the complete list of FHIR profiles, RESTful operations, and search parameters supported by US Meds Servers. US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
 			<h4 id="behavior">Behavior</h4>
 			<p>Description: The US Meds Server <strong>SHALL</strong>:</p>
 			<ul>
-				<li>Support the <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-patient.html">US Core Patient</a> resource profile.</li>
+				<li>Support the <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-patient.html">US Core Patient</a> resource profile.</li>
 				<li>At a minimum, support the US Core MedicationStatement Profile.</li>
 				<li>Implement the RESTful behavior according to the FHIR specification.</li>
 				<li>Return the following response classes:
@@ -88,7 +88,7 @@
 			<h4 id="security">Security:</h4>
 			<p>US Meds Servers <strong>SHALL</strong>:</p>
 			<ul>
-				<li>Implement the security requirements documented in the <a href="http://hl7.org/fhir/us/core/STU1/security.html">US-Core IG</a>.</li>
+				<li>Implement the security requirements documented in the <a href="http://hl7.org/fhir/us/core/security.html">US-Core IG</a>.</li>
 				<li>A server has ensured that every API request includes a valid Authorization token, supplied via: <code class="highlighter-rouge">Authorization: Bearer {server-specific-token-here}</code>
 				</li>
 				<li>A server has rejected any unauthorized requests by returning an <code class="highlighter-rouge">HTTP 401</code> Unauthorized response code.</li>
@@ -158,7 +158,7 @@
 			</table>
 			<h4 id="resource--details">Resource  Details:</h4>
 			<h5 id="medication">1. Medication</h5>
-			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
+			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
 			</p>
 			<h5 id="medicationadministration">2. MedicationAdministration</h5>
 			<p>Supported Profiles:  <a href="StructureDefinition-medicationadministration.html">US Meds MedicationAdministration Profile</a>
@@ -232,7 +232,7 @@
 				</tbody>
 			</table>
 			<h5 id="medicationrequest">4. MedicationRequest</h5>
-			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
 			</p>
 			<p>Search Criteria:</p>
 			<p>A server <strong>SHALL</strong> be capable of returning a patient’s active medications orders using one of or both:</p>
@@ -268,7 +268,7 @@
 				</tbody>
 			</table>
 			<h5 id="medicationstatement">5. MedicationStatement</h5>
-			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/STU1/StructureDefinition-us-core-medicationstatement.html">US Core MedicationStatement Profile</a>
+			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationstatement.html">US Core MedicationStatement Profile</a>
 			</p>
 			<p>Search Criteria:</p>
 			<p>A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:</p>
