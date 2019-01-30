@@ -13,7 +13,7 @@
 
 ### Introduction
 
-The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR STU3]({{ site.data.fhir.path }}index.html) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
+The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR Version 3.0.1]({{ site.data.fhir.path }}index.html) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
 
 ### Scope
 
