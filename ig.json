@@ -54,7 +54,7 @@
 		},
 		"Any": {
 			"template-format": "format.html",
-			"template-base": "base.html"
+			"template-base": "base.html",
 			 "swagger": true
 		}
 	},

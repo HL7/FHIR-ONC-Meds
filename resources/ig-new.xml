@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/ehaas/Documents/FHIR/US-Meds/resources"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/ehaas/Documents/FHIR/US-Meds/examples"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/ehaas/Documents/FHIR/US-Meds/pages"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
   <version value="1.1.0"/>
@@ -17,7 +17,14 @@
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Pharmacy Work Group"/>
-  <packageId value="us-meds"/>
+  <contact>
+    <name value="HL7 Pharmacy Work Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication/index.cfm"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.meds"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="3.0.1"/>
   <dependsOn id="uscore">
@@ -26,232 +33,232 @@
     <version value="current"/>
   </dependsOn>
   <definition>
-    <package id="p1">
+    <grouping id="p1">
       <name value="base"/>
-    </package>
+    </grouping>
     <resource>
       <reference>
         <reference value="StructureDefinition/medicationadministration"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/medicationdispense"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/test2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/test2-2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/test2-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-test2-3"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-test2-2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-test2-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-6"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-5"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-4"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-3"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/test2-3"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/test2-2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/test2-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-6"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-5"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-4"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-3"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-2"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationRequest/enca-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationDispense/meddispense-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="MedicationAdministration/medadmin-1"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/get-encounter-meds"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/get-all-meds"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/get-active-orders"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Bundle/get-active-meds"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/A"/>
       </reference>
       <exampleBoolean value="true"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <resource>
       <reference>
         <reference value="CapabilityStatement/client"/>
       </reference>
       <exampleBoolean value="false"/>
-      <package value="p1"/>
+      <groupingId value="p1"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>
@@ -259,8 +266,8 @@
       <generation value="html"/>
     </page>
     <parameter>
-      <code value="apply-business-version"/>
-      <value value="1.1.0"/>
+      <code value="apply"/>
+      <value value="version"/>
     </parameter>
     <parameter>
       <code value="generate-json"/>

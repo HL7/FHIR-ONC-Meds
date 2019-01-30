@@ -379,13 +379,13 @@ a.to-top {
 
 
 ul#markdown-toc {
-  font-size: .6em;
+  font-size: 1em;
   list-style: none;
     margin: 4px;
     padding: 4px;
     float: right;
     z-index: 10;
-    width: 150px;
+    width: 200px;
     background-color: #f5f5f5;
     border: 1px solid #f5f5f5;
     border-radius: 5px;
@@ -433,4 +433,31 @@ p#not-open {
   padding: 5px;s
 }
 
+}
+
+
+/* this part adds an icon after external links, using external.png file  for p and li elements */
+
+p a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not([no-external^="true"]):after {
+    content: url(../images/external.png);
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+li a[href^="http://"]:not([no-external^="true"]):after, a[href^="https://"]:not([no-external^="true"]):after {
+    content: url(../images/external.png);
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+
+/* ============ downloads css ============= */
+
+a[href$=".sch"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:after, a[href$=".json"]:after, a[href$=".csv"]:after, a[href$=".ttl"]:after {
+  content: url(../images/download.png);
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
 }

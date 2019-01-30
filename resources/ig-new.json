@@ -3,15 +3,15 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/ehaas/Documents/FHIR/US-Meds/resources"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "/Users/ehaas/Documents/FHIR/US-Meds/examples"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/ehaas/Documents/FHIR/US-Meds/pages"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/pages"
   }],
   "url" : "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
   "version" : "1.1.0",
@@ -19,9 +19,16 @@
   "status" : "draft",
   "experimental" : false,
   "publisher" : "HL7 Pharmacy Work Group",
-  "packageId" : "us-meds",
+  "contact" : [{
+    "name" : "HL7 Pharmacy Work Group",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/medication/index.cfm"
+    }]
+  }],
+  "packageId" : "hl7.fhir.us.meds",
   "license" : "CC0-1.0",
-  "fhirVersion" : "3.0.1",
+  "fhirVersion" : ["3.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
@@ -29,7 +36,7 @@
     "version" : "current"
   }],
   "definition" : {
-    "package" : [{
+    "grouping" : [{
       "id" : "p1",
       "name" : "base"
     }],
@@ -38,224 +45,224 @@
         "reference" : "StructureDefinition/medicationadministration"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "StructureDefinition/medicationdispense"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Patient/test2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/test2-2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/test2-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-test2-3"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-test2-2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-test2-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-6"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-5"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-4"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-3"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/test2-3"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/test2-2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/test2-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-6"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-5"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-4"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-3"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-2"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationRequest/enca-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationDispense/meddispense-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "MedicationAdministration/medadmin-1"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Bundle/get-encounter-meds"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Bundle/get-all-meds"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Bundle/get-active-orders"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Bundle/get-active-meds"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "Encounter/A"
       },
       "exampleBoolean" : true,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/server"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     },
     {
       "reference" : {
         "reference" : "CapabilityStatement/client"
       },
       "exampleBoolean" : false,
-      "package" : "p1"
+      "groupingId" : "p1"
     }],
     "page" : {
       "nameUrl" : "index.html",
@@ -263,8 +270,8 @@
       "generation" : "html"
     },
     "parameter" : [{
-      "code" : "apply-business-version",
-      "value" : "1.1.0"
+      "code" : "apply",
+      "value" : "version"
     },
     {
       "code" : "generate-json",
