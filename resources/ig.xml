@@ -8,6 +8,13 @@
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="HL7 Pharmacy Work Group"/>
+  <contact> 
+    <name value="ONC"/> 
+    <telecom> 
+      <system value="url"/> 
+      <value value="http://www.healthit.gov"/> 
+    </telecom> 
+  </contact>
   <package>
     <name value="base"/>
     <resource>
