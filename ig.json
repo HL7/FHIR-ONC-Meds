@@ -55,7 +55,7 @@
 		"Any": {
 			"template-format": "format.html",
 			"template-base": "base.html"
-			 "swagger": "true"
+			 "swagger": true
 		}
 	},
 	"sct-edition": "http://snomed.info/sct/731000124108",
