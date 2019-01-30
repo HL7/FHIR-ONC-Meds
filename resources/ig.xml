@@ -9,10 +9,10 @@
   <experimental value="false"/>
   <publisher value="HL7 Pharmacy Work Group"/>
   <contact> 
-    <name value="ONC"/> 
+    <name value="HL7 Pharmacy Work Group"/> 
     <telecom> 
       <system value="url"/> 
-      <value value="http://www.healthit.gov"/> 
+      <value value="http://www.hl7.org/Special/committees/medication/index.cfm"/> 
     </telecom> 
   </contact>
   <package>
