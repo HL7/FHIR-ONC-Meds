@@ -40,9 +40,19 @@
   }
 }}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (urn:ietf:bcp:47#en, (English)) is not  valid in the value set Language codes with language and optionally a region modifier"
+  "display" : "English",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "en"
+}, "valueSet" :null}####
+v: {
+  "display" : "English",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
