@@ -243,8 +243,7 @@
     ],
     "pages": [
       "framework",
-      "source/pages",
-      "source/history"
+      "source/pages"
     ]
   }
 }
