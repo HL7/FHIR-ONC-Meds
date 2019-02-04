@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="get-active-meds"/>
+  <meta>
+    <lastUpdated value="2017-03-28T16:01:11Z"/>
+  </meta>
+  <type value="searchset"/>
+  <total value="6"/>
+  <link>
+    <relation value="self"/>
+    <url value="http://fhir3.healthintersections.com.au/open/MedicationStatement?search-id=e6c7f360-ffc5-4ea0-be38-f112e481fb&amp;&amp;patient=test2&amp;_sort=_id"/>
+  </link>
+  <entry>
+    <fullUrl value="http://fhir3.healthintersections.com.au/open/MedicationStatement/derivedfrom-mr-test2-1"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-test2-1"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-03-28T15:55:55Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-1</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: Zocor (simvastatin) 20mg Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '104491' = '104491', given as 'Simvastatin 20 MG Oral Tablet [Zocor]'})</span></p><p><b>effective</b>: Jan 15, 2016, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Jan 25, 2016</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-test2-1.html">Generated Summary: id: test2-1; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 104491}">Zocor (simvastatin) 20mg Tablet</span>; authoredOn: Jan 15, 2016; <span title="Codes: {http://snomed.info/sct 13644009}">Hypercholesterolemia (disorder)</span>; </a></p><p><b>taken</b>: na</p><p><b>reasonCode</b>: Hypercholesterolemia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '13644009' = '13644009', given as 'Hypercholesterolemia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="104491"/>
+            <display value="Simvastatin 20 MG Oral Tablet [Zocor]"/>
+            <userSelected value="false"/>
+          </coding>
+          <text value="Zocor (simvastatin) 20mg Tablet"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-01-15"/>
+        </effectivePeriod>
+        <dateAsserted value="2016-01-25"/>
+        <informationSource>
+          <display value="Dr Cayr"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/test2-1"/>
+        </derivedFrom>
+        <taken value="na"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="13644009"/>
+            <display value="Hypercholesterolemia (disorder)"/>
+            <userSelected value="false"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="40mg by mouth once daily"/>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38288"/>
+              <display value="ORAL"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir3.healthintersections.com.au/open/MedicationStatement/derivedfrom-mr-test2-2"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-test2-2"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-03-28T15:58:01Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-2</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: Humulin R (insulin regular, human) U100  100units/ml inj solution <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '311036' = '311036', given as 'Humulin R (insulin regular, human) U100  100units/ml inj solution'})</span></p><p><b>effective</b>: Jul 1, 2015, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Jan 21, 2017</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-test2-2.html">Generated Summary: id: test2-2; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 311036}">Humulin R (insulin regular, human) U100  100units/ml inj solution</span>; authoredOn: Jul 1, 2015; </a></p><p><b>taken</b>: na</p><p><b>dosage</b>: </p></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="311036"/>
+            <display value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+            <userSelected value="false"/>
+          </coding>
+          <text value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2015-07-01"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-01-21"/>
+        <informationSource>
+          <display value="Dr Cayr"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/test2-2"/>
+        </derivedFrom>
+        <taken value="na"/>
+        <dosage>
+          <sequence value="1"/>
+          <text value="10U every AM, 5U every PM, 5U at bedtime"/>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="34206005"/>
+              <display value="Subcutaneous route (qualifier value)"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir3.healthintersections.com.au/open/MedicationStatement/derivedfrom-mr-test2-3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-test2-3"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-03-28T16:00:39Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-3</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>medication</b>: simvastatin 10mg Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '314231' = '314231', given as 'Simvastatin 10 MG Oral Tablet'})</span></p><p><b>effective</b>: Jun 12, 2015, 12:00:00 AM --&gt; Jan 15, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Mar 15, 2017, 4:07:59 PM</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-test2-3.html">Generated Summary: id: test2-3; status: completed; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 314231}">simvastatin 10mg Tablet</span>; authoredOn: Jun 12, 2015; <span title="Codes: {http://snomed.info/sct 13644009}">Hypercholesterolemia (disorder)</span>; </a></p><p><b>taken</b>: na</p><p><b>reasonCode</b>: Hypercholesterolemia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '13644009' = '13644009', given as 'Hypercholesterolemia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <status value="completed"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="314231"/>
+            <display value="Simvastatin 10 MG Oral Tablet"/>
+            <userSelected value="false"/>
+          </coding>
+          <text value="simvastatin 10mg Tablet"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2015-06-12"/>
+          <end value="2016-01-15"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-03-15T16:07:59.169-07:00"/>
+        <informationSource>
+          <display value="Dr Cayr"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/test2-3"/>
+        </derivedFrom>
+        <taken value="na"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="13644009"/>
+            <display value="Hypercholesterolemia (disorder)"/>
+            <userSelected value="false"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="30mg (3 tablets) by mouth once daily"/>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38288"/>
+              <display value="ORAL"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir3.healthintersections.com.au/open/MedicationStatement/test2-1"/>
+    <resource>
+      <MedicationStatement>
+        <id value="test2-1"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-03-28T15:49:10Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: test2-1</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>medication</b>: testosterone cypionate 100mg/ml inj <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '835829' = '835829', given as 'testosterone cypionate 100 MG/ML Injectable Solution'})</span></p><p><b>effective</b>: Sep 1, 2016</p><p><b>dateAsserted</b>: Sep 1, 2016</p><p><b>informationSource</b>: Dr. Cryn</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>taken</b>: y</p></div>
+        </text>
+        <status value="completed"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="835829"/>
+            <display value="testosterone cypionate 100 MG/ML Injectable Solution"/>
+            <userSelected value="false"/>
+          </coding>
+          <text value="testosterone cypionate 100mg/ml inj"/>
+        </medicationCodeableConcept>
+        <effectiveDateTime value="2016-09-01"/>
+        <dateAsserted value="2016-09-01"/>
+        <informationSource>
+          <display value="Dr. Cryn"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <taken value="y"/>
+      </MedicationStatement>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir3.healthintersections.com.au/open/MedicationStatement/test2-2"/>
+    <resource>
+      <MedicationStatement>
+        <id value="test2-2"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2017-03-28T14:26:52Z"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: test2-2</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: testosterone cypionate 100mg/ml inj <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '835829' = '835829', given as 'testosterone cypionate 100 MG/ML Injectable Solution'})</span></p><p><b>effective</b>: Sep 12, 2016, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Sep 12, 2016</p><p><b>informationSource</b>: Brian Z</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>taken</b>: y</p><p><b>note</b>: Get at doctor's office every third Friday. Taking for energy level and drive.</p></div>
+        </text>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="835829"/>
+            <display value="testosterone cypionate 100 MG/ML Injectable Solution"/>
+            <userSelected value="false"/>
+          </coding>
+          <text value="testosterone cypionate 100mg/ml inj"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2016-09-12"/>
+        <informationSource>
+          <display value="Brian Z"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <taken value="y"/>
+        <note>
+          <text value="Get at doctor&#39;s office every third Friday. Taking for energy level and drive."/>
+        </note>
+      </MedicationStatement>
+    </resource>
+    <search>
+      <mode value="match"/>
+    </search>
+  </entry>
+</Bundle>

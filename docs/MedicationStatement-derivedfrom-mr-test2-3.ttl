@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationStatement/derivedfrom-mr-test2-3> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "derivedfrom-mr-test2-3"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-3</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>medication</b>: simvastatin 10mg Tablet <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '314231' = '314231', given as 'Simvastatin 10 MG Oral Tablet'})</span></p><p><b>effective</b>: Jun 12, 2015, 12:00:00 AM --&gt; Jan 15, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Mar 15, 2017, 4:07:59 PM</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-test2-3.html\">Generated Summary: id: test2-3; status: completed; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 314231}\">simvastatin 10mg Tablet</span>; authoredOn: Jun 12, 2015; <span title=\"Codes: {http://snomed.info/sct 13644009}\">Hypercholesterolemia (disorder)</span>; </a></p><p><b>taken</b>: na</p><p><b>reasonCode</b>: Hypercholesterolemia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '13644009' = '13644009', given as 'Hypercholesterolemia (disorder)'})</span></p><p><b>dosage</b>: </p></div>"
+  ];
+  fhir:MedicationStatement.status [ fhir:value "completed"];
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "314231" ];
+       fhir:Coding.display [ fhir:value "Simvastatin 10 MG Oral Tablet" ];
+       fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "simvastatin 10mg Tablet" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2015-06-12"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2016-01-15"^^xsd:date ]
+  ];
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2017-03-15T16:07:59.169-07:00"^^xsd:dateTime];
+  fhir:MedicationStatement.informationSource [
+     fhir:Reference.display [ fhir:value "Dr Cayr" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.org/fhir/us/meds/Patient/test2>;
+     fhir:Reference.reference [ fhir:value "Patient/test2" ];
+     fhir:Reference.display [ fhir:value "Brian Z" ]
+  ];
+  fhir:MedicationStatement.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/meds/MedicationRequest/test2-3>;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/test2-3" ]
+  ];
+  fhir:MedicationStatement.taken [ fhir:value "na"];
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:13644009;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "13644009" ];
+       fhir:Coding.display [ fhir:value "Hypercholesterolemia (disorder)" ];
+       fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+     ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "30mg (3 tablets) by mouth once daily" ];
+     fhir:Dosage.asNeededBoolean [ fhir:value "false"^^xsd:boolean ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncimeta.nci.nih.gov" ];
+         fhir:Coding.code [ fhir:value "C38288" ];
+         fhir:Coding.display [ fhir:value "ORAL" ];
+         fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/test2-3> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationStatement/derivedfrom-mr-test2-3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/meds/MedicationStatement/derivedfrom-mr-test2-3.ttl> .
+
+# -------------------------------------------------------------------------------------
+

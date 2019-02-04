@@ -1,0 +1,96 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "derivedfrom-mr-enca-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-2</p><p><b>meta</b>: </p><p><b>context</b>: <a href=\"Encounter-A.html\">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title=\"{http://hl7.org/fhir/v3/ActCode IMP}\">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: Ketorolac Tromethamine 15 MG/ML For Injection <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '860092' = '860092', given as '1 ML Ketorolac Tromethamine 15 MG/ML Injection'})</span></p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:54:15 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-enca-2.html\">Generated Summary: id: enca-2; status: completed; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860092}\">Ketorolac Tromethamine 15 MG/ML For Injection</span>; authoredOn: Sep 10, 2016; <span title=\"Codes: {http://snomed.info/sct 233604007}\">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>"
+  },
+  "context": {
+    "reference": "Encounter/A",
+    "display": "Inpatient Encounter A"
+  },
+  "status": "completed",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "860092",
+        "display": "1 ML Ketorolac Tromethamine 15 MG/ML Injection"
+      }
+    ],
+    "text": "Ketorolac Tromethamine 15 MG/ML For Injection"
+  },
+  "effectivePeriod": {
+    "start": "2016-09-10",
+    "end": "2016-09-12"
+  },
+  "dateAsserted": "2017-04-10T08:54:15.585-07:00",
+  "informationSource": {
+    "display": "Provider B"
+  },
+  "subject": {
+    "reference": "Patient/test2",
+    "display": "Brian Z"
+  },
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/enca-2"
+    }
+  ],
+  "taken": "y",
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "233604007",
+          "display": "Pneumonia (disorder)"
+        }
+      ]
+    }
+  ],
+  "dosage": [
+    {
+      "sequence": 1,
+      "text": "Ketoralac 15mg every six hours",
+      "timing": {
+        "event": [
+          "2016-09-10T08:52:20-07:00",
+          "2016-09-10T08:52:20-07:00",
+          "2016-09-10T14:52:20-07:00",
+          "2016-09-10T20:20:20-07:00",
+          "2016-09-11T02:02:20-07:00",
+          "2016-09-11T08:45:20-07:00",
+          "2016-09-11T14:15:20-07:00",
+          "2016-09-11T20:15:20-07:00",
+          "2016-09-12T02:15:20-07:00"
+        ]
+      },
+      "asNeededBoolean": false,
+      "route": {
+        "coding": [
+          {
+            "system": "http://ncimeta.nci.nih.gov",
+            "code": "C38276",
+            "display": "INTRAVENOUS",
+            "userSelected": false
+          }
+        ]
+      },
+      "method": {
+        "text": "Slow Push"
+      },
+      "doseQuantity": {
+        "value": 15,
+        "unit": "mg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg"
+      }
+    }
+  ]
+}

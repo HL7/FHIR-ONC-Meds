@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/pages"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/history"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
+  <version value="1.1.0"/>
+  <name value="US Meds"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <publisher value="HL7 Pharmacy Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/medication/index.cfm"/>
+    </telecom>
+  </contact>
+  <packageId value="hl7.fhir.us.meds"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="3.0.1"/>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <definition>
+    <grouping id="p1">
+      <name value="base"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="MedicationAdministration/medadmin-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/test2-3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/test2-2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/get-encounter-meds"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/test2-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/get-active-orders"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-5"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/get-all-meds"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-4"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-6"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/meddispense-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-enca-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/get-active-meds"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/test2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/derivedfrom-mr-test2-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-4"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationStatement/test2-2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-5"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/A"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/test2-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-6"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-2"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-3"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/enca-1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/medicationadministration"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/medicationdispense"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/server"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/client"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="General Guidance"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="get-all-active-med-order.html"/>
+          <title value="Get All Active Med Order "/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="get-all-active-meds.html"/>
+          <title value="Get All Active Meds "/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="get-all-enc-meds.html"/>
+          <title value="Get All Enc Meds "/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="get-all-meds.html"/>
+          <title value="Get All Meds "/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles and Extensions"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="StructureDefinition-medicationadministration.html"/>
+          <title value="StructureDefinition MedicationAdministration"/>
+          <generation value="generated"/>
+          <page>
+            <nameUrl value="MedicationAdministration-medadmin-1.html"/>
+            <title value="Medicationadministration Medadmin 1 "/>
+            <generation value="generated"/>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="StructureDefinition-medicationdispense.html"/>
+          <title value="StructureDefinition MedicationDispense"/>
+          <generation value="generated"/>
+          <page>
+            <nameUrl value="MedicationDispense-meddispense-1.html"/>
+            <title value="Medicationdispense Meddispense 1 "/>
+            <generation value="generated"/>
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="pdmp.html"/>
+        <title value="PDMP"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="capstatements.html"/>
+        <title value="Capability Statements"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="CapabilityStatement-server.html"/>
+          <title value="CapabilityStatement Server"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="CapabilityStatement-client.html"/>
+          <title value="CapabilityStatement Client"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="Bundle-get-active-meds.html"/>
+          <title value="Bundle Get Active Meds "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Bundle-get-active-orders.html"/>
+          <title value="Bundle Get Active Orders "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Bundle-get-all-meds.html"/>
+          <title value="Bundle Get All Meds "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Bundle-get-encounter-meds.html"/>
+          <title value="Bundle Get Encounter Meds "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Encounter-A.html"/>
+          <title value="Encounter A "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationAdministration-medadmin-1.html"/>
+          <title value="Medicationadministration Medadmin 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationDispense-meddispense-1.html"/>
+          <title value="Medicationdispense Meddispense 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-1.html"/>
+          <title value="Medicationrequest Enca 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-2.html"/>
+          <title value="Medicationrequest Enca 2 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-3.html"/>
+          <title value="Medicationrequest Enca 3 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-4.html"/>
+          <title value="Medicationrequest Enca 4 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-5.html"/>
+          <title value="Medicationrequest Enca 5 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-enca-6.html"/>
+          <title value="Medicationrequest Enca 6 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-test2-1.html"/>
+          <title value="Medicationrequest Test2 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-test2-2.html"/>
+          <title value="Medicationrequest Test2 2 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationRequest-test2-3.html"/>
+          <title value="Medicationrequest Test2 3 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-1.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-2.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 2 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-3.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 3 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-4.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 4 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-5.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 5 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-enca-6.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Enca 6 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-test2-1.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Test2 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-test2-2.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Test2 2 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-derivedfrom-mr-test2-3.html"/>
+          <title value="Medicationstatement Derivedfrom Mr Test2 3 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-test2-1.html"/>
+          <title value="Medicationstatement Test2 1 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="MedicationStatement-test2-2.html"/>
+          <title value="Medicationstatement Test2 2 "/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Patient-test2.html"/>
+          <title value="Patient Test2 "/>
+          <generation value="generated"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="toc.html"/>
+        <title value="Table of Contents"/>
+        <generation value="generated"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

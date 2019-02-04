@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/enca-6> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "enca-6"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: enca-6</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Amoxicillin 500 MG <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '308191' = '308191', given as 'Amoxicillin 500 MG Oral Capsule'})</span></p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>context</b>: <a href=\"Encounter-A.html\">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title=\"{http://hl7.org/fhir/v3/ActCode IMP}\">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>authoredOn</b>: Sep 12, 2016</p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Dr. B</td></tr></table><p><b>reasonCode</b>: Pneumonia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class=\"grid\"><tr><td>-</td><td><b>ValidityPeriod</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>Sep 12, 2016, 12:00:00 AM --&gt; Oct 12, 2016, 12:00:00 AM</td><td>40 Oral Capsule<span style=\"background: LightGoldenRodYellow\"> (Details: http://hl7.org/fhir/v3/orderableDrugForm code ORCAP = 'Oral Capsule')</span></td><td>10 days<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code d = 'd')</span></td></tr></table></div>"
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "308191" ];
+       fhir:Coding.display [ fhir:value "Amoxicillin 500 MG Oral Capsule" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Amoxicillin 500 MG" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://hl7.org/fhir/us/meds/Patient/test2>;
+     fhir:Reference.reference [ fhir:value "Patient/test2" ];
+     fhir:Reference.display [ fhir:value "Brian Z" ]
+  ];
+  fhir:MedicationRequest.context [
+     fhir:link <http://hl7.org/fhir/us/meds/Encounter/A>;
+     fhir:Reference.reference [ fhir:value "Encounter/A" ];
+     fhir:Reference.display [ fhir:value "Inpatient Encounter A" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2016-09-12"^^xsd:date];
+  fhir:MedicationRequest.requester [
+     fhir:MedicationRequest.requester.agent [
+       fhir:Reference.display [ fhir:value "Dr. B" ]
+     ]
+  ];
+  fhir:MedicationRequest.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:233604007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "233604007" ];
+       fhir:Coding.display [ fhir:value "Pneumonia (disorder)" ]
+     ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Amoxicillin 500mg by mouth every 6 hours for 10 days" ];
+     fhir:Dosage.additionalInstruction [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:311504000;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "311504000" ];
+         fhir:Coding.display [ fhir:value "With or after food" ]
+       ]
+     ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:integer ];
+         fhir:Timing.repeat.period [ fhir:value "6"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "h" ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncimeta.nci.nih.gov" ];
+         fhir:Coding.code [ fhir:value "C38288" ];
+         fhir:Coding.display [ fhir:value "ORALLY" ];
+         fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ];
+     fhir:Dosage.doseQuantity [
+       fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Oral Capsule" ];
+       fhir:Quantity.system [ fhir:value "http://hl7.org/fhir/v3/orderableDrugForm" ];
+       fhir:Quantity.code [ fhir:value "ORCAP" ]
+     ]
+  ];
+  fhir:MedicationRequest.dispenseRequest [
+     fhir:MedicationRequest.dispenseRequest.validityPeriod [
+       fhir:Period.start [ fhir:value "2016-09-12"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2016-10-12"^^xsd:date ]
+     ];
+     fhir:MedicationRequest.dispenseRequest.quantity [
+       fhir:Quantity.value [ fhir:value "40"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "Oral Capsule" ];
+       fhir:Quantity.system [ fhir:value "http://hl7.org/fhir/v3/orderableDrugForm" ];
+       fhir:Quantity.code [ fhir:value "ORCAP" ]
+     ];
+     fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "days" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "d" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/Encounter/A> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/enca-6.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/meds/MedicationRequest/enca-6.ttl> .
+
+# -------------------------------------------------------------------------------------
+

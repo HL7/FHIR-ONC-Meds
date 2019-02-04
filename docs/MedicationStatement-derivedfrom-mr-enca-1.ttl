@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationStatement/derivedfrom-mr-enca-1> a fhir:MedicationStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "derivedfrom-mr-enca-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-1</p><p><b>meta</b>: </p><p><b>context</b>: <a href=\"Encounter-A.html\">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title=\"{http://hl7.org/fhir/v3/ActCode IMP}\">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: Cefotaxime 1000Mg Powder For Solution For Injection <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '1656313' = '1656313', given as 'Cefotaxime 1000 MG Injection'})</span></p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:52:20 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-enca-1.html\">Generated Summary: id: enca-1; status: completed; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 1656313}\">Cefotaxime 1000Mg Powder For Solution For Injection</span>; authoredOn: Sep 10, 2016; <span title=\"Codes: {http://snomed.info/sct 233604007}\">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>"
+  ];
+  fhir:MedicationStatement.context [
+     fhir:link <http://hl7.org/fhir/us/meds/Encounter/A>;
+     fhir:Reference.reference [ fhir:value "Encounter/A" ];
+     fhir:Reference.display [ fhir:value "Inpatient Encounter A" ]
+  ];
+  fhir:MedicationStatement.status [ fhir:value "completed"];
+  fhir:MedicationStatement.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "1656313" ];
+       fhir:Coding.display [ fhir:value "Cefotaxime 1000 MG Injection" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Cefotaxime 1000Mg Powder For Solution For Injection" ]
+  ];
+  fhir:MedicationStatement.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-09-10"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2016-09-12"^^xsd:date ]
+  ];
+  fhir:MedicationStatement.dateAsserted [ fhir:value "2017-04-10T08:52:20.325-07:00"^^xsd:dateTime];
+  fhir:MedicationStatement.informationSource [
+     fhir:Reference.display [ fhir:value "Provider B" ]
+  ];
+  fhir:MedicationStatement.subject [
+     fhir:link <http://hl7.org/fhir/us/meds/Patient/test2>;
+     fhir:Reference.reference [ fhir:value "Patient/test2" ];
+     fhir:Reference.display [ fhir:value "Brian Z" ]
+  ];
+  fhir:MedicationStatement.derivedFrom [
+     fhir:index 0;
+     fhir:link <http://hl7.org/fhir/us/meds/MedicationRequest/enca-1>;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/enca-1" ]
+  ];
+  fhir:MedicationStatement.taken [ fhir:value "y"];
+  fhir:MedicationStatement.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:233604007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "233604007" ];
+       fhir:Coding.display [ fhir:value "Pneumonia (disorder)" ]
+     ]
+  ];
+  fhir:MedicationStatement.dosage [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Cefatoxime 1gm intravenously every 6 hours" ];
+     fhir:Dosage.timing [
+       fhir:Timing.event [
+         fhir:value "2016-09-10T08:52:20-07:00"^^xsd:dateTime;
+         fhir:index 0
+       ], [
+         fhir:value "2016-09-10T08:52:20-07:00"^^xsd:dateTime;
+         fhir:index 1
+       ], [
+         fhir:value "2016-09-10T14:52:20-07:00"^^xsd:dateTime;
+         fhir:index 2
+       ], [
+         fhir:value "2016-09-10T20:20:20-07:00"^^xsd:dateTime;
+         fhir:index 3
+       ], [
+         fhir:value "2016-09-11T02:02:20-07:00"^^xsd:dateTime;
+         fhir:index 4
+       ], [
+         fhir:value "2016-09-11T08:45:20-07:00"^^xsd:dateTime;
+         fhir:index 5
+       ], [
+         fhir:value "2016-09-11T14:15:20-07:00"^^xsd:dateTime;
+         fhir:index 6
+       ], [
+         fhir:value "2016-09-11T20:15:20-07:00"^^xsd:dateTime;
+         fhir:index 7
+       ], [
+         fhir:value "2016-09-12T02:15:20-07:00"^^xsd:dateTime;
+         fhir:index 8
+       ]
+     ];
+     fhir:Dosage.asNeededBoolean [ fhir:value "false"^^xsd:boolean ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncimeta.nci.nih.gov" ];
+         fhir:Coding.code [ fhir:value "C38276" ];
+         fhir:Coding.display [ fhir:value "INTRAVENOUS" ];
+         fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.text [ fhir:value "Slow Push" ]
+     ];
+     fhir:Dosage.doseQuantity [
+       fhir:Quantity.value [ fhir:value "1000"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mg" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/meds/Encounter/A> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/enca-1> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationStatement/derivedfrom-mr-enca-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/meds/MedicationStatement/derivedfrom-mr-enca-1.ttl> .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/Encounter/A> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "A"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: A</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>period</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p></div>"
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+     fhir:Coding.code [ fhir:value "IMP" ];
+     fhir:Coding.display [ fhir:value "inpatient encounter" ]
+  ];
+  fhir:Encounter.subject [
+     fhir:link <http://hl7.org/fhir/us/meds/Patient/test2>;
+     fhir:Reference.reference [ fhir:value "Patient/test2" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2016-09-10"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2016-09-12"^^xsd:date ]
+  ] .
+
+<http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/Encounter/A.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/meds/Encounter/A.ttl> .
+
+# -------------------------------------------------------------------------------------
+

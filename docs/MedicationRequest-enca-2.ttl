@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/enca-2> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "enca-2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: enca-2</p><p><b>meta</b>: </p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>medication</b>: Ketorolac Tromethamine 15 MG/ML For Injection <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '860092' = '860092', given as '1 ML Ketorolac Tromethamine 15 MG/ML Injection'})</span></p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>context</b>: <a href=\"Encounter-A.html\">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title=\"{http://hl7.org/fhir/v3/ActCode IMP}\">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>authoredOn</b>: Sep 10, 2016</p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Dr. B</td></tr></table><p><b>reasonCode</b>: Pneumonia (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosageInstruction</b>: </p></div>"
+  ];
+  fhir:MedicationRequest.status [ fhir:value "completed"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ];
+       fhir:Coding.code [ fhir:value "860092" ];
+       fhir:Coding.display [ fhir:value "1 ML Ketorolac Tromethamine 15 MG/ML Injection" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Ketorolac Tromethamine 15 MG/ML For Injection" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:link <http://hl7.org/fhir/us/meds/Patient/test2>;
+     fhir:Reference.reference [ fhir:value "Patient/test2" ];
+     fhir:Reference.display [ fhir:value "Brian Z" ]
+  ];
+  fhir:MedicationRequest.context [
+     fhir:link <http://hl7.org/fhir/us/meds/Encounter/A>;
+     fhir:Reference.reference [ fhir:value "Encounter/A" ];
+     fhir:Reference.display [ fhir:value "Inpatient Encounter A" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2016-09-10"^^xsd:date];
+  fhir:MedicationRequest.requester [
+     fhir:MedicationRequest.requester.agent [
+       fhir:Reference.display [ fhir:value "Dr. B" ]
+     ]
+  ];
+  fhir:MedicationRequest.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:233604007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "233604007" ];
+       fhir:Coding.display [ fhir:value "Pneumonia (disorder)" ]
+     ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Dosage.sequence [ fhir:value "1"^^xsd:integer ];
+     fhir:Dosage.text [ fhir:value "Ketoralac 15mg every six hours" ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:integer ];
+         fhir:Timing.repeat.period [ fhir:value "6"^^xsd:decimal ];
+         fhir:Timing.repeat.periodUnit [ fhir:value "h" ]
+       ]
+     ];
+     fhir:Dosage.asNeededBoolean [ fhir:value "false"^^xsd:boolean ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncimeta.nci.nih.gov" ];
+         fhir:Coding.code [ fhir:value "C38276" ];
+         fhir:Coding.display [ fhir:value "INTRAVENOUS" ];
+         fhir:Coding.userSelected [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.text [ fhir:value "Slow Push" ]
+     ];
+     fhir:Dosage.doseQuantity [
+       fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mg" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg" ]
+     ]
+  ] .
+
+<http://hl7.org/fhir/us/meds/Patient/test2> a fhir:us .
+
+<http://hl7.org/fhir/us/meds/Encounter/A> a fhir:us .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/us/meds/MedicationRequest/enca-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/us/meds/MedicationRequest/enca-2.ttl> .
+
+# -------------------------------------------------------------------------------------
+

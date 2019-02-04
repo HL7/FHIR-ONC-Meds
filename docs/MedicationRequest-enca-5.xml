@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="enca-5"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: enca-5</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>medication</b>: Zithromax 500 MG Oral Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '212446' = '212446', given as 'Zithromax 250 MG Oral Tablet'})</span></p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>authoredOn</b>: Sep 12, 2016</p><h3>Requesters</h3><table class="grid"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td>Dr. B</td></tr></table><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table class="grid"><tr><td>-</td><td><b>ValidityPeriod</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>Sep 12, 2016, 12:00:00 AM --&gt; Oct 12, 2016, 12:00:00 AM</td><td>20 TAB<span style="background: LightGoldenRodYellow"> (Details: http://hl7.org/fhir/v3/orderableDrugForm code TAB = 'Tablet')</span></td><td>10 days<span style="background: LightGoldenRodYellow"> (Details: UCUM code d = 'd')</span></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="212446"/>
+      <display value="Zithromax 250 MG Oral Tablet"/>
+    </coding>
+    <text value="Zithromax 500 MG Oral Tablet"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/test2"/>
+    <display value="Brian Z"/>
+  </subject>
+  <context>
+    <reference value="Encounter/A"/>
+    <display value="Inpatient Encounter A"/>
+  </context>
+  <authoredOn value="2016-09-12"/>
+  <requester>
+    <agent>
+      <display value="Dr. B"/>
+    </agent>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="233604007"/>
+      <display value="Pneumonia (disorder)"/>
+    </coding>
+  </reasonCode>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <text value="Zithromax (azithromycin) 250mg by mouth every 12 hours for 10 days"/>
+    <additionalInstruction>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="311504000"/>
+        <display value="With or after food"/>
+      </coding>
+    </additionalInstruction>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="12"/>
+        <periodUnit value="h"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://ncimeta.nci.nih.gov"/>
+        <code value="C38288"/>
+        <display value="ORALLY"/>
+        <userSelected value="false"/>
+      </coding>
+    </route>
+    <doseQuantity>
+      <value value="1"/>
+      <unit value="TAB"/>
+      <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+      <code value="TAB"/>
+    </doseQuantity>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2016-09-12"/>
+      <end value="2016-10-12"/>
+    </validityPeriod>
+  <!-- 		<numberOfRepeatsAllowed value="0"/>
+ -->
+    <quantity>
+      <value value="20"/>
+      <unit value="TAB"/>
+      <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+      <code value="TAB"/>
+    </quantity>
+    <expectedSupplyDuration>
+      <value value="10"/>
+      <unit value="days"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="d"/>
+    </expectedSupplyDuration>
+  </dispenseRequest>
+</MedicationRequest>

@@ -1,208 +1,250 @@
 {
-	"paths": {
-		"txCache": "txCache",
-		"qa": "qa",
-		"temp": "temp",
-		"resources": ["resources",
-		"examples"],
-		"output": "output",
-		"pages": "pages",
-		"specification": "https://hl7.org/fhir/STU3"
-	},
-  "version" : "3.0.1",
-	"tool": "jekyll",
-	"license" : "CC0-1.0",
-  "npm-name" : "hl7.fhir.us.meds",
-	"defaults": {
-		"StructureDefinition": {
-			"template-mappings": "sd-mappings.html",
-			"template-defns": "sd-definitions.html",
-			"template-base": "sd.html"
-		},
-		"MedicationDispense": {
-			"template-base": "ex.html"
-		},
-		"ConceptMap": {
-			"template-base": "cm.html"
-		},
-		"MedicationStatement": {
-			"template-base": "ex.html"
-		},
-		"MedicationAdministration": {
-			"template-base": "ex.html"
-		},
-		"ValueSet": {
-			"template-base": "vs.html"
-		},
-		"MedicationRequest": {
-			"template-base": "ex.html"
-		},
-		"Patient": {
-			"template-base": "ex.html"
-		},
-		"CodeSystem": {
-			"template-base": "cs.html"
-		},
-		"CapabilityStatement": {
-			"template-base": "cs.html"
-		},
-		"Encounter": {
-			"template-base": "ex.html"
-		},
-		"Bundle": {
-			"template-base": "ex.html"
-		},
-		"Any": {
-			"template-format": "format.html",
-			"template-base": "base.html",
-			 "swagger": true
-		}
-	},
-	"sct-edition": "http://snomed.info/sct/731000124108",
-	"resources": {
-		"MedicationDispense/meddispense-1": {
-			"base": "MedicationDispense-meddispense-1.html",
-			"source": "meddispense-1.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-test2-2": {
-			"base": "MedicationStatement-derivedfrom-mr-test2-2.html",
-			"source": "medicationstatement-derivedfrom-mr-test2-2.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-6": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-6.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-6.xml"
-		},
-		"CapabilityStatement/client": {
-			"base": "CapabilityStatement-client.html",
-			"source": "capabilitystatement-client.xml"
-		},
-		"MedicationRequest/enca-3": {
-			"base": "MedicationRequest-enca-3.html",
-			"source": "MedicationRequest-enca-3.xml"
-		},
-		"MedicationStatement/test2-2": {
-			"base": "MedicationStatement-test2-2.html",
-			"source": "medicationstatement-test2-2.json"
-		},
-		"Bundle/get-encounter-meds": {
-			"base": "Bundle-get-encounter-meds.html",
-			"source": "get-encounter-meds-bundle.xml"
-		},
-		"MedicationRequest/enca-2": {
-			"base": "MedicationRequest-enca-2.html",
-			"source": "MedicationRequest-enca-2.xml"
-		},
-		"MedicationRequest/enca-1": {
-			"base": "MedicationRequest-enca-1.html",
-			"source": "MedicationRequest-enca-1.xml"
-		},
-		"Bundle/get-all-meds": {
-			"base": "Bundle-get-all-meds.html",
-			"source": "get-all-meds-bundle.xml"
-		},
-		"MedicationRequest/enca-6": {
-			"base": "MedicationRequest-enca-6.html",
-			"source": "MedicationRequest-enca-6.xml"
-		},
-		"Patient/test2": {
-			"base": "Patient-test2.html",
-			"source": "test2-patient.xml"
-		},
-		"Bundle/get-active-orders": {
-			"base": "Bundle-get-active-orders.html",
-			"source": "get-active-orders-bundle.json"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-3": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-3.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-3.xml"
-		},
-		"MedicationStatement/test2-1": {
-			"base": "MedicationStatement-test2-1.html",
-			"source": "medicationstatement-test2-1.json"
-		},
-		"MedicationRequest/enca-5": {
-			"base": "MedicationRequest-enca-5.html",
-			"source": "MedicationRequest-enca-5.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-test2-1": {
-			"base": "MedicationStatement-derivedfrom-mr-test2-1.html",
-			"source": "medicationstatement-derivedfrom-mr-test2-1.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-2": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-2.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-2.xml"
-		},
-		"Encounter/A": {
-			"base": "Encounter-A.html",
-			"source": "encounter-a.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-test2-3": {
-			"base": "MedicationStatement-derivedfrom-mr-test2-3.html",
-			"source": "medicationstatement-derivedfrom-mr-test2-3.xml"
-		},
-		"MedicationRequest/test2-3": {
-			"base": "MedicationRequest-test2-3.html",
-			"source": "medicationrequest-test2-3.json"
-		},
-		"StructureDefinition/medicationdispense": {
-			"base": "StructureDefinition-medicationdispense.html",
-			"defns": "StructureDefinition-medicationdispense-definitions.html",
-      "source": "StructureDefinition-medicationdispense.xml"
-
-		},
-		"MedicationRequest/test2-1": {
-			"base": "MedicationRequest-test2-1.html",
-			"source": "medicationrequest-test2-1.json"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-5": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-5.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-5.xml"
-		},
-		"MedicationRequest/test2-2": {
-			"base": "MedicationRequest-test2-2.html",
-			"source": "medicationrequest-test2-2.json"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-1": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-1.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-1.xml"
-		},
-		"StructureDefinition/medicationadministration": {
-			"base": "StructureDefinition-medicationadministration.html",
-			"defns": "StructureDefinition-medicationadministration-definitions.html",
-      "source": "StructureDefinition-medicationadministration.xml"
-
-		},
-		"MedicationRequest/enca-4": {
-			"base": "MedicationRequest-enca-4.html",
-			"source": "MedicationRequest-enca-4.xml"
-		},
-		"CapabilityStatement/server": {
-			"base": "CapabilityStatement-server.html",
-			"source": "capabilitystatement-server.xml"
-		},
-		"MedicationStatement/derivedfrom-mr-enca-4": {
-			"base": "MedicationStatement-derivedfrom-mr-enca-4.html",
-			"source": "medicationstatement-derivedfrom-mr-enca-4.xml"
-		},
-		"MedicationAdministration/medadmin-1": {
-			"base": "MedicationAdministration-medadmin-1.html",
-			"source": "medadmin-1.xml"
-		},
-		"Bundle/get-active-meds": {
-			"base": "Bundle-get-active-meds.html",
-			"source": "get-active-meds-bundle.xml"
-		}
-	},
-	"fixed-business-version": "1.1.0",
+  "source": "ig.xml",
+  "sct-edition": "http://snomed.info/sct/731000124108",
+  "license": "CC0-1.0",
+  "publisher": "HL7 Pharmacy Work Group",
+  "gen-examples": "false",
+  "canonicalBase": "http://hl7.org/fhir/us/meds",
+  "working-dir": "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/",
   "dependencyList": [
     {
-      "name": "uscore",
-      "version": "2.0.0",
+      "version": "1.1.0",
       "location": "http://hl7.org/fhir/us/core",
-      "source": "dependency/uscore-vp"
+      "name": "uscore",
+      "source": "dependencies/uscore-vp"
     }
+  ],
+  "tool": "jekyll",
+  "logging": [
+    "progress"
+  ],
+  "version": "3.0.1",
+  "status": "active",
+  "defaults": {
+    "MedicationRequest": {
+      "template-base": "ex.html"
+    },
+    "Any": {
+      "template-format": "format.html",
+      "template-base": "base.html",
+      "swagger": "true"
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "Bundle": {
+      "template-base": "ex.html"
+    },
+    "MedicationStatement": {
+      "template-base": "ex.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    },
+    "MedicationDispense": {
+      "template-base": "ex.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "MedicationAdministration": {
+      "template-base": "ex.html"
+    },
+    "StructureMap": {
+      "template-base": "ex.html",
+      "content": false,
+      "script": false,
+      "profiles": false
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "Encounter": {
+      "template-base": "ex.html"
+    },
+    "Patient": {
+      "template-base": "ex.html"
+    },
+    "StructureDefinition": {
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html",
+      "template-mappings": "sd-mappings.html"
+    },
+    "ConceptMap": {
+      "template-base": "base.html"
+    }
+  },
+  "swagger": [
+    {
+      "mode": "single",
+      "capabilities": "server"
+    }
+  ],
+  "igtemplate-dir": "/Users/ehaas/Documents/FHIR/IG-Template2/",
+  "mappings": "true",
+  "fixed-business-version": "1.1.0",
+  "title": "US Meds",
+  "allviews": "true",
+  "no-inactive-codes": "false",
+  "broken-links": "warning",
+  "contact_system": "url",
+  "resources": {
+    "Patient/test2": {
+      "base": "Patient-test2.html",
+      "source": "test2-patient.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-5": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-5.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-5.xml"
+    },
+    "MedicationRequest/test2-2": {
+      "base": "MedicationRequest-test2-2.html",
+      "source": "medicationrequest-test2-2.json"
+    },
+    "CapabilityStatement/server": {
+      "base": "CapabilityStatement-server.html",
+      "source": "capabilitystatement-server.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-2": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-2.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-2.xml"
+    },
+    "Bundle/get-active-meds": {
+      "base": "Bundle-get-active-meds.html",
+      "source": "get-active-meds-bundle.xml"
+    },
+    "MedicationRequest/test2-3": {
+      "base": "MedicationRequest-test2-3.html",
+      "source": "medicationrequest-test2-3.json"
+    },
+    "MedicationStatement/derivedfrom-mr-test2-3": {
+      "base": "MedicationStatement-derivedfrom-mr-test2-3.html",
+      "source": "medicationstatement-derivedfrom-mr-test2-3.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-6": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-6.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-6.xml"
+    },
+    "MedicationRequest/enca-3": {
+      "base": "MedicationRequest-enca-3.html",
+      "source": "MedicationRequest-enca-3.xml"
+    },
+    "MedicationRequest/enca-4": {
+      "base": "MedicationRequest-enca-4.html",
+      "source": "MedicationRequest-enca-4.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-1": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-1.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-1.xml"
+    },
+    "MedicationRequest/enca-2": {
+      "base": "MedicationRequest-enca-2.html",
+      "source": "MedicationRequest-enca-2.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-3": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-3.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-3.xml"
+    },
+    "Encounter/A": {
+      "base": "Encounter-A.html",
+      "source": "encounter-a.xml"
+    },
+    "CapabilityStatement/client": {
+      "base": "CapabilityStatement-client.html",
+      "source": "capabilitystatement-client.xml"
+    },
+    "MedicationAdministration/medadmin-1": {
+      "base": "MedicationAdministration-medadmin-1.html",
+      "source": "medadmin-1.xml"
+    },
+    "MedicationStatement/test2-1": {
+      "base": "MedicationStatement-test2-1.html",
+      "source": "medicationstatement-test2-1.json"
+    },
+    "MedicationDispense/meddispense-1": {
+      "base": "MedicationDispense-meddispense-1.html",
+      "source": "meddispense-1.xml"
+    },
+    "StructureDefinition/medicationadministration": {
+      "defns": "StructureDefinition-medicationadministration-definitions.html",
+      "base": "StructureDefinition-medicationadministration.html",
+      "source": "StructureDefinition-medicationadministration.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-enca-4": {
+      "base": "MedicationStatement-derivedfrom-mr-enca-4.html",
+      "source": "medicationstatement-derivedfrom-mr-enca-4.xml"
+    },
+    "MedicationRequest/test2-1": {
+      "base": "MedicationRequest-test2-1.html",
+      "source": "medicationrequest-test2-1.json"
+    },
+    "MedicationStatement/derivedfrom-mr-test2-1": {
+      "base": "MedicationStatement-derivedfrom-mr-test2-1.html",
+      "source": "medicationstatement-derivedfrom-mr-test2-1.xml"
+    },
+    "Bundle/get-all-meds": {
+      "base": "Bundle-get-all-meds.html",
+      "source": "get-all-meds-bundle.xml"
+    },
+    "StructureDefinition/medicationdispense": {
+      "defns": "StructureDefinition-medicationdispense-definitions.html",
+      "base": "StructureDefinition-medicationdispense.html",
+      "source": "StructureDefinition-medicationdispense.xml"
+    },
+    "MedicationStatement/derivedfrom-mr-test2-2": {
+      "base": "MedicationStatement-derivedfrom-mr-test2-2.html",
+      "source": "medicationstatement-derivedfrom-mr-test2-2.xml"
+    },
+    "MedicationStatement/test2-2": {
+      "base": "MedicationStatement-test2-2.html",
+      "source": "medicationstatement-test2-2.json"
+    },
+    "MedicationRequest/enca-6": {
+      "base": "MedicationRequest-enca-6.html",
+      "source": "MedicationRequest-enca-6.xml"
+    },
+    "Bundle/get-active-orders": {
+      "base": "Bundle-get-active-orders.html",
+      "source": "get-active-orders-bundle.json"
+    },
+    "Bundle/get-encounter-meds": {
+      "base": "Bundle-get-encounter-meds.html",
+      "source": "get-encounter-meds-bundle.xml"
+    },
+    "MedicationRequest/enca-1": {
+      "base": "MedicationRequest-enca-1.html",
+      "source": "MedicationRequest-enca-1.xml"
+    },
+    "MedicationRequest/enca-5": {
+      "base": "MedicationRequest-enca-5.html",
+      "source": "MedicationRequest-enca-5.xml"
+    }
+  },
+  "npm-name": "hl7.fhir.us.meds",
+  "topofpage": "true",
+  "contact_value": "http://www.hl7.org/Special/committees/medication/index.cfm",
+  "do-transforms": "false",
+  "extraTemplates": [
+    "mappings"
+  ],
+  "pub_url": "ehaas@healthedatainc.com",
+  "paths": {
+    "temp": "generated_output/temp",
+    "output": "output",
+    "specification": "http://hl7.org/fhir/STU3",
+    "qa": "generated_output/qa",
+    "txCache": "generated_output/txCache",
+    "resources": [
+      "source/resources",
+      "source/examples"
     ],
-    	"extraTemplates": ["mappings"],
-	"source": "ig.xml",
-	"canonicalBase": "http://hl7.org/fhir/us/meds"
+    "pages": [
+      "framework",
+      "source/pages",
+      "source/history"
+    ]
+  }
 }

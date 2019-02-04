@@ -14,8 +14,7 @@
       {
          "version": "1.1.0",
          "date": "2019-01-31",
-         "desc": "STU 2",
-         "changes": "added new section on PDMP",
+         "desc": "STU 2:  added new section on PDMP",
          "path": "us/meds/STU2",
          "status": "trial-use",
          "sequence": "STU2"
@@ -24,7 +23,6 @@
          "version": "1.1.0",
          "date": "2018-06-14",
          "desc": "STU 2 Ballot",
-         "changes": "n/a",
          "path": "us/meds/2018May",
          "status": "ballot",
          "sequence": "STU2"
@@ -33,7 +31,6 @@
          "version": "1.0.0",
          "date": "2017-06-14",
          "desc": "STU 1 (Permanent Home - v1.0.0)",
-         "changes": "n/a",
          "path": "us/meds/STU1",
          "status": "trial-use",
          "sequence": "STU1"
@@ -42,7 +39,6 @@
          "version": "n/a",
          "date": "2016-12-06",
          "desc": "1st Draft",
-         "changes": "n/a",
          "path": "us/meds/2017Jan",
          "status": "draft",
          "sequence": "STU1"

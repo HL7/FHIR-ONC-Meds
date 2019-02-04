@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="get-encounter-meds"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2017-04-10T12:49:37.665-04:00"/>
+  </meta>
+  <type value="searchset"/>
+  <total value="6"/>
+  <link>
+    <relation value="self"/>
+    <url value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement?patient=test2&amp;context=A"/>
+  </link>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-1"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-1"/>
+        <meta>
+          <versionId value="3"/>
+          <lastUpdated value="2017-04-10T12:47:22.409-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-1</p><p><b>meta</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: Cefotaxime 1000Mg Powder For Solution For Injection <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '1656313' = '1656313', given as 'Cefotaxime 1000 MG Injection'})</span></p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:52:20 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-1.html">Generated Summary: id: enca-1; status: completed; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 1656313}">Cefotaxime 1000Mg Powder For Solution For Injection</span>; authoredOn: Sep 10, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="completed"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="1656313"/>
+            <display value="Cefotaxime 1000 MG Injection"/>
+          </coding>
+          <text value="Cefotaxime 1000Mg Powder For Solution For Injection"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-10"/>
+          <end value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:52:20.325-07:00"/>
+        <informationSource>
+          <display value="Provider B"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-1"/>
+        </derivedFrom>
+        <taken value="y"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="Cefatoxime 1gm intravenously every 6 hours"/>
+          <timing>
+            <event value="2016-09-10T08:52:20-07:00"/>
+            <event value="2016-09-10T08:52:20-07:00"/>
+            <event value="2016-09-10T14:52:20-07:00"/>
+            <event value="2016-09-10T20:20:20-07:00"/>
+            <event value="2016-09-11T02:02:20-07:00"/>
+            <event value="2016-09-11T08:45:20-07:00"/>
+            <event value="2016-09-11T14:15:20-07:00"/>
+            <event value="2016-09-11T20:15:20-07:00"/>
+            <event value="2016-09-12T02:15:20-07:00"/>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38276"/>
+              <display value="INTRAVENOUS"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+          <method>
+            <text value="Slow Push"/>
+          </method>
+          <doseQuantity>
+            <value value="1000"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </doseQuantity>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-2"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-2"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-04-10T12:47:42.113-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-2</p><p><b>meta</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: Ketorolac Tromethamine 15 MG/ML For Injection <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '860092' = '860092', given as '1 ML Ketorolac Tromethamine 15 MG/ML Injection'})</span></p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:54:15 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-2.html">Generated Summary: id: enca-2; status: completed; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 860092}">Ketorolac Tromethamine 15 MG/ML For Injection</span>; authoredOn: Sep 10, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="completed"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="860092"/>
+            <display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
+          </coding>
+          <text value="Ketorolac Tromethamine 15 MG/ML For Injection"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-10"/>
+          <end value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:54:15.585-07:00"/>
+        <informationSource>
+          <display value="Provider B"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-2"/>
+        </derivedFrom>
+        <taken value="y"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="Cefatoxime 1gm intravenously every 6 hours"/>
+          <timing>
+            <event value="2016-09-10T08:52:20-07:00"/>
+            <event value="2016-09-10T08:52:20-07:00"/>
+            <event value="2016-09-10T14:52:20-07:00"/>
+            <event value="2016-09-10T20:20:20-07:00"/>
+            <event value="2016-09-11T02:02:20-07:00"/>
+            <event value="2016-09-11T08:45:20-07:00"/>
+            <event value="2016-09-11T14:15:20-07:00"/>
+            <event value="2016-09-11T20:15:20-07:00"/>
+            <event value="2016-09-12T02:15:20-07:00"/>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38276"/>
+              <display value="INTRAVENOUS"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+          <method>
+            <text value="Slow Push"/>
+          </method>
+          <doseQuantity>
+            <value value="15"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </doseQuantity>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-3"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-3"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-04-10T12:47:54.316-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-3</p><p><b>meta</b>: </p><p><b>contained</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: unknown resource contained</p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:55:28 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-3.html">Generated Summary: id: enca-3; status: completed; intent: order; ????; authoredOn: Sep 10, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <contained>
+          <Medication>
+            <id value="med-1"/>
+            <meta>
+              <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+            </meta>
+            <code>
+              <text value="Azithromycin 500mg in 250 ml Normal Saline"/>
+            </code>
+            <ingredient>
+              <itemCodeableConcept>
+                <coding>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+                  <code value="1668240"/>
+                  <display value="Zithromax 500 MG Injection"/>
+                </coding>
+                <text value="Zithromax (azithromycin) 500 MG Injection"/>
+              </itemCodeableConcept>
+              <isActive value="true"/>
+              <amount>
+                <numerator>
+                  <value value="500"/>
+                  <unit value="mg"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mg"/>
+                </numerator>
+                <denominator>
+                  <value value="1"/>
+                  <unit value="vial"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="{vial}"/>
+                </denominator>
+              </amount>
+            </ingredient>
+            <ingredient>
+              <itemCodeableConcept>
+                <coding>
+                  <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+                  <code value="313002"/>
+                  <display value="Sodium Chloride 0.9% injectable solution"/>
+                </coding>
+                <text value="Normal Saline"/>
+              </itemCodeableConcept>
+              <isActive value="true"/>
+              <amount>
+                <numerator>
+                  <value value="250"/>
+                  <unit value="mL"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mL"/>
+                </numerator>
+                <denominator>
+                  <value value="1"/>
+                  <unit value="IV Bag"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="{IV Bag}"/>
+                </denominator>
+              </amount>
+            </ingredient>
+          </Medication>
+        </contained>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="completed"/>
+        <medicationReference>
+          <reference value="#med-1"/>
+        </medicationReference>
+        <effectivePeriod>
+          <start value="2016-09-10"/>
+          <end value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:55:28.557-07:00"/>
+        <informationSource>
+          <display value="Provider B"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-3"/>
+        </derivedFrom>
+        <taken value="y"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="Azithromycin 500mg in 250 ml Normal Saline intravenously over 1hour every 24 hours"/>
+          <timing>
+            <event value="2016-09-10T08:52:20-07:00"/>
+            <event value="2016-09-11T08:52:20-07:00"/>
+          </timing>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38276"/>
+              <display value="INTRAVENOUS"/>
+            </coding>
+          </route>
+          <method>
+            <text value="I hr infusion"/>
+          </method>
+          <doseQuantity>
+            <value value="500"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+          </doseQuantity>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-4"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-4"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-04-10T12:48:03.114-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-4</p><p><b>meta</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: completed</p><p><b>medication</b>: LRS <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '847626' = 'Potassium Chloride 20 MEQ/L in Lactated Ringers Solution with Dextrose 5 % Injectable Solution', given as 'Calcium Chloride 0.0014 MEQ/ML / Potassium Chloride 0.024 MEQ/ML / Sodium Chloride 0.103 MEQ/ML / Sodium Lactate 0.028 MEQ/ML Injectable Solution'})</span></p><p><b>effective</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:56:13 AM</p><p><b>informationSource</b>: Provider B</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-4.html">Generated Summary: id: enca-4; status: completed; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 847626}">LRS</span>; authoredOn: Sep 10, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: y</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="completed"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="847626"/>
+            <display value="Calcium Chloride 0.0014 MEQ/ML / Potassium Chloride 0.024 MEQ/ML / Sodium Chloride 0.103 MEQ/ML / Sodium Lactate 0.028 MEQ/ML Injectable Solution"/>
+          </coding>
+          <text value="LRS"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-10"/>
+          <end value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:56:13.229-07:00"/>
+        <informationSource>
+          <display value="Provider B"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-4"/>
+        </derivedFrom>
+        <taken value="y"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="LRS IV at 250 ml/hr"/>
+          <asNeededBoolean value="false"/>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38276"/>
+              <display value="INTRAVENOUS"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+          <method>
+            <text value="Constant Rate Infusion"/>
+          </method>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-5"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-5"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-04-10T12:48:11.192-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-5</p><p><b>meta</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: active</p><p><b>medication</b>: Zithromax 500 MG Oral Tablet <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '212446' = '212446', given as 'Zithromax 250 MG Oral Tablet'})</span></p><p><b>effective</b>: Sep 12, 2016, 12:00:00 AM --&gt; Sep 22, 2016, 12:00:00 AM</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:56:49 AM</p><p><b>informationSource</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-5.html">Generated Summary: id: enca-5; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 212446}">Zithromax 500 MG Oral Tablet</span>; authoredOn: Sep 12, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: n</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="212446"/>
+            <display value="Zithromax 250 MG Oral Tablet"/>
+          </coding>
+          <text value="Zithromax 500 MG Oral Tablet"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-12"/>
+          <end value="2016-09-22"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:56:49.038-07:00"/>
+        <informationSource>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-5"/>
+        </derivedFrom>
+        <taken value="n"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="Zithromax (azithromycin) 250mg by mouth every 12 hours for 10 days"/>
+          <additionalInstruction>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="311504000"/>
+              <display value="With or after food"/>
+            </coding>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="12"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38288"/>
+              <display value="ORALLY"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+          <doseQuantity>
+            <value value="1"/>
+            <unit value="TAB"/>
+            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+            <code value="TAB"/>
+          </doseQuantity>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://wildfhir.aegis.net/fhir3-0-0/MedicationStatement/derivedfrom-mr-enca-6"/>
+    <resource>
+      <MedicationStatement>
+        <id value="derivedfrom-mr-enca-6"/>
+        <meta>
+          <versionId value="2"/>
+          <lastUpdated value="2017-04-10T12:48:18.411-04:00"/>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-enca-6</p><p><b>meta</b>: </p><p><b>context</b>: <a href="Encounter-A.html">Inpatient Encounter A. Generated Summary: id: A; status: finished; <span title="{http://hl7.org/fhir/v3/ActCode IMP}">inpatient encounter</span>; period: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</a></p><p><b>status</b>: active</p><p><b>medication</b>: Amoxicillin 500 MG <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '308191' = '308191', given as 'Amoxicillin 500 MG Oral Capsule'})</span></p><p><b>effective</b>: Sep 12, 2016, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Apr 10, 2017, 8:57:19 AM</p><p><b>informationSource</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-enca-6.html">Generated Summary: id: enca-6; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 308191}">Amoxicillin 500 MG</span>; authoredOn: Sep 12, 2016; <span title="Codes: {http://snomed.info/sct 233604007}">Pneumonia (disorder)</span>; </a></p><p><b>taken</b>: n</p><p><b>reasonCode</b>: Pneumonia (disorder) <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '233604007' = '233604007', given as 'Pneumonia (disorder)'})</span></p><p><b>dosage</b>: </p></div>
+        </text>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
+        <status value="active"/>
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="308191"/>
+            <display value="Amoxicillin 500 MG Oral Capsule"/>
+          </coding>
+          <text value="Amoxicillin 500 MG"/>
+        </medicationCodeableConcept>
+        <effectivePeriod>
+          <start value="2016-09-12"/>
+        </effectivePeriod>
+        <dateAsserted value="2017-04-10T08:57:19.412-07:00"/>
+        <informationSource>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </informationSource>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <derivedFrom>
+          <reference value="MedicationRequest/enca-6"/>
+        </derivedFrom>
+        <taken value="n"/>
+        <reasonCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia (disorder)"/>
+          </coding>
+        </reasonCode>
+        <dosage>
+          <sequence value="1"/>
+          <text value="Amoxicillin 500mg by mouth every 6 hours for 10 days"/>
+          <additionalInstruction>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="311504000"/>
+              <display value="With or after food"/>
+            </coding>
+          </additionalInstruction>
+          <timing>
+            <repeat>
+              <frequency value="1"/>
+              <period value="6"/>
+              <periodUnit value="h"/>
+            </repeat>
+          </timing>
+          <route>
+            <coding>
+              <system value="http://ncimeta.nci.nih.gov"/>
+              <code value="C38288"/>
+              <display value="ORALLY"/>
+              <userSelected value="false"/>
+            </coding>
+          </route>
+          <doseQuantity>
+            <value value="1"/>
+            <unit value="Oral Capsule"/>
+            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+            <code value="ORCAP"/>
+          </doseQuantity>
+        </dosage>
+      </MedicationStatement>
+    </resource>
+  </entry>
+</Bundle>

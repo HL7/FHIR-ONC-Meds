@@ -1,0 +1,60 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "derivedfrom-mr-test2-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-2</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: Humulin R (insulin regular, human) U100  100units/ml inj solution <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '311036' = '311036', given as 'Humulin R (insulin regular, human) U100  100units/ml inj solution'})</span></p><p><b>effective</b>: Jul 1, 2015, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Jan 21, 2017</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href=\"MedicationRequest-test2-2.html\">Brian Z. Generated Summary: id: test2-2; status: active; intent: order; <span title=\"Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 311036}\">Humulin R (insulin regular, human) U100  100units/ml inj solution</span>; authoredOn: Jul 1, 2015; </a></p><p><b>taken</b>: na</p><p><b>dosage</b>: </p></div>"
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "311036",
+        "display": "Humulin R (insulin regular, human) U100  100units/ml inj solution",
+        "userSelected": false
+      }
+    ],
+    "text": "Humulin R (insulin regular, human) U100  100units/ml inj solution"
+  },
+  "effectivePeriod": {
+    "start": "2015-07-01"
+  },
+  "dateAsserted": "2017-01-21",
+  "informationSource": {
+    "display": "Dr Cayr"
+  },
+  "subject": {
+    "reference": "Patient/test2",
+    "display": "Brian Z"
+  },
+  "derivedFrom": [
+    {
+      "reference": "MedicationRequest/test2-2",
+      "display": "Brian Z"
+    }
+  ],
+  "taken": "na",
+  "dosage": [
+    {
+      "sequence": 1,
+      "text": "10U every AM, 5U every PM, 5U at bedtime",
+      "asNeededBoolean": false,
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "34206005",
+            "display": "Subcutaneous route (qualifier value)",
+            "userSelected": false
+          }
+        ]
+      }
+    }
+  ]
+}

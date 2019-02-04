@@ -1,0 +1,692 @@
+﻿{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "This resource defines the expected capabilities of the US Meds Server actor when conforming to the US Meds IG and It is expected that it will be used in conjuction with the US Core CapabilityStatement. Together they describe the complete list of actual profiles, RESTful operations, and search parameters supported by US Meds Servers.  US Meds Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+    "license": {
+      "name": "CC0-1.0"
+    },
+    "version": "1.1.0",
+    "contact": {}
+  },
+  "externalDocs": {
+    "url": "http://hl7.org/fhir/us/meds/CapabilityStatement/server",
+    "description": "FHIR CapabilityStatement"
+  },
+  "paths": {
+    "/Medication": {
+      "summary": "manage the collection of resources of type Medication",
+      "description": "Access to services to manage the collection of all resources of type Medication",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedication",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Medication/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Medication",
+      "description": "Access to services to manage the state of a single resource of type Medication",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readMedication",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Medication"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Medication.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Medication/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type Medication",
+      "description": "Access to previous versions of a single resource of type Medication",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadMedication",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Medication"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Medication.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationAdministration": {
+      "summary": "manage the collection of resources of type MedicationAdministration",
+      "description": "Access to services to manage the collection of all resources of type MedicationAdministration",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationAdministration",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationAdministration/{rid}": {
+      "summary": "Read/Write/etc resource instance of type MedicationAdministration",
+      "description": "Access to services to manage the state of a single resource of type MedicationAdministration",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readMedicationAdministration",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationAdministration"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationAdministration.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationAdministration/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type MedicationAdministration",
+      "description": "Access to previous versions of a single resource of type MedicationAdministration",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadMedicationAdministration",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationAdministration"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationAdministration.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationDispense": {
+      "summary": "manage the collection of resources of type MedicationDispense",
+      "description": "Access to services to manage the collection of all resources of type MedicationDispense",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationDispense",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationDispense/{rid}": {
+      "summary": "Read/Write/etc resource instance of type MedicationDispense",
+      "description": "Access to services to manage the state of a single resource of type MedicationDispense",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readMedicationDispense",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationDispense"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationDispense.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationDispense/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type MedicationDispense",
+      "description": "Access to previous versions of a single resource of type MedicationDispense",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadMedicationDispense",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationDispense"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationDispense.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationRequest": {
+      "summary": "manage the collection of resources of type MedicationRequest",
+      "description": "Access to services to manage the collection of all resources of type MedicationRequest",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationRequest",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationRequest/{rid}": {
+      "summary": "Read/Write/etc resource instance of type MedicationRequest",
+      "description": "Access to services to manage the state of a single resource of type MedicationRequest",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readMedicationRequest",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationRequest"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationRequest.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationRequest/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type MedicationRequest",
+      "description": "Access to previous versions of a single resource of type MedicationRequest",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadMedicationRequest",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationRequest"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationRequest.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationStatement": {
+      "summary": "manage the collection of resources of type MedicationStatement",
+      "description": "Access to services to manage the collection of all resources of type MedicationStatement",
+      "get": {
+        "summary": "Search all resources based on a set of criteria",
+        "operationId": "searchMedicationStatement",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/Bundle.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationStatement/{rid}": {
+      "summary": "Read/Write/etc resource instance of type MedicationStatement",
+      "description": "Access to services to manage the state of a single resource of type MedicationStatement",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readMedicationStatement",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationStatement"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationStatement.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/MedicationStatement/{rid}/_history/{hid}": {
+      "summary": "Read past versions of resource instance of type MedicationStatement",
+      "description": "Access to previous versions of a single resource of type MedicationStatement",
+      "get": {
+        "summary": "Read a past state of the resource",
+        "operationId": "vreadMedicationStatement",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag for that version"
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/fhir.json.schema#/definitions/MedicationStatement"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "http://hl7.org/fhir/STU3/MedicationStatement.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

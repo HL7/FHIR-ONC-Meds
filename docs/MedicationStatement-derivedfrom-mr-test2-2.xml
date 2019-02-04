@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="derivedfrom-mr-test2-2"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: derivedfrom-mr-test2-2</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: Humulin R (insulin regular, human) U100  100units/ml inj solution <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '311036' = '311036', given as 'Humulin R (insulin regular, human) U100  100units/ml inj solution'})</span></p><p><b>effective</b>: Jul 1, 2015, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Jan 21, 2017</p><p><b>informationSource</b>: Dr Cayr</p><p><b>subject</b>: <a href="Patient-test2.html">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>derivedFrom</b>: <a href="MedicationRequest-test2-2.html">Brian Z. Generated Summary: id: test2-2; status: active; intent: order; <span title="Codes: {http://www.nlm.nih.gov/research/umls/rxnorm 311036}">Humulin R (insulin regular, human) U100  100units/ml inj solution</span>; authoredOn: Jul 1, 2015; </a></p><p><b>taken</b>: na</p><p><b>dosage</b>: </p></div>
+  </text>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="311036"/>
+      <display value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+      <userSelected value="false"/>
+    </coding>
+    <text value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+  </medicationCodeableConcept>
+  <effectivePeriod>
+    <start value="2015-07-01"/>
+  </effectivePeriod>
+  <dateAsserted value="2017-01-21"/>
+  <informationSource>
+    <display value="Dr Cayr"/>
+  </informationSource>
+  <subject>
+    <reference value="Patient/test2"/>
+    <display value="Brian Z"/>
+  </subject>
+  <derivedFrom>
+    <reference value="MedicationRequest/test2-2"/>
+    <display value="Brian Z"/>
+  </derivedFrom>
+  <taken value="na"/>
+  <dosage>
+    <sequence value="1"/>
+    <text value="10U every AM, 5U every PM, 5U at bedtime"/>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="34206005"/>
+        <display value="Subcutaneous route (qualifier value)"/>
+        <userSelected value="false"/>
+      </coding>
+    </route>
+  </dosage>
+</MedicationStatement>

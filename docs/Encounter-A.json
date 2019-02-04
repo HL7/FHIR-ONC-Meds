@@ -1,0 +1,21 @@
+{
+  "resourceType": "Encounter",
+  "id": "A",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: A</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://hl7.org/fhir/v3/ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>period</b>: Sep 10, 2016, 12:00:00 AM --&gt; Sep 12, 2016, 12:00:00 AM</p></div>"
+  },
+  "status": "finished",
+  "class": {
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "code": "IMP",
+    "display": "inpatient encounter"
+  },
+  "subject": {
+    "reference": "Patient/test2"
+  },
+  "period": {
+    "start": "2016-09-10",
+    "end": "2016-09-12"
+  }
+}

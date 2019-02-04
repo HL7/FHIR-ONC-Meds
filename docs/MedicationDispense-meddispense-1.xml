@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationDispense xmlns="http://hl7.org/fhir">
+  <id value="meddispense-1"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2016-12-08T06:38:52Z"/>
+    <profile value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: meddispense-1</p><p><b>meta</b>: </p><p><b>status</b>: in-progress</p><p><b>medication</b>: Lantus 100 unit/ml injectable solution <span style="background: LightGoldenRodYellow">(Details : {RxNorm code '285018' = '285018', given as 'Lantus 100 unit/ml injectable solution'})</span></p><p><b>subject</b>: Amy V. Shaw</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td>Ronald Bone, MD</td></tr></table><p><b>whenHandedOver</b>: Dec 8, 2016, 6:38:52 AM</p><p><b>dosageInstruction</b>: </p></div>
+  </text>
+  <status value="in-progress"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="285018"/>
+      <display value="Lantus 100 unit/ml injectable solution"/>
+    </coding>
+    <text value="Lantus 100 unit/ml injectable solution"/>
+  </medicationCodeableConcept>
+  <subject>
+    <display value="Amy V. Shaw"/>
+  </subject>
+  <performer>
+    <actor>
+      <display value="Ronald Bone, MD"/>
+    </actor>
+  </performer>
+  <whenHandedOver value="2016-12-08T06:38:52Z"/>
+  <dosageInstruction>
+    <sequence value="1"/>
+    <text value="20 Units SC three times daily"/>
+  </dosageInstruction>
+</MedicationDispense>

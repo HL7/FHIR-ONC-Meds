@@ -1,0 +1,42 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "test2-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: test2-2</p><p><b>meta</b>: </p><p><b>status</b>: active</p><p><b>medication</b>: testosterone cypionate 100mg/ml inj <span style=\"background: LightGoldenRodYellow\">(Details : {RxNorm code '835829' = '835829', given as 'testosterone cypionate 100 MG/ML Injectable Solution'})</span></p><p><b>effective</b>: Sep 12, 2016, 12:00:00 AM --&gt; (ongoing)</p><p><b>dateAsserted</b>: Sep 12, 2016</p><p><b>informationSource</b>: Brian Z</p><p><b>subject</b>: <a href=\"Patient-test2.html\">Brian Z. Generated Summary: id: test2; Medical Record Number = 1032702 (USUAL); active; Brian Z ; ph: 555-555-5555(HOME); gender: male; birthDate: Jan 5, 1964</a></p><p><b>taken</b>: y</p><p><b>note</b>: Get at doctor's office every third Friday. Taking for energy level and drive.</p></div>"
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "835829",
+        "display": "testosterone cypionate 100 MG/ML Injectable Solution",
+        "userSelected": false
+      }
+    ],
+    "text": "testosterone cypionate 100mg/ml inj"
+  },
+  "effectivePeriod": {
+    "start": "2016-09-12"
+  },
+  "dateAsserted": "2016-09-12",
+  "informationSource": {
+    "display": "Brian Z"
+  },
+  "subject": {
+    "reference": "Patient/test2",
+    "display": "Brian Z"
+  },
+  "taken": "y",
+  "note": [
+    {
+      "text": "Get at doctor's office every third Friday. Taking for energy level and drive."
+    }
+  ]
+}
