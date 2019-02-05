@@ -16,10 +16,6 @@
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/pages"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/history"
   }],
   "url" : "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
   "version" : "1.1.0",
@@ -40,7 +36,7 @@
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "1.1.0"
+    "version" : "2.0.0"
   }],
   "definition" : {
     "grouping" : [{
