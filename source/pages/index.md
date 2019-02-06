@@ -65,5 +65,3 @@ Refer to the US Core Implementation Guide's [General Security Considerations]({{
 Primary Authors: Brett Marquard, Melva Peters, Eric Haas
 
 Sponsoring HL7 Workgroup : [Pharmacy](http://www.hl7.org/Special/committees/medication/index.cfm)
-
-<input id="foo" value="https://github.com/zenorocha/clipboard.js.git"><!-- Trigger --><button id="copy-button" class="btn" data-toggle="tooltip" title="Copy link" data-clipboard-target="#foo">Copy</button>

@@ -10,8 +10,7 @@
     {
       "version": "2.0.0",
       "location": "http://hl7.org/fhir/us/core",
-      "name": "uscore",
-      "source": "dependencies/uscore-vp"
+      "name": "uscore"
     }
   ],
   "tool": "jekyll",

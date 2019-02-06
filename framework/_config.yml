@@ -1,8 +1,8 @@
-historypath : "http://www.hl7.org/fhir/us/meds/history.cfml" # complete path to IG history file
+historypath : "http://www.hl7.org/fhir/us/meds/history.cfml" # complete path to IG history file use "history" for an example of what this page would look like
 summaries: true #true if want custom profile summaries in summary tab
-diff2: false # true if want to show intermediate differentials
+diff2: false # true if want to show intermediate differentials - probably never use this.
 build: version  # choice of ci|ballot|version
-hl7_version: STU2 #STU version of IG ( if needed )
+hl7_version: STU2 #STU version of IG ( if needed for publishing HL7 guides)
 example_types:
 - Account
 - ActivityDefinition
