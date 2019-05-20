@@ -78,6 +78,12 @@ The guidance below addresses how a patient or a provider can access a patients' 
 
 Medications may be duplicated in a medication list when multiple sources of data are used to generate the list.  To provide a list of a patients’ medications, it may be necessary to “de-duplicate” the medications on the list. The deduplication activity **MAY** be provided by the server but **SHOULD** be provided by the client.
 
+This specification does not specify deduplication best practices, however systems can consider the following approaches:
+
+* Compare the MedicationRequest.identifier or MedicationStatement.identifier. The identifier element is an external business identifier systems include to help indicate that the resources are related.
+* Compare the generic, or brand name, included in the medication resource. The system will require access to terminology capabilities to identify equivalence.
+* Finally, in the deduplication process, systems must be cautious in only marking things as equivalent if they are certain.
+
 **“Not Taken” Medications**
 
 For specific guidance on how to determine if the patient has taken the medication, see the [MedicationStatement Resource Notes]({{ site.data.fhir.path }}medicationstatement.html#11.4.3.3) section in the FHIR Specification. To illustrate this scenario, the examples listed below contain an instance in which the patient has not taken a medication.
