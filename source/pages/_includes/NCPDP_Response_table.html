@@ -30,14 +30,14 @@
         </td>
         <td class="maptable28">Response Prescription Date Range (Start Date)</td>
         <td class="maptable29">&lt;EffectiveDate&gt;</td>
-        <td class="maptable29">MessageHeader</td>
+        <td class="maptable29">medicationdispense-validityPeriod (Existing MedicationDispense Extension)</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable23">
         </td>
         <td class="maptable28">Response Prescription Date Range (End date)</td>
         <td class="maptable29">&lt;ExpirationDate&gt;</td>
-        <td class="maptable29">MessageHeader</td>
+        <td class="maptable29">medicationdispense-validityPeriod (Existing MedicationDispense Extension)</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable23">
@@ -121,17 +121,17 @@
       <tr style='height:20px;'>
         <td class="maptable28">Drug Name[1]</td>
         <td class="maptable29">&lt;DrugDescription&gt;</td>
-        <td class="maptable29">MedicationDispense.medication[x]</td>
+        <td class="maptable29">MedicationDispense.medicationReference.code.coding.code.dispay</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable28">Drug Strength[1]</td>
-        <td class="maptable215">&lt;StrengthValue, Code&gt; fields </td>
-        <td class="maptable29">Medication.ingredient.itemReference</td>
+        <td class="maptable215">&lt;StrengthValue, StrengthUnitOfMeasure&gt; fields </td>
+        <td class="maptable29">MedicationDispense.medicationReference.ingredient.amount</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Dosage Form[2]</td>
         <td class="maptable29">&lt;FormCode&gt;</td>
-        <td class="maptable29">Medication.form</td>
+        <td class="maptable29">MedicationDispense.medicationReference.form</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Drug Quantity</td>
@@ -146,7 +146,7 @@
       <tr style='height:20px;'>
         <td class="maptable28">Refill Number</td>
         <td class="maptable29">&lt;FillNumber&gt;</td>
-        <td class="maptable29">Medication.request - extension</td>
+        <td class="maptable29">MedicationDispense.extension - (Proposed new extension - fillNumber)</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Refills Authorized</td>
@@ -155,7 +155,7 @@
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Partial Fill Indicator </td>
-        <td class="maptable29">gap</td>
+        <td class="maptable29">&lt;FillStatus&gt;</td>
         <td class="maptable29">MedicationDispense.type</td>
       </tr>
       <tr style='height:20px;'>
@@ -167,12 +167,12 @@
         <td class="maptable214" rowspan="2">Drug</td>
         <td class="maptable28">Product ID Qualifier</td>
         <td class="maptable215">&lt;CodeListQualifier&gt;</td>
-        <td class="maptable29">MedicationDipense.medicationCodeableConcept.code.system</td>
+        <td class="maptable29">MedicationDipense.medicationReference.code.coding.system</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable28">Product ID</td>
         <td class="maptable29">&lt;ProductCode&gt;</td>
-        <td class="maptable29">MedicationDispense.medicationCodeableConcept.code.value</td>
+        <td class="maptable29">MedicationDispense.medicationReference.code.coding.code</td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable214" rowspan="6">Dispenser Organization</td>
