@@ -45,7 +45,27 @@ This section defines the abstract model which is used to identify the specific a
 
 
 
-### PDMP Data Access using FHIR
+### EHR - PDMP Data Access Current State
+
+Currently in the PDMP eco-system, EHR systems use a combination of NCPDP SCRIPT and PMIX/NIEM to access data from the state PDMP systems. Figure 3 below shows these data access patterns with and without intermediaries. 
+
+
+{% include img.html img="pdmp-data-access-1.png" caption="Figure 3: EHRs using NCPDP and PMIX/NIEM to access PDMP data" %}
+
+
+As shown in the figure above, a Practitioner uses the EHR to access PDMP data, which then initiates a NCPDP based RxHistoryRequest transaction requesting data for a patient. The request is normally routed to an intermediary such as Appriss, RxCheck or a StateHIE system. The intermediary typically converts this incoming NCPDP request to PMIX/NIEM format and initiates a request to the State PDMP systems. The response then comes back from the State PDMP system in PMIX/NIEM format which the intermediary converts it back to NCPDP RxHistoryResponse and makes it available to the EHR where the Practitioner can view the results. 
+
+Another mechanism that is currently used by Practitioners to access PDMP data is by using web portals which is shown in Figure 4 below. 
+
+
+{% include img.html img="pdmp-data-access-2.png" caption="Figure 4: Practitioners using WebPortals to access PDMP data" %}
+
+
+In this case, the Practitioner has to interact with a separate web portal not integrated with the EHR and access the PDMP data. The web portals typically have custom integrations with the State PDMP systems and provide access to data. 
+
+
+### EHR - PDMP Data Access Using FHIR APIs
+
 
 The abstract model interactions can be implemented using FHIR in multiple ways namely
 
