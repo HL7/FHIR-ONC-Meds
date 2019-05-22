@@ -50,7 +50,7 @@ This section defines the abstract model which is used to identify the specific a
 Currently in the PDMP eco-system, EHR systems use a combination of NCPDP SCRIPT and PMIX/NIEM to access data from the state PDMP systems. Figure 3 below shows these data access patterns with and without intermediaries. 
 
 
-{% include img.html img="pdmp-data-access-1.png" caption="Figure 3: EHRs using NCPDP and PMIX/NIEM to access PDMP data" %}
+{% include img.html img="pdmp-data-access-1.png" caption="Figure 3: Practitioners interacting with EHRs to access PDMP data using NCPDP and PMIX/NIEM standards" %}
 
 
 As shown in the figure above, a Practitioner uses the EHR to access PDMP data, which then initiates a NCPDP based RxHistoryRequest transaction requesting data for a patient. The request is normally routed to an intermediary such as Appriss, RxCheck or a StateHIE system. The intermediary typically converts this incoming NCPDP request to PMIX/NIEM format and initiates a request to the State PDMP systems. The response then comes back from the State PDMP system in PMIX/NIEM format which the intermediary converts it back to NCPDP RxHistoryResponse and makes it available to the EHR where the Practitioner can view the results. 
@@ -67,63 +67,50 @@ In this case, the Practitioner has to interact with a separate web portal not in
 ### EHR - PDMP Data Access Using FHIR APIs
 
 
-The abstract model interactions can be implemented using FHIR in multiple ways namely
+As discussed above, the current mechanisms to access PDMP data vary between the usage of multiple standards namely NCPDP, PMIX/NIEM and usage of proprietary mechanisms such as the web portals. The PDMP eco-system can benefit from the usage of FHIR APIs for accessing PDMP data in the following ways
 
-* Using FHIR Search APIs
-* Using FHIR Messaging APIs
+* Ability to easily integrate PDMP data access in EHR work flows using SMART on FHIR Apps.
+* Ability to enhance security mechanisms outlined by FHIR and SMART on FHIR between the PDMP actors
+* Ability to leverage the PDMP FHIR APIs to build decision support services using CDS Hooks in the EHR work flows
 
-These APIs are discussed further in the next few sub-sections.
+Figure 5a, 5b and 5c below shows the different options for using FHIR APIs to access PDMP data in the EHR work flows including ability to leverage existing investments in intermediaries and PMIX/NIEM protocols.
 
 
-#### Using FHIR Search APIs
+{% include img.html img="pdmp-data-access-fhir-1.png" caption="Figure 5a: Options to leverage FHIR APIs with intermediaries and PMIX/NIEM to access PDMP data" %}
+
+
+{% include img.html img="pdmp-data-access-fhir-2.png" caption="Figure 5b: Options to leverage only FHIR APIs with intermediaries to access PDMP data" %}
+
+
+{% include img.html img="pdmp-data-access-fhir-3.png" caption="Figure 5c: Options to leverage only FHIR APIs to access PDMP data without intermediaries" %}
+
+
+#### Profiles to be used
+
+In order to use FHIR to access PDMP data the following FHIR profiles will be used
+
+* MedicationDispense profile : Used to communicate dispense information.
+* MedicationRequest profile : Used to communicate prescription information.
+* Medication profile : Used to communicate actual drug information.
+* Organization profile : Used to communicate information about the dispensing organization.
+* Practitioner profile : Used to communicate information about the prescriber.
+* Patient profile : Used to communicate information about the patient.
+* Message Header : Used to communicate information about the request headers.
+
+
+#### API 
 
 The FHIR standard provides a rich set of [search mechanisms](http://hl7.org/fhir/search.html) by which specific FHIR resources can be accessed from a FHIR server. Typically the search parameters are specified in the RESTful URL and accessed using the HTTP GET operation.
 
-The following is an example of how search parameters will be used by a PDMP Requestor to retrieve PDMP data from a PDMP Responder.
+The following is the exact API that uses multiple search parameters to access PDMP data from a PDMP Responder
 
-'GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication'
+	`GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
 
+The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015. The bundle returned will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication.
 
-The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015 and as part of the returned information will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication information as part of the returned bundle.
+The security considerations for using the API will be discussed as part of the security section.
 
-Also as part of the Search API one can specify to the server to include additional information such as the prescriber information, patient information. The combinations that need to be implemented by the US Meds PDMP FHIR IG actors will be described in detail as part of the Capability Statements.  
-
-
-#### Using FHIR Messaging APIs
-
-The FHIR standard also provides APIs that resemble messaging paradigm similar to HL7 v2. These are part of the [FHIR Messaging APIs](http://hl7.org/fhir/messaging.html). A PDMP Requestor can request prescription history for a patient by invoking the [$process-message](http://hl7.org/fhir/messageheader-operations.html) on the base URL as follows:
-
-`POST [base-url]/$process-message`
-
-**NOTE**: FHIR Messaging APIs will require the use of the POST operation even to access data.
-
-The body of the message will be a FHIR Bundle that contains a MessageHeader resource as the first entry with the following minimum details:
-
-* MessageHeader Resource
-	* MessageHeader.id
-	* MessageHeader.event (A new event type for retrieving PDMP data needs to be added to the value-set)
-	* MessageHeader.timestamp
-	* MessageHeader.responsible containing a reference to Practitioner resource requesting the information.
-	* MessageHeader.focus containing a reference to the Patient resource for whom the prescription history is required.
-	* MessageHeader.data containing a reference to Parameters resource to specify additional parameters such as the date range.
-
-* Include the Practitioner and Patient Resources as entries in the bundle.
-* Include the Parameters resource with the parameters of startDate and endDate with values for date range.
-
-The PDMP Responder has to be able to process this message and return back a Bundle which contains all the MedicationDispense resources along with Practitioner, Organization and Patient resources related to the data set. In case of errors OperationOutcome would be returned similar to any regular FHIR API.
-
-**NOTE**: FHIR Messaging operations can only be invoked on FHIR Servers which conform to the FHIR Messaging operations in their capability statements and not on regular FHIR servers implementing RESTful Search APIs.
-
-
-#### Final Approach for US Meds PDMP FHIR IG
-
-
-For the purposes of the US Meds PDMP FHIR IG, the FHIR Search APIs will be used and will be specified in detail in the CapabilityStatements for the actors. While both the Search and Messaging APIs have their own strengths and weaknesses, the decision to use FHIR Search APIs is based on the following factors
-
-* Argonaut program has embraced the FHIR Search APIs for conforming to the ONC 2015 Edition for the Common Clinical Data Set
-* US-Core and US Meds Implementation Guides specify the search APIs as basic capabilities for FHIR servers providing access to data.
-* Search APIs will be relatively easier to build on existing FHIR infrastructure developed by vendor community.
-* Search APIs are limited to synchronous operations only and avoid the complexity of the various Message Exchange patterns that need to be accounted for in a Messaging system.
+The data elements that will be returned and how they map to NCPDP and PMIX/NIEM will be discussed in the PDMP Data Elements and Mapping section.
 
 
 #### Security Considerations
