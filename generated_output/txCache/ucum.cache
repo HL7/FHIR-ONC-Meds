@@ -4,9 +4,9 @@
   "code" : "U"
 }, "valueSet" :null}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "java.lang.NullPointerException"
+  "display" : "U",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -14,9 +14,9 @@ v: {
   "code" : "mL"
 }, "valueSet" :null}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "java.lang.NullPointerException"
+  "display" : "mL",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -24,8 +24,8 @@ v: {
   "code" : "d"
 }, "valueSet" :null}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "java.lang.NullPointerException"
+  "display" : "d",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
