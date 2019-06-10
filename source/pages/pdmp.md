@@ -104,20 +104,45 @@ The FHIR standard provides a rich set of [search mechanisms](http://hl7.org/fhir
 
 The following is the exact API that uses multiple search parameters to access PDMP data from a PDMP Responder
 
- `GET [base]/MedicationDispense?subject:Patient.name.given=peter&subject:Patient.name.family=jacobs&subject:Patient.birthdate=eq1973-11-25&authorizingPrescription.dispenseRequest.validityPeriod=ge2010-01-01`
- `&authorizingPrescription.dispenseRequest.validityPeriod=le2015-12-31&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
+	`GET [base]/MedicationDispense?subject:Patient.name.given=sherlock&subject:Patient.name.family=holmes&subject:Patient.birthdate=eq1954-01-06&authorizingPrescription.dispenseRequest.validityPeriod=ge1954-01-06&authorizingPrescription.dispenseRequest.validityPeriod=le2019-12-01&_include=MedicationDispense:subject&_include:recurse=MedicationDispense:authorizingPrescription&_include=MedicationDispense:medication`
 
-The above API will fetch all MedicationDispense resources for Patient with a given name of "peter" and family name of "jacobs" with a birthdate of "1973-11-25" with a prescription that falls within in a 5 year window starting from January 1st 2010 to December 31st 2015. The bundle returned will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication.
+The above API will fetch all MedicationDispense resources for Patient with a given name of "sherlock" and family name of "holmes" with a birthdate of "1954-01-06" with a prescription from January 6, 1954 to December 01, 2019. The bundle returned will include MedicationDispense, MedicationRequest, Practitioner, Organization, Patient and Medication.
 
 The security considerations for using the API will be discussed as part of the security section.
 
 The data elements that will be returned and how they map to NCPDP and PMIX/NIEM will be discussed in the PDMP Data Elements and Mapping section.
 
 
-#### Security Considerations
+#### Security Considerations for PDMP Transactions
 
 
-All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations. In addition to the [FHIR Security](http://hl7.org/fhir/security.html) considerations, the PDMP requests need to contain specific information about Requestor Identity and Requestor Facility information. Providing this information using FHIR Search APIs is very cumbersome and is not necessary. This kind of information can be collected by the PDMP Responder's Authorization Server during application registration and avoid repeating the information on each request. These mechanisms are outlined in great detail in the [SMART Backend Services Authorization Guide](http://docs.smarthealthit.org/authorization/backend-services/). The US Meds PDMP FHIR IG will use the SMART Backend Services Authorization Guide to collect the necessary requestor information appropriate to making the PDMP data request. In addition the authentication and authorization mechanisms will be used as part of requesting the PDMP data using the FHIR Search APIs.
+All implementers of FHIR servers and clients should pay attention to [FHIR Security](http://hl7.org/fhir/security.html) considerations.
+
+In addition to the above, the PDMP transactions between the PDMP Requestor and the PDMP Responder need to be secured using the [SMART Backend Services Authorization Guide](https://github.com/HL7/bulk-data/blob/master/spec/authorization/index.md) as shown in Figure 6 below.
+
+{% include img.html img="pdmp-security-backend.png" caption="Figure 6: PDMP Transactions secured using SMART on FHIR Backend Services Specification" %}
+
+
+##### PDMP Responder Requirements
+* Specifically the PDMP Responder will implement the Authorization Server (documented as EHR Authz Server in the SMART on FHIR Backend Services specification) that will permit the PDMP Requestor to ask for PDMP data about specific patients.  
+* The PDMP Responder's Authorization Server will register each PDMP Requestor and provide the capability to register its public key with the Authorization Server. 
+* The PDMP Responder is expected to allow registration of a PDMP Requestor for each individual Provider or a Provider Organization as required by policies.
+* The PDMP Responder SHALL collect the following information about each PDMP Rqquestor which will be used for both auditing and for identifying the requestor uniquely.
+** Requestor Identity namely name
+** Requestor Role
+** Requestor DEA, NPI Number
+** Requestor Facility information 
+
+
+##### PDMP Requestor Requirements
+* The PDMP Requestor will implement the requirements corresponding to the App actor in the SMART on FHIR Backend Services specification.
+* The PDMP Requestor is expected to run in a trusted environment and hence capable of protecting the Private Key.
+
+
+#### Security Considerations for SMART on FHIR App
+
+For deployments using a SMART on FHIR App which plays the role of a PDMP Requestor, the app will be launched from the EHR and secured using the [SMART App Launch Framework](http://hl7.org/fhir/smart-app-launch/). The user authorizing the app in this case would be the Practitioner who has access to data about his/her patients.
+
 
 
 ### PDMP Data Elements and Mappings
