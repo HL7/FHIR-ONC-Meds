@@ -188,6 +188,10 @@
       "base": "Bundle-get-all-meds.html",
       "source": "get-all-meds-bundle.xml"
     },
+    "Bundle/pdmp-response": {
+      "base": "Bundle-pdmp-response.html",
+      "source": "pdmp-response-bundle.xml"
+    },
     "StructureDefinition/medicationdispense": {
       "defns": "StructureDefinition-medicationdispense-definitions.html",
       "base": "StructureDefinition-medicationdispense.html",

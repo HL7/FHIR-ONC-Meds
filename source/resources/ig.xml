@@ -155,6 +155,8 @@
   <page><source value="MedicationStatement-test2-2.html"/><title value="Medicationstatement Test2 2"/><kind value="example"/></page>
 
   <page><source value="Patient-test2.html"/><title value="Patient Test2"/><kind value="example"/></page>
+  
+  <page><source value="Bundle-pdmp-response.html"/><title value="PDMP Response"/><kind value="example"/></page>
 
 
 </page>
