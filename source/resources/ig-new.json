@@ -101,6 +101,13 @@
     },
     {
       "reference" : {
+        "reference" : "Bundle/pdmp-response"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-4"
       },
       "exampleBoolean" : true,
@@ -291,6 +298,11 @@
           "generation" : "html"
         },
         {
+          "nameUrl" : "pdmp-response.html",
+          "title" : "PDMP Response",
+          "generation" : "html"
+	},
+        {
           "nameUrl" : "get-all-meds.html",
           "title" : "Get All Meds",
           "generation" : "html"
@@ -363,6 +375,11 @@
         {
           "nameUrl" : "Bundle-get-all-meds.html",
           "title" : "Bundle Get All Meds",
+          "generation" : "generated"
+        },
+        {
+          "nameUrl" : "Bundle-pdmp-response.html",
+          "title" : "Bundle PDMP Response",
           "generation" : "generated"
         },
         {

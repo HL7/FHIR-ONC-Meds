@@ -96,6 +96,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/pdmp-response"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-4"/>
       </reference>
       <exampleBoolean value="true"/>
@@ -290,6 +297,11 @@
           <title value="Get All Meds"/>
           <generation value="html"/>
         </page>
+        <page>
+          <nameUrl value="pdmp-response.html"/>
+          <title value="PDMP Response"/>
+          <generation value="html"/>
+        </page>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
@@ -358,6 +370,11 @@
         <page>
           <nameUrl value="Bundle-get-all-meds.html"/>
           <title value="Bundle Get All Meds"/>
+          <generation value="generated"/>
+        </page>
+        <page>
+          <nameUrl value="Bundle-pdmp-response.html"/>
+          <title value="Bundle PDMP Response"/>
           <generation value="generated"/>
         </page>
         <page>
