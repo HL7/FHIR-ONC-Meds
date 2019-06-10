@@ -59,6 +59,15 @@
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
+    <element id="MedicationAdministration.context">
+      <path value="MedicationAdministration.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
       <mustSupport value="true" />
