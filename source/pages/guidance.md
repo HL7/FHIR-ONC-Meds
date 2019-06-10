@@ -145,7 +145,7 @@ This Use Case will be the focus of future versions of this IG.
 ### Use Case 3 - Create new outpatient Prescription
 {: #uc-3}
 
-This use case involves the provider creating a new outpatient prescription using the MedicationRequest resource.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the [FHIR workflow sections]({{ site.data.fhir.path }}workflow-communications.html) in the FHIR specification.
+This use case involves the provider creating a new outpatient prescription using the MedicationRequest, MedicationStatement and Medication resources.  Subsequent workflow steps depend on specific pattern agreed upon by business partners. See a list of possible scenarios in the [FHIR workflow sections]({{ site.data.fhir.path }}workflow-communications.html) in the FHIR specification.
 
 At the time of this publication, the US implementers have not used the MedicationRequest resource sufficiently to provide meaningful feedback on best practices and guidance.  This Use Case will be the focus of future versions of this IG.
 
