@@ -261,7 +261,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationAdministration-Patient"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -305,7 +305,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationDispense-Patient"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
@@ -357,7 +357,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationRequest-Patient"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -365,7 +365,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="status"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationRequest-Status"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-status"/>
 				<type value="token"/>
 			</searchParam>
 		</resource>
@@ -425,7 +425,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationStatement-Patient"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
 			</searchParam>
 			<searchParam>
@@ -433,7 +433,7 @@
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="status"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationStatement-Status"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/medications-status"/>
 				<type value="token"/>
 			</searchParam>
 			<searchParam>
@@ -441,7 +441,7 @@
 					<valueCode value="MAY"/>
 				</extension>
 				<name value="category"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/MedicationStatement-Category"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/MedicationStatement-category"/>
 				<type value="reference"/>
 			</searchParam>
 		</resource>
