@@ -82,6 +82,13 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/pdmp-response"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="MedicationStatement/derivedfrom-mr-enca-5"/>
       </reference>
       <exampleBoolean value="true"/>

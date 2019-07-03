@@ -87,6 +87,13 @@
     },
     {
       "reference" : {
+        "reference" : "Bundle/pdmp-response"
+      },
+      "exampleBoolean" : true,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
         "reference" : "MedicationStatement/derivedfrom-mr-enca-5"
       },
       "exampleBoolean" : true,
