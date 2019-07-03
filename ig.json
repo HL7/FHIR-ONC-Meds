@@ -4,6 +4,7 @@
   "license": "CC0-1.0",
   "publisher": "HL7 Pharmacy Work Group",
   "gen-examples": "false",
+  
   "canonicalBase": "http://hl7.org/fhir/us/meds",
   "working-dir": "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/",
   "dependencyList": [
@@ -238,6 +239,7 @@
     "temp": "generated_output/temp",
     "output": "output",
     "specification": "http://hl7.org/fhir/STU3",
+     "history": "http://hl7.org/fhir/us/meds/history.html",
     "qa": "generated_output/qa",
     "txCache": "generated_output/txCache",
     "resources": [
