@@ -3,23 +3,23 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\FHIR-ONC-Meds\source\resources"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="C:\FHIR-ONC-Meds\source\examples"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\FHIR-ONC-Meds\framework"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="C:\FHIR-ONC-Meds\source\pages"/>
+    <valueString value="/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/pages"/>
   </extension>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
   <version value="1.1.0"/>
   <name value="US Meds"/>
   <status value="active"/>
   <experimental value="true"/>
-  <publisher value="HL7 Pharmacy Work Group"/>
+  <publisher value="HL7 International - Pharmacy Work Group"/>
   <contact>
     <telecom>
       <system value="url"/>

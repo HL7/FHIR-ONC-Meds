@@ -3,26 +3,26 @@
   "id" : "ig",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/resources"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
-    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/examples"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/framework"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
-    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+    "valueString" : "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/source/pages"
   }],
   "url" : "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
   "version" : "1.1.0",
   "name" : "US Meds",
   "status" : "active",
   "experimental" : true,
-  "publisher" : "HL7 Pharmacy Work Group",
+  "publisher" : "HL7 International - Pharmacy Work Group",
   "contact" : [{
     "telecom" : [{
       "system" : "url",
