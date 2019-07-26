@@ -17,8 +17,9 @@
          "desc": "STU 2:  added new section on PDMP",
          "path": "http://hl7.org/fhir/us/meds/STU2",
          "status": "trial-use",
+		 "current": true,
          "sequence": "STU2",
-         "fhir-version": "3.0.1"
+         "fhirversion": "3.0.1"
       },
       {
          "version": "1.1.0",
@@ -27,7 +28,7 @@
          "path": "http://hl7.org/fhir/us/meds/2018May",
          "status": "ballot",
          "sequence": "STU2",
-         "fhir-version": "3.0.1"
+         "fhirversion": "3.0.1"
       },
       {
          "version": "1.0.0",
@@ -36,7 +37,7 @@
          "path": "http://hl7.org/fhir/us/meds/STU1",
          "status": "trial-use",
          "sequence": "STU1",
-         "fhir-version": "3.0.1"
+         "fhirversion": "3.0.1"
          
       },
       {
@@ -46,7 +47,7 @@
          "path": "http://hl7.org/fhir/us/meds/2017Jan",
          "status": "draft",
          "sequence": "STU1",
-         "fhir-version": "1.8.0"
+         "fhirversion": "1.8.0"
       }
    ]
 }
