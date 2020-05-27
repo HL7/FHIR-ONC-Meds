@@ -1,5 +1,5 @@
 {
-  "source": "ig.xml",
+  "source": "ig-new.xml",
   "sct-edition": "http://snomed.info/sct/731000124108",
   "license": "CC0-1.0",
   "publisher": "HL7 International - Pharmacy Work Group",
@@ -9,7 +9,7 @@
   "working-dir": "/Users/ehaas/Documents/FHIR/FHIR-ONC-Meds/",
   "dependencyList": [
     {
-      "version": "2.0.0",
+      "version": "3.0.1",
       "location": "http://hl7.org/fhir/us/core",
       "name": "uscore"
     }
@@ -18,7 +18,7 @@
   "logging": [
     "progress"
   ],
-  "version": "3.0.2",
+  "version": "4.0.1",
   "status": "active",
   "defaults": {
     "MedicationRequest": {
@@ -89,7 +89,6 @@
   "allviews": "true",
   "no-inactive-codes": "false",
   "broken-links": "warning",
-  "contact_system": "url",
   "resources": {
     "Patient/test2": {
       "base": "Patient-test2.html",
@@ -228,7 +227,6 @@
   },
   "npm-name": "hl7.fhir.us.meds",
   "topofpage": "true",
-  "contact_value": "http://www.hl7.org/Special/committees/medication/index.cfm",
   "do-transforms": "false",
   "extraTemplates": [
     "mappings"

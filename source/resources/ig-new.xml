@@ -14,8 +14,44 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="C:\FHIR-ONC-Meds\source\pages"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"/>
+  </extension>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
-  <version value="1.1.0"/>
+  <version value="1.2.0"/>
   <name value="US Meds"/>
   <status value="active"/>
   <experimental value="true"/>
@@ -28,11 +64,12 @@
   </contact>
   <packageId value="hl7.fhir.us.meds"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="3.0.1"/>
+  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="2.0.0"/>
+    <version value="3.0.1"/>
   </dependsOn>
   <definition>
     <grouping id="p1">
@@ -504,6 +541,42 @@
         <generation value="generated"/>
       </page>
     </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
     <parameter>
       <code value="apply"/>
       <value value="version"/>
