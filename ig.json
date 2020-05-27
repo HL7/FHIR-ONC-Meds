@@ -18,7 +18,7 @@
   "logging": [
     "progress"
   ],
-  "version": "3.0.1",
+  "version": "3.0.2",
   "status": "active",
   "defaults": {
     "MedicationRequest": {
