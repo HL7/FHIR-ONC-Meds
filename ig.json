@@ -235,7 +235,7 @@
   "paths": {
     "temp": "generated_output/temp",
     "output": "output",
-    "specification": "http://hl7.org/fhir/STU3",
+    "specification": "http://hl7.org/fhir/R4",
      "history": "http://hl7.org/fhir/us/meds/history.html",
     "qa": "generated_output/qa",
     "txCache": "generated_output/txCache",

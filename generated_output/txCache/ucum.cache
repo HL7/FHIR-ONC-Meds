@@ -2,7 +2,7 @@
 {"code" : {
   "system" : "http://unitsofmeasure.org",
   "code" : "U"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "U",
   "severity" : null,
@@ -12,7 +12,7 @@ v: {
 {"code" : {
   "system" : "http://unitsofmeasure.org",
   "code" : "mL"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "mL",
   "severity" : null,
@@ -22,37 +22,7 @@ v: {
 {"code" : {
   "system" : "http://unitsofmeasure.org",
   "code" : "d"
-}, "valueSet" :null}####
-v: {
-  "display" : "d",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "U"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "U",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "mL"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "mL",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "d"
-}, "valueSet" :null, "lang":"null"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "d",
   "severity" : null,

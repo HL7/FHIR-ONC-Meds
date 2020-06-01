@@ -127,3 +127,67 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "13644009"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233604007"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Attempt to use Terminology server when no Terminology server is available"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "13644009",
+  "display" : "Hypercholesterolemia (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hypercholesterolemia",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "34206005",
+  "display" : "Subcutaneous route (qualifier value)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Subcutaneous route",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233604007",
+  "display" : "Pneumonia (disorder)"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pneumonia",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "311504000",
+  "display" : "With or after food"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "With or after food",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

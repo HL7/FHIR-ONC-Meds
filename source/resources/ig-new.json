@@ -16,9 +16,281 @@
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "/Users/nbashyam/git/FHIR-ONC-Meds/source/pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
   }],
   "url" : "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
-  "version" : "1.1.0",
+  "version" : "1.2.0",
   "name" : "US Meds",
   "status" : "active",
   "experimental" : true,
@@ -31,12 +303,27 @@
   }],
   "packageId" : "hl7.fhir.us.meds",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["3.0.1"],
+  "fhirVersion" : ["4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1",
+  "4.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
     "uri" : "http://hl7.org/fhir/us/core",
     "packageId" : "hl7.fhir.us.core",
-    "version" : "2.0.0"
+    "version" : "3.1.0"
   }],
   "definition" : {
     "grouping" : [{
@@ -510,6 +797,210 @@
       }]
     },
     "parameter" : [{
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
+    },
+    {
       "code" : "apply",
       "value" : "version"
     },

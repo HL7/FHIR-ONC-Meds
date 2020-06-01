@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medicationadministration" />
   <url value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationadministration" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="MedicationAdministrationProfile" />
   <status value="active" />
-  <date value="2016-11-08" />
+  <date value="2020-06-01" />
   <publisher value="Health Level Seven International (FHIR-Infrastructure)" />
   <contact>
     <telecom>
@@ -14,7 +14,7 @@
     </telecom>
   </contact>
   <description value="Defines constraints and extensions on the MedicationAdministration resource for the minimal set of data to query and retrieve patient's medication information." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationAdministration" />
@@ -25,29 +25,37 @@
       <path value="MedicationAdministration" />
       <definition value="Administration that a medication is/was actively taken by a patient." />
       <mustSupport value="false" />
-      <isModifier value="false" />
     </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required"/>
+        <description value="A set of codes indicating the current status of a MedicationAdministration."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-status"/>
+      </binding>
     </element>
     <element id="MedicationAdministration.medication[x]">
-      <path value="MedicationAdministration.medication[x]" />
+      <path value="MedicationAdministration.medication[x]"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
+        <code value="CodeableConcept"/>
       </type>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
       </type>
-      <mustSupport value="true" />
-      <isModifier value="false" />
+      <mustSupport value="true"/>
       <binding>
-        <strength value="extensible" />
-        <description value="Prescribable medications" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes" />
-        </valueSetReference>
+        <strength value="extensible"/>
+        <description value="Prescribable medications"/>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes"/>
       </binding>
     </element>
     <element id="MedicationAdministration.subject">

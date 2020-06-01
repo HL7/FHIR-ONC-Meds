@@ -34,6 +34,7 @@
       <binding>
         <strength value="required" />
         <description value="A set of codes indicating the current status of a MedicationDispense." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-admin-status"/>
       </binding>
     </element>
     <element id="MedicationDispense.medication[x]">
@@ -50,9 +51,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Prescribable medications" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes" />
-        </valueSetReference>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes"/>
       </binding>
     </element>
     <element id="MedicationDispense.subject">
