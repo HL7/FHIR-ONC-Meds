@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/medicationstatement.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="derivedfrom-mr-enca-1"/>
-	<meta>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-	</meta>
-	<context>
-		<reference value="Encounter/A"/>
-		<display value="Inpatient Encounter A"/>
-	</context>
+	
 	<status value="completed"/>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="1656313"/>
-			<display value="Cefotaxime 1000 MG Injection"/>
+			<display value="cefotaxime 1 GM Injection"/>
 		</coding>
-		<text value="Cefotaxime 1000Mg Powder For Solution For Injection"/>
+		<text value="cefotaxime 1 GM Injection"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/test2"/>
+		<display value="Brian Z"/>
+	</subject>
+	<context>
+		<reference value="Encounter/A"/>
+		<display value="Inpatient Encounter A"/>
+	</context>
 	<effectivePeriod>
 		<start value="2016-09-10"/>
 		<end value="2016-09-12"/>
@@ -25,14 +27,9 @@
 	<informationSource>
 		<display value="Provider B"/>
 	</informationSource>
-	<subject>
-		<reference value="Patient/test2"/>
-		<display value="Brian Z"/>
-	</subject>
 	<derivedFrom>
 		<reference value="MedicationRequest/enca-1"/>
 	</derivedFrom>
-	<taken value="y"/>
 	<reasonCode>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -57,20 +54,22 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38276"/>
-				<display value="INTRAVENOUS"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
 		<method>
 			<text value="Slow Push"/>
 		</method>
-		<doseQuantity>
-			<value value="1000"/>
-			<unit value="mg"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
-		</doseQuantity>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="1000"/>
+				<unit value="mg"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+		</doseAndRate>
 	</dosage>
 </MedicationStatement>

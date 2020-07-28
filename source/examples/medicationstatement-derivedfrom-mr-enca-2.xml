@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/medicationstatement.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="derivedfrom-mr-enca-2"/>
-	<meta>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-	</meta>
-	<context><reference value="Encounter/A"/><display value="Inpatient Encounter A"/></context><status value="completed"/>
+	<status value="completed"/>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="860092"/>
-			<display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
+			<display value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
 		</coding>
-		<text value="Ketorolac Tromethamine 15 MG/ML For Injection"/>
+		<text value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/test2"/>
+		<display value="Brian Z"/>
+	</subject>
+	<context><reference value="Encounter/A"/><display value="Inpatient Encounter A"/></context>
 	<effectivePeriod>
 		<start value="2016-09-10"/>
 		<end value="2016-09-12"/>
@@ -20,15 +22,10 @@
 	<dateAsserted value="2017-04-10T08:54:15.585-07:00"/>
 	<informationSource>
 		<display value="Provider B"/>
-	</informationSource>
-	<subject>
-		<reference value="Patient/test2"/>
-		<display value="Brian Z"/>
-	</subject>
+	</informationSource>	
 	<derivedFrom>
 		<reference value="MedicationRequest/enca-2"/>
 	</derivedFrom>
-	<taken value="y"/>
 	<reasonCode>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -53,20 +50,22 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38276"/>
-				<display value="INTRAVENOUS"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
 		<method>
 			<text value="Slow Push"/>
 		</method>
-		<doseQuantity>
-			<value value="15"/>
-			<unit value="mg"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
-		</doseQuantity>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="15"/>
+				<unit value="mg"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+		</doseAndRate>
 	</dosage>
 </MedicationStatement>

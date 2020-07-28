@@ -1,11 +1,6 @@
 {
 	"resourceType": "MedicationStatement",
 	"id": "test2-1",
-	"meta": {
-		"profile": [
-			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
-		]
-	},
 	"status": "completed",
 	"medicationCodeableConcept": {
 		"coding": [
@@ -26,6 +21,5 @@
 	"subject": {
 		"reference": "Patient/test2",
 		"display": "Brian Z"
-	},
-	"taken": "y"
+	}
 }

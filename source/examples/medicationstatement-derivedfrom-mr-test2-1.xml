@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
 	<id value="derivedfrom-mr-test2-1"/>
-	<meta>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-	</meta>
 	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>
@@ -14,6 +11,10 @@
 		</coding>
 		<text value="Zocor (simvastatin) 20mg Tablet"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/test2"/>
+		<display value="Brian Z"/>
+	</subject>
 	<effectivePeriod>
 		<start value="2016-01-15"/>
 	</effectivePeriod>
@@ -21,14 +22,9 @@
 	<informationSource>
 		<display value="Dr Cayr"/>
 	</informationSource>
-	<subject>
-		<reference value="Patient/test2"/>
-		<display value="Brian Z"/>
-	</subject>
 	<derivedFrom>
 		<reference value="MedicationRequest/test2-1"/>
 	</derivedFrom>
-	<taken value="na"/>
 	<reasonCode>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -43,9 +39,9 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38288"/>
-				<display value="ORAL"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
