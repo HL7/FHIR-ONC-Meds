@@ -46,7 +46,7 @@
 				<li>Published: 2017-03-08</li>
 				<li>Published by: Health Level Seven International Pharmacy Work Group</li>
 			</ul>
-			<p>This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information about an individual patient.It is expected that this CapabilityStatement will be used with the <a href="http://hl7.org/fhir/us/core/capstmnts.html">US Core CapabilityStatement</a>. Together they describe the basic expectations for the capabilities of a conformant client application. The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that <strong>MAY</strong> be supported by the client</p>
+			<p>This section describes the expected capabilities of a client actor which is responsible for creating and initiating the queries for information about an individual patient.It is expected that this CapabilityStatement will be used with the <a href="http://hl7.org/fhir/us/core/capstatements.html">US Core CapabilityStatement</a>. Together they describe the basic expectations for the capabilities of a conformant client application. The complete list of actual profiles and dependencies on other profiles outside the FHIR specification RESTful interactions which includes the search and read operations that <strong>MAY</strong> be supported by the client</p>
 			<h4 id="behavior-1">Behavior</h4>
 			<p>The US Meds Clent <strong>SHALL</strong> support fetching and querying of one or more US Meds profile(s), using the supported RESTful interactions and search parameters declared in the <a href="CapabilityStatement-server.html#conformance-requirements-for-the-us-meds-server">US Meds Server CapabilityStatement</a>
 			</p>
@@ -101,8 +101,6 @@
 				</li>
 			</ul>
 			<h5 id="medicationstatement-1">5. MedicationStatement</h5>
-			<p>Supported Profiles:  <a href="http://hl7.org/fhir/us/core/StructureDefinition-us-core-medicationstatement.html">US Core MedicationStatement Profile</a>
-			</p>
 			<p>Search Criteria:</p>
 			<p>A client <strong>SHALL</strong> be capable of fetching all medications for a patient using:</p>
 			<ul>
