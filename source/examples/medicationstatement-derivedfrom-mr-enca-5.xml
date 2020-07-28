@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/medicationstatement.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="derivedfrom-mr-enca-5"/>
-	<meta>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-	</meta>
-	<context><reference value="Encounter/A"/><display value="Inpatient Encounter A"/></context><status value="active"/>
+	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
@@ -13,6 +10,11 @@
 		</coding>
 		<text value="Zithromax 500 MG Oral Tablet"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/test2"/>
+		<display value="Brian Z"/>
+	</subject>
+	<context><reference value="Encounter/A"/><display value="Inpatient Encounter A"/></context>
 	<effectivePeriod>
 		<start value="2016-09-12"/>
 		<end value="2016-09-22"/>
@@ -21,15 +23,10 @@
 	<informationSource>
 		<reference value="Patient/test2"/>
 		<display value="Brian Z"/>
-	</informationSource>
-	<subject>
-		<reference value="Patient/test2"/>
-		<display value="Brian Z"/>
-	</subject>
+	</informationSource>	
 	<derivedFrom>
 		<reference value="MedicationRequest/enca-5"/>
 	</derivedFrom>
-	<taken value="n"/>
 	<reasonCode>
 		<coding>
 			<system value="http://snomed.info/sct"/>
@@ -56,17 +53,19 @@
 		</timing>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38288"/>
-				<display value="ORALLY"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
-		<doseQuantity>
-			<value value="1"/>
-			<unit value="TAB"/>
-			<system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
-			<code value="TAB"/>
-		</doseQuantity>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="1"/>
+				<unit value="TAB"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+				<code value="TAB"/>
+			</doseQuantity>
+		</doseAndRate>
 	</dosage>
 </MedicationStatement>

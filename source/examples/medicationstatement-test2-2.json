@@ -1,11 +1,6 @@
 {
 	"resourceType": "MedicationStatement",
 	"id": "test2-2",
-	"meta": {
-		"profile": [
-			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"
-		]
-	},
 	"status": "active",
 	"medicationCodeableConcept": {
 		"coding": [
@@ -18,6 +13,10 @@
 		],
 		"text": "testosterone cypionate 100mg/ml inj"
 	},
+	"subject": {
+		"reference": "Patient/test2",
+		"display": "Brian Z"
+	},
 	"effectivePeriod": {
 		"start": "2016-09-12"
 	},
@@ -25,11 +24,6 @@
 	"informationSource": {
 		"display": "Brian Z"
 	},
-	"subject": {
-		"reference": "Patient/test2",
-		"display": "Brian Z"
-	},
-	"taken": "y",
 	"note": [
 		{
 			"text": "Get at doctor's office every third Friday. Taking for energy level and drive."

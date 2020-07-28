@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
 	<id value="derivedfrom-mr-test2-2"/>
-	<meta>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
-	</meta>
 	<status value="active"/>
 	<medicationCodeableConcept>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="311036"/>
-			<display value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+			<display value="HumuLIN R 100 UNT/ML Injectable Solution"/>
 			<userSelected value="false"/>
 		</coding>
-		<text value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+		<text value="HumuLIN R 100 UNT/ML Injectable Solution"/>
 	</medicationCodeableConcept>
+	<subject>
+		<reference value="Patient/test2"/>
+		<display value="Brian Z"/>
+	</subject>
 	<effectivePeriod>
 		<start value="2015-07-01"/>
 	</effectivePeriod>
 	<dateAsserted value="2017-01-21"/>
 		<informationSource>
 		<display value="Dr Cayr"/>
-	</informationSource>
-	<subject>
-		<reference value="Patient/test2"/>
-		<display value="Brian Z"/>
-	</subject>
+	</informationSource>	
 	<derivedFrom>
 		<reference value="MedicationRequest/test2-2"/>
 		<display value="Brian Z"/>
 	</derivedFrom>
-	<taken value="na"/>
 	<dosage>
 		<sequence value="1"/>
 		<text value="10U every AM, 5U every PM, 5U at bedtime"/>
