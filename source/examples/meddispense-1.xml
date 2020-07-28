@@ -10,9 +10,9 @@
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="285018"/>
-			<display value="Lantus 100 unit/ml injectable solution"/>
+			<display value="Lantus 100 UNT/ML Injectable Solution"/>
 		</coding>
-		<text value="Lantus 100 unit/ml injectable solution"/>
+		<text value="Lantus 100 UNT/ML Injectable Solution"/>
 	</medicationCodeableConcept>
 	<subject>
 		<display value="Amy V. Shaw"/>

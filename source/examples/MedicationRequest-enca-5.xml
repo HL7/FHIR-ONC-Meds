@@ -18,15 +18,13 @@
 		<reference value="Patient/test2"/>
 		<display value="Brian Z"/>
 	</subject>
-	<context>
+	<encounter>
 		<reference value="Encounter/A"/>
 		<display value="Inpatient Encounter A"/>
-	</context>
+	</encounter>
 	<authoredOn value="2016-09-12"/>
 	<requester>
-		<agent>
 			<display value="Dr. B"/>
-		</agent>
 	</requester>
 	<reasonCode>
 		<coding>
@@ -54,18 +52,20 @@
 		</timing>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38288"/>
-				<display value="ORALLY"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
-		<doseQuantity>
-			<value value="1"/>
-			<unit value="TAB"/>
-			<system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
-			<code value="TAB"/>
-		</doseQuantity>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="1"/>
+				<unit value="TAB"/>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+				<code value="TAB"/>
+			</doseQuantity>
+		</doseAndRate>
 	</dosageInstruction>
 	<dispenseRequest>
 		<validityPeriod>
@@ -77,7 +77,7 @@
 		<quantity>
 			<value value="20"/>
 			<unit value="TAB"/>
-			<system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
 			<code value="TAB"/>
 		</quantity>
 		<expectedSupplyDuration>

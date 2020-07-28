@@ -19,21 +19,24 @@
         <meta>
           <versionId value="3"/>
           <lastUpdated value="2017-04-10T12:47:22.409-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <context>
-          <reference value="Encounter/A"/>
-          <display value="Inpatient Encounter A"/>
-        </context>
-        <status value="completed"/>
+        <status value="completed"/>      
         <medicationCodeableConcept>
           <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="1656313"/>
-            <display value="Cefotaxime 1000 MG Injection"/>
+            <display value="cefotaxime 1 GM Injection"/>
           </coding>
-          <text value="Cefotaxime 1000Mg Powder For Solution For Injection"/>
+          <text value="cefotaxime 1 GM Injection"/>
         </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
         <effectivePeriod>
           <start value="2016-09-10"/>
           <end value="2016-09-12"/>
@@ -41,15 +44,10 @@
         <dateAsserted value="2017-04-10T08:52:20.325-07:00"/>
         <informationSource>
           <display value="Provider B"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>  
         <derivedFrom>
           <reference value="MedicationRequest/enca-1"/>
         </derivedFrom>
-        <taken value="y"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -74,21 +72,23 @@
           <asNeededBoolean value="false"/>
           <route>
             <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38276"/>
-              <display value="INTRAVENOUS"/>
-              <userSelected value="false"/>
-            </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
           <method>
             <text value="Slow Push"/>
           </method>
-          <doseQuantity>
-            <value value="1000"/>
-            <unit value="mg"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg"/>
-          </doseQuantity>
+          <doseAndRate>
+	          <doseQuantity>
+	            <value value="1000"/>
+	            <unit value="mg"/>
+	            <system value="http://unitsofmeasure.org"/>
+	            <code value="mg"/>
+	          </doseQuantity>
+          </doseAndRate>
         </dosage>
       </MedicationStatement>
     </resource>
@@ -101,21 +101,24 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2017-04-10T12:47:42.113-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <context>
-          <reference value="Encounter/A"/>
-          <display value="Inpatient Encounter A"/>
-        </context>
-        <status value="completed"/>
+        <status value="completed"/>      
         <medicationCodeableConcept>
           <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="860092"/>
-            <display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
+            <display value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
           </coding>
-          <text value="Ketorolac Tromethamine 15 MG/ML For Injection"/>
+          <text value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
         </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
         <effectivePeriod>
           <start value="2016-09-10"/>
           <end value="2016-09-12"/>
@@ -123,15 +126,10 @@
         <dateAsserted value="2017-04-10T08:54:15.585-07:00"/>
         <informationSource>
           <display value="Provider B"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>     
         <derivedFrom>
           <reference value="MedicationRequest/enca-2"/>
         </derivedFrom>
-        <taken value="y"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -155,22 +153,24 @@
           </timing>
           <asNeededBoolean value="false"/>
           <route>
-            <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38276"/>
-              <display value="INTRAVENOUS"/>
-              <userSelected value="false"/>
-            </coding>
+           <coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
           <method>
             <text value="Slow Push"/>
           </method>
-          <doseQuantity>
-            <value value="15"/>
-            <unit value="mg"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg"/>
-          </doseQuantity>
+          <doseAndRate>
+	          <doseQuantity>
+	            <value value="15"/>
+	            <unit value="mg"/>
+	            <system value="http://unitsofmeasure.org"/>
+	            <code value="mg"/>
+	          </doseQuantity>
+          </doseAndRate>
         </dosage>
       </MedicationStatement>
     </resource>
@@ -183,7 +183,6 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2017-04-10T12:47:54.316-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
         <contained>
           <Medication>
@@ -204,7 +203,7 @@
                 <text value="Zithromax (azithromycin) 500 MG Injection"/>
               </itemCodeableConcept>
               <isActive value="true"/>
-              <amount>
+              <strength>
                 <numerator>
                   <value value="500"/>
                   <unit value="mg"/>
@@ -217,19 +216,19 @@
                   <system value="http://unitsofmeasure.org"/>
                   <code value="{vial}"/>
                 </denominator>
-              </amount>
+              </strength>
             </ingredient>
             <ingredient>
               <itemCodeableConcept>
                 <coding>
                   <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
                   <code value="313002"/>
-                  <display value="Sodium Chloride 0.9% injectable solution"/>
+                  <display value="Sodium Chloride 9 MG/ML Injectable Solution"/>
                 </coding>
-                <text value="Normal Saline"/>
+                <text value="Sodium Chloride 9 MG/ML Injectable Solution"/>
               </itemCodeableConcept>
               <isActive value="true"/>
-              <amount>
+              <strength>
                 <numerator>
                   <value value="250"/>
                   <unit value="mL"/>
@@ -242,18 +241,22 @@
                   <system value="http://unitsofmeasure.org"/>
                   <code value="{IV Bag}"/>
                 </denominator>
-              </amount>
+              </strength>
             </ingredient>
           </Medication>
         </contained>
+        <status value="completed"/>       
+        <medicationReference>
+          <reference value="#med-1"/>
+        </medicationReference>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
         <context>
           <reference value="Encounter/A"/>
           <display value="Inpatient Encounter A"/>
         </context>
-        <status value="completed"/>
-        <medicationReference>
-          <reference value="#med-1"/>
-        </medicationReference>
         <effectivePeriod>
           <start value="2016-09-10"/>
           <end value="2016-09-12"/>
@@ -261,15 +264,10 @@
         <dateAsserted value="2017-04-10T08:55:28.557-07:00"/>
         <informationSource>
           <display value="Provider B"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>      
         <derivedFrom>
           <reference value="MedicationRequest/enca-3"/>
         </derivedFrom>
-        <taken value="y"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -287,20 +285,23 @@
           <asNeededBoolean value="false"/>
           <route>
             <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38276"/>
-              <display value="INTRAVENOUS"/>
-            </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
           <method>
             <text value="I hr infusion"/>
           </method>
-          <doseQuantity>
-            <value value="500"/>
-            <unit value="mg"/>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mg"/>
-          </doseQuantity>
+          <doseAndRate>
+	          <doseQuantity>
+	            <value value="500"/>
+	            <unit value="mg"/>
+	            <system value="http://unitsofmeasure.org"/>
+	            <code value="mg"/>
+	          </doseQuantity>
+          </doseAndRate>
         </dosage>
       </MedicationStatement>
     </resource>
@@ -313,21 +314,24 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2017-04-10T12:48:03.114-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <context>
-          <reference value="Encounter/A"/>
-          <display value="Inpatient Encounter A"/>
-        </context>
-        <status value="completed"/>
+        <status value="completed"/>      
         <medicationCodeableConcept>
           <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="847626"/>
-            <display value="Calcium Chloride 0.0014 MEQ/ML / Potassium Chloride 0.024 MEQ/ML / Sodium Chloride 0.103 MEQ/ML / Sodium Lactate 0.028 MEQ/ML Injectable Solution"/>
+            <display value="Potassium Chloride 20 MEQ/L in Lactated Ringers Solution with Dextrose 5 % Injectable Solution"/>
           </coding>
-          <text value="LRS"/>
+          <text value="Potassium Chloride 20 MEQ/L in Lactated Ringers Solution with Dextrose 5 % Injectable Solution"/>
         </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
         <effectivePeriod>
           <start value="2016-09-10"/>
           <end value="2016-09-12"/>
@@ -335,15 +339,10 @@
         <dateAsserted value="2017-04-10T08:56:13.229-07:00"/>
         <informationSource>
           <display value="Provider B"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>       
         <derivedFrom>
           <reference value="MedicationRequest/enca-4"/>
         </derivedFrom>
-        <taken value="y"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -357,11 +356,11 @@
           <asNeededBoolean value="false"/>
           <route>
             <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38276"/>
-              <display value="INTRAVENOUS"/>
-              <userSelected value="false"/>
-            </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
           <method>
             <text value="Constant Rate Infusion"/>
@@ -378,13 +377,8 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2017-04-10T12:48:11.192-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <context>
-          <reference value="Encounter/A"/>
-          <display value="Inpatient Encounter A"/>
-        </context>
-        <status value="active"/>
+        <status value="active"/>      
         <medicationCodeableConcept>
           <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
@@ -393,6 +387,14 @@
           </coding>
           <text value="Zithromax 500 MG Oral Tablet"/>
         </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
         <effectivePeriod>
           <start value="2016-09-12"/>
           <end value="2016-09-22"/>
@@ -401,15 +403,10 @@
         <informationSource>
           <reference value="Patient/test2"/>
           <display value="Brian Z"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>       
         <derivedFrom>
           <reference value="MedicationRequest/enca-5"/>
         </derivedFrom>
-        <taken value="n"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -436,18 +433,20 @@
           </timing>
           <route>
             <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38288"/>
-              <display value="ORALLY"/>
-              <userSelected value="false"/>
-            </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
-          <doseQuantity>
-            <value value="1"/>
-            <unit value="TAB"/>
-            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
-            <code value="TAB"/>
-          </doseQuantity>
+          <doseAndRate>
+	          <doseQuantity>
+	            <value value="1"/>
+	            <unit value="TAB"/>
+	            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+	            <code value="TAB"/>
+	          </doseQuantity>
+          </doseAndRate>
         </dosage>
       </MedicationStatement>
     </resource>
@@ -460,13 +459,8 @@
         <meta>
           <versionId value="2"/>
           <lastUpdated value="2017-04-10T12:48:18.411-04:00"/>
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
         </meta>
-        <context>
-          <reference value="Encounter/A"/>
-          <display value="Inpatient Encounter A"/>
-        </context>
-        <status value="active"/>
+        <status value="active"/>      
         <medicationCodeableConcept>
           <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
@@ -475,6 +469,14 @@
           </coding>
           <text value="Amoxicillin 500 MG"/>
         </medicationCodeableConcept>
+        <subject>
+          <reference value="Patient/test2"/>
+          <display value="Brian Z"/>
+        </subject>
+        <context>
+          <reference value="Encounter/A"/>
+          <display value="Inpatient Encounter A"/>
+        </context>
         <effectivePeriod>
           <start value="2016-09-12"/>
         </effectivePeriod>
@@ -482,15 +484,10 @@
         <informationSource>
           <reference value="Patient/test2"/>
           <display value="Brian Z"/>
-        </informationSource>
-        <subject>
-          <reference value="Patient/test2"/>
-          <display value="Brian Z"/>
-        </subject>
+        </informationSource>      
         <derivedFrom>
           <reference value="MedicationRequest/enca-6"/>
         </derivedFrom>
-        <taken value="n"/>
         <reasonCode>
           <coding>
             <system value="http://snomed.info/sct"/>
@@ -517,18 +514,20 @@
           </timing>
           <route>
             <coding>
-              <system value="http://ncimeta.nci.nih.gov"/>
-              <code value="C38288"/>
-              <display value="ORALLY"/>
-              <userSelected value="false"/>
-            </coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="26643006"/>
+				<display value="Oral use"/>
+				<userSelected value="false"/>
+			</coding>
           </route>
-          <doseQuantity>
-            <value value="1"/>
-            <unit value="Oral Capsule"/>
-            <system value="http://hl7.org/fhir/v3/orderableDrugForm"/>
-            <code value="ORCAP"/>
-          </doseQuantity>
+          <doseAndRate>
+	          <doseQuantity>
+	            <value value="1"/>
+	            <unit value="Oral Capsule"/>
+	            <system value="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"/>
+	            <code value="ORCAP"/>
+	          </doseQuantity>
+          </doseAndRate>
         </dosage>
       </MedicationStatement>
     </resource>

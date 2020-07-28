@@ -45,9 +45,7 @@
         },
         "authoredOn": "2016-01-15",
         "requester": {
-          "agent": {
             "display": "Dr. Cayr (BMC PCP)"
-          }
         },
         "reasonCode": [
           {
@@ -69,9 +67,9 @@
             "route": {
               "coding": [
                 {
-                  "system": "http://ncimeta.nci.nih.gov",
-                  "code": "C38288",
-                  "display": "ORAL",
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "ORAL use",
                   "userSelected": false
                 }
               ]
@@ -83,7 +81,7 @@
           "quantity": {
             "value": 60,
             "unit": "tablets",
-            "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
             "code": "TAB"
           }
         }
@@ -108,11 +106,11 @@
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
               "code": "311036",
-              "display": "Humulin R (insulin regular, human) U100  100units/ml inj solution",
+              "display": "HumuLIN R 100 UNT/ML Injectable Solution",
               "userSelected": false
             }
           ],
-          "text": "Humulin R (insulin regular, human) U100  100units/ml inj solution"
+          "text": "HumuLIN R 100 UNT/ML Injectable Solution"
         },
         "subject": {
           "reference": "Patient/test2",
@@ -120,9 +118,7 @@
         },
         "authoredOn": "2015-07-01",
         "requester": {
-          "agent": {
             "display": "Dr. Cryn (BMC Endo)"
-          }
         },
         "dosageInstruction": [
           {

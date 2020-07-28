@@ -10,23 +10,21 @@
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="1656313"/>
-			<display value="Cefotaxime 1000 MG Injection"/>
+			<display value="cefotaxime 1 GM Injection"/>
 		</coding>
-		<text value="Cefotaxime 1000Mg Powder For Solution For Injection"/>
+		<text value="cefotaxime 1 GM Injection"/>
 	</medicationCodeableConcept>
 	<subject>
 		<reference value="Patient/test2"/>
 		<display value="Brian Z"/>
 	</subject>
-	<context>
+	<encounter>
 		<reference value="Encounter/A"/>
 		<display value="Inpatient Encounter A"/>
-	</context>
+	</encounter>
 	<authoredOn value="2016-09-10"/>
 	<requester>
-		<agent>
 			<display value="Dr. B"/>
-		</agent>
 	</requester>
 	<reasonCode>
 		<coding>
@@ -48,20 +46,22 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38276"/>
-				<display value="INTRAVENOUS"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
 		<method>
 			<text value="Slow Push"/>
 		</method>
-		<doseQuantity>
-			<value value="1000"/>
-			<unit value="mg"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
-		</doseQuantity>
+        <doseAndRate>
+			<doseQuantity>
+				<value value="1000"/>
+				<unit value="mg"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+        </doseAndRate>
 	</dosageInstruction>
 </MedicationRequest>

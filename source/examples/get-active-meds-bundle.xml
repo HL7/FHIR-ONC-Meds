@@ -18,7 +18,6 @@
 				<meta>
 					<versionId value="2"/>
 					<lastUpdated value="2017-03-28T15:55:55Z"/>
-					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 				</meta>
 				<status value="active"/>
 				<medicationCodeableConcept>
@@ -30,21 +29,20 @@
 					</coding>
 					<text value="Zocor (simvastatin) 20mg Tablet"/>
 				</medicationCodeableConcept>
+				<subject>
+					<reference value="Patient/test2"/>
+					<display value="Brian Z"/>
+				</subject>
 				<effectivePeriod>
 					<start value="2016-01-15"/>
 				</effectivePeriod>
 				<dateAsserted value="2016-01-25"/>
 				<informationSource>
 					<display value="Dr Cayr"/>
-				</informationSource>
-				<subject>
-					<reference value="Patient/test2"/>
-					<display value="Brian Z"/>
-				</subject>
+				</informationSource>				
 				<derivedFrom>
 					<reference value="MedicationRequest/test2-1"/>
 				</derivedFrom>
-				<taken value="na"/>
 				<reasonCode>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -59,9 +57,9 @@
 					<asNeededBoolean value="false"/>
 					<route>
 						<coding>
-							<system value="http://ncimeta.nci.nih.gov"/>
-							<code value="C38288"/>
-							<display value="ORAL"/>
+							<system value="http://snomed.info/sct"/>
+							<code value="26643006"/>
+							<display value="Oral use"/>
 							<userSelected value="false"/>
 						</coding>
 					</route>
@@ -80,33 +78,31 @@
 				<meta>
 					<versionId value="2"/>
 					<lastUpdated value="2017-03-28T15:58:01Z"/>
-					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 				</meta>
 				<status value="active"/>
 				<medicationCodeableConcept>
 					<coding>
 						<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 						<code value="311036"/>
-						<display value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+						<display value="HumuLIN R 100 UNT/ML Injectable Solution"/>
 						<userSelected value="false"/>
 					</coding>
-					<text value="Humulin R (insulin regular, human) U100  100units/ml inj solution"/>
+					<text value="HumuLIN R 100 UNT/ML Injectable Solution"/>
 				</medicationCodeableConcept>
+				<subject>
+					<reference value="Patient/test2"/>
+					<display value="Brian Z"/>
+				</subject>
 				<effectivePeriod>
 					<start value="2015-07-01"/>
 				</effectivePeriod>
 				<dateAsserted value="2017-01-21"/>
 				<informationSource>
 					<display value="Dr Cayr"/>
-				</informationSource>
-				<subject>
-					<reference value="Patient/test2"/>
-					<display value="Brian Z"/>
-				</subject>
+				</informationSource>			
 				<derivedFrom>
 					<reference value="MedicationRequest/test2-2"/>
 				</derivedFrom>
-				<taken value="na"/>
 				<dosage>
 					<sequence value="1"/>
 					<text value="10U every AM, 5U every PM, 5U at bedtime"/>
@@ -134,7 +130,6 @@
 				<meta>
 					<versionId value="2"/>
 					<lastUpdated value="2017-03-28T16:00:39Z"/>
-					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 				</meta>
 				<status value="completed"/>
 				<medicationCodeableConcept>
@@ -146,6 +141,10 @@
 					</coding>
 					<text value="simvastatin 10mg Tablet"/>
 				</medicationCodeableConcept>
+				<subject>
+					<reference value="Patient/test2"/>
+					<display value="Brian Z"/>
+				</subject>
 				<effectivePeriod>
 					<start value="2015-06-12"/>
 					<end value="2016-01-15"/>
@@ -153,15 +152,10 @@
 				<dateAsserted value="2017-03-15T16:07:59.169-07:00"/>
 				<informationSource>
 					<display value="Dr Cayr"/>
-				</informationSource>
-				<subject>
-					<reference value="Patient/test2"/>
-					<display value="Brian Z"/>
-				</subject>
+				</informationSource>			
 				<derivedFrom>
 					<reference value="MedicationRequest/test2-3"/>
 				</derivedFrom>
-				<taken value="na"/>
 				<reasonCode>
 					<coding>
 						<system value="http://snomed.info/sct"/>
@@ -176,9 +170,9 @@
 					<asNeededBoolean value="false"/>
 					<route>
 						<coding>
-							<system value="http://ncimeta.nci.nih.gov"/>
-							<code value="C38288"/>
-							<display value="ORAL"/>
+							<system value="http://snomed.info/sct"/>
+							<code value="26643006"/>
+							<display value="Oral use"/>
 							<userSelected value="false"/>
 						</coding>
 					</route>
@@ -197,7 +191,6 @@
 				<meta>
 					<versionId value="2"/>
 					<lastUpdated value="2017-03-28T15:49:10Z"/>
-					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 				</meta>
 				<status value="completed"/>
 				<medicationCodeableConcept>
@@ -209,16 +202,15 @@
 					</coding>
 					<text value="testosterone cypionate 100mg/ml inj"/>
 				</medicationCodeableConcept>
-				<effectiveDateTime value="2016-09-01"/>
-				<dateAsserted value="2016-09-01"/>
-				<informationSource>
-					<display value="Dr. Cryn"/>
-				</informationSource>
 				<subject>
 					<reference value="Patient/test2"/>
 					<display value="Brian Z"/>
 				</subject>
-				<taken value="y"/>
+				<effectiveDateTime value="2016-09-01"/>
+				<dateAsserted value="2016-09-01"/>
+				<informationSource>
+					<display value="Dr. Cryn"/>
+				</informationSource>			
 			</MedicationStatement>
 		</resource>
 		<search>
@@ -233,7 +225,6 @@
 				<meta>
 					<versionId value="1"/>
 					<lastUpdated value="2017-03-28T14:26:52Z"/>
-					<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 				</meta>
 				<status value="active"/>
 				<medicationCodeableConcept>
@@ -245,18 +236,17 @@
 					</coding>
 					<text value="testosterone cypionate 100mg/ml inj"/>
 				</medicationCodeableConcept>
+				<subject>
+					<reference value="Patient/test2"/>
+					<display value="Brian Z"/>
+				</subject>
 				<effectivePeriod>
 					<start value="2016-09-12"/>
 				</effectivePeriod>
 				<dateAsserted value="2016-09-12"/>
 				<informationSource>
 					<display value="Brian Z"/>
-				</informationSource>
-				<subject>
-					<reference value="Patient/test2"/>
-					<display value="Brian Z"/>
-				</subject>
-				<taken value="y"/>
+				</informationSource>			
 				<note>
 					<text value="Get at doctor's office every third Friday. Taking for energy level and drive."/>
 				</note>

@@ -10,23 +10,21 @@
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<code value="860092"/>
-			<display value="1 ML Ketorolac Tromethamine 15 MG/ML Injection"/>
+			<display value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
 		</coding>
-		<text value="Ketorolac Tromethamine 15 MG/ML For Injection"/>
+		<text value="ketorolac tromethamine 15 MG in 1 ML Injection"/>
 	</medicationCodeableConcept>
 	<subject>
 		<reference value="Patient/test2"/>
 		<display value="Brian Z"/>
 	</subject>
-	<context>
+	<encounter>
 		<reference value="Encounter/A"/>
 		<display value="Inpatient Encounter A"/>
-	</context>
+	</encounter>
 	<authoredOn value="2016-09-10"/>
 	<requester>
-		<agent>
 			<display value="Dr. B"/>
-		</agent>
 	</requester>
 	<reasonCode>
 		<coding>
@@ -48,20 +46,22 @@
 		<asNeededBoolean value="false"/>
 		<route>
 			<coding>
-				<system value="http://ncimeta.nci.nih.gov"/>
-				<code value="C38276"/>
-				<display value="INTRAVENOUS"/>
+				<system value="http://snomed.info/sct"/>
+				<code value="47625008"/>
+				<display value="INTRAVENOUS use"/>
 				<userSelected value="false"/>
 			</coding>
 		</route>
 		<method>
 			<text value="Slow Push"/>
 		</method>
-		<doseQuantity>
-			<value value="15"/>
-			<unit value="mg"/>
-			<system value="http://unitsofmeasure.org"/>
-			<code value="mg"/>
-		</doseQuantity>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="15"/>
+				<unit value="mg"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</doseQuantity>
+		</doseAndRate>
 	</dosageInstruction>
 </MedicationRequest>
