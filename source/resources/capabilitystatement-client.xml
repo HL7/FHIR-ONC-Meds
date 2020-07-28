@@ -137,7 +137,7 @@
 		</div>
 	</text>
 	<url value="http://hl7.org/fhir/us/meds/CapabilityStatement/client"/>
-	<name value="US Meds Client"/>
+	<name value="US_Meds_Client"/>
 	<status value="draft"/>
 	<date value="2017-03-08"/>
 	<publisher value="Health Level Seven International Pharmacy Work Group"/>
@@ -148,11 +148,17 @@
 		</telecom>
 	</contact>
 	<description value="This resource defines the expected capabilities of the US Meds Client actor when conforming to the US Meds IG and It is expected that it will be used in conjuction with the US Core CapabilityStatement. Together they describe the complete list of actual profiles, RESTful operations, and search parameters supported by US Meds Clients."/>
+	<jurisdiction> 
+	    <coding> 
+	      <system value="urn:iso:std:iso:3166"/> 
+	      <code value="US"/> 
+	    </coding> 
+  	</jurisdiction>
 	<kind value="requirements"/>
-	<fhirVersion value="3.0.0"/>
-	<acceptUnknown value="extensions"/>
+	<fhirVersion value="4.0.1"/>
 	<format value="xml"/>
 	<format value="json"/>
+	<!--  
 	<profile>
 		<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-profile-link">
 			<valueCode value="Medication"/>
@@ -187,7 +193,7 @@
 		</extension>
 		<reference value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationstatement"/>
 		<display value="US Core MedicationStatement Profile"/>
-	</profile>
+	</profile> -->
 	<rest>
 		<mode value="client"/>
 		<resource>
@@ -256,14 +262,14 @@
 					<valueCode value="SHALL"/>
 				</extension>
 			</searchInclude>
-			<searchParam>
+	<!-- 		<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
-				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/MedicationAdministration-patient"/>
 				<type value="reference"/>
-			</searchParam>
+			</searchParam> -->
 		</resource>
 		<resource>
 			<type value="MedicationDispense"/>
@@ -300,14 +306,14 @@
 					<valueCode value="SHALL"/>
 				</extension>
 			</searchInclude>
-			<searchParam>
+	<!--  		<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
-			</searchParam>
+			</searchParam> -->
 		</resource>
 		<resource>
 			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
@@ -352,14 +358,14 @@
 					<valueCode value="SHALL"/>
 				</extension>
 			</searchInclude>
-			<searchParam>
+	<!--  		<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
-			</searchParam>
+			</searchParam> -->
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
@@ -420,15 +426,15 @@
 					<valueCode value="SHALL"/>
 				</extension>
 			</searchInclude>
-			<searchParam>
+		<!--  	<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="patient"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/medications-patient"/>
 				<type value="reference"/>
-			</searchParam>
-			<searchParam>
+			</searchParam> -->
+	  		<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 					<valueCode value="SHOULD"/>
 				</extension>
@@ -442,7 +448,7 @@
 				</extension>
 				<name value="category"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/MedicationStatement-category"/>
-				<type value="reference"/>
+				<type value="token"/>
 			</searchParam>
 		</resource>
 	</rest>

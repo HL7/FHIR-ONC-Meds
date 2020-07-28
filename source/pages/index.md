@@ -47,7 +47,6 @@ This IG uses the following US Core Profiles from the US Core Implementation Guid
 
 - [US Core Medication]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medication.html)
 - [US Core Medication Request]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationrequest.html)
-- [US Core Medication Statement]({{ site.data.fhir.uscore }}StructureDefinition-us-core-medicationstatement.html)
 
 In addition, two new profiles have been defined as part of this implementation guide:
 

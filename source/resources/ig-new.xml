@@ -4,7 +4,7 @@
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
   <version value="1.2.0"/>
-  <name value="US Meds"/>
+  <name value="US_Meds"/>
   <status value="active"/>
   <experimental value="true"/>
   <publisher value="HL7 International - Pharmacy Work Group"/>
@@ -14,20 +14,14 @@
       <value value="http://www.hl7.org/Special/committees/medication/index.cfm"/>
     </telecom>
   </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <packageId value="hl7.fhir.us.meds"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
-  <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
@@ -504,6 +498,78 @@
         <generation value="generated"/>
       </page>
     </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
+    </parameter>
     <parameter>
       <code value="apply"/>
       <value value="version"/>
