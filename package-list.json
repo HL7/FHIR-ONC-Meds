@@ -13,13 +13,13 @@
       },
       {
          "version": "1.2.0",
-         "date": "2019-07-09",
-         "desc": "STU 2:  added new section on PDMP",
-         "path": "http://hl7.org/fhir/us/meds/STU2",
+         "date": "2020-07-28",
+         "desc": "STU 3:  Updated PDMP sectiosn to conform to FHIR R4",
+         "path": "http://hl7.org/fhir/us/meds/STU3",
          "status": "trial-use",
 		 "current": true,
-         "sequence": "STU2",
-         "fhirversion": "3.0.1"
+         "sequence": "STU3",
+         "fhirversion": "4.0.1"
       },
       {
          "version": "1.1.0",
