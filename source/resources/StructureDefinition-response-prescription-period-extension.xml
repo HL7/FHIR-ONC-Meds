@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="response-prescription-period-extension" />
+  <meta>
+    <versionId value="1" />
+    <lastUpdated value="2019-10-03T20:14:37.000-04:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/meds/StructureDefinition/response-prescription-period-extension" />
+  <version value="1.0.0" />
+  <name value="Response_Prescription_Period_Extension" />
+  <title value="Response_Prescription_Period_Extension" />
+  <status value="active" />
+  <publisher value="HL7 Pharmacy Work Group" />
+  <description value="The period indicating the range (start/end) for the responses from PDMP." />
+  <jurisdiction> 
+	    <coding> 
+	      <system value="urn:iso:std:iso:3166"/> 
+	      <code value="US"/> 
+	    </coding> 
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MessageHeader" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.org/fhir/us/meds/StructureDefinition/response-prescription-period-extension" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Response Prescription Period" />
+      <definition value="Represents the date range of prescriptions included in the responses" />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

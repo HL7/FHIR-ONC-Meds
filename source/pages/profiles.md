@@ -11,14 +11,15 @@ The following Profiles have been defined for this implementation guide.
 
 <br />
 
-<!--
+
 ### Extensions
 
 These extensions have been defined for this implementation guide.
 
 
-{ % include list-extensions.xhtml % }
+{% include list-extensions.xhtml %}
 
+<!--
 
 { % include link-list.md % }
 -->

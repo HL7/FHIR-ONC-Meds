@@ -6,7 +6,7 @@
         <td class="maptable10">
         </td>
         <td class="maptable11">PDMP Request Data Element</td>
-        <td class="maptable11">PMIX Data Element</td>
+        <td class="maptable11">ASAP Data Element</td>
         <td class="maptable12">FHIR Data Element</td>
       </tr>
       <tr style='height:20px;'>
@@ -21,60 +21,55 @@
       <tr style='height:20px;'>
         <td class="maptable16" rowspan="4">Request</td>
         <td class="maptable17">Requestor</td>
-        <td class="maptable17">&lt;pmix:Requestor&gt;</td>
+        <td class="maptable17">RequestorName</td>
         <td class="maptable17">Practitioner.name</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Requestor Role</td>
-        <td class="maptable17">&lt;pmix:RequestorRole&gt;</td>
+        <td class="maptable17">RequestorRole</td>
         <td class="maptable17">PractitionerRole.code</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Request ID</td>
-        <td class="maptable17">&lt;pmix:RequestID&gt;</td>
+        <td class="maptable17">RequestID</td>
         <td class="maptable17">MessageHeader.id</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable18">Request date/ timestamp</td>
-        <td class="maptable18">n/a</td>
+        <td class="maptable18">dateTime</td>
         <td class="maptable17">MessageHeader.extension (StructureDefinition-header-timestamp-extension) </td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16" rowspan="2">Requestor Identifier</td>
         <td class="maptable17">NPI Number*</td>
-        <td class="maptable17">&lt;nc:IdentificationID&gt;</td>
+        <td class="maptable17">NationalProviderID</td>
         <td class="maptable17">Practitioner.identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">DEA Number*</td>
-        <td class="maptable17">&lt;nc:IdentificationID&gt;</td>
+        <td class="maptable17">DEANumber</td>
         <td class="maptable17">Practitioner.identifier</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable16" rowspan="3">Requesting Facility ID</td>
+        <td class="maptable16" rowspan="2">Requesting Facility ID</td>
         <td class="maptable17">DEA Number*</td>
-        <td class="maptable17">&lt;nc:IdentificationID&gt;</td>
+        <td class="maptable17">DEANumber</td>
         <td class="maptable17">Organization.identifier</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable17">NCPDP Number*</td>
-        <td class="maptable17">&lt;nc:IdentificationID&gt;</td>
-        <td class="maptable17">Organization.identifier</td>
-      </tr>
-      <tr style='height:20px;'>
-        <td class="maptable17">NPI*</td>
-        <td class="maptable17">&lt;nc:IdentificationID&gt;</td>
+        <td class="maptable17">NPI</td>
+        <td class="maptable17">NationalProviderID</td>
         <td class="maptable17">Organization.identifier</td>
       </tr>
       <tr style='height:28px;'>
         <td class="maptable16" rowspan="3">Requesting Faciltiy</td>
         <td class="maptable17">Facility Name</td>
-        <td class="maptable17">&lt;nc:OrganizationDoingBusinessAsName&gt;</td>
+        <td class="maptable17">FacilityName</td>
         <td class="maptable17">Organization.name</td>
       </tr>
       <tr style='height:28px;'>
         <td class="maptable17">State code of Requesting Facility</td>
-        <td class="maptable17">&lt;nc:LocationStateUSPostalServiceCode&gt;</td>
+        <td class="maptable17">LocationStateUSPostalServiceCode&gt;</td>
         <td class="maptable17">Organization.address.state</td>
       </tr>
       <tr style='height:20px;'>
@@ -87,28 +82,28 @@
       <tr style='height:20px;'>
         <td class="maptable16" rowspan="3">Patient</td>
         <td class="maptable17">First Name</td>
-        <td class="maptable17">&lt;nc:PersonGivenName&gt;</td>
+        <td class="maptable17">GivenName</td>
         <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.name.given</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Last Name</td>
-        <td class="maptable17">&lt;nc:PersonSurName&gt;</td>
+        <td class="maptable17">SurName</td>
         <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.name.family</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">Date of Birth</td>
-        <td class="maptable17">&lt;nc:Date&gt;</td>
+        <td class="maptable17">BirthDate</td>
         <td class="maptable17">MedicationDispense.subject(Patient) --> Patient.birthdate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16" rowspan="2">Request Prescription Date Range</td>
         <td class="maptable17">Start Date</td>
-        <td class="maptable17">&lt;pmp:RequestPrescriptionDateRangeBegin&gt;</td>
+        <td class="maptable17">DateRangeBegin</td>
         <td class="maptable17">MedicationDispense.authorizingPrescription.dispenseRequest.validityPeriod</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable17">End Date</td>
-        <td class="maptable17">&lt;pmp:RequestPrescriptionDateRangeEnd&gt;</td>
+        <td class="maptable17">DateRangeEnd</td>
         <td class="maptable17">MedicationDispense.authorizingPrescription.dispenseRequest.validityPeriod</td>
       </tr>
       <tr style='height:40px;'>

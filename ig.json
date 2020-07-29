@@ -196,6 +196,21 @@
       "base": "StructureDefinition-medicationdispense.html",
       "source": "StructureDefinition-medicationdispense.xml"
     },
+    "StructureDefinition/header-timestamp-extension": {
+      "defns": "StructureDefinition-header-timestamp-extension-definitions.html",
+      "base": "StructureDefinition-header-timestamp-extension.html",
+      "source": "StructureDefinition-header-timestamp-extension.xml"
+    },
+    "StructureDefinition/response-prescription-period-extension": {
+      "defns": "StructureDefinition-response-prescription-period-extension-definitions.html",
+      "base": "StructureDefinition-response-prescription-period-extension.html",
+      "source": "StructureDefinition-response-prescription-period-extension.xml"
+    },
+    "StructureDefinition/refill-number-extension": {
+      "defns": "StructureDefinition-refill-number-extension-definitions.html",
+      "base": "StructureDefinition-refill-number-extension.html",
+      "source": "StructureDefinition-refill-number-extension.xml"
+    },
     "MedicationStatement/derivedfrom-mr-test2-2": {
       "base": "MedicationStatement-derivedfrom-mr-test2-2.html",
       "source": "medicationstatement-derivedfrom-mr-test2-2.xml"

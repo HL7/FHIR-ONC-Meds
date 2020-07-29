@@ -184,6 +184,17 @@ This section includes the minimal mapping for the PDMP response from a state PDM
 
 {% include PMIX_Response_table.html %}
 
+#### ASAP 2.1A Mappings for PDMP Request
+
+This section includes the minimal mapping for the PDMP request from an EHR to a state PDMP using ASAP 2.1A.
+
+{% include ASAP_Request_table.html %}
+
+#### ASAP 2.1A Mappings for PDMP Response
+
+This section includes the minimal mapping for the PDMP response from a state PDMP to an EHR using ASAP 2.1A.
+
+{% include ASAP_Response_table.html %}
 
 
 

@@ -23,21 +23,21 @@
         </td>
         <td class="maptable28">Response Date/Timestamp</td>
         <td class="maptable29">&lt;SentTime&gt;</td>
-        <td class="maptable29">MessageHeader.timestamp</td>
+        <td class="maptable29">MessageHeader.extension (StructureDefinition-header-timestamp-extension) </td>
       </tr>
       <tr style='height:32px;'>
         <td class="maptable27">
         </td>
         <td class="maptable28">Response Prescription Date Range (Start Date)</td>
         <td class="maptable29">&lt;EffectiveDate&gt;</td>
-        <td class="maptable29">medicationdispense-validityPeriod (Existing MedicationDispense Extension)</td>
+        <td class="maptable29">MessageHeader.extension (StructureDefinition-response-prescription-period-extension - Period.start)</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable23">
         </td>
         <td class="maptable28">Response Prescription Date Range (End date)</td>
         <td class="maptable29">&lt;ExpirationDate&gt;</td>
-        <td class="maptable29">medicationdispense-validityPeriod (Existing MedicationDispense Extension)</td>
+        <td class="maptable29">MessageHeader.extension (StructureDefinition-response-prescription-period-extension - Period.end)</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable23">
@@ -126,7 +126,7 @@
       <tr style='height:32px;'>
         <td class="maptable28">Drug Strength[1]</td>
         <td class="maptable215">&lt;StrengthValue, StrengthUnitOfMeasure&gt; fields </td>
-        <td class="maptable29">MedicationDispense.medicationReference.ingredient.amount</td>
+        <td class="maptable29">MedicationDispense.medicationReference.ingredient.strength</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Dosage Form[2]</td>
@@ -146,7 +146,7 @@
       <tr style='height:20px;'>
         <td class="maptable28">Refill Number</td>
         <td class="maptable29">&lt;FillNumber&gt;</td>
-        <td class="maptable29">MedicationDispense.extension - (Proposed new extension - fillNumber)</td>
+        <td class="maptable29">MedicationDispense.type</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable28">Refills Authorized</td>
@@ -277,7 +277,7 @@
         <td class="maptable216">
         </td>
         <td class="maptable217" colspan="3">* Conditionally required data elements have asterisks (*), meaning at least one data element is required within this category. For example, under Requesting Facility ID, one of the three data elements (DEA Number, NCPDP Number or NPI) is required.
-        Similarly for Patient Identifier, either SSN or MedicareNumber should be used as allowed by law. Additional occurrences of Patient Identifier may use PatientAccountNumber of MedicalRecordIdentificationNumberEHR per the NCPDP Script implementation guide.</td>
+        </td>
       </tr>
     </tbody>
   </table>

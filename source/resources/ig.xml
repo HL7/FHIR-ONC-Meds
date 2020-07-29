@@ -251,6 +251,27 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/header-timestamp-extension"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/response-prescription-period-extension"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/refill-number-extension"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CapabilityStatement/server"/>
       </reference>
       <exampleBoolean value="false"/>
