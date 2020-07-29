@@ -17,7 +17,7 @@ end TOC -->
 
 ### Introduction
 
-The {{site.data.fhir.igName}} Implementation Guide is based upon the [FHIR Version 3.0.1]({{ site.data.fhir.path }}index.html) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
+The US Med Implementation Guide is based upon the [FHIR Version 4.0.1]({{ site.data.fhir.path }}index.html) specification. It promotes consistent implementation of the pharmacy FHIR resources in US Realm Electronic Health Record Systems (EHRs) to provide patient and provider access to patient medications. This IG provides specific guidance on how to access a patient's active and historical medications, including prescriptions, dispenses, administrations and statements.  It also proposes future areas of guidance on how to create new outpatient prescriptions, record a dispensed medication, and mappings to support PDMP integration.
 
 ### Scope
 
@@ -61,6 +61,6 @@ Refer to the US Core Implementation Guide's [General Security Considerations]({{
 
 ----
 
-Primary Authors: Brett Marquard, Melva Peters, Eric Haas
+Primary Authors: Brett Marquard, Nagesh Bashyam, Melva Peters, Eric Haas
 
 Sponsoring HL7 Workgroup : [Pharmacy](http://www.hl7.org/Special/committees/medication/index.cfm)
