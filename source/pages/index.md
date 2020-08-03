@@ -14,6 +14,17 @@ active: home
 
 end TOC -->
 
+<!-- end TOC -->
+
+<div markdown='1' class="highlight-note">
+### September 2020 Ballot Review
+
+Most of the original guidance published in the US Meds IG is updated and migrated to the latest version of US Core. Rather than duplicate the guidance, references to the relevant US Core sections are noted.
+
+Beyond updating references to US Core, updates for this ballot are concentrated to the mapping on the [PDMP](pdmp.html) page. 
+
+</div>
+{: .highlight-note}
 
 ### Introduction
 
