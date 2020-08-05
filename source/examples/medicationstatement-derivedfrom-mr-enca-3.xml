@@ -8,7 +8,12 @@
 				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
 			</meta>
 			<code>
-				<text value="Azithromycin 500mg in 250 ml Normal Saline"/>
+			    <coding>
+					<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+					<code value="1668240"/>
+					<display value="Zithromax 500 MG Injection"/>
+				</coding>
+				<text value="Zithromax 500 MG Injection"/>
 			</code>
 			<ingredient>
 				<itemCodeableConcept>
