@@ -2,6 +2,18 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\FHIR-ONC-Meds\source\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\FHIR-ONC-Meds\source\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\FHIR-ONC-Meds\framework"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\FHIR-ONC-Meds\source\pages"/>
+  </extension>
   <url value="http://hl7.org/fhir/us/meds/ImplementationGuide/ig"/>
   <version value="1.2.0"/>
   <name value="US_Meds"/>
@@ -22,6 +34,7 @@
   </jurisdiction>
   <packageId value="hl7.fhir.us.meds"/>
   <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
@@ -245,6 +258,27 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/medicationdispense"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/header-timestamp-extension"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/response-prescription-period-extension"/>
+      </reference>
+      <exampleBoolean value="false"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/refill-number-extension"/>
       </reference>
       <exampleBoolean value="false"/>
       <groupingId value="p1"/>
@@ -498,486 +532,6 @@
         <generation value="generated"/>
       </page>
     </page>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
-    </parameter>
     <parameter>
       <code value="apply"/>
       <value value="version"/>

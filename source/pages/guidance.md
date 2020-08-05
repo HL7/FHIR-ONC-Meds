@@ -11,7 +11,7 @@ f: http://build.fhir.org/
 
 <!-- end TOC -->
 
-This section outlines the definitions and interpretations and specific guidance for the US Meds IG use cases  Most of the original guidance published in the US Meds IG is updated and migrated to the latest version of US Core. Rather than duplicate the guidance, references to the relevant US Core sections are noted.
+This section outlines the definitions and interpretations and specific guidance for the US Meds IG use cases.  Most of the original guidance published in the US Meds IG is updated and migrated to the latest version of US Core. Rather than duplicate the guidance, references to the relevant US Core sections are noted.
 
 <!-- source pages/\_include/{{page.md_filename}}.md  file -->
 

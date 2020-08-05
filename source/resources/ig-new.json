@@ -1,6 +1,22 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "ig",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\framework"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\FHIR-ONC-Meds\\source\\pages"
+  }],
   "url" : "http://hl7.org/fhir/us/meds/ImplementationGuide/ig",
   "version" : "1.2.0",
   "name" : "US_Meds",
@@ -22,7 +38,6 @@
   "packageId" : "hl7.fhir.us.meds",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1",
-  "4.0.1",
   "4.0.1"],
   "dependsOn" : [{
     "id" : "uscore",
@@ -248,6 +263,27 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/medicationdispense"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/header-timestamp-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/response-prescription-period-extension"
+      },
+      "exampleBoolean" : false,
+      "groupingId" : "p1"
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/refill-number-extension"
       },
       "exampleBoolean" : false,
       "groupingId" : "p1"
@@ -502,510 +538,6 @@
       }]
     },
     "parameter" : [{
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
-      "code" : "apply",
-      "value" : "version"
-    },
-    {
-      "code" : "generate",
-      "value" : "xml"
-    },
-    {
-      "code" : "generate",
-      "value" : "JSON"
-    },
-    {
       "code" : "apply",
       "value" : "version"
     },
