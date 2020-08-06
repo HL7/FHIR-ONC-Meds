@@ -5,6 +5,9 @@
 		<lastUpdated value="2016-12-08T06:38:52Z"/>
 		<profile value="http://hl7.org/fhir/us/meds/StructureDefinition/medicationdispense"/>
 	</meta>
+	<extension url="http://hl7.org/fhir/us/meds/StructureDefinition/refill-number-extension">
+		<valuePositiveInt value="5"/>
+    </extension>
 	<status value="in-progress"/>
 	<medicationCodeableConcept>
 		<coding>

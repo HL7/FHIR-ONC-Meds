@@ -34,6 +34,13 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="MessageHeader/msg1"/>
+      </reference>
+      <exampleBoolean value="true"/>
+      <groupingId value="p1"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="MedicationAdministration/medadmin-1"/>
       </reference>
       <exampleBoolean value="true"/>

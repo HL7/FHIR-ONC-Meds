@@ -24,6 +24,9 @@
     "MedicationRequest": {
       "template-base": "ex.html"
     },
+    "MessageHeader": {
+      "template-base": "ex.html"
+    },
     "Any": {
       "template-format": "format.html",
       "template-base": "base.html",
@@ -190,6 +193,10 @@
     "Bundle/pdmp-response": {
       "base": "Bundle-pdmp-response.html",
       "source": "pdmp-response-bundle.xml"
+    },
+    "MessageHeader/msg1": {
+      "base": "MessageHeader-msg1.html",
+      "source": "header-timestamp-1.xml"
     },
     "StructureDefinition/medicationdispense": {
       "defns": "StructureDefinition-medicationdispense-definitions.html",

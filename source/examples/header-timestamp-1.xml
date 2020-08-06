@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader xmlns="http://hl7.org/fhir">
+  <id value="msg1"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p> Example Message Header</p> 
+    </div> 
+  </text> 
+  <extension url="http://hl7.org/fhir/us/meds/StructureDefinition/header-timestamp-extension">
+		<valueDateTime value="2020-07-21"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/meds/StructureDefinition/response-prescription-period-extension">
+		<valuePeriod>
+   			<start value="2010-05-23" />
+   			<end value="2020-07-27" />
+  		</valuePeriod>
+  </extension>
+  <eventCoding> 
+    <system value="urn:oid:2.16.840.1.113883.4.642.3.26"/> 
+    <code value="pdmp-request-response"/> 
+  </eventCoding> 
+  <source> 
+    	<name value="Clinical Care Site"/> 
+    	<endpoint value="llp:10.11.12.13:7867"/> 
+  </source> 
+</MessageHeader>
