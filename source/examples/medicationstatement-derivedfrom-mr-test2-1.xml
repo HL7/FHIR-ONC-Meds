@@ -23,7 +23,8 @@
 		<display value="Dr Cayr"/>
 	</informationSource>
 	<derivedFrom>
-		<reference value="MedicationRequest/test2-1"/>
+		<reference value="http://wildfhir.aegis.net/fhir3-0-0/MedicationRequest/test2-1"/>
+		<display value="Brian Z"/>
 	</derivedFrom>
 	<reasonCode>
 		<coding>
