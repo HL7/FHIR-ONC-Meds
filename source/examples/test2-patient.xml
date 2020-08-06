@@ -4,39 +4,6 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
 	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<p>
-				<b>Generated Narrative with Details</b>
-			</p>
-			<p>
-				<b>id</b>: test2</p>
-			<p>
-				<b>identifier</b>: Medical Record Number = 1032702 (USUAL)</p>
-			<p>
-				<b>active</b>: true</p>
-			<p>
-				<b>name</b>: Biran Z </p>
-			<p>
-				<b>telecom</b>: ph: 555-555-5555(HOME)</p>
-			<p>
-				<b>gender</b>: Male</p>
-			<p>
-				<b>birthsex</b>: Male</p>
-			<p>
-				<b>birthDate</b>: Jan 5, 1964</p>
-			<p>
-				<b>address</b>: 211 Main St Anytown, CA 95555 US </p>
-			<p>
-				<b>race</b>: White</p>
-			<p>
-				<b>ethnicity</b>: Hispanic or Latino</p>
-						<p>
-				<b>preferred language</b>: English</p>
-
-		</div>
-	</text>
 	<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
 		<extension url="ombCategory">
 			<valueCoding>
