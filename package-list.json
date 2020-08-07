@@ -12,10 +12,10 @@
          "current": true
       },
       {
-         "version": "1.2.0",
-         "date": "2020-08-14",
+         "version": "2.1.0",
+         "date": "2020-09-14",
          "desc": "STU 3 Ballot:  Updated PDMP mappings, profiles and resources to conform to FHIR R4",
-         "path": "http://hl7.org/fhir/us/meds/2020Aug",
+         "path": "http://hl7.org/fhir/us/meds/2020Sep",
          "status": "ballot",
          "sequence": "STU3",
          "fhirversion": "4.0.1"
