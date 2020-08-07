@@ -30,15 +30,6 @@
          "fhirversion": "3.0.1"
       },
       {
-               "version": "1.2.0",
-               "date": "2019-07-25",
-               "desc": "STU 2:  added new section on PDMP",
-               "path": "http://hl7.org/fhir/us/meds/STU2",
-               "status": "trial-use",
-               "sequence": "STU2",
-               "fhirversion": "3.0.1"
-      },
-      {
          "version": "1.1.0",
          "date": "2018-06-14",
          "desc": "STU 2 Ballot",
